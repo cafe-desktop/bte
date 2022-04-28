@@ -1,0 +1,695 @@
+<html>
+<head>
+<title>bte (clang-tools 1:11.0-51+nmu5) - scan-build results</title>
+<link type="text/css" rel="stylesheet" href="scanview.css"/>
+<script src="sorttable.js"></script>
+<script language='javascript' type="text/javascript">
+function SetDisplay(RowClass, DisplayVal)
+{
+  var Rows = document.getElementsByTagName("tr");
+  for ( var i = 0 ; i < Rows.length; ++i ) {
+    if (Rows[i].className == RowClass) {
+      Rows[i].style.display = DisplayVal;
+    }
+  }
+}
+
+function CopyCheckedStateToCheckButtons(SummaryCheckButton) {
+  var Inputs = document.getElementsByTagName("input");
+  for ( var i = 0 ; i < Inputs.length; ++i ) {
+    if (Inputs[i].type == "checkbox") {
+      if(Inputs[i] != SummaryCheckButton) {
+        Inputs[i].checked = SummaryCheckButton.checked;
+        Inputs[i].onclick();
+      }
+    }
+  }
+}
+
+function returnObjById( id ) {
+    if (document.getElementById)
+        var returnVar = document.getElementById(id);
+    else if (document.all)
+        var returnVar = document.all[id];
+    else if (document.layers)
+        var returnVar = document.layers[id];
+    return returnVar;
+}
+
+var NumUnchecked = 0;
+
+function ToggleDisplay(CheckButton, ClassName) {
+  if (CheckButton.checked) {
+    SetDisplay(ClassName, "");
+    if (--NumUnchecked == 0) {
+      returnObjById("AllBugsCheck").checked = true;
+    }
+  }
+  else {
+    SetDisplay(ClassName, "none");
+    NumUnchecked++;
+    returnObjById("AllBugsCheck").checked = false;
+  }
+}
+</script>
+<!-- SUMMARYENDHEAD -->
+</head>
+<body>
+<h1>bte (clang-tools 1:11.0-51+nmu5) - scan-build results</h1>
+
+<table>
+<tr><th>User:</th><td>root@1278766e2b32</td></tr>
+<tr><th>Working Directory:</th><td>/rootdir</td></tr>
+<tr><th>Command Line:</th><td>ninja -C _build</td></tr>
+<tr><th>Clang Version:</th><td>Debian clang version 11.1.0-4
+</td></tr>
+<tr><th>Date:</th><td>Thu Oct 14 07:34:21 2021</td></tr>
+</table>
+<h2>Bug Summary</h2><table>
+<thead><tr><td>Bug Type</td><td>Quantity</td><td class="sorttable_nosort">Display?</td></tr></thead>
+<tr style="font-weight:bold"><td class="SUMM_DESC">All Bugs</td><td class="Q">195</td><td><center><input type="checkbox" id="AllBugsCheck" onClick="CopyCheckedStateToCheckButtons(this);" checked/></center></td></tr>
+<tr><th>C++ move semantics</th><th colspan=2></th></tr>
+<tr><td class="SUMM_DESC">Use-after-move</td><td class="Q">1</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_c++_move_semantics_use-after-move');" checked/></center></td></tr>
+<tr><th>Dead code</th><th colspan=2></th></tr>
+<tr><td class="SUMM_DESC">Unreachable code</td><td class="Q">148</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_dead_code_unreachable_code');" checked/></center></td></tr>
+<tr><th>Dead store</th><th colspan=2></th></tr>
+<tr><td class="SUMM_DESC">Dead assignment</td><td class="Q">10</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_dead_store_dead_assignment');" checked/></center></td></tr>
+<tr><td class="SUMM_DESC">Dead increment</td><td class="Q">1</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_dead_store_dead_increment');" checked/></center></td></tr>
+<tr><td class="SUMM_DESC">Dead initialization</td><td class="Q">4</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_dead_store_dead_initialization');" checked/></center></td></tr>
+<tr><th>Logic error</th><th colspan=2></th></tr>
+<tr><td class="SUMM_DESC">Assigned value is garbage or undefined</td><td class="Q">2</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_logic_error_assigned_value_is_garbage_or_undefined');" checked/></center></td></tr>
+<tr><td class="SUMM_DESC">Cast from non-struct type to struct type</td><td class="Q">2</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_logic_error_cast_from_non-struct_type_to_struct_type');" checked/></center></td></tr>
+<tr><td class="SUMM_DESC">Dereference of null pointer</td><td class="Q">6</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_logic_error_dereference_of_null_pointer');" checked/></center></td></tr>
+<tr><td class="SUMM_DESC">Division by zero</td><td class="Q">2</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_logic_error_division_by_zero');" checked/></center></td></tr>
+<tr><td class="SUMM_DESC">Garbage return value</td><td class="Q">1</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_logic_error_garbage_return_value');" checked/></center></td></tr>
+<tr><td class="SUMM_DESC">Out-of-bound access</td><td class="Q">3</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_logic_error_out-of-bound_access');" checked/></center></td></tr>
+<tr><td class="SUMM_DESC">Result of operation is garbage or undefined</td><td class="Q">6</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_logic_error_result_of_operation_is_garbage_or_undefined');" checked/></center></td></tr>
+<tr><td class="SUMM_DESC">Return of pointer value outside of expected range</td><td class="Q">2</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_logic_error_return_of_pointer_value_outside_of_expected_range');" checked/></center></td></tr>
+<tr><td class="SUMM_DESC">Uninitialized argument value</td><td class="Q">5</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_logic_error_uninitialized_argument_value');" checked/></center></td></tr>
+<tr><td class="SUMM_DESC">Use of identical expressions</td><td class="Q">1</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_logic_error_use_of_identical_expressions');" checked/></center></td></tr>
+<tr><th>Unix Stream API Error</th><th colspan=2></th></tr>
+<tr><td class="SUMM_DESC">Resource Leak</td><td class="Q">1</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_unix_stream_api_error_resource_leak');" checked/></center></td></tr>
+</table>
+<h2>Reports</h2>
+
+<table class="sortable" style="table-layout:automatic">
+<thead><tr>
+  <td>Bug Group</td>
+  <td class="sorttable_sorted">Bug Type<span id="sorttable_sortfwdind">&nbsp;&#x25BE;</span></td>
+  <td>File</td>
+  <td>Function/Method</td>
+  <td class="Q">Line</td>
+  <td class="Q">Path Length</td>
+  <td class="sorttable_nosort"></td>
+  <!-- REPORTBUGCOL -->
+</tr></thead>
+<tbody>
+<tr class="bt_logic_error_assigned_value_is_garbage_or_undefined"><td class="DESC">Logic error</td><td class="DESC">Assigned value is garbage or undefined</td><td>ringview.cc</td><td class="DESC">update</td><td class="Q">279</td><td class="Q">29</td><td><a href="report-207ef0.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-207ef0.html" -->
+</tr>
+<tr class="bt_logic_error_assigned_value_is_garbage_or_undefined"><td class="DESC">Logic error</td><td class="DESC">Assigned value is garbage or undefined</td><td>parser-test.cc</td><td class="DESC">test_seq_glue_arg</td><td class="Q">1181</td><td class="Q">93</td><td><a href="report-8173d2.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-8173d2.html" -->
+</tr>
+<tr class="bt_logic_error_cast_from_non-struct_type_to_struct_type"><td class="DESC">Logic error</td><td class="DESC">Cast from non-struct type to struct type</td><td>missing.cc</td><td class="DESC">fdwalk</td><td class="Q">164</td><td class="Q">1</td><td><a href="report-100ef0.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-100ef0.html" -->
+</tr>
+<tr class="bt_logic_error_cast_from_non-struct_type_to_struct_type"><td class="DESC">Logic error</td><td class="DESC">Cast from non-struct type to struct type</td><td>bterowdata.cc</td><td class="DESC">_bte_cells_for_cell_array</td><td class="Q">55</td><td class="Q">1</td><td><a href="report-6fabda.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-6fabda.html" -->
+</tr>
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>bteseq.cc</td><td class="DESC">delete_character</td><td class="Q">916</td><td class="Q">1</td><td><a href="report-0d7abc.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-0d7abc.html" -->
+</tr>
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>bte.cc</td><td class="DESC">widget_key_press</td><td class="Q">4717</td><td class="Q">1</td><td><a href="report-1760fa.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-1760fa.html" -->
+</tr>
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>icu-converter.cc</td><td class="DESC">convert</td><td class="Q">121</td><td class="Q">1</td><td><a href="report-363f1a.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-363f1a.html" -->
+</tr>
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>mev.c</td><td class="DESC">main</td><td class="Q">383</td><td class="Q">1</td><td><a href="report-42b238.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-42b238.html" -->
+</tr>
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>parser-test.cc</td><td class="DESC">test_seq_string</td><td class="Q">281</td><td class="Q">1</td><td><a href="report-462ec8.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-462ec8.html" -->
+</tr>
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>icu-converter.cc</td><td class="DESC">convert</td><td class="Q">121</td><td class="Q">1</td><td><a href="report-502c8e.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-502c8e.html" -->
+</tr>
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>bteaccess.cc</td><td class="DESC">bte_terminal_accessible_get_text_somewhere</td><td class="Q">1106</td><td class="Q">1</td><td><a href="report-6e4d10.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-6e4d10.html" -->
+</tr>
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>bte.cc</td><td class="DESC">widget_key_press</td><td class="Q">4685</td><td class="Q">1</td><td><a href="report-98a603.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-98a603.html" -->
+</tr>
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>parser-test.cc</td><td class="DESC">test_seq_string</td><td class="Q">268</td><td class="Q">1</td><td><a href="report-99c53c.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-99c53c.html" -->
+</tr>
+<tr class="bt_dead_store_dead_assignment"><td class="DESC">Dead store</td><td class="DESC">Dead assignment</td><td>drawing-cairo.cc</td><td class="DESC">draw_text_internal</td><td class="Q">356</td><td class="Q">1</td><td><a href="report-db7ef8.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-db7ef8.html" -->
+</tr>
+<tr class="bt_dead_store_dead_increment"><td class="DESC">Dead store</td><td class="DESC">Dead increment</td><td>bidi.cc</td><td class="DESC">implicit_paragraph</td><td class="Q">694</td><td class="Q">1</td><td><a href="report-0be8eb.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-0be8eb.html" -->
+</tr>
+<tr class="bt_dead_store_dead_initialization"><td class="DESC">Dead store</td><td class="DESC">Dead initialization</td><td>pty.cc</td><td class="DESC">child_setup</td><td class="Q">189</td><td class="Q">1</td><td><a href="report-4ca74a.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-4ca74a.html" -->
+</tr>
+<tr class="bt_dead_store_dead_initialization"><td class="DESC">Dead store</td><td class="DESC">Dead initialization</td><td>pty.cc</td><td class="DESC">child_setup</td><td class="Q">229</td><td class="Q">1</td><td><a href="report-84e52b.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-84e52b.html" -->
+</tr>
+<tr class="bt_dead_store_dead_initialization"><td class="DESC">Dead store</td><td class="DESC">Dead initialization</td><td>pty.cc</td><td class="DESC">child_setup</td><td class="Q">211</td><td class="Q">1</td><td><a href="report-bf81f6.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-bf81f6.html" -->
+</tr>
+<tr class="bt_dead_store_dead_initialization"><td class="DESC">Dead store</td><td class="DESC">Dead initialization</td><td>parser-test.cc</td><td class="DESC">test_seq_string</td><td class="Q">261</td><td class="Q">1</td><td><a href="report-d14bf9.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-d14bf9.html" -->
+</tr>
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>ring.cc</td><td class="DESC">get_hyperlink_at_position</td><td class="Q">685</td><td class="Q">15</td><td><a href="report-41e666.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-41e666.html" -->
+</tr>
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>reflect.c</td><td class="DESC">update_contents</td><td class="Q">97</td><td class="Q">13</td><td><a href="report-5282e0.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-5282e0.html" -->
+</tr>
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>bidi.cc</td><td class="DESC">explicit_line_shape</td><td class="Q">244</td><td class="Q">34</td><td><a href="report-5b0060.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-5b0060.html" -->
+</tr>
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>reflect.c</td><td class="DESC">main</td><td class="Q">312</td><td class="Q">14</td><td><a href="report-91c4d5.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-91c4d5.html" -->
+</tr>
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>reflect.c</td><td class="DESC">update_contents</td><td class="Q">97</td><td class="Q">13</td><td><a href="report-92c9b6.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-92c9b6.html" -->
+</tr>
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>reflect.c</td><td class="DESC">main</td><td class="Q">312</td><td class="Q">14</td><td><a href="report-bd1cbb.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-bd1cbb.html" -->
+</tr>
+<tr class="bt_logic_error_division_by_zero"><td class="DESC">Logic error</td><td class="DESC">Division by zero</td><td>decoder-cat.cc</td><td class="DESC">print_benchmark</td><td class="Q">522</td><td class="Q">14</td><td><a href="report-c9e539.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-c9e539.html" -->
+</tr>
+<tr class="bt_logic_error_division_by_zero"><td class="DESC">Logic error</td><td class="DESC">Division by zero</td><td>parser-cat.cc</td><td class="DESC">print_benchmark</td><td class="Q">807</td><td class="Q">13</td><td><a href="report-f16724.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-f16724.html" -->
+</tr>
+<tr class="bt_logic_error_garbage_return_value"><td class="DESC">Logic error</td><td class="DESC">Garbage return value</td><td>cell.hh</td><td class="DESC">colors</td><td class="Q">95</td><td class="Q">57</td><td><a href="report-73f743.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-73f743.html" -->
+</tr>
+<tr class="bt_logic_error_out-of-bound_access"><td class="DESC">Logic error</td><td class="DESC">Out-of-bound access</td><td>ringview.cc</td><td class="DESC">set_rows</td><td class="Q">154</td><td class="Q">17</td><td><a href="report-051441.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-051441.html" -->
+</tr>
+<tr class="bt_logic_error_out-of-bound_access"><td class="DESC">Logic error</td><td class="DESC">Out-of-bound access</td><td>missing.cc</td><td class="DESC">filename_to_fd</td><td class="Q">65</td><td class="Q">8</td><td><a href="report-9a8467.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-9a8467.html" -->
+</tr>
+<tr class="bt_logic_error_out-of-bound_access"><td class="DESC">Logic error</td><td class="DESC">Out-of-bound access</td><td>parser-glue.hh</td><td class="DESC">assert_equal_full</td><td class="Q">754</td><td class="Q">21</td><td><a href="report-e29b14.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-e29b14.html" -->
+</tr>
+<tr class="bt_unix_stream_api_error_resource_leak"><td class="DESC">Unix Stream API Error</td><td class="DESC">Resource Leak</td><td>slowcat.c</td><td class="DESC">catfile</td><td class="Q">76</td><td class="Q">21</td><td><a href="report-ffeb04.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-ffeb04.html" -->
+</tr>
+<tr class="bt_logic_error_result_of_operation_is_garbage_or_undefined"><td class="DESC">Logic error</td><td class="DESC">Result of operation is garbage or undefined</td><td>bte.cc</td><td class="DESC">draw_cells_with_attributes</td><td class="Q">8623</td><td class="Q">48</td><td><a href="report-2bc429.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-2bc429.html" -->
+</tr>
+<tr class="bt_logic_error_result_of_operation_is_garbage_or_undefined"><td class="DESC">Logic error</td><td class="DESC">Result of operation is garbage or undefined</td><td>bteseq.cc</td><td class="DESC">XTERM_WM</td><td class="Q">8617</td><td class="Q">13</td><td><a href="report-54dada.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-54dada.html" -->
+</tr>
+<tr class="bt_logic_error_result_of_operation_is_garbage_or_undefined"><td class="DESC">Logic error</td><td class="DESC">Result of operation is garbage or undefined</td><td>color-triple.hh</td><td class="DESC">bte_color_triple_set_back</td><td class="Q">60</td><td class="Q">60</td><td><a href="report-b9c89b.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-b9c89b.html" -->
+</tr>
+<tr class="bt_logic_error_result_of_operation_is_garbage_or_undefined"><td class="DESC">Logic error</td><td class="DESC">Result of operation is garbage or undefined</td><td>bteseq.cc</td><td class="DESC">XTERM_WM</td><td class="Q">8640</td><td class="Q">13</td><td><a href="report-c8055f.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-c8055f.html" -->
+</tr>
+<tr class="bt_logic_error_result_of_operation_is_garbage_or_undefined"><td class="DESC">Logic error</td><td class="DESC">Result of operation is garbage or undefined</td><td>bteseq.cc</td><td class="DESC">DECSTBM</td><td class="Q">4756</td><td class="Q">2</td><td><a href="report-cc58d7.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-cc58d7.html" -->
+</tr>
+<tr class="bt_logic_error_result_of_operation_is_garbage_or_undefined"><td class="DESC">Logic error</td><td class="DESC">Result of operation is garbage or undefined</td><td>color-triple.hh</td><td class="DESC">bte_color_triple_set_fore</td><td class="Q">54</td><td class="Q">58</td><td><a href="report-e938f2.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-e938f2.html" -->
+</tr>
+<tr class="bt_logic_error_return_of_pointer_value_outside_of_expected_range"><td class="DESC">Logic error</td><td class="DESC">Return of pointer value outside of expected range</td><td>icu-decoder.hh</td><td class="DESC">u16_buffer_end</td><td class="Q">97</td><td class="Q">3</td><td><a href="report-6f6979.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-6f6979.html" -->
+</tr>
+<tr class="bt_logic_error_return_of_pointer_value_outside_of_expected_range"><td class="DESC">Logic error</td><td class="DESC">Return of pointer value outside of expected range</td><td>icu-decoder.hh</td><td class="DESC">u16_buffer_end</td><td class="Q">97</td><td class="Q">3</td><td><a href="report-aaacfc.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-aaacfc.html" -->
+</tr>
+<tr class="bt_logic_error_uninitialized_argument_value"><td class="DESC">Logic error</td><td class="DESC">Uninitialized argument value</td><td>bteseq.cc</td><td class="DESC">set_color_index</td><td class="Q">1462</td><td class="Q">17</td><td><a href="report-2b94da.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-2b94da.html" -->
+</tr>
+<tr class="bt_logic_error_uninitialized_argument_value"><td class="DESC">Logic error</td><td class="DESC">Uninitialized argument value</td><td>bte.cc</td><td class="DESC">screen_set_size</td><td class="Q">7506</td><td class="Q">33</td><td><a href="report-417268.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-417268.html" -->
+</tr>
+<tr class="bt_logic_error_uninitialized_argument_value"><td class="DESC">Logic error</td><td class="DESC">Uninitialized argument value</td><td>bteseq.cc</td><td class="DESC">set_color_index</td><td class="Q">1465</td><td class="Q">17</td><td><a href="report-7bdc8b.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-7bdc8b.html" -->
+</tr>
+<tr class="bt_logic_error_uninitialized_argument_value"><td class="DESC">Logic error</td><td class="DESC">Uninitialized argument value</td><td>ringview.cc</td><td class="DESC">update</td><td class="Q">261</td><td class="Q">30</td><td><a href="report-800aac.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-800aac.html" -->
+</tr>
+<tr class="bt_logic_error_uninitialized_argument_value"><td class="DESC">Logic error</td><td class="DESC">Uninitialized argument value</td><td>ringview.cc</td><td class="DESC">update</td><td class="Q">245</td><td class="Q">31</td><td><a href="report-e80ac7.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-e80ac7.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_hyperlink_check_event</td><td class="Q">2572</td><td class="Q">1</td><td><a href="report-001865.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-001865.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_paste_clipboard</td><td class="Q">2390</td><td class="Q">1</td><td><a href="report-038643.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-038643.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_set_color_highlight</td><td class="Q">4301</td><td class="Q">1</td><td><a href="report-04191d.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-04191d.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_set_color_cursor_foreground</td><td class="Q">4249</td><td class="Q">1</td><td><a href="report-04dafc.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-04dafc.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_get_text_range</td><td class="Q">3730</td><td class="Q">1</td><td><a href="report-0901ae.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-0901ae.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_paste_primary</td><td class="Q">2412</td><td class="Q">1</td><td><a href="report-095902.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-095902.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_write_contents_sync</td><td class="Q">5541</td><td class="Q">1</td><td><a href="report-09ef70.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-09ef70.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">set_error_from_exception</td><td class="Q">5720</td><td class="Q">1</td><td><a href="report-0b6136.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-0b6136.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>widget.cc</td><td class="DESC">im_preedit_start_cb</td><td class="Q">59</td><td class="Q">1</td><td><a href="report-0cc07b.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-0cc07b.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>widget.cc</td><td class="DESC">im_retrieve_surrounding_cb</td><td class="Q">97</td><td class="Q">1</td><td><a href="report-0cebd3.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-0cebd3.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_match_check</td><td class="Q">2508</td><td class="Q">1</td><td><a href="report-0f07c9.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-0f07c9.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_set_color_highlight_foreground</td><td class="Q">4330</td><td class="Q">1</td><td><a href="report-107ea6.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-107ea6.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_set_color_cursor</td><td class="Q">4219</td><td class="Q">1</td><td><a href="report-119dc8.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-119dc8.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>bteseq.cc</td><td class="DESC">XTERM_WM</td><td class="Q">8617</td><td class="Q">1</td><td><a href="report-18603b.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-18603b.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btepty.cc</td><td class="DESC">bte_pty_finalize</td><td class="Q">357</td><td class="Q">1</td><td><a href="report-1bddcf.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-1bddcf.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>bteaccess.cc</td><td class="DESC">bte_terminal_accessible_get_selection</td><td class="Q">1428</td><td class="Q">1</td><td><a href="report-1becf0.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-1becf0.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_set_color_highlight</td><td class="Q">4308</td><td class="Q">1</td><td><a href="report-1f9203.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-1f9203.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_focus_out</td><td class="Q">344</td><td class="Q">1</td><td><a href="report-224ac7.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-224ac7.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_enter</td><td class="Q">359</td><td class="Q">1</td><td><a href="report-2280eb.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-2280eb.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>reflect.c</td><td class="DESC">main</td><td class="Q">317</td><td class="Q">1</td><td><a href="report-2d2224.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-2d2224.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>bte.cc</td><td class="DESC">emit_eof_idle_cb</td><td class="Q">787</td><td class="Q">1</td><td><a href="report-2de511.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-2de511.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>bteaccess.cc</td><td class="DESC">bte_terminal_accessible_set_size</td><td class="Q">1594</td><td class="Q">1</td><td><a href="report-2e4965.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-2e4965.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>parser.cc</td><td class="DESC">parser_feed_to_state</td><td class="Q">1389</td><td class="Q">1</td><td><a href="report-2fe83d.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-2fe83d.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btepty.cc</td><td class="DESC">bte_pty_child_setup</td><td class="Q">134</td><td class="Q">1</td><td><a href="report-2ff88a.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-2ff88a.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>bte.cc</td><td class="DESC">bte_terminal_vadjustment_value_changed_cb</td><td class="Q">7625</td><td class="Q">1</td><td><a href="report-312978.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-312978.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_motion_notify</td><td class="Q">272</td><td class="Q">1</td><td><a href="report-318927.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-318927.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btepty.cc</td><td class="DESC">bte_pty_initable_init</td><td class="Q">305</td><td class="Q">1</td><td><a href="report-34f2d9.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-34f2d9.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_get_has_selection</td><td class="Q">5055</td><td class="Q">1</td><td><a href="report-392bb4.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-392bb4.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_match_set_cursor</td><td class="Q">2730</td><td class="Q">1</td><td><a href="report-3a6dac.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-3a6dac.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btepty.cc</td><td class="DESC">bte_pty_set_utf8</td><td class="Q">258</td><td class="Q">1</td><td><a href="report-3b8653.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-3b8653.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_set_default_colors</td><td class="Q">4417</td><td class="Q">1</td><td><a href="report-3c2807.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-3c2807.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_search_find_previous</td><td class="Q">2846</td><td class="Q">1</td><td><a href="report-3cf999.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-3cf999.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_get_char_height</td><td class="Q">4071</td><td class="Q">1</td><td><a href="report-3ecbe1.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-3ecbe1.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>reaper.cc</td><td class="DESC">main</td><td class="Q">182</td><td class="Q">1</td><td><a href="report-410772.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-410772.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>bte.cc</td><td class="DESC">reaper_child_exited_cb</td><td class="Q">3101</td><td class="Q">1</td><td><a href="report-4427c1.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-4427c1.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_search_set_wrap_around</td><td class="Q">2974</td><td class="Q">1</td><td><a href="report-465aae.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-465aae.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_leave</td><td class="Q">381</td><td class="Q">1</td><td><a href="report-4ac2e5.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-4ac2e5.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>icu-decoder.cc</td><td class="DESC">decode</td><td class="Q">113</td><td class="Q">1</td><td><a href="report-4c4448.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-4c4448.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>icu-decoder.cc</td><td class="DESC">decode</td><td class="Q">95</td><td class="Q">1</td><td><a href="report-4e41b8.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-4e41b8.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_set_colors</td><td class="Q">4398</td><td class="Q">1</td><td><a href="report-4f821d.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-4f821d.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_get_encoding_supported</td><td class="Q">2274</td><td class="Q">1</td><td><a href="report-5286c1.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-5286c1.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>bteseq.cc</td><td class="DESC">DECSTBM</td><td class="Q">4778</td><td class="Q">1</td><td><a href="report-559df4.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-559df4.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_match_remove_all</td><td class="Q">2825</td><td class="Q">1</td><td><a href="report-575495.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-575495.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_copy_primary</td><td class="Q">2369</td><td class="Q">1</td><td><a href="report-593eb6.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-593eb6.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_key_press</td><td class="Q">227</td><td class="Q">1</td><td><a href="report-5962ca.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-5962ca.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_match_set_cursor_type</td><td class="Q">2757</td><td class="Q">1</td><td><a href="report-5ac518.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-5ac518.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>icu-decoder.cc</td><td class="DESC">decode</td><td class="Q">118</td><td class="Q">1</td><td><a href="report-5dd5fd.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-5dd5fd.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>widget.cc</td><td class="DESC">key_event_from_cdk</td><td class="Q">361</td><td class="Q">1</td><td><a href="report-5fe252.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-5fe252.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_button_press</td><td class="Q">286</td><td class="Q">1</td><td><a href="report-61ec34.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-61ec34.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>bteaccess.cc</td><td class="DESC">bte_terminal_accessible_initialize</td><td class="Q">718</td><td class="Q">1</td><td><a href="report-6b781a.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-6b781a.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_set_property</td><td class="Q">749</td><td class="Q">1</td><td><a href="report-6e1a90.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-6e1a90.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_search_find_next</td><td class="Q">2868</td><td class="Q">1</td><td><a href="report-6e3234.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-6e3234.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>widget.cc</td><td class="DESC">~Widget</td><td class="Q">156</td><td class="Q">1</td><td><a href="report-6f304d.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-6f304d.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_match_check_event</td><td class="Q">2541</td><td class="Q">1</td><td><a href="report-712afe.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-712afe.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>reflect.c</td><td class="DESC">main</td><td class="Q">317</td><td class="Q">1</td><td><a href="report-713dd3.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-713dd3.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_set_size</td><td class="Q">3788</td><td class="Q">1</td><td><a href="report-736552.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-736552.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_set_colors</td><td class="Q">4392</td><td class="Q">1</td><td><a href="report-765e50.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-765e50.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_copy_clipboard</td><td class="Q">2317</td><td class="Q">1</td><td><a href="report-775fe0.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-775fe0.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_get_preferred_width</td><td class="Q">404</td><td class="Q">1</td><td><a href="report-7b45e5.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-7b45e5.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_select_all</td><td class="Q">3012</td><td class="Q">1</td><td><a href="report-7d3af6.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-7d3af6.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>widget.cc</td><td class="DESC">im_commit_cb</td><td class="Q">44</td><td class="Q">1</td><td><a href="report-7d6a90.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-7d6a90.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btepty.cc</td><td class="DESC">bte_pty_get_size</td><td class="Q">221</td><td class="Q">1</td><td><a href="report-80e630.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-80e630.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_get_encodings</td><td class="Q">2239</td><td class="Q">1</td><td><a href="report-8150ba.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-8150ba.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_get_row_count</td><td class="Q">5275</td><td class="Q">1</td><td><a href="report-870809.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-870809.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_set_color_bold</td><td class="Q">4198</td><td class="Q">1</td><td><a href="report-886feb.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-886feb.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_feed_child</td><td class="Q">3555</td><td class="Q">1</td><td><a href="report-8a7054.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-8a7054.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_map</td><td class="Q">489</td><td class="Q">1</td><td><a href="report-8bb966.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-8bb966.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>reflect.c</td><td class="DESC">main</td><td class="Q">314</td><td class="Q">1</td><td><a href="report-8e3aae.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-8e3aae.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>bteseq.cc</td><td class="DESC">DECSTBM</td><td class="Q">4782</td><td class="Q">1</td><td><a href="report-91025d.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-91025d.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_get_color_background_for_draw</td><td class="Q">5601</td><td class="Q">1</td><td><a href="report-91574a.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-91574a.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_constructed</td><td class="Q">538</td><td class="Q">1</td><td><a href="report-92c2cc.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-92c2cc.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>widget.cc</td><td class="DESC">im_delete_surrounding_cb</td><td class="Q">113</td><td class="Q">1</td><td><a href="report-940fe9.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-940fe9.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>bteaccess.cc</td><td class="DESC">bte_terminal_accessible_set_selection</td><td class="Q">1516</td><td class="Q">1</td><td><a href="report-950c89.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-950c89.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_unmap</td><td class="Q">508</td><td class="Q">1</td><td><a href="report-953b8b.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-953b8b.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>bteregex.cc</td><td class="DESC">bte_regex_new_for_search</td><td class="Q">165</td><td class="Q">1</td><td><a href="report-957e1d.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-957e1d.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>icu-decoder.cc</td><td class="DESC">decode</td><td class="Q">113</td><td class="Q">1</td><td><a href="report-95c278.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-95c278.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_set_colors</td><td class="Q">4401</td><td class="Q">1</td><td><a href="report-95fe20.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-95fe20.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_real_copy_clipboard</td><td class="Q">189</td><td class="Q">1</td><td><a href="report-9661fc.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-9661fc.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>parser.cc</td><td class="DESC">parser_feed_to_state</td><td class="Q">1389</td><td class="Q">1</td><td><a href="report-96a2a4.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-96a2a4.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_scrollable_get_border</td><td class="Q">2042</td><td class="Q">1</td><td><a href="report-973189.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-973189.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_copy_clipboard_format</td><td class="Q">2348</td><td class="Q">1</td><td><a href="report-987c9f.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-987c9f.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_set_color_bold</td><td class="Q">4191</td><td class="Q">1</td><td><a href="report-9be312.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-9be312.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_init</td><td class="Q">553</td><td class="Q">1</td><td><a href="report-9c4bf0.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-9c4bf0.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>icu-decoder.cc</td><td class="DESC">decode</td><td class="Q">85</td><td class="Q">1</td><td><a href="report-9c6683.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-9c6683.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>parser.cc</td><td class="DESC">parser_feed_to_state</td><td class="Q">1389</td><td class="Q">1</td><td><a href="report-9d1bd9.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-9d1bd9.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_feed_child_binary</td><td class="Q">3586</td><td class="Q">1</td><td><a href="report-a0e5ed.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-a0e5ed.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_search_set_regex</td><td class="Q">2895</td><td class="Q">1</td><td><a href="report-a1d32f.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-a1d32f.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_key_release</td><td class="Q">258</td><td class="Q">1</td><td><a href="report-a22472.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-a22472.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_screen_changed</td><td class="Q">521</td><td class="Q">1</td><td><a href="report-a24a4e.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-a24a4e.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_set_colors</td><td class="Q">4388</td><td class="Q">1</td><td><a href="report-a25455.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-a25455.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">set_error_from_exception</td><td class="Q">5724</td><td class="Q">1</td><td><a href="report-a30927.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-a30927.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>reflect.c</td><td class="DESC">main</td><td class="Q">314</td><td class="Q">1</td><td><a href="report-a31b76.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-a31b76.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>reaper.cc</td><td class="DESC">main</td><td class="Q">189</td><td class="Q">1</td><td><a href="report-a33496.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-a33496.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">exception_append_to_string</td><td class="Q">5672</td><td class="Q">1</td><td><a href="report-a74c2f.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-a74c2f.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_match_add_regex</td><td class="Q">2463</td><td class="Q">1</td><td><a href="report-a79068.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-a79068.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_set_color_highlight_foreground</td><td class="Q">4337</td><td class="Q">1</td><td><a href="report-a8e249.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-a8e249.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_draw</td><td class="Q">444</td><td class="Q">1</td><td><a href="report-a9029e.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-a9029e.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>bteseq.cc</td><td class="DESC">XTERM_WM</td><td class="Q">8640</td><td class="Q">1</td><td><a href="report-ae0a15.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-ae0a15.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_set_color_background</td><td class="Q">4165</td><td class="Q">1</td><td><a href="report-ae9bf4.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-ae9bf4.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>bteregex.cc</td><td class="DESC">bte_regex_substitute</td><td class="Q">241</td><td class="Q">1</td><td><a href="report-afd315.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-afd315.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>widget.cc</td><td class="DESC">im_preedit_changed_cb</td><td class="Q">85</td><td class="Q">1</td><td><a href="report-b1d64c.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-b1d64c.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>reaper.cc</td><td class="DESC">main</td><td class="Q">206</td><td class="Q">1</td><td><a href="report-b3054d.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-b3054d.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_spawn_sync</td><td class="Q">3210</td><td class="Q">1</td><td><a href="report-b311db.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-b311db.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_set_colors</td><td class="Q">4370</td><td class="Q">1</td><td><a href="report-b3dc70.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-b3dc70.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_set_property</td><td class="Q">852</td><td class="Q">1</td><td><a href="report-b487a9.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-b487a9.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_init</td><td class="Q">580</td><td class="Q">1</td><td><a href="report-b8c612.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-b8c612.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>bte.cc</td><td class="DESC">emit_child_exited_idle_cb</td><td class="Q">822</td><td class="Q">1</td><td><a href="report-b96569.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-b96569.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_get_cursor_position</td><td class="Q">3057</td><td class="Q">1</td><td><a href="report-b9adfb.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-b9adfb.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>bteseq.cc</td><td class="DESC">DECSTBM</td><td class="Q">4757</td><td class="Q">1</td><td><a href="report-bbfa5c.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-bbfa5c.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_set_colors</td><td class="Q">4399</td><td class="Q">1</td><td><a href="report-bc0997.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-bc0997.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_finalize</td><td class="Q">604</td><td class="Q">1</td><td><a href="report-bf10a6.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-bf10a6.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_search_get_regex</td><td class="Q">2918</td><td class="Q">1</td><td><a href="report-c0250e.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-c0250e.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_button_release</td><td class="Q">300</td><td class="Q">1</td><td><a href="report-c0e394.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-c0e394.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>bteaccess.cc</td><td class="DESC">bte_terminal_accessible_remove_selection</td><td class="Q">1484</td><td class="Q">1</td><td><a href="report-c192bb.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-c192bb.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_event_check_regex_array</td><td class="Q">2611</td><td class="Q">1</td><td><a href="report-c6f1ff.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-c6f1ff.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_set_colors</td><td class="Q">4385</td><td class="Q">1</td><td><a href="report-c74d15.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-c74d15.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_reset</td><td class="Q">3765</td><td class="Q">1</td><td><a href="report-caa645.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-caa645.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>bteseq.cc</td><td class="DESC">SCORC</td><td class="Q">6881</td><td class="Q">1</td><td><a href="report-cc9981.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-cc9981.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>reaper.cc</td><td class="DESC">main</td><td class="Q">213</td><td class="Q">1</td><td><a href="report-d21258.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-d21258.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>bteregex.cc</td><td class="DESC">bte_regex_jit</td><td class="Q">192</td><td class="Q">1</td><td><a href="report-d29da3.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-d29da3.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>bteregex.cc</td><td class="DESC">bte_regex_new_for_match</td><td class="Q">127</td><td class="Q">1</td><td><a href="report-d5afd0.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-d5afd0.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_get_column_count</td><td class="Q">4435</td><td class="Q">1</td><td><a href="report-d7e353.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-d7e353.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_style_updated</td><td class="Q">211</td><td class="Q">1</td><td><a href="report-d97969.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-d97969.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_dispose</td><td class="Q">588</td><td class="Q">1</td><td><a href="report-da705f.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-da705f.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_focus_in</td><td class="Q">329</td><td class="Q">1</td><td><a href="report-dbcff3.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-dbcff3.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_scroll</td><td class="Q">314</td><td class="Q">1</td><td><a href="report-dee31a.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-dee31a.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_get_property</td><td class="Q">620</td><td class="Q">1</td><td><a href="report-e38a55.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-e38a55.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_match_remove</td><td class="Q">2806</td><td class="Q">1</td><td><a href="report-e390bf.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-e390bf.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_set_color_foreground</td><td class="Q">4275</td><td class="Q">1</td><td><a href="report-e4143f.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-e4143f.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_set_color_cursor_foreground</td><td class="Q">4256</td><td class="Q">1</td><td><a href="report-e87cb9.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-e87cb9.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_match_set_cursor_name</td><td class="Q">2782</td><td class="Q">1</td><td><a href="report-e89029.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-e89029.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_unselect_all</td><td class="Q">3031</td><td class="Q">1</td><td><a href="report-e98bda.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-e98bda.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>icu-decoder.cc</td><td class="DESC">decode</td><td class="Q">95</td><td class="Q">1</td><td><a href="report-ea2a79.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-ea2a79.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_set_color_cursor</td><td class="Q">4226</td><td class="Q">1</td><td><a href="report-ec109f.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-ec109f.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_size_allocate</td><td class="Q">431</td><td class="Q">1</td><td><a href="report-ed237e.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-ed237e.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>icu-decoder.cc</td><td class="DESC">decode</td><td class="Q">85</td><td class="Q">1</td><td><a href="report-ed8dd4.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-ed8dd4.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_realize</td><td class="Q">458</td><td class="Q">1</td><td><a href="report-ee9a07.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-ee9a07.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_feed</td><td class="Q">3526</td><td class="Q">1</td><td><a href="report-f1e2be.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-f1e2be.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>icu-decoder.cc</td><td class="DESC">decode</td><td class="Q">118</td><td class="Q">1</td><td><a href="report-f28bde.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-f28bde.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_real_paste_clipboard</td><td class="Q">200</td><td class="Q">1</td><td><a href="report-f66160.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-f66160.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>widget.cc</td><td class="DESC">im_preedit_end_cb</td><td class="Q">72</td><td class="Q">1</td><td><a href="report-f6a5a5.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-f6a5a5.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_unrealize</td><td class="Q">477</td><td class="Q">1</td><td><a href="report-f723c0.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-f723c0.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_get_char_width</td><td class="Q">4093</td><td class="Q">1</td><td><a href="report-f92de0.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-f92de0.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_get_preferred_height</td><td class="Q">418</td><td class="Q">1</td><td><a href="report-fb0bb0.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-fb0bb0.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_set_clear_background</td><td class="Q">5569</td><td class="Q">1</td><td><a href="report-fbd13d.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-fbd13d.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">spawn_async_cb</td><td class="Q">3307</td><td class="Q">1</td><td><a href="report-fc9aa1.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-fc9aa1.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>btectk.cc</td><td class="DESC">bte_terminal_search_get_wrap_around</td><td class="Q">2993</td><td class="Q">1</td><td><a href="report-febe74.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-febe74.html" -->
+</tr>
+<tr class="bt_dead_code_unreachable_code"><td class="DESC">Dead code</td><td class="DESC">Unreachable code</td><td>widget.cc</td><td class="DESC">settings_notify_cb</td><td class="Q">130</td><td class="Q">1</td><td><a href="report-ff5bfc.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-ff5bfc.html" -->
+</tr>
+<tr class="bt_logic_error_use_of_identical_expressions"><td class="DESC">Logic error</td><td class="DESC">Use of identical expressions</td><td>btectk.cc</td><td class="DESC">bte_get_feature_flags</td><td class="Q">2123</td><td class="Q">1</td><td><a href="report-038232.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-038232.html" -->
+</tr>
+<tr class="bt_c++_move_semantics_use-after-move"><td class="DESC">C++ move semantics</td><td class="DESC">Use-after-move</td><td>refptr-test.cc</td><td class="DESC">test_glib_refptr</td><td class="Q">81</td><td class="Q">5</td><td><a href="report-dc4843.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-dc4843.html" -->
+</tr>
+</tbody>
+</table>
+
+</body></html>

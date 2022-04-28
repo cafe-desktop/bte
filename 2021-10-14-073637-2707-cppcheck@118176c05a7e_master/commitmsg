@@ -1,0 +1,1 @@
+ci: cppcheck with --force
