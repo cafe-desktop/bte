@@ -1,0 +1,1640 @@
+Checking src/app/app.cc ...
+src/app/app.cc:1226:37: error: syntax error [syntaxError]
+        g_assert_cmpint(chrome_width, >=, 0);
+                                    ^
+Checking src/app/app.cc: BTE_DEBUG...
+1/47 files checked 6% done
+Checking src/bidi.cc ...
+Checking src/bidi.cc: BTE_COMPILATION;BTE_DISABLE_DEPRECATED;__EXCEPTIONS;__GXX_RTTI...
+src/attr.hh:122:40: error: syntax error [syntaxError]
+        g_assert_cmpuint(value << shift, <=, mask); /* assurance */
+                                       ^
+Checking src/bidi.cc: BTE_COMPILATION;__EXCEPTIONS;__GXX_RTTI...
+Checking src/bidi.cc: BTE_DISABLE_DEPRECATION_WARNINGS;__EXCEPTIONS;__GXX_RTTI...
+Checking src/bidi.cc: WITH_FRIBIDI;__EXCEPTIONS;__GXX_RTTI...
+Checking src/bidi.cc: __EXCEPTIONS;__GXX_RTTI...
+2/47 files checked 8% done
+Checking src/bte.cc ...
+Checking src/bte.cc: BTE_COMPILATION;BTE_DISABLE_DEPRECATED;__EXCEPTIONS;__GXX_RTTI...
+Checking src/bte.cc: BTE_COMPILATION;__EXCEPTIONS;__GXX_RTTI...
+Checking src/bte.cc: BTE_DEBUG;WITH_ICU;__EXCEPTIONS;__GXX_RTTI...
+Checking src/bte.cc: BTE_DEBUG;__EXCEPTIONS;__GXX_RTTI...
+Checking src/bte.cc: BTE_DISABLE_DEPRECATION_WARNINGS;__EXCEPTIONS;__GXX_RTTI...
+Checking src/bte.cc: DEBUG;__EXCEPTIONS;__GXX_RTTI...
+Checking src/bte.cc: HAVE_SYS_SYSLIMITS_H;__EXCEPTIONS;__GXX_RTTI...
+Checking src/bte.cc: HAVE_SYS_TERMIOS_H;__EXCEPTIONS;__GXX_RTTI...
+Checking src/bte.cc: HAVE_SYS_WAIT_H;__EXCEPTIONS;__GXX_RTTI...
+Checking src/bte.cc: HAVE_WCHAR_H;__EXCEPTIONS;__GXX_RTTI...
+Checking src/bte.cc: WITH_A11Y;__EXCEPTIONS;__GXX_RTTI...
+Checking src/bte.cc: WITH_FRIBIDI;__EXCEPTIONS;__GXX_RTTI...
+Checking src/bte.cc: WITH_ICU;__EXCEPTIONS;__GXX_RTTI...
+Checking src/bte.cc: __EXCEPTIONS;__GXX_RTTI...
+3/47 files checked 32% done
+Checking src/bteaccess.cc ...
+Checking src/bteaccess.cc: BTE_COMPILATION;BTE_DISABLE_DEPRECATED;__EXCEPTIONS;__GXX_RTTI...
+Checking src/bteaccess.cc: BTE_COMPILATION;__EXCEPTIONS;__GXX_RTTI...
+Checking src/bteaccess.cc: BTE_DISABLE_DEPRECATION_WARNINGS;__EXCEPTIONS;__GXX_RTTI...
+Checking src/bteaccess.cc: HAVE_LOCALE_H;__EXCEPTIONS;__GXX_RTTI...
+Checking src/bteaccess.cc: WITH_FRIBIDI;__EXCEPTIONS;__GXX_RTTI...
+Checking src/bteaccess.cc: __EXCEPTIONS;__GXX_RTTI...
+4/47 files checked 36% done
+Checking src/btectk.cc ...
+Checking src/btectk.cc: BTE_COMPILATION;BTE_DISABLE_DEPRECATED;__EXCEPTIONS;__GXX_RTTI...
+src/btectk.cc:138:1: error: syntax error: keyword 'try' is not allowed in global scope [syntaxError]
+try
+^
+Checking src/btectk.cc: BTE_COMPILATION;__EXCEPTIONS;__GXX_RTTI...
+5/47 files checked 47% done
+Checking src/btepty.cc ...
+src/btepty.cc:134:1: error: syntax error: keyword 'try' is not allowed in global scope [syntaxError]
+try
+^
+Checking src/btepty.cc: BTE_COMPILATION...
+Checking src/btepty.cc: BTE_COMPILATION;BTE_DISABLE_DEPRECATED...
+Checking src/btepty.cc: BTE_DEBUG...
+Checking src/btepty.cc: BTE_DEBUG;__GNUC__...
+Checking src/btepty.cc: BTE_DISABLE_DEPRECATION_WARNINGS...
+Checking src/btepty.cc: GLIB_CHECK_VERSION=0...
+Checking src/btepty.cc: G_HAVE_GNUC_VARARGS=0;__GNUC__...
+6/47 files checked 49% done
+Checking src/bteregex.cc ...
+src/bteregex.cc:92:1: error: syntax error: keyword 'try' is not allowed in global scope [syntaxError]
+try
+^
+Checking src/bteregex.cc: BTE_DEBUG...
+Checking src/bteregex.cc: __GNUC__;__clang__...
+7/47 files checked 50% done
+Checking src/bterowdata.cc ...
+Checking src/bterowdata.cc: BTE_DEBUG...
+Checking src/bterowdata.cc: BTE_DEBUG;__GNUC__...
+Checking src/bterowdata.cc: G_HAVE_GNUC_VARARGS=0;__GNUC__...
+Checking src/bterowdata.cc: __clang__...
+8/47 files checked 50% done
+Checking src/bteseq.cc ...
+Checking src/bteseq.cc: BTE_COMPILATION;BTE_DISABLE_DEPRECATED;__EXCEPTIONS;__GXX_RTTI...
+Checking src/bteseq.cc: BTE_COMPILATION;__EXCEPTIONS;__GXX_RTTI...
+Checking src/bteseq.cc: BTE_DEBUG;__EXCEPTIONS;__GXX_RTTI...
+Checking src/bteseq.cc: BTE_DISABLE_DEPRECATION_WARNINGS;__EXCEPTIONS;__GXX_RTTI...
+Checking src/bteseq.cc: HAVE_SYS_SYSLIMITS_H;__EXCEPTIONS;__GXX_RTTI...
+Checking src/bteseq.cc: PARSER_INCLUDE_NOP;__EXCEPTIONS;__GXX_RTTI...
+Checking src/bteseq.cc: WITH_FRIBIDI;__EXCEPTIONS;__GXX_RTTI...
+Checking src/bteseq.cc: __EXCEPTIONS;__GXX_RTTI...
+9/47 files checked 65% done
+Checking src/btespawn.cc ...
+src/btespawn.cc:51:15: style: C-style pointer casting [cstyleCast]
+  char *buf = (char *) vbuf;
+              ^
+src/btespawn.cc:109:20: style: C-style pointer casting [cstyleCast]
+  argv_buffer[0] = (char *) "/bin/sh";
+                   ^
+src/btespawn.cc:110:20: style: C-style pointer casting [cstyleCast]
+  argv_buffer[1] = (char *) file;
+                   ^
+src/btespawn.cc:218:0: information: Skipping configuration 'ENOTDIR' since the value of 'ENOTDIR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+     case ENOTDIR:
+^
+Checking src/btespawn.cc: ENOTDIR...
+src/btespawn.cc:215:0: information: Skipping configuration 'ESTALE' since the value of 'ESTALE' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+     case ESTALE:
+^
+Checking src/btespawn.cc: ESTALE...
+10/47 files checked 66% done
+Checking src/btestream.cc ...
+src/btestream-file.h:400:55: error: syntax error [syntaxError]
+        g_assert_cmpuint (offset % BTE_SNAKE_BLOCKSIZE, ==, 0);
+                                                      ^
+Checking src/btestream.cc: BTESTREAM_MAIN...
+Checking src/btestream.cc: BTESTREAM_MAIN;WITH_GNUTLS...
+Checking src/btestream.cc: BTESTREAM_MAIN;__clang__...
+Checking src/btestream.cc: BTE_DEBUG...
+Checking src/btestream.cc: BTE_DEBUG;__GNUC__...
+src/btestream-file.h:206:0: information: Skipping configuration 'FALLOC_FL_PUNCH_HOLE' since the value of 'FALLOC_FL_PUNCH_HOLE' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+                fallocate (fd, FALLOC_FL_PUNCH_HOLE | FALLOC_FL_KEEP_SIZE, offset, len);
+^
+Checking src/btestream.cc: FALLOC_FL_PUNCH_HOLE...
+Checking src/btestream.cc: G_HAVE_GNUC_VARARGS=0;__GNUC__...
+Checking src/btestream.cc: WITH_GNUTLS...
+11/47 files checked 66% done
+Checking src/btetypes.cc ...
+src/btetypes.hh:139:17: warning: Member variable 'coords::x' is not initialized in the constructor. [uninitMemberVar]
+                coords() = default;
+                ^
+src/btetypes.hh:139:17: warning: Member variable 'coords::y' is not initialized in the constructor. [uninitMemberVar]
+                coords() = default;
+                ^
+src/btetypes.hh:156:17: warning: Member variable 'extents::m_width' is not initialized in the constructor. [uninitMemberVar]
+                extents() = default;
+                ^
+src/btetypes.hh:156:17: warning: Member variable 'extents::m_height' is not initialized in the constructor. [uninitMemberVar]
+                extents() = default;
+                ^
+src/btetypes.hh:183:17: style: Class 'rgb' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+                rgb(PangoColor const& c) { *static_cast<PangoColor*>(this) = c; }
+                ^
+src/btetypes.hh:184:17: style: Class 'rgb' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+                rgb(CdkRGBA const* c);
+                ^
+src/btetypes.hh:185:17: style: Class 'rgb' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+                rgb(CdkRGBA const& c) : rgb(&c) { }
+                ^
+src/btetypes.cc:50:20: style: C-style pointer casting [cstyleCast]
+ char *spec_copy = (char *)spec;
+                   ^
+src/libc-glue.hh:89:30: style: Variable 'errsv' is assigned a value that is never used. [unreadVariable]
+                        auto errsv = ErrnoSaver{};
+                             ^
+Checking src/btetypes.cc: BTE_DEBUG...
+Checking src/btetypes.cc: BTE_DEBUG;MAIN...
+src/btetypes.cc:169:33: error: syntax error [syntaxError]
+        g_assert_cmpint(p2.row(), ==, 256);
+                                ^
+Checking src/btetypes.cc: MAIN...
+12/47 files checked 67% done
+Checking src/bteunistr.cc ...
+src/bteunistr.cc:188:31: error: syntax error [syntaxError]
+        g_assert_cmpint(a->len, >=, 1);
+                              ^
+13/47 files checked 67% done
+Checking src/bteutils.cc ...
+src/bteutils.cc:68:0: information: Skipping configuration 'O_NOATIME' since the value of 'O_NOATIME' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+        do { } while (fcntl (fd, F_SETFL, O_NOATIME) == -1 && errno == EINTR);
+^
+Checking src/bteutils.cc: O_NOATIME...
+Checking src/bteutils.cc: __linux__...
+14/47 files checked 67% done
+Checking src/chunk.cc ...
+src/chunk.hh:59:9: warning: Member variable 'Chunk::dataminusone' is not initialized in the constructor. [uninitMemberVar]
+        Chunk() = default;
+        ^
+src/chunk.hh:59:9: warning: Member variable 'Chunk::data' is not initialized in the constructor. [uninitMemberVar]
+        Chunk() = default;
+        ^
+15/47 files checked 67% done
+Checking src/debug.cc ...
+Checking src/debug.cc: BTE_DEBUG...
+Checking src/debug.cc: BTE_DEBUG;__GNUC__...
+Checking src/debug.cc: G_HAVE_GNUC_VARARGS=0;__GNUC__...
+16/47 files checked 68% done
+Checking src/decoder-cat.cc ...
+src/utf8.hh:74:30: style: Condition 'state!=m_state' is always false [knownConditionTrueFalse]
+                return state != m_state;
+                             ^
+src/utf8.hh:71:28: note: state is assigned 'm_state' here.
+                auto state = m_state;
+                           ^
+src/utf8.hh:74:30: note: Condition 'state!=m_state' is always false
+                return state != m_state;
+                             ^
+src/decoder-cat.cc:515:0: style: C-style pointer casting [cstyleCast]
+                                     int64_t const t1 = *(int64_t const*)p1;
+^
+src/decoder-cat.cc:516:0: style: C-style pointer casting [cstyleCast]
+                                     int64_t const t2 = *(int64_t const*)p2;
+^
+src/decoder-cat.cc:475:44: style: Redundant initialization for 'fd'. The initialized value is overwritten before it is read. [redundantInitialization]
+                                        fd = STDIN_FILENO;
+                                           ^
+src/decoder-cat.cc:473:41: note: fd is initialized
+                                auto fd = int{-1};
+                                        ^
+src/decoder-cat.cc:475:44: note: fd is overwritten
+                                        fd = STDIN_FILENO;
+                                           ^
+src/decoder-cat.cc:571:20: style: Redundant initialization for 'rv'. The initialized value is overwritten before it is read. [redundantInitialization]
+                rv = proc.process_files(options, sink);
+                   ^
+src/decoder-cat.cc:567:17: note: rv is initialized
+        auto rv = bool{};
+                ^
+src/decoder-cat.cc:571:20: note: rv is overwritten
+                rv = proc.process_files(options, sink);
+                   ^
+src/decoder-cat.cc:104:30: style: Local variable 'benchmark' shadows outer function [shadowFunction]
+                        auto benchmark = BoolArg{&m_benchmark, false};
+                             ^
+src/decoder-cat.cc:89:31: note: Shadowed declaration
+        inline constexpr bool benchmark()  const noexcept { return m_benchmark;  }
+                              ^
+src/decoder-cat.cc:104:30: note: Shadow variable
+                        auto benchmark = BoolArg{&m_benchmark, false};
+                             ^
+src/decoder-cat.cc:105:30: style: Local variable 'codepoints' shadows outer function [shadowFunction]
+                        auto codepoints = BoolArg{&m_codepoints, false};
+                             ^
+src/decoder-cat.cc:90:31: note: Shadowed declaration
+        inline constexpr bool codepoints() const noexcept { return m_codepoints; }
+                              ^
+src/decoder-cat.cc:105:30: note: Shadow variable
+                        auto codepoints = BoolArg{&m_codepoints, false};
+                             ^
+src/decoder-cat.cc:106:30: style: Local variable 'list' shadows outer function [shadowFunction]
+                        auto list = BoolArg{&m_list, false};
+                             ^
+src/decoder-cat.cc:91:31: note: Shadowed declaration
+        inline constexpr bool list()       const noexcept { return m_list;       }
+                              ^
+src/decoder-cat.cc:106:30: note: Shadow variable
+                        auto list = BoolArg{&m_list, false};
+                             ^
+src/decoder-cat.cc:107:30: style: Local variable 'quiet' shadows outer function [shadowFunction]
+                        auto quiet = BoolArg{&m_quiet, false};
+                             ^
+src/decoder-cat.cc:93:31: note: Shadowed declaration
+        inline constexpr int  quiet()      const noexcept { return m_quiet;      }
+                              ^
+src/decoder-cat.cc:107:30: note: Shadow variable
+                        auto quiet = BoolArg{&m_quiet, false};
+                             ^
+src/decoder-cat.cc:108:30: style: Local variable 'statistics' shadows outer function [shadowFunction]
+                        auto statistics = BoolArg{&m_statistics, false};
+                             ^
+src/decoder-cat.cc:92:31: note: Shadowed declaration
+        inline constexpr bool statistics() const noexcept { return m_statistics; }
+                              ^
+src/decoder-cat.cc:108:30: note: Shadow variable
+                        auto statistics = BoolArg{&m_statistics, false};
+                             ^
+src/decoder-cat.cc:109:30: style: Local variable 'utf8' shadows outer function [shadowFunction]
+                        auto utf8 = BoolArg{&m_utf8, false};
+                             ^
+src/decoder-cat.cc:94:31: note: Shadowed declaration
+        inline constexpr bool utf8()       const noexcept { return m_utf8;       }
+                              ^
+src/decoder-cat.cc:109:30: note: Shadow variable
+                        auto utf8 = BoolArg{&m_utf8, false};
+                             ^
+src/decoder-cat.cc:110:30: style: Local variable 'repeat' shadows outer function [shadowFunction]
+                        auto repeat = IntArg{&m_repeat, 1};
+                             ^
+src/decoder-cat.cc:95:31: note: Shadowed declaration
+        inline constexpr int  repeat()     const noexcept { return m_repeat;     }
+                              ^
+src/decoder-cat.cc:110:30: note: Shadow variable
+                        auto repeat = IntArg{&m_repeat, 1};
+                             ^
+src/decoder-cat.cc:111:30: style: Local variable 'charset' shadows outer function [shadowFunction]
+                        auto charset = StrArg{&m_charset, nullptr};
+                             ^
+src/decoder-cat.cc:96:38: note: Shadowed declaration
+        inline constexpr char const* charset()          const noexcept { return m_charset;   }
+                                     ^
+src/decoder-cat.cc:111:30: note: Shadow variable
+                        auto charset = StrArg{&m_charset, nullptr};
+                             ^
+src/decoder-cat.cc:112:30: style: Local variable 'filenames' shadows outer function [shadowFunction]
+                        auto filenames = StrvArg{&m_filenames, nullptr};
+                             ^
+src/decoder-cat.cc:97:45: note: Shadowed declaration
+        inline constexpr char const* const* filenames() const noexcept { return m_filenames; }
+                                            ^
+src/decoder-cat.cc:112:30: note: Shadow variable
+                        auto filenames = StrvArg{&m_filenames, nullptr};
+                             ^
+Checking src/decoder-cat.cc: BTE_DEBUG...
+Checking src/decoder-cat.cc: BTE_DEBUG;__GNUC__...
+Checking src/decoder-cat.cc: G_HAVE_GNUC_VARARGS=0;__GNUC__...
+Checking src/decoder-cat.cc: WITH_ICU...
+src/icu-decoder.hh:37:9: warning: Member variable 'ICUDecoder::m_u32_buffer' is not initialized in the constructor. [uninitMemberVar]
+        ICUDecoder(converter_shared_type charset_converter,
+        ^
+src/icu-decoder.hh:37:9: warning: Member variable 'ICUDecoder::m_u16_buffer' is not initialized in the constructor. [uninitMemberVar]
+        ICUDecoder(converter_shared_type charset_converter,
+        ^
+src/decoder-cat.cc:402:32: style: Redundant initialization for 'result'. The initialized value is overwritten before it is read. [redundantInitialization]
+                while ((result = decoder->decode(&sptr, true)) == bte::base::ICUDecoder::Result::eSomething) {
+                               ^
+src/decoder-cat.cc:401:29: note: result is initialized
+                auto result = bte::base::ICUDecoder::Result{};
+                            ^
+src/decoder-cat.cc:402:32: note: result is overwritten
+                while ((result = decoder->decode(&sptr, true)) == bte::base::ICUDecoder::Result::eSomething) {
+                               ^
+17/47 files checked 69% done
+Checking src/drawing-cairo.cc ...
+Checking src/drawing-cairo.cc: BTE_COMPILATION...
+Checking src/drawing-cairo.cc: BTE_COMPILATION;BTE_DISABLE_DEPRECATED...
+Checking src/drawing-cairo.cc: BTE_DEBUG...
+Checking src/drawing-cairo.cc: BTE_DEBUG;__GNUC__...
+Checking src/drawing-cairo.cc: BTE_DISABLE_DEPRECATION_WARNINGS...
+Checking src/drawing-cairo.cc: G_HAVE_GNUC_VARARGS=0;__GNUC__...
+Checking src/drawing-cairo.cc: WITH_FRIBIDI...
+Checking src/drawing-cairo.cc: __clang__...
+18/47 files checked 70% done
+Checking src/dumpkeys.c ...
+Checking src/dumpkeys.c: HAVE_SYS_SELECT_H...
+Checking src/dumpkeys.c: HAVE_SYS_TERMIOS_H...
+Checking src/dumpkeys.c: HAVE_SYS_TYPES_H...
+Checking src/dumpkeys.c: HAVE_TERMIOS_H...
+19/47 files checked 71% done
+Checking src/fonts-pangocairo.cc ...
+src/fonts-pangocairo.hh:122:9: style: Class 'FontInfo' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+        FontInfo(PangoContext* context);
+        ^
+src/fonts-pangocairo.cc:105:15: style: C-style pointer casting [cstyleCast]
+ glyph_item = (PangoGlyphItem *)line->runs->data;
+              ^
+src/fonts-pangocairo.cc:110:50: style: C-style pointer casting [cstyleCast]
+ scaled_font = pango_cairo_font_get_scaled_font ((PangoCairoFont *) pango_font);
+                                                 ^
+src/fonts-pangocairo.cc:277:22: style: C-style pointer casting [cstyleCast]
+ g_object_set_qdata ((GObject *) context,
+                     ^
+src/fonts-pangocairo.cc:285:47: style: C-style pointer casting [cstyleCast]
+ return GPOINTER_TO_UINT (g_object_get_qdata ((GObject *) context,
+                                              ^
+src/fonts-pangocairo.cc:421:47: style: C-style pointer casting [cstyleCast]
+  ufi->using_pango_layout_line.line->layout = (PangoLayout *)g_object_ref(m_layout.get());
+                                              ^
+src/fonts-pangocairo.cc:424:32: style: C-style pointer casting [cstyleCast]
+  PangoGlyphItem *glyph_item = (PangoGlyphItem *)line->runs->data;
+                               ^
+src/fonts-pangocairo.cc:435:73: style: C-style pointer casting [cstyleCast]
+   cairo_scaled_font_t *scaled_font = pango_cairo_font_get_scaled_font ((PangoCairoFont *) pango_font);
+                                                                        ^
+src/fonts-pangocairo.cc:449:54: style: C-style pointer casting [cstyleCast]
+   ufi->using_pango_glyph_string.font = pango_font ? (PangoFont *)g_object_ref (pango_font) : NULL;
+                                                     ^
+Checking src/fonts-pangocairo.cc: BTE_DEBUG...
+src/fonts-pangocairo.cc:166:6: style: C-style pointer casting [cstyleCast]
+     (void*)this, m_coverage_count[0]);
+     ^
+src/fonts-pangocairo.cc:214:6: style: C-style pointer casting [cstyleCast]
+     (void*)this, m_width, m_height, m_ascent);
+     ^
+src/fonts-pangocairo.cc:221:6: style: C-style pointer casting [cstyleCast]
+     (void*)this);
+     ^
+src/fonts-pangocairo.cc:248:6: style: C-style pointer casting [cstyleCast]
+     (void*)this,
+     ^
+Checking src/fonts-pangocairo.cc: BTE_DEBUG;__GNUC__...
+Checking src/fonts-pangocairo.cc: G_HAVE_GNUC_VARARGS=0;__GNUC__...
+20/47 files checked 72% done
+Checking src/icu-converter.cc ...
+src/icu-converter.cc:39:14: style: Local variable 'charset_converter' shadows outer function [shadowFunction]
+        auto charset_converter = bte::base::make_icu_converter(charset, error);
+             ^
+src/icu-converter.hh:60:14: note: Shadowed declaration
+        auto charset_converter() noexcept { return m_charset_converter.get(); }
+             ^
+src/icu-converter.cc:39:14: note: Shadow variable
+        auto charset_converter = bte::base::make_icu_converter(charset, error);
+             ^
+src/icu-converter.cc:43:14: style: Local variable 'u32_converter' shadows outer function [shadowFunction]
+        auto u32_converter = bte::base::make_icu_converter("utf32platformendian", error);
+             ^
+src/icu-converter.hh:61:14: note: Shadowed declaration
+        auto u32_converter() noexcept     { return m_u32_converter.get();     }
+             ^
+src/icu-converter.cc:43:14: note: Shadow variable
+        auto u32_converter = bte::base::make_icu_converter("utf32platformendian", error);
+             ^
+src/icu-converter.cc:47:14: style: Local variable 'u8_converter' shadows outer function [shadowFunction]
+        auto u8_converter = bte::base::make_icu_converter("utf8", error);
+             ^
+src/icu-converter.hh:62:14: note: Shadowed declaration
+        auto u8_converter() noexcept      { return m_u8_converter.get();      }
+             ^
+src/icu-converter.cc:47:14: note: Shadow variable
+        auto u8_converter = bte::base::make_icu_converter("utf8", error);
+             ^
+Checking src/icu-converter.cc: BTE_DEBUG...
+Checking src/icu-converter.cc: BTE_DEBUG;__GNUC__...
+Checking src/icu-converter.cc: G_HAVE_GNUC_VARARGS=0;__GNUC__...
+21/47 files checked 72% done
+Checking src/icu-decoder.cc ...
+22/47 files checked 72% done
+Checking src/icu-glue.cc ...
+23/47 files checked 73% done
+Checking src/keymap.cc ...
+src/keymap.cc:763:35: style: C-style pointer casting [cstyleCast]
+                        *normal = (char*)g_memdup(entries[i].normal,
+                                  ^
+Checking src/keymap.cc: BTE_DEBUG...
+Checking src/keymap.cc: BTE_DEBUG;__GNUC__...
+Checking src/keymap.cc: G_HAVE_GNUC_VARARGS=0;__GNUC__...
+24/47 files checked 75% done
+Checking src/mev.c ...
+Checking src/mev.c: HAVE_SYS_SELECT_H...
+Checking src/mev.c: HAVE_SYS_TERMIOS_H...
+Checking src/mev.c: HAVE_TERMIOS_H...
+25/47 files checked 75% done
+Checking src/minifont.cc ...
+Checking src/minifont.cc: BTE_DEBUG...
+26/47 files checked 78% done
+Checking src/missing.cc ...
+src/missing.cc:206:19: style: C-style pointer casting [cstyleCast]
+        char *p = (char *) s;
+                  ^
+Checking src/missing.cc: HAVE_SYS_RESOURCE_H...
+Checking src/missing.cc: HAVE_SYS_RESOURCE_H;__GLIBC__...
+Checking src/missing.cc: HAVE_SYS_RESOURCE_H;__linux__...
+src/missing.cc:163:21: style: C-style pointer casting [cstyleCast]
+              de = (struct linux_dirent64 *)(buf + pos);
+                    ^
+Checking src/missing.cc: __APPLE__;__FreeBSD__;__OpenBSD__...
+Checking src/missing.cc: __linux__...
+27/47 files checked 78% done
+Checking src/modes-test.cc ...
+src/modes-test.cc:47:42: error: syntax error [syntaxError]
+        g_assert_cmpuint(copy.get_modes(), ==, modes.get_modes());
+                                         ^
+Checking src/modes-test.cc: MODE;MODE_FIXED...
+28/47 files checked 79% done
+Checking src/parser-cat.cc ...
+src/parser-glue.hh:740:44: error: syntax error [syntaxError]
+                g_assert_cmpuint(seq.type(), ==, m_seq.type);
+                                           ^
+Checking src/parser-cat.cc: BTE_DEBUG...
+Checking src/parser-cat.cc: BTE_DEBUG;__GNUC__...
+Checking src/parser-cat.cc: G_HAVE_GNUC_VARARGS=0;__GNUC__...
+29/47 files checked 81% done
+Checking src/parser-test.cc ...
+Checking src/parser-test.cc: PARSER_INCLUDE_NOP...
+Checking src/parser-test.cc: _BTE_NGR;_BTE_SGR...
+30/47 files checked 84% done
+Checking src/parser.cc ...
+src/parser-string.hh:48:20: style: C-style pointer casting [cstyleCast]
+        str->buf = (uint32_t*)g_malloc0_n(str->capacity, sizeof(uint32_t));
+                   ^
+src/parser-string.hh:79:20: style: C-style pointer casting [cstyleCast]
+        str->buf = (uint32_t*)g_realloc_n(str->buf, str->capacity, sizeof(uint32_t));
+                   ^
+Checking src/parser.cc: PARSER_EXTRA_CLEAN...
+src/parser.cc:661:53: error: syntax error [syntaxError]
+                g_assert_cmpuint(parser->seq.args[n], ==, BTE_SEQ_ARG_INIT_DEFAULT);
+                                                    ^
+Checking src/parser.cc: PARSER_INCLUDE_NOP...
+Checking src/parser.cc: _BTE_CMD;_BTE_NOP...
+Checking src/parser.cc: _BTE_NGR;_BTE_SGR...
+31/47 files checked 87% done
+Checking src/pty.cc ...
+Checking src/pty.cc: BTE_COMPILATION...
+src/bte/btepty.h:96:1: error: There is an unknown macro here somewhere. Configuration is required. If G_DEFINE_AUTOPTR_CLEANUP_FUNC is a macro then please configure it. [unknownMacro]
+G_DEFINE_AUTOPTR_CLEANUP_FUNC(BtePty, g_object_unref)
+^
+Checking src/pty.cc: BTE_COMPILATION;BTE_DISABLE_DEPRECATED...
+32/47 files checked 88% done
+Checking src/reaper.cc ...
+Checking src/reaper.cc: BTE_DEBUG...
+Checking src/reaper.cc: BTE_DEBUG;__GNUC__...
+Checking src/reaper.cc: G_HAVE_GNUC_VARARGS=0;__GNUC__...
+Checking src/reaper.cc: MAIN...
+33/47 files checked 89% done
+Checking src/reflect.c ...
+Checking src/reflect.c: BTE_COMPILATION...
+Checking src/reflect.c: BTE_COMPILATION;BTE_DISABLE_DEPRECATED...
+Checking src/reflect.c: BTE_DEBUG...
+Checking src/reflect.c: BTE_DISABLE_DEPRECATION_WARNINGS...
+Checking src/reflect.c: USE_BTE...
+Checking src/reflect.c: USE_TEXT_VIEW...
+34/47 files checked 89% done
+Checking src/refptr-test.cc ...
+Checking src/refptr-test.cc: BTE_DEBUG...
+35/47 files checked 90% done
+Checking src/regex.cc ...
+Checking src/regex.cc: BTE_COMPILATION...
+src/bte/bteregex.h:77:1: error: There is an unknown macro here somewhere. Configuration is required. If G_DEFINE_AUTOPTR_CLEANUP_FUNC is a macro then please configure it. [unknownMacro]
+G_DEFINE_AUTOPTR_CLEANUP_FUNC(BteRegex, bte_regex_unref)
+^
+Checking src/regex.cc: BTE_COMPILATION;__BTE_BTE_H_INSIDE__...
+36/47 files checked 90% done
+Checking src/ring.cc ...
+Checking src/ring.cc: BTE_COMPILATION...
+Checking src/ring.cc: BTE_COMPILATION;BTE_DISABLE_DEPRECATED...
+Checking src/ring.cc: BTE_DEBUG...
+Checking src/ring.cc: BTE_DEBUG;__GNUC__...
+Checking src/ring.cc: BTE_DISABLE_DEPRECATION_WARNINGS...
+Checking src/ring.cc: G_HAVE_GNUC_VARARGS=0;__GNUC__...
+Checking src/ring.cc: __clang__...
+37/47 files checked 93% done
+Checking src/ringview.cc ...
+Checking src/ringview.cc: BTE_COMPILATION;BTE_DISABLE_DEPRECATED;__EXCEPTIONS;__GXX_RTTI...
+Checking src/ringview.cc: BTE_COMPILATION;__EXCEPTIONS;__GXX_RTTI...
+Checking src/ringview.cc: BTE_DISABLE_DEPRECATION_WARNINGS;__EXCEPTIONS;__GXX_RTTI...
+Checking src/ringview.cc: WITH_FRIBIDI;__EXCEPTIONS;__GXX_RTTI...
+Checking src/ringview.cc: __EXCEPTIONS;__GXX_RTTI...
+38/47 files checked 94% done
+Checking src/slowcat.c ...
+39/47 files checked 94% done
+Checking src/spawn.cc ...
+Checking src/spawn.cc: BTE_COMPILATION...
+Checking src/spawn.cc: BTE_COMPILATION;BTE_DISABLE_DEPRECATED...
+40/47 files checked 96% done
+Checking src/systemd.cc ...
+Checking src/systemd.cc: BTE_DEBUG...
+41/47 files checked 96% done
+Checking src/tabstops-test.cc ...
+src/tabstops.hh:142:50: error: syntax error [syntaxError]
+                g_assert_cmpuint(new_capacity % 2, ==, 0);
+                                                 ^
+42/47 files checked 97% done
+Checking src/urlencode.cc ...
+src/urlencode.cc:44:20: style: Redundant initialization for 'ch'. The initialized value is overwritten before it is read. [redundantInitialization]
+        while ((ch = *pwd++ & 0xff)) {
+                   ^
+src/urlencode.cc:43:17: note: ch is initialized
+        auto ch = int{};
+                ^
+src/urlencode.cc:44:20: note: ch is overwritten
+        while ((ch = *pwd++ & 0xff)) {
+                   ^
+43/47 files checked 97% done
+Checking src/utf8-test.cc ...
+src/utf8-test.cc:46:38: error: syntax error [syntaxError]
+                g_assert_cmpint(state, ==, UTF8Decoder::ACCEPT);
+                                     ^
+44/47 files checked 98% done
+Checking src/utf8.cc ...
+45/47 files checked 98% done
+Checking src/widget.cc ...
+Checking src/widget.cc: BTE_COMPILATION;BTE_DISABLE_DEPRECATED;__EXCEPTIONS;__GXX_RTTI...
+Checking src/widget.cc: BTE_COMPILATION;__EXCEPTIONS;__GXX_RTTI...
+Checking src/widget.cc: BTE_DISABLE_DEPRECATION_WARNINGS;__EXCEPTIONS;__GXX_RTTI...
+Checking src/widget.cc: WITH_FRIBIDI;__EXCEPTIONS;__GXX_RTTI...
+Checking src/widget.cc: __EXCEPTIONS;__GXX_RTTI...
+46/47 files checked 99% done
+Checking src/xticker.c ...
+47/47 files checked 100% done
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingInclude]
+
+scan-build: Using '/usr/lib/llvm-14/bin/clang' for static analysis
+The Meson build system
+Version: 0.62.2
+Source dir: /rootdir
+Build dir: /rootdir/_build
+Build type: native build
+Project name: bte
+Project version: 0.65.0
+C compiler for the host machine: /usr/share/clang/scan-build-14/bin/../libexec/ccc-analyzer (gcc 11.3.0 "gcc (Debian 11.3.0-5) 11.3.0")
+C linker for the host machine: /usr/share/clang/scan-build-14/bin/../libexec/ccc-analyzer ld.bfd 2.38.90.20220713
+C++ compiler for the host machine: /usr/share/clang/scan-build-14/bin/../libexec/c++-analyzer (gcc 11.3.0 "g++ (Debian 11.3.0-5) 11.3.0")
+C++ linker for the host machine: /usr/share/clang/scan-build-14/bin/../libexec/c++-analyzer ld.bfd 2.38.90.20220713
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Has header "locale.h" : YES 
+Has header "pty.h" : YES 
+Has header "stropts.h" : NO 
+Has header "sys/resource.h" : YES 
+Has header "sys/select.h" : YES 
+Has header "sys/syslimits.h" : NO 
+Has header "sys/termios.h" : YES 
+Has header "sys/types.h" : YES 
+Has header "sys/wait.h" : YES 
+Has header "termios.h" : YES 
+Has header "util.h" : NO 
+Has header "wchar.h" : YES 
+Header <sys/ioctl.h> has symbol "TIOCGWINSZ" : YES 
+Checking for function "fork" : YES 
+Checking for function "grantpt" : YES 
+Checking for function "posix_openpt" : YES 
+Checking for function "ptsname" : YES 
+Checking for function "tcgetattr" : YES 
+Checking for function "unlockpt" : YES 
+Checking for function "explicit_bzero" : YES 
+Checking for function "fdwalk" : NO 
+Checking for function "pread" : YES 
+Checking for function "pwrite" : YES 
+Checking for function "strchrnul" : YES 
+Library m found: YES
+Checking for function "ceil" with dependency -lm: YES 
+Checking for function "floor" with dependency -lm: YES 
+Checking for function "round" with dependency -lm: YES 
+Compiler for C supports arguments -Wall: YES 
+Compiler for C supports arguments -Wextra: YES 
+Compiler for C supports arguments -Wcast-align: YES 
+Compiler for C supports arguments -Wcast-function-type: YES 
+Compiler for C supports arguments -Wclobbered: YES 
+Compiler for C supports arguments -Wempty-body: YES 
+Compiler for C supports arguments -Wendif-labels: YES 
+Compiler for C supports arguments -Werror=init-self: YES 
+Compiler for C supports arguments -Werror=missing-include-dirs: YES 
+Compiler for C supports arguments -Werror=pointer-arith: YES 
+Compiler for C supports arguments -Wfloat-equal: YES 
+Compiler for C supports arguments -Wignored-qualifiers: YES 
+Compiler for C supports arguments -Winvalid-pch: YES 
+Compiler for C supports arguments -Wlogical-op: YES 
+Compiler for C supports arguments -Wmisleading-indentation: YES 
+Compiler for C supports arguments -Wmissing-declarations: YES 
+Compiler for C supports arguments -Wmissing-field-initializers: YES 
+Compiler for C supports arguments -Wmissing-format-attribute: YES 
+Compiler for C supports arguments -Wmissing-include-dirs: YES 
+Compiler for C supports arguments -Wmissing-noreturn: YES 
+Compiler for C supports arguments -Wno-address-of-packed-member: YES 
+Compiler for C supports arguments -Wno-missing-field-initializers: YES 
+Compiler for C supports arguments -Wno-packed: YES 
+Compiler for C supports arguments -Wno-switch-enum: YES 
+Compiler for C supports arguments -Wno-unused-parameter: YES 
+Compiler for C supports arguments -Wshadow: YES 
+Compiler for C supports arguments -Wshift-negative-value: YES 
+Compiler for C supports arguments -Wsign-compare: YES 
+Compiler for C supports arguments -Wstrict-aliasing=2: YES 
+Compiler for C supports arguments -Wtype-limits: YES 
+Compiler for C supports arguments -Wundef: YES 
+Compiler for C supports arguments -Wuninitialized: YES 
+Compiler for C supports arguments -Wuninitialized: YES (cached)
+Compiler for C supports arguments -Wunsafe-loop-optimizations: YES 
+Compiler for C supports arguments -Wunused: YES 
+Compiler for C supports arguments -Wunused-but-set-parameter: YES 
+Compiler for C supports arguments -Wunused-but-set-variable: YES 
+Compiler for C supports arguments -Wunused-function: YES 
+Compiler for C supports arguments -Wunused-label: YES 
+Compiler for C supports arguments -Wunused-local-typedefs: YES 
+Compiler for C supports arguments -Wunused-value: YES 
+Compiler for C supports arguments -Wunused-variable: YES 
+Compiler for C supports arguments -Wvla: YES 
+Compiler for C supports arguments -Wwrite-strings: YES 
+Compiler for C supports arguments -fdiagnostics-show-option: YES 
+Compiler for C supports arguments -fno-common: YES 
+Compiler for C supports arguments -fno-semantic-interposition: YES 
+Compiler for C supports arguments -fstack-protector: YES 
+Compiler for C supports arguments -fstack-protector-strong: YES 
+Compiler for C supports arguments -fno-strict-aliasing: YES 
+Compiler for C supports arguments -Waggregate-return: YES 
+Compiler for C supports arguments -Werror=implicit-function-declaration: YES 
+Compiler for C supports arguments -Werror=missing-prototypes: YES 
+Compiler for C supports arguments -Wimplicit: YES 
+Compiler for C supports arguments -Wimplicit-fallthrough=3: YES 
+Compiler for C supports arguments -Wmissing-parameter-type: YES 
+Compiler for C supports arguments -Wnested-externs: YES 
+Compiler for C supports arguments -Wold-style-declaration: YES 
+Compiler for C supports arguments -Wold-style-definition: YES 
+Compiler for C supports arguments -Woverride-init: YES 
+Compiler for C supports arguments -Wsign-compare: YES (cached)
+Compiler for C supports arguments -Wstrict-prototypes: YES 
+Compiler for C++ supports arguments -Wall: YES 
+Compiler for C++ supports arguments -Wextra: YES 
+Compiler for C++ supports arguments -Wcast-align: YES 
+Compiler for C++ supports arguments -Wcast-function-type: YES 
+Compiler for C++ supports arguments -Wclobbered: YES 
+Compiler for C++ supports arguments -Wempty-body: YES 
+Compiler for C++ supports arguments -Wendif-labels: YES 
+Compiler for C++ supports arguments -Werror=init-self: YES 
+Compiler for C++ supports arguments -Werror=missing-include-dirs: YES 
+Compiler for C++ supports arguments -Werror=pointer-arith: YES 
+Compiler for C++ supports arguments -Wfloat-equal: YES 
+Compiler for C++ supports arguments -Wignored-qualifiers: YES 
+Compiler for C++ supports arguments -Winvalid-pch: YES 
+Compiler for C++ supports arguments -Wlogical-op: YES 
+Compiler for C++ supports arguments -Wmisleading-indentation: YES 
+Compiler for C++ supports arguments -Wmissing-declarations: YES 
+Compiler for C++ supports arguments -Wmissing-field-initializers: YES 
+Compiler for C++ supports arguments -Wmissing-format-attribute: YES 
+Compiler for C++ supports arguments -Wmissing-include-dirs: YES 
+Compiler for C++ supports arguments -Wmissing-noreturn: YES 
+Compiler for C++ supports arguments -Wno-address-of-packed-member: YES 
+Compiler for C++ supports arguments -Wno-missing-field-initializers: YES 
+Compiler for C++ supports arguments -Wno-packed: YES 
+Compiler for C++ supports arguments -Wno-switch-enum: YES 
+Compiler for C++ supports arguments -Wno-unused-parameter: YES 
+Compiler for C++ supports arguments -Wshadow: YES 
+Compiler for C++ supports arguments -Wshift-negative-value: YES 
+Compiler for C++ supports arguments -Wsign-compare: YES 
+Compiler for C++ supports arguments -Wstrict-aliasing=2: YES 
+Compiler for C++ supports arguments -Wtype-limits: YES 
+Compiler for C++ supports arguments -Wundef: YES 
+Compiler for C++ supports arguments -Wuninitialized: YES 
+Compiler for C++ supports arguments -Wuninitialized: YES (cached)
+Compiler for C++ supports arguments -Wunsafe-loop-optimizations: YES 
+Compiler for C++ supports arguments -Wunused: YES 
+Compiler for C++ supports arguments -Wunused-but-set-parameter: YES 
+Compiler for C++ supports arguments -Wunused-but-set-variable: YES 
+Compiler for C++ supports arguments -Wunused-function: YES 
+Compiler for C++ supports arguments -Wunused-label: YES 
+Compiler for C++ supports arguments -Wunused-local-typedefs: YES 
+Compiler for C++ supports arguments -Wunused-value: YES 
+Compiler for C++ supports arguments -Wunused-variable: YES 
+Compiler for C++ supports arguments -Wvla: YES 
+Compiler for C++ supports arguments -Wwrite-strings: YES 
+Compiler for C++ supports arguments -fdiagnostics-show-option: YES 
+Compiler for C++ supports arguments -fno-common: YES 
+Compiler for C++ supports arguments -fno-semantic-interposition: YES 
+Compiler for C++ supports arguments -fstack-protector: YES 
+Compiler for C++ supports arguments -fstack-protector-strong: YES 
+Compiler for C++ supports arguments -fno-strict-aliasing: YES 
+Compiler for C++ supports arguments -Wimplicit-fallthrough=5: YES 
+Compiler for C++ supports arguments -Wnon-virtual-dtor: YES 
+Compiler for C++ supports arguments -Wstrict-null-sentinel: YES 
+Compiler for C++ supports arguments -fvisibility-inlines-hidden: YES 
+Compiler for C++ supports arguments -fvisibility=hidden: YES 
+Compiler for C++ supports arguments -fvisibility-inlines-hidden: YES (cached)
+Compiler for C++ supports arguments -fvisibility=hidden: YES (cached)
+Compiler for C supports arguments -Werror=format=2 -Werror=format-nonliteral -Werror=format-security: YES 
+Compiler for C++ supports arguments -Werror=format=2 -Werror=format-nonliteral -Werror=format-security: YES 
+meson.build:370: WARNING: Consider using the built-in warning_level option instead of using "-Wall".
+meson.build:370: WARNING: Consider using the built-in warning_level option instead of using "-Wextra".
+meson.build:371: WARNING: Consider using the built-in warning_level option instead of using "-Wall".
+meson.build:371: WARNING: Consider using the built-in warning_level option instead of using "-Wextra".
+Compiler for C supports link arguments -Wl,-Bsymbolic: YES 
+Compiler for C++ supports link arguments -Wl,-Bsymbolic: YES 
+Compiler for C supports link arguments -Wl,-Bsymbolic-functions: YES 
+Compiler for C++ supports link arguments -Wl,-Bsymbolic-functions: YES 
+Found pkg-config: /usr/bin/pkg-config (0.29.2)
+Run-time dependency gio-2.0 found: YES 2.72.3
+Run-time dependency glib-2.0 found: YES 2.72.3
+Run-time dependency gobject-2.0 found: YES 2.72.3
+Run-time dependency pango found: YES 1.50.7
+Run-time dependency libpcre2-8 found: YES 10.40
+Run-time dependency threads found: YES
+Run-time dependency zlib found: YES 1.2.11
+Run-time dependency fribidi found: YES 1.0.8
+Run-time dependency gnutls found: YES 3.7.7
+Run-time dependency ctk+-3.0 found: YES 3.25.2
+Run-time dependency icu-uc found: YES 71.1
+Run-time dependency libsystemd found: YES 251
+Configuring config.h using configuration
+Program glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Program glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Configuring bteversion.h using configuration
+Program box_drawing_generate.sh found: YES (/rootdir/src/box_drawing_generate.sh)
+Found pkg-config: /usr/bin/pkg-config (0.29.2)
+Program glib-compile-resources found: YES (/usr/bin/glib-compile-resources)
+Program glib-genmarshal found: YES (/usr/bin/glib-genmarshal)
+Configuring bte.csh using configuration
+Configuring bte.sh using configuration
+Program glib-compile-resources found: YES (/usr/bin/glib-compile-resources)
+Run-time dependency gobject-introspection-1.0 found: YES 1.72.0
+Dependency gobject-introspection-1.0 found: YES 1.72.0 (cached)
+Dependency gobject-introspection-1.0 found: YES 1.72.0 (cached)
+Program g-ir-scanner found: YES (/usr/bin/g-ir-scanner)
+Dependency gobject-introspection-1.0 found: YES 1.72.0 (cached)
+Program g-ir-compiler found: YES (/usr/bin/g-ir-compiler)
+Program msgfmt found: YES (/usr/bin/msgfmt)
+Program msginit found: YES (/usr/bin/msginit)
+Program msgmerge found: YES (/usr/bin/msgmerge)
+Program xgettext found: YES (/usr/bin/xgettext)
+Configuring Makefile using configuration
+Configuring .gitignore with command
+Message: 
+Configuration for BTE:
+
+  Version:      0.65.0
+
+  C compiler:   gcc (version 11.3.0)
+  C++ compiler: gcc (version 11.3.0)
+
+  Coverage:     false
+  Debug:        false
+
+  A11y:         true
+  Docs:         false
+  FRIBIDI:      true
+  GNUTLS:       true
+  CTK+ 3.0:     true
+  ICU:          true
+  GIR:          true
+  systemd:      true
+
+  Prefix:       /usr/local
+
+Build targets in project: 130
+
+Found ninja-1.11.0 at /usr/bin/ninja
+scan-build: Analysis run complete.
+scan-build: Removing directory '/tmp/scan-build-2022-08-07-225934-8093-1' because it contains no reports.
+scan-build: No bugs found.
+scan-build: Using '/usr/lib/llvm-14/bin/clang' for static analysis
+ninja: Entering directory `_build'
+[0/195] Generating src/bte/btetypebuiltins.h with a custom command (wrapped by meson to capture output)[0/195] Generating src/box-drawing with a custom command (wrapped by meson to capture output)[0/195] Generating src/bteresources_c with a custom command[1/195] Generating src/bteresources_c with a custom command[1/195] Generating src/bteresources_h with a custom command[2/195] Generating src/bteresources_h with a custom command[2/195] Generating src/marshal_h with a custom command[3/195] Generating src/marshal_h with a custom command
+INFO: Reading ../src/marshal.list...
+[3/195] Generating src/marshal_c with a custom command[4/195] Generating src/marshal_c with a custom command
+INFO: Reading ../src/marshal.list...
+[4/195] Compiling C++ object src/decoder-cat.p/utf8.cc.o[5/195] Compiling C++ object src/decoder-cat.p/utf8.cc.o[5/195] Compiling C++ object src/decoder-cat.p/debug.cc.o[6/195] Generating src/bte/btetypebuiltins.h with a custom command (wrapped by meson to capture output)[6/195] Generating src/bte/btetypebuiltins.cc with a custom command (wrapped by meson to capture output)[7/195] Compiling C++ object src/decoder-cat.p/debug.cc.o[7/195] Compiling C++ object src/decoder-cat.p/decoder-cat.cc.o[8/195] Generating src/box-drawing with a custom command (wrapped by meson to capture output)[8/195] Compiling C object src/libbte-2.91.so.0.6500.0.p/meson-generated_.._bteresources.c.o[9/195] Generating src/bte/btetypebuiltins.cc with a custom command (wrapped by meson to capture output)[9/195] Compiling C object src/libbte-2.91.so.0.6500.0.p/meson-generated_.._marshal.c.o[10/195] Compiling C object src/libbte-2.91.so.0.6500.0.p/meson-generated_.._bteresources.c.o
+src/bteresources.c:47: warning: macro "__G_CONSTRUCTOR_H__" is not used [-Wunused-macros]
+   47 | #define __G_CONSTRUCTOR_H__
+      | 
+[10/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/meson-generated_.._bte_btetypebuiltins.cc.o[11/195] Compiling C object src/libbte-2.91.so.0.6500.0.p/meson-generated_.._marshal.c.o
+src/marshal.c:34: warning: macro "g_marshal_value_peek_int" is not used [-Wunused-macros]
+   34 | #define g_marshal_value_peek_int(v)      (v)->data[0].v_int
+      | 
+src/marshal.c:49: warning: macro "g_marshal_value_peek_variant" is not used [-Wunused-macros]
+   49 | #define g_marshal_value_peek_variant(v)  (v)->data[0].v_pointer
+      | 
+src/marshal.c:33: warning: macro "g_marshal_value_peek_uchar" is not used [-Wunused-macros]
+   33 | #define g_marshal_value_peek_uchar(v)    (v)->data[0].v_uint
+      | 
+src/marshal.c:43: warning: macro "g_marshal_value_peek_double" is not used [-Wunused-macros]
+   43 | #define g_marshal_value_peek_double(v)   (v)->data[0].v_double
+      | 
+src/marshal.c:47: warning: macro "g_marshal_value_peek_pointer" is not used [-Wunused-macros]
+   47 | #define g_marshal_value_peek_pointer(v)  (v)->data[0].v_pointer
+      | 
+src/marshal.c:39: warning: macro "g_marshal_value_peek_uint64" is not used [-Wunused-macros]
+   39 | #define g_marshal_value_peek_uint64(v)   (v)->data[0].v_uint64
+      | 
+src/marshal.c:37: warning: macro "g_marshal_value_peek_ulong" is not used [-Wunused-macros]
+   37 | #define g_marshal_value_peek_ulong(v)    (v)->data[0].v_ulong
+      | 
+src/marshal.c:48: warning: macro "g_marshal_value_peek_object" is not used [-Wunused-macros]
+   48 | #define g_marshal_value_peek_object(v)   (v)->data[0].v_pointer
+      | 
+src/marshal.c:38: warning: macro "g_marshal_value_peek_int64" is not used [-Wunused-macros]
+   38 | #define g_marshal_value_peek_int64(v)    (v)->data[0].v_int64
+      | 
+src/marshal.c:42: warning: macro "g_marshal_value_peek_float" is not used [-Wunused-macros]
+   42 | #define g_marshal_value_peek_float(v)    (v)->data[0].v_float
+      | 
+src/marshal.c:40: warning: macro "g_marshal_value_peek_enum" is not used [-Wunused-macros]
+   40 | #define g_marshal_value_peek_enum(v)     (v)->data[0].v_long
+      | 
+src/marshal.c:41: warning: macro "g_marshal_value_peek_flags" is not used [-Wunused-macros]
+   41 | #define g_marshal_value_peek_flags(v)    (v)->data[0].v_ulong
+      | 
+src/marshal.c:32: warning: macro "g_marshal_value_peek_char" is not used [-Wunused-macros]
+   32 | #define g_marshal_value_peek_char(v)     (v)->data[0].v_int
+      | 
+src/marshal.c:45: warning: macro "g_marshal_value_peek_param" is not used [-Wunused-macros]
+   45 | #define g_marshal_value_peek_param(v)    (v)->data[0].v_pointer
+      | 
+src/marshal.c:36: warning: macro "g_marshal_value_peek_long" is not used [-Wunused-macros]
+   36 | #define g_marshal_value_peek_long(v)     (v)->data[0].v_long
+      | 
+src/marshal.c:31: warning: macro "g_marshal_value_peek_boolean" is not used [-Wunused-macros]
+   31 | #define g_marshal_value_peek_boolean(v)  (v)->data[0].v_int
+      | 
+[11/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/debug.cc.o[12/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/debug.cc.o[12/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/parser.cc.o[13/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/meson-generated_.._bte_btetypebuiltins.cc.o[13/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/pty.cc.o[14/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/parser.cc.o
+../src/parser.cc:1446:1: warning: macro "BTE_SEQ_PARAMETER_MASK" is not used [-Wunused-macros]
+ 1446 | }
+      | ^
+../src/parser.cc:1446:1: warning: macro "BTE_SEQ_PARAMETER" is not used [-Wunused-macros]
+../src/parser.cc:1446:1: warning: macro "BTE_SEQ_REMOVE_PARAMETER" is not used [-Wunused-macros]
+../src/parser.cc:1389:9: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+        g_assert_not_reached();
+        ^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gtestutils.h:230:136: note: expanded from macro 'g_assert_not_reached'
+#define g_assert_not_reached()          G_STMT_START { g_assertion_message_expr (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, NULL); } G_STMT_END
+                                                                                                                                       ^~~~~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:944:30: note: expanded from macro 'G_STMT_END'
+#define G_STMT_END    while (0)
+                             ^
+1 warning generated.
+[14/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/btepty.cc.o[15/195] Compiling C++ object src/decoder-cat.p/decoder-cat.cc.o
+../src/decoder-cat.cc:529:39: warning: Division by zero [core.DivideZero]
+                           total_time / (int64_t)m_bench_times->len);
+                           ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+[15/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/regex.cc.o[16/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/pty.cc.o
+../src/pty.cc:189:22: warning: Value stored to 'errsv' during its initialization is never read [deadcode.DeadStores]
+                auto errsv = bte::libc::ErrnoSaver{};
+                     ^~~~~   ~~~~~~~~~~~~~~~~~~~~~~~
+../src/pty.cc:211:30: warning: Value stored to 'errsv' during its initialization is never read [deadcode.DeadStores]
+                        auto errsv = bte::libc::ErrnoSaver{};
+                             ^~~~~   ~~~~~~~~~~~~~~~~~~~~~~~
+../src/pty.cc:229:30: warning: Value stored to 'errsv' during its initialization is never read [deadcode.DeadStores]
+                        auto errsv = bte::libc::ErrnoSaver{};
+                             ^~~~~   ~~~~~~~~~~~~~~~~~~~~~~~
+3 warnings generated.
+[16/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/utf8.cc.o[17/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/utf8.cc.o[17/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/bidi.cc.o[18/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/regex.cc.o[18/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/chunk.cc.o[19/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/chunk.cc.o[19/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/drawing-cairo.cc.o[20/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/drawing-cairo.cc.o
+../src/drawing-cairo.cc:552:1: warning: macro "BTE_DRAW_BOLD_ITALIC" is not used [-Wunused-macros]
+  552 | } // namespace bte
+      | ^
+../src/drawing-cairo.cc:356:3: warning: Value stored to 'n_cr_glyphs' is never read [deadcode.DeadStores]
+                n_cr_glyphs = 0;
+                ^             ~
+1 warning generated.
+[20/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/fonts-pangocairo.cc.o[21/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/btepty.cc.o
+../src/btepty.cc:915:1: warning: macro "I_" is not used [-Wunused-macros]
+  915 | }
+      | ^
+../src/btepty.cc:134:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btepty.cc:221:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btepty.cc:258:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btepty.cc:305:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btepty.cc:357:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+5 warnings generated.
+[21/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/keymap.cc.o[22/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/keymap.cc.o[22/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/minifont.cc.o[23/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/bidi.cc.o
+../src/bidi.cc:244:58: warning: Access to field 'c' results in a dereference of a null pointer (loaded from variable 'cell') [core.NullDereference]
+                        _bte_unistr_append_to_gunichars (cell->c, fribidi_chars_array);
+                                                         ^~~~~~~
+../src/bidi.cc:694:33: warning: Value stored to 'tl' is never read [deadcode.DeadStores]
+                                tl += cell->attr.columns();
+                                ^     ~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+[23/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/missing.cc.o[24/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/fonts-pangocairo.cc.o
+../src/fonts-pangocairo.cc:466:1: warning: macro "FONT_CACHE_TIMEOUT" is not used [-Wunused-macros]
+  466 | } // namespace bte
+      | ^
+[24/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/reaper.cc.o[25/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/reaper.cc.o
+../src/reaper.cc:144:1: warning: macro "BTE_REAPER_GET_CLASS" is not used [-Wunused-macros]
+  144 | }
+      | ^
+../src/reaper.cc:144:1: warning: macro "BTE_IS_REAPER" is not used [-Wunused-macros]
+../src/reaper.cc:144:1: warning: macro "BTE_REAPER_CLASS" is not used [-Wunused-macros]
+../src/reaper.cc:144:1: warning: macro "BTE_IS_REAPER_CLASS" is not used [-Wunused-macros]
+[25/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/ring.cc.o[26/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/missing.cc.o
+../src/missing.cc:163:20: warning: Casting a non-structure type to a structure type and accessing a field can lead to memory access errors or data corruption [alpha.core.CastToStruct]
+              de = (struct linux_dirent64 *)(buf + pos);
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+[26/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/ringview.cc.o[27/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/minifont.cc.o[27/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/spawn.cc.o[28/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/ringview.cc.o
+../src/ringview.cc:154:39: warning: Out of bound memory access (accessed memory precedes memory block) [alpha.security.ArrayBoundV2]
+                        m_bidirows[i] = new BidiRow();
+                        ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+../src/ringview.cc:245:25: warning: 2nd function call argument is an uninitialized value [core.CallAndMessage]
+                        _bte_row_data_copy (row_data, m_rows[m_rows_len]);
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/ringview.cc:261:25: warning: 1st function call argument is an uninitialized value [core.CallAndMessage]
+                        _bte_row_data_clear (m_rows[m_rows_len]);
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/ringview.cc:279:26: warning: Assigned value is garbage or undefined [core.uninitialized.Assign]
+                row_data = m_rows[row - m_top];
+                         ^ ~~~~~~~~~~~~~~~~~~~
+4 warnings generated.
+[28/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/bte.cc.o[29/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/spawn.cc.o[29/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/btectk.cc.o[30/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/ring.cc.o
+../src/ring.cc:685:13: warning: Dereference of null pointer [core.NullDereference]
+        if (**hyperlink == '\0')
+            ^~~~~~~~~~~
+1 warning generated.
+[30/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/bteregex.cc.o[31/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/bteregex.cc.o
+../src/bteregex.cc:127:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/bteregex.cc:165:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/bteregex.cc:192:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/bteregex.cc:241:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+4 warnings generated.
+[31/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/bterowdata.cc.o[32/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/bterowdata.cc.o
+../src/bterowdata.cc:55:9: warning: Casting a non-structure type to a structure type and accessing a field can lead to memory access errors or data corruption [alpha.core.CastToStruct]
+        return (BteCells *) (((guchar *) cells) - G_STRUCT_OFFSET (BteCells, cells));
+               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+[32/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/bteseq.cc.o[33/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/btectk.cc.o
+../src/btectk.cc:189:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:200:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:211:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:227:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:258:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:272:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:286:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:300:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:314:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:329:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:344:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:359:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:381:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:404:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:418:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:431:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:444:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:458:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:477:9: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+        try {
+        ^~~~~
+../src/btectk.cc:489:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:508:9: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+        try {
+        ^~~~~
+../src/btectk.cc:521:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:538:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:553:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:580:9: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+        g_assert_not_reached();
+        ^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gtestutils.h:230:136: note: expanded from macro 'g_assert_not_reached'
+#define g_assert_not_reached()          G_STMT_START { g_assertion_message_expr (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, NULL); } G_STMT_END
+                                                                                                                                       ^~~~~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:944:30: note: expanded from macro 'G_STMT_END'
+#define G_STMT_END    while (0)
+                             ^
+../src/btectk.cc:588:9: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+        try {
+        ^~~~~
+../src/btectk.cc:604:9: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+        try {
+        ^~~~~
+../src/btectk.cc:620:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:749:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:852:25: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+                        g_assert_not_reached ();
+                        ^~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gtestutils.h:230:136: note: expanded from macro 'g_assert_not_reached'
+#define g_assert_not_reached()          G_STMT_START { g_assertion_message_expr (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, NULL); } G_STMT_END
+                                                                                                                                       ^~~~~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:944:30: note: expanded from macro 'G_STMT_END'
+#define G_STMT_END    while (0)
+                             ^
+../src/btectk.cc:2042:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:2239:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:2274:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:2317:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:2348:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:2369:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:2390:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:2412:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:2463:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:2508:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:2541:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:2572:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:2611:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:2730:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:2757:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:2782:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:2806:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:2825:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:2846:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:2868:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:2895:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:2918:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:2974:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:2993:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:3012:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:3031:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:3057:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:3210:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:3307:17: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+                try {
+                ^~~~~
+../src/btectk.cc:3526:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:3555:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:3586:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:3730:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:3765:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:3788:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:4071:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:4093:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:4165:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:4191:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:4198:17: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+                impl->set_color_bold(bte::color::rgb(bold));
+                ^~~~
+../src/btectk.cc:4219:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:4226:17: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+                impl->set_color_cursor_background(bte::color::rgb(cursor_background));
+                ^~~~
+../src/btectk.cc:4249:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:4256:17: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+                impl->set_color_cursor_foreground(bte::color::rgb(cursor_foreground));
+                ^~~~
+../src/btectk.cc:4275:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:4301:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:4308:17: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+                impl->set_color_highlight_background(bte::color::rgb(highlight_background));
+                ^~~~
+../src/btectk.cc:4330:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:4337:17: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+                impl->set_color_highlight_foreground(bte::color::rgb(highlight_foreground));
+                ^~~~
+../src/btectk.cc:4370:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:4385:20: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+                fg = bte::color::rgb(foreground);
+                   ^
+../src/btectk.cc:4388:20: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+                bg = bte::color::rgb(background);
+                   ^
+../src/btectk.cc:4392:47: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+                pal = g_new0(bte::color::rgb, palette_size);
+                                              ^~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gmem.h:314:63: note: expanded from macro 'g_new0'
+#define g_new0(struct_type, n_structs)                  _G_NEW (struct_type, n_structs, malloc0)
+                                                                             ^~~~~~~~~
+/usr/include/glib-2.0/glib/gmem.h:243:25: note: expanded from macro '_G_NEW'
+          gsize __n = (gsize) (n_structs);                      \
+                               ^~~~~~~~~
+../src/btectk.cc:4398:40: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+        impl->set_colors(foreground ? &fg : nullptr,
+                                       ^~
+../src/btectk.cc:4399:40: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+                         background ? &bg : nullptr,
+                                       ^~
+../src/btectk.cc:4401:49: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+        impl->set_background_alpha(background ? background->alpha : 1.0);
+                                                ^~~~~~~~~~
+../src/btectk.cc:4417:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:4435:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:5055:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:5275:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:5541:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:5569:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:5601:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:5672:9: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+        try {
+        ^~~~~
+../src/btectk.cc:5720:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/btectk.cc:5724:9: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+        try {
+        ^~~~~
+96 warnings generated.
+[33/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/btespawn.cc.o[34/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/btespawn.cc.o[34/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/btestream.cc.o[35/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/btestream.cc.o[35/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/btetypes.cc.o[36/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/btetypes.cc.o[36/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/bteunistr.cc.o[37/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/bteseq.cc.o
+../src/bteseq.cc:8787:1: warning: macro "BEL_C0" is not used [-Wunused-macros]
+ 8787 | } // namespace bte
+      | ^
+../src/bteseq.cc:8787:1: warning: macro "ST_C0" is not used [-Wunused-macros]
+../src/bteseq.cc:916:33: warning: Value stored to 'len' is never read [deadcode.DeadStores]
+                                len = m_column_count;
+                                ^     ~~~~~~~~~~~~~~
+../src/bteseq.cc:4756:19: warning: The left operand of '<=' is a garbage value [core.UndefinedBinaryOperatorResult]
+        if (start <= 0)
+            ~~~~~ ^
+../src/bteseq.cc:4757:25: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+                start = 1;
+                        ^
+../src/bteseq.cc:4778:42: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+                m_scrolling_restricted = FALSE;
+                                         ^~~~~
+/usr/include/glib-2.0/glib/gmacros.h:876:16: note: expanded from macro 'FALSE'
+#define FALSE   (0)
+                 ^
+../src/bteseq.cc:4782:25: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+                        _bte_ring_insert(m_screen->row_data, _bte_ring_next(m_screen->row_data), get_bidi_flags());
+                        ^~~~~~~~~~~~~~~~
+../src/bteseq.cc:6881:17: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+                return;
+                ^~~~~~
+../src/bteseq.cc:8617:27: warning: The left operand of '!=' is a garbage value [core.UndefinedBinaryOperatorResult]
+                if (width != -1 && height != -1) {
+                    ~~~~~ ^
+../src/bteseq.cc:8617:36: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+                if (width != -1 && height != -1) {
+                                   ^~~~~~
+../src/bteseq.cc:8640:27: warning: The left operand of '!=' is a garbage value [core.UndefinedBinaryOperatorResult]
+                if (width != -1 && height != -1) {
+                    ~~~~~ ^
+../src/bteseq.cc:8640:36: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+                if (width != -1 && height != -1) {
+                                   ^~~~~~
+10 warnings generated.
+[37/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/bteutils.cc.o[38/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/bteunistr.cc.o[38/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/widget.cc.o[39/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/bteutils.cc.o[39/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/bteaccess.cc.o[40/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/widget.cc.o
+../src/widget.cc:44:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/widget.cc:59:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/widget.cc:72:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/widget.cc:85:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/widget.cc:97:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/widget.cc:113:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/widget.cc:130:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/widget.cc:156:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/widget.cc:361:18: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+        default: g_assert_not_reached(); return {};
+                 ^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gtestutils.h:230:136: note: expanded from macro 'g_assert_not_reached'
+#define g_assert_not_reached()          G_STMT_START { g_assertion_message_expr (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, NULL); } G_STMT_END
+                                                                                                                                       ^~~~~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:944:30: note: expanded from macro 'G_STMT_END'
+#define G_STMT_END    while (0)
+                             ^
+9 warnings generated.
+[40/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/icu-converter.cc.o[41/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/icu-converter.cc.o
+../src/icu-converter.cc:121:9: warning: Value stored to 'target_size' is never read [deadcode.DeadStores]
+        target_size = ucnv_fromUChars(m_charset_converter.get(),
+        ^             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+[41/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/icu-decoder.cc.o[42/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/icu-decoder.cc.o
+../src/icu-decoder.cc:108:35: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+                        m_state = State::eError;
+                                  ^~~~~~~~~~~~~
+1 warning generated.
+[42/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/icu-glue.cc.o[43/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/bteaccess.cc.o
+../src/bteaccess.cc:718:9: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+        try {
+        ^~~~~
+../src/bteaccess.cc:1106:4: warning: Value stored to 'line' is never read [deadcode.DeadStores]
+                        line = 0;
+                        ^      ~
+../src/bteaccess.cc:1428:9: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+        try {
+        ^~~~~
+../src/bteaccess.cc:1484:17: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+                try {
+                ^~~~~
+../src/bteaccess.cc:1516:17: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+                try {
+                ^~~~~
+../src/bteaccess.cc:1594:9: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+        try {
+        ^~~~~
+6 warnings generated.
+[43/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/systemd.cc.o[44/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/systemd.cc.o[44/195] Compiling C++ object src/decoder-cat.p/icu-converter.cc.o[45/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/icu-glue.cc.o[45/195] Compiling C++ object src/decoder-cat.p/icu-decoder.cc.o[46/195] Compiling C++ object src/decoder-cat.p/icu-decoder.cc.o
+../src/icu-decoder.cc:108:35: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+                        m_state = State::eError;
+                                  ^~~~~~~~~~~~~
+1 warning generated.
+[46/195] Compiling C++ object src/decoder-cat.p/icu-glue.cc.o[47/195] Compiling C++ object src/decoder-cat.p/icu-converter.cc.o
+../src/icu-converter.cc:121:9: warning: Value stored to 'target_size' is never read [deadcode.DeadStores]
+        target_size = ucnv_fromUChars(m_charset_converter.get(),
+        ^             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+[47/195] Compiling C++ object src/parser-cat.p/parser.cc.o[48/195] Compiling C++ object src/parser-cat.p/parser.cc.o
+../src/parser.cc:1446:1: warning: macro "BTE_SEQ_PARAMETER_MASK" is not used [-Wunused-macros]
+ 1446 | }
+      | ^
+../src/parser.cc:1446:1: warning: macro "BTE_SEQ_PARAMETER" is not used [-Wunused-macros]
+../src/parser.cc:1446:1: warning: macro "BTE_SEQ_REMOVE_PARAMETER" is not used [-Wunused-macros]
+../src/parser.cc:1389:9: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+        g_assert_not_reached();
+        ^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gtestutils.h:230:136: note: expanded from macro 'g_assert_not_reached'
+#define g_assert_not_reached()          G_STMT_START { g_assertion_message_expr (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, NULL); } G_STMT_END
+                                                                                                                                       ^~~~~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:944:30: note: expanded from macro 'G_STMT_END'
+#define G_STMT_END    while (0)
+                             ^
+1 warning generated.
+[48/195] Compiling C++ object src/parser-cat.p/utf8.cc.o[49/195] Compiling C++ object src/parser-cat.p/utf8.cc.o[49/195] Compiling C++ object src/parser-cat.p/debug.cc.o[50/195] Compiling C++ object src/parser-cat.p/debug.cc.o[50/195] Compiling C++ object src/parser-cat.p/parser-cat.cc.o[51/195] Compiling C++ object src/decoder-cat.p/icu-glue.cc.o[51/195] Linking target src/decoder-cat[52/195] Linking target src/decoder-cat[52/195] Compiling C object src/dumpkeys.p/dumpkeys.c.o[53/195] Compiling C object src/dumpkeys.p/dumpkeys.c.o[53/195] Linking target src/dumpkeys[54/195] Linking target src/dumpkeys[54/195] Compiling C object src/mev.p/mev.c.o[55/195] Compiling C object src/mev.p/mev.c.o
+../src/mev.c:383:3: warning: Value stored to 'stop' is never read [deadcode.DeadStores]
+                stop = TRUE;
+                ^      ~~~~
+1 warning generated.
+[55/195] Linking target src/mev[56/195] Linking target src/mev[56/195] Compiling C object src/slowcat.p/slowcat.c.o[57/195] Compiling C object src/slowcat.p/slowcat.c.o[57/195] Linking target src/slowcat[58/195] Linking target src/slowcat[58/195] Compiling C object src/reflect-textview.p/reflect.c.o[59/195] Compiling C object src/reflect-textview.p/reflect.c.o
+../src/reflect.c:97:18: warning: Access to field 'len' results in a dereference of a null pointer (loaded from variable 'contents') [core.NullDereference]
+        for (i = 0; i < contents->len; i++) {
+                        ^~~~~~~~~~~~~
+../src/reflect.c:312:9: warning: Access to field 'len' results in a dereference of a null pointer (loaded from variable 'contents') [core.NullDereference]
+                             contents->len < count;
+                             ^~~~~~~~~~~~~
+../src/reflect.c:314:9: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+                                c = g_utf8_get_char(p);
+                                    ^~~~~~~~~~~~~~~
+../src/reflect.c:317:4: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+                        g_free(text);
+                        ^~~~~~
+4 warnings generated.
+[59/195] Linking target src/reflect-textview[60/195] Linking target src/reflect-textview[60/195] Compiling C object src/reflect-bte.p/reflect.c.o[61/195] Compiling C object src/reflect-bte.p/reflect.c.o
+../src/reflect.c:97:18: warning: Access to field 'len' results in a dereference of a null pointer (loaded from variable 'contents') [core.NullDereference]
+        for (i = 0; i < contents->len; i++) {
+                        ^~~~~~~~~~~~~
+../src/reflect.c:312:9: warning: Access to field 'len' results in a dereference of a null pointer (loaded from variable 'contents') [core.NullDereference]
+                             contents->len < count;
+                             ^~~~~~~~~~~~~
+../src/reflect.c:314:9: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+                                c = g_utf8_get_char(p);
+                                    ^~~~~~~~~~~~~~~
+../src/reflect.c:317:4: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+                        g_free(text);
+                        ^~~~~~
+4 warnings generated.
+[61/195] Compiling C++ object src/bte-urlencode-cwd.p/urlencode.cc.o[62/195] Compiling C++ object src/parser-cat.p/parser-cat.cc.o
+../src/parser-cat.cc:807:39: warning: Division by zero [core.DivideZero]
+                           total_time / (int64_t)m_bench_times->len);
+                           ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+[62/195] Linking target src/parser-cat[63/195] Linking target src/parser-cat[63/195] Compiling C object src/xticker.p/xticker.c.o[64/195] Compiling C++ object src/bte-urlencode-cwd.p/urlencode.cc.o[64/195] Linking target src/bte-urlencode-cwd[65/195] Linking target src/bte-urlencode-cwd[65/195] Compiling C++ object src/test-modes.p/modes-test.cc.o[66/195] Compiling C++ object src/test-modes.p/modes-test.cc.o[66/195] Linking target src/test-modes[67/195] Linking target src/test-modes[67/195] Compiling C++ object src/test-parser.p/parser.cc.o[68/195] Compiling C object src/xticker.p/xticker.c.o
+../src/xticker.c:115:6: warning: Memory copy function accesses out-of-bound array element [alpha.unix.cstring.OutOfBounds]
+                                        memcpy(outbuf + 4,
+                                        ^~~~~~~~~~~~~~~~~~
+1 warning generated.
+[68/195] Linking target src/xticker[69/195] Linking target src/xticker[69/195] Compiling C++ object src/test-parser.p/parser-test.cc.o[70/195] Compiling C++ object src/test-parser.p/parser.cc.o
+../src/parser.cc:1446:1: warning: macro "BTE_SEQ_PARAMETER_MASK" is not used [-Wunused-macros]
+ 1446 | }
+      | ^
+../src/parser.cc:1446:1: warning: macro "BTE_SEQ_PARAMETER" is not used [-Wunused-macros]
+../src/parser.cc:1446:1: warning: macro "BTE_SEQ_REMOVE_PARAMETER" is not used [-Wunused-macros]
+../src/parser.cc:1389:9: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+        g_assert_not_reached();
+        ^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gtestutils.h:230:136: note: expanded from macro 'g_assert_not_reached'
+#define g_assert_not_reached()          G_STMT_START { g_assertion_message_expr (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, NULL); } G_STMT_END
+                                                                                                                                       ^~~~~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:944:30: note: expanded from macro 'G_STMT_END'
+#define G_STMT_END    while (0)
+                             ^
+1 warning generated.
+[70/195] Compiling C++ object src/test-reaper.p/debug.cc.o[71/195] Compiling C++ object src/test-reaper.p/debug.cc.o[71/195] Compiling C++ object src/test-reaper.p/reaper.cc.o[72/195] Compiling C++ object src/test-reaper.p/reaper.cc.o
+../src/reaper.cc:225:1: warning: macro "BTE_REAPER_GET_CLASS" is not used [-Wunused-macros]
+  225 | }
+      | ^
+../src/reaper.cc:225:1: warning: macro "BTE_IS_REAPER" is not used [-Wunused-macros]
+../src/reaper.cc:225:1: warning: macro "BTE_REAPER_CLASS" is not used [-Wunused-macros]
+../src/reaper.cc:225:1: warning: macro "BTE_IS_REAPER_CLASS" is not used [-Wunused-macros]
+../src/reaper.cc:182:25: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+                        g_assert_not_reached();
+                        ^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gtestutils.h:230:136: note: expanded from macro 'g_assert_not_reached'
+#define g_assert_not_reached()          G_STMT_START { g_assertion_message_expr (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, NULL); } G_STMT_END
+                                                                                                                                       ^~~~~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:944:30: note: expanded from macro 'G_STMT_END'
+#define G_STMT_END    while (0)
+                             ^
+../src/reaper.cc:189:25: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+                        break;
+                        ^~~~~
+../src/reaper.cc:206:25: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+                        g_assert_not_reached();
+                        ^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gtestutils.h:230:136: note: expanded from macro 'g_assert_not_reached'
+#define g_assert_not_reached()          G_STMT_START { g_assertion_message_expr (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, NULL); } G_STMT_END
+                                                                                                                                       ^~~~~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:944:30: note: expanded from macro 'G_STMT_END'
+#define G_STMT_END    while (0)
+                             ^
+../src/reaper.cc:213:25: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+                        break;
+                        ^~~~~
+4 warnings generated.
+[72/195] Linking target src/test-reaper[73/195] Linking target src/test-reaper[73/195] Compiling C++ object src/test-refptr.p/refptr-test.cc.o[74/195] Compiling C++ object src/test-refptr.p/refptr-test.cc.o
+../src/refptr-test.cc:81:23: warning: Method called on moved-from object 'ptr1' [cplusplus.Move]
+        g_assert_true(ptr1.get() == nullptr);
+                      ^~~~~~~~~~
+/usr/include/glib-2.0/glib/gtestutils.h:184:59: note: expanded from macro 'g_assert_true'
+                                             if G_LIKELY (expr) ; else \
+                                                          ^~~~
+/usr/include/glib-2.0/glib/gmacros.h:1088:59: note: expanded from macro 'G_LIKELY'
+#define G_LIKELY(expr) (__builtin_expect (_G_BOOLEAN_EXPR(expr), 1))
+                                                          ^~~~
+/usr/include/glib-2.0/glib/gmacros.h:1082:8: note: expanded from macro '_G_BOOLEAN_EXPR'
+   if (expr)                                    \
+       ^~~~
+1 warning generated.
+[74/195] Linking target src/test-refptr[75/195] Linking target src/test-refptr[75/195] Compiling C++ object src/test-stream.p/btestream.cc.o[76/195] Compiling C++ object src/test-stream.p/btestream.cc.o[76/195] Compiling C++ object src/test-stream.p/bteutils.cc.o[77/195] Compiling C++ object src/test-stream.p/bteutils.cc.o[77/195] Linking target src/test-stream[78/195] Linking target src/test-stream[78/195] Compiling C++ object src/test-tabstops.p/tabstops-test.cc.o[79/195] Compiling C++ object src/test-tabstops.p/tabstops-test.cc.o[79/195] Linking target src/test-tabstops[80/195] Linking target src/test-tabstops[80/195] Compiling C++ object src/test-utf8.p/utf8.cc.o[81/195] Compiling C++ object src/test-utf8.p/utf8.cc.o[81/195] Compiling C++ object src/test-utf8.p/utf8-test.cc.o[82/195] Compiling C++ object src/test-parser.p/parser-test.cc.o
+../src/parser-test.cc:1514:1: warning: macro "_BTE_NOP" is not used [-Wunused-macros]
+ 1514 | }
+      | ^
+In file included from ../src/parser-test.cc:33:
+../src/parser-glue.hh:754:67: warning: Out of bound memory access (access exceeds upper limit of memory block) [alpha.security.ArrayBoundV2]
+                                g_assert_true(bte_seq_arg_default(m_seq.args[m_seq.n_args - 1]));
+                                                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gtestutils.h:184:59: note: expanded from macro 'g_assert_true'
+                                             if G_LIKELY (expr) ; else \
+                                                          ^~~~
+/usr/include/glib-2.0/glib/gmacros.h:1088:59: note: expanded from macro 'G_LIKELY'
+#define G_LIKELY(expr) (__builtin_expect (_G_BOOLEAN_EXPR(expr), 1))
+                                                          ^~~~
+/usr/include/glib-2.0/glib/gmacros.h:1082:8: note: expanded from macro '_G_BOOLEAN_EXPR'
+   if (expr)                                    \
+       ^~~~
+../src/parser-test.cc:261:14: warning: Value stored to 'buf' during its initialization is never read [deadcode.DeadStores]
+        auto buf = bte_seq_string_get(&str, &len);
+             ^~~   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/parser-test.cc:268:17: warning: Value stored to 'buf' is never read [deadcode.DeadStores]
+                buf = bte_seq_string_get(&str, &len);
+                ^     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/parser-test.cc:281:9: warning: Value stored to 'buf' is never read [deadcode.DeadStores]
+        buf = bte_seq_string_get(&str, &len);
+        ^     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4 warnings generated.
+[82/195] Linking target src/test-parser[83/195] Linking target src/test-parser[83/195] Compiling C++ object src/test-btetypes.p/btetypes.cc.o[84/195] Compiling C++ object src/test-utf8.p/utf8-test.cc.o[84/195] Linking target src/test-utf8[85/195] Compiling C++ object src/test-btetypes.p/btetypes.cc.o[85/195] Linking target src/test-btetypes[86/195] Linking target src/test-utf8[86/195] Generating src/app/resources.cc_c with a custom command[87/195] Generating src/app/resources.cc_c with a custom command[87/195] Generating src/app/resources.cc_h with a custom command[88/195] Linking target src/test-btetypes[88/195] Generating po/am/LC_MESSAGES/bte-2.91-am.mo with a custom command[89/195] Generating src/app/resources.cc_h with a custom command[89/195] Compiling C object src/app/bte-2.91.p/meson-generated_.._resources.cc.c.o[90/195] Generating po/am/LC_MESSAGES/bte-2.91-am.mo with a custom command[90/195] Compiling C++ object src/app/bte-2.91.p/app.cc.o[91/195] Compiling C object src/app/bte-2.91.p/meson-generated_.._resources.cc.c.o
+src/app/resources.cc.c:284: warning: macro "__G_CONSTRUCTOR_H__" is not used [-Wunused-macros]
+  284 | #define __G_CONSTRUCTOR_H__
+      | 
+[91/195] Generating po/an/LC_MESSAGES/bte-2.91-an.mo with a custom command[92/195] Generating po/an/LC_MESSAGES/bte-2.91-an.mo with a custom command[92/195] Generating po/ang/LC_MESSAGES/bte-2.91-ang.mo with a custom command[93/195] Generating po/ang/LC_MESSAGES/bte-2.91-ang.mo with a custom command[93/195] Generating po/ar/LC_MESSAGES/bte-2.91-ar.mo with a custom command[94/195] Generating po/ar/LC_MESSAGES/bte-2.91-ar.mo with a custom command[94/195] Generating po/as/LC_MESSAGES/bte-2.91-as.mo with a custom command[95/195] Generating po/as/LC_MESSAGES/bte-2.91-as.mo with a custom command[95/195] Generating po/ast/LC_MESSAGES/bte-2.91-ast.mo with a custom command[96/195] Generating po/ast/LC_MESSAGES/bte-2.91-ast.mo with a custom command[96/195] Generating po/az/LC_MESSAGES/bte-2.91-az.mo with a custom command[97/195] Generating po/az/LC_MESSAGES/bte-2.91-az.mo with a custom command[97/195] Generating po/be/LC_MESSAGES/bte-2.91-be.mo with a custom command[98/195] Generating po/be/LC_MESSAGES/bte-2.91-be.mo with a custom command[98/195] Generating po/be@latin/LC_MESSAGES/bte-2.91-be@latin.mo with a custom command[99/195] Generating po/be@latin/LC_MESSAGES/bte-2.91-be@latin.mo with a custom command[99/195] Generating po/bg/LC_MESSAGES/bte-2.91-bg.mo with a custom command[100/195] Generating po/bg/LC_MESSAGES/bte-2.91-bg.mo with a custom command[100/195] Generating po/bn/LC_MESSAGES/bte-2.91-bn.mo with a custom command[101/195] Generating po/bn/LC_MESSAGES/bte-2.91-bn.mo with a custom command[101/195] Generating po/bn_IN/LC_MESSAGES/bte-2.91-bn_IN.mo with a custom command[102/195] Generating po/bn_IN/LC_MESSAGES/bte-2.91-bn_IN.mo with a custom command[102/195] Generating po/bs/LC_MESSAGES/bte-2.91-bs.mo with a custom command[103/195] Generating po/bs/LC_MESSAGES/bte-2.91-bs.mo with a custom command[103/195] Generating po/ca/LC_MESSAGES/bte-2.91-ca.mo with a custom command[104/195] Generating po/ca/LC_MESSAGES/bte-2.91-ca.mo with a custom command[104/195] Generating po/ca@valencia/LC_MESSAGES/bte-2.91-ca@valencia.mo with a custom command[105/195] Generating po/ca@valencia/LC_MESSAGES/bte-2.91-ca@valencia.mo with a custom command[105/195] Generating po/ckb/LC_MESSAGES/bte-2.91-ckb.mo with a custom command[106/195] Generating po/ckb/LC_MESSAGES/bte-2.91-ckb.mo with a custom command[106/195] Generating po/cs/LC_MESSAGES/bte-2.91-cs.mo with a custom command[107/195] Generating po/cs/LC_MESSAGES/bte-2.91-cs.mo with a custom command[107/195] Generating po/cy/LC_MESSAGES/bte-2.91-cy.mo with a custom command[108/195] Generating po/cy/LC_MESSAGES/bte-2.91-cy.mo with a custom command[108/195] Generating po/da/LC_MESSAGES/bte-2.91-da.mo with a custom command[109/195] Generating po/da/LC_MESSAGES/bte-2.91-da.mo with a custom command[109/195] Generating po/de/LC_MESSAGES/bte-2.91-de.mo with a custom command[110/195] Generating po/de/LC_MESSAGES/bte-2.91-de.mo with a custom command[110/195] Generating po/dz/LC_MESSAGES/bte-2.91-dz.mo with a custom command[111/195] Generating po/dz/LC_MESSAGES/bte-2.91-dz.mo with a custom command[111/195] Generating po/el/LC_MESSAGES/bte-2.91-el.mo with a custom command[112/195] Generating po/el/LC_MESSAGES/bte-2.91-el.mo with a custom command[112/195] Generating po/en_CA/LC_MESSAGES/bte-2.91-en_CA.mo with a custom command[113/195] Generating po/en_CA/LC_MESSAGES/bte-2.91-en_CA.mo with a custom command[113/195] Generating po/en_GB/LC_MESSAGES/bte-2.91-en_GB.mo with a custom command[114/195] Generating po/en_GB/LC_MESSAGES/bte-2.91-en_GB.mo with a custom command[114/195] Generating po/en@shaw/LC_MESSAGES/bte-2.91-en@shaw.mo with a custom command[115/195] Generating po/en@shaw/LC_MESSAGES/bte-2.91-en@shaw.mo with a custom command[115/195] Generating po/eo/LC_MESSAGES/bte-2.91-eo.mo with a custom command[116/195] Generating po/eo/LC_MESSAGES/bte-2.91-eo.mo with a custom command[116/195] Generating po/es/LC_MESSAGES/bte-2.91-es.mo with a custom command[117/195] Generating po/es/LC_MESSAGES/bte-2.91-es.mo with a custom command[117/195] Generating po/et/LC_MESSAGES/bte-2.91-et.mo with a custom command[118/195] Generating po/et/LC_MESSAGES/bte-2.91-et.mo with a custom command[118/195] Generating po/eu/LC_MESSAGES/bte-2.91-eu.mo with a custom command[119/195] Generating po/eu/LC_MESSAGES/bte-2.91-eu.mo with a custom command[119/195] Generating po/fa/LC_MESSAGES/bte-2.91-fa.mo with a custom command[120/195] Generating po/fa/LC_MESSAGES/bte-2.91-fa.mo with a custom command[120/195] Generating po/fi/LC_MESSAGES/bte-2.91-fi.mo with a custom command[121/195] Generating po/fi/LC_MESSAGES/bte-2.91-fi.mo with a custom command[121/195] Generating po/fr/LC_MESSAGES/bte-2.91-fr.mo with a custom command[122/195] Generating po/fr/LC_MESSAGES/bte-2.91-fr.mo with a custom command[122/195] Generating po/fur/LC_MESSAGES/bte-2.91-fur.mo with a custom command[123/195] Generating po/fur/LC_MESSAGES/bte-2.91-fur.mo with a custom command[123/195] Generating po/ga/LC_MESSAGES/bte-2.91-ga.mo with a custom command[124/195] Generating po/ga/LC_MESSAGES/bte-2.91-ga.mo with a custom command[124/195] Generating po/gd/LC_MESSAGES/bte-2.91-gd.mo with a custom command[125/195] Generating po/gd/LC_MESSAGES/bte-2.91-gd.mo with a custom command[125/195] Generating po/gl/LC_MESSAGES/bte-2.91-gl.mo with a custom command[126/195] Generating po/gl/LC_MESSAGES/bte-2.91-gl.mo with a custom command[126/195] Generating po/gu/LC_MESSAGES/bte-2.91-gu.mo with a custom command[127/195] Generating po/gu/LC_MESSAGES/bte-2.91-gu.mo with a custom command[127/195] Generating po/he/LC_MESSAGES/bte-2.91-he.mo with a custom command[128/195] Generating po/he/LC_MESSAGES/bte-2.91-he.mo with a custom command[128/195] Generating po/hi/LC_MESSAGES/bte-2.91-hi.mo with a custom command[129/195] Generating po/hi/LC_MESSAGES/bte-2.91-hi.mo with a custom command[129/195] Generating po/hr/LC_MESSAGES/bte-2.91-hr.mo with a custom command[130/195] Generating po/hr/LC_MESSAGES/bte-2.91-hr.mo with a custom command[130/195] Generating po/hu/LC_MESSAGES/bte-2.91-hu.mo with a custom command[131/195] Generating po/hu/LC_MESSAGES/bte-2.91-hu.mo with a custom command[131/195] Generating po/id/LC_MESSAGES/bte-2.91-id.mo with a custom command[132/195] Generating po/id/LC_MESSAGES/bte-2.91-id.mo with a custom command[132/195] Generating po/is/LC_MESSAGES/bte-2.91-is.mo with a custom command[133/195] Generating po/is/LC_MESSAGES/bte-2.91-is.mo with a custom command[133/195] Generating po/it/LC_MESSAGES/bte-2.91-it.mo with a custom command[134/195] Generating po/it/LC_MESSAGES/bte-2.91-it.mo with a custom command[134/195] Generating po/ja/LC_MESSAGES/bte-2.91-ja.mo with a custom command[135/195] Generating po/ja/LC_MESSAGES/bte-2.91-ja.mo with a custom command[135/195] Generating po/ka/LC_MESSAGES/bte-2.91-ka.mo with a custom command[136/195] Generating po/ka/LC_MESSAGES/bte-2.91-ka.mo with a custom command[136/195] Generating po/kk/LC_MESSAGES/bte-2.91-kk.mo with a custom command[137/195] Generating po/kk/LC_MESSAGES/bte-2.91-kk.mo with a custom command[137/195] Generating po/kn/LC_MESSAGES/bte-2.91-kn.mo with a custom command[138/195] Generating po/kn/LC_MESSAGES/bte-2.91-kn.mo with a custom command[138/195] Generating po/ko/LC_MESSAGES/bte-2.91-ko.mo with a custom command[139/195] Generating po/ko/LC_MESSAGES/bte-2.91-ko.mo with a custom command[139/195] Generating po/ku/LC_MESSAGES/bte-2.91-ku.mo with a custom command[140/195] Generating po/ku/LC_MESSAGES/bte-2.91-ku.mo with a custom command[140/195] Generating po/ky/LC_MESSAGES/bte-2.91-ky.mo with a custom command[141/195] Generating po/ky/LC_MESSAGES/bte-2.91-ky.mo with a custom command[141/195] Generating po/li/LC_MESSAGES/bte-2.91-li.mo with a custom command[142/195] Generating po/li/LC_MESSAGES/bte-2.91-li.mo with a custom command[142/195] Generating po/lt/LC_MESSAGES/bte-2.91-lt.mo with a custom command[143/195] Generating po/lt/LC_MESSAGES/bte-2.91-lt.mo with a custom command[143/195] Generating po/lv/LC_MESSAGES/bte-2.91-lv.mo with a custom command[144/195] Generating po/lv/LC_MESSAGES/bte-2.91-lv.mo with a custom command[144/195] Generating po/mai/LC_MESSAGES/bte-2.91-mai.mo with a custom command[145/195] Generating po/mai/LC_MESSAGES/bte-2.91-mai.mo with a custom command[145/195] Generating po/mi/LC_MESSAGES/bte-2.91-mi.mo with a custom command[146/195] Generating po/mi/LC_MESSAGES/bte-2.91-mi.mo with a custom command[146/195] Generating po/mjw/LC_MESSAGES/bte-2.91-mjw.mo with a custom command[147/195] Generating po/mjw/LC_MESSAGES/bte-2.91-mjw.mo with a custom command[147/195] Generating po/mk/LC_MESSAGES/bte-2.91-mk.mo with a custom command[148/195] Generating po/mk/LC_MESSAGES/bte-2.91-mk.mo with a custom command[148/195] Generating po/ml/LC_MESSAGES/bte-2.91-ml.mo with a custom command[149/195] Generating po/ml/LC_MESSAGES/bte-2.91-ml.mo with a custom command[149/195] Generating po/mn/LC_MESSAGES/bte-2.91-mn.mo with a custom command[150/195] Generating po/mn/LC_MESSAGES/bte-2.91-mn.mo with a custom command[150/195] Generating po/mr/LC_MESSAGES/bte-2.91-mr.mo with a custom command[151/195] Generating po/mr/LC_MESSAGES/bte-2.91-mr.mo with a custom command[151/195] Generating po/ms/LC_MESSAGES/bte-2.91-ms.mo with a custom command[152/195] Generating po/ms/LC_MESSAGES/bte-2.91-ms.mo with a custom command[152/195] Generating po/nb/LC_MESSAGES/bte-2.91-nb.mo with a custom command[153/195] Generating po/nb/LC_MESSAGES/bte-2.91-nb.mo with a custom command[153/195] Generating po/nds/LC_MESSAGES/bte-2.91-nds.mo with a custom command[154/195] Generating po/nds/LC_MESSAGES/bte-2.91-nds.mo with a custom command[154/195] Generating po/ne/LC_MESSAGES/bte-2.91-ne.mo with a custom command[155/195] Generating po/ne/LC_MESSAGES/bte-2.91-ne.mo with a custom command[155/195] Generating po/nl/LC_MESSAGES/bte-2.91-nl.mo with a custom command[156/195] Generating po/nl/LC_MESSAGES/bte-2.91-nl.mo with a custom command[156/195] Generating po/nn/LC_MESSAGES/bte-2.91-nn.mo with a custom command[157/195] Generating po/nn/LC_MESSAGES/bte-2.91-nn.mo with a custom command[157/195] Generating po/oc/LC_MESSAGES/bte-2.91-oc.mo with a custom command[158/195] Generating po/oc/LC_MESSAGES/bte-2.91-oc.mo with a custom command[158/195] Generating po/or/LC_MESSAGES/bte-2.91-or.mo with a custom command[159/195] Generating po/or/LC_MESSAGES/bte-2.91-or.mo with a custom command[159/195] Generating po/pa/LC_MESSAGES/bte-2.91-pa.mo with a custom command[160/195] Generating po/pa/LC_MESSAGES/bte-2.91-pa.mo with a custom command[160/195] Generating po/pl/LC_MESSAGES/bte-2.91-pl.mo with a custom command[161/195] Generating po/pl/LC_MESSAGES/bte-2.91-pl.mo with a custom command[161/195] Generating po/pt/LC_MESSAGES/bte-2.91-pt.mo with a custom command[162/195] Generating po/pt/LC_MESSAGES/bte-2.91-pt.mo with a custom command[162/195] Generating po/pt_BR/LC_MESSAGES/bte-2.91-pt_BR.mo with a custom command[163/195] Generating po/pt_BR/LC_MESSAGES/bte-2.91-pt_BR.mo with a custom command[163/195] Generating po/ro/LC_MESSAGES/bte-2.91-ro.mo with a custom command[164/195] Generating po/ro/LC_MESSAGES/bte-2.91-ro.mo with a custom command[164/195] Generating po/ru/LC_MESSAGES/bte-2.91-ru.mo with a custom command[165/195] Generating po/ru/LC_MESSAGES/bte-2.91-ru.mo with a custom command[165/195] Generating po/rw/LC_MESSAGES/bte-2.91-rw.mo with a custom command[166/195] Generating po/rw/LC_MESSAGES/bte-2.91-rw.mo with a custom command[166/195] Generating po/si/LC_MESSAGES/bte-2.91-si.mo with a custom command[167/195] Generating po/si/LC_MESSAGES/bte-2.91-si.mo with a custom command[167/195] Generating po/sk/LC_MESSAGES/bte-2.91-sk.mo with a custom command[168/195] Generating po/sk/LC_MESSAGES/bte-2.91-sk.mo with a custom command[168/195] Generating po/sl/LC_MESSAGES/bte-2.91-sl.mo with a custom command[169/195] Generating po/sl/LC_MESSAGES/bte-2.91-sl.mo with a custom command[169/195] Generating po/sq/LC_MESSAGES/bte-2.91-sq.mo with a custom command[170/195] Generating po/sq/LC_MESSAGES/bte-2.91-sq.mo with a custom command[170/195] Generating po/sr/LC_MESSAGES/bte-2.91-sr.mo with a custom command[171/195] Generating po/sr/LC_MESSAGES/bte-2.91-sr.mo with a custom command[171/195] Generating po/sr@latin/LC_MESSAGES/bte-2.91-sr@latin.mo with a custom command[172/195] Generating po/sr@latin/LC_MESSAGES/bte-2.91-sr@latin.mo with a custom command[172/195] Generating po/sv/LC_MESSAGES/bte-2.91-sv.mo with a custom command[173/195] Generating po/sv/LC_MESSAGES/bte-2.91-sv.mo with a custom command[173/195] Generating po/ta/LC_MESSAGES/bte-2.91-ta.mo with a custom command[174/195] Generating po/ta/LC_MESSAGES/bte-2.91-ta.mo with a custom command[174/195] Generating po/te/LC_MESSAGES/bte-2.91-te.mo with a custom command[175/195] Generating po/te/LC_MESSAGES/bte-2.91-te.mo with a custom command[175/195] Generating po/tg/LC_MESSAGES/bte-2.91-tg.mo with a custom command[176/195] Generating po/tg/LC_MESSAGES/bte-2.91-tg.mo with a custom command[176/195] Generating po/th/LC_MESSAGES/bte-2.91-th.mo with a custom command[177/195] Generating po/th/LC_MESSAGES/bte-2.91-th.mo with a custom command[177/195] Generating po/tr/LC_MESSAGES/bte-2.91-tr.mo with a custom command[178/195] Generating po/tr/LC_MESSAGES/bte-2.91-tr.mo with a custom command[178/195] Generating po/ug/LC_MESSAGES/bte-2.91-ug.mo with a custom command[179/195] Generating po/ug/LC_MESSAGES/bte-2.91-ug.mo with a custom command[179/195] Generating po/uk/LC_MESSAGES/bte-2.91-uk.mo with a custom command[180/195] Generating po/uk/LC_MESSAGES/bte-2.91-uk.mo with a custom command[180/195] Generating po/uz@cyrillic/LC_MESSAGES/bte-2.91-uz@cyrillic.mo with a custom command[181/195] Generating po/uz@cyrillic/LC_MESSAGES/bte-2.91-uz@cyrillic.mo with a custom command[181/195] Generating po/vi/LC_MESSAGES/bte-2.91-vi.mo with a custom command[182/195] Generating po/vi/LC_MESSAGES/bte-2.91-vi.mo with a custom command[182/195] Generating po/wa/LC_MESSAGES/bte-2.91-wa.mo with a custom command[183/195] Generating po/wa/LC_MESSAGES/bte-2.91-wa.mo with a custom command[183/195] Generating po/xh/LC_MESSAGES/bte-2.91-xh.mo with a custom command[184/195] Generating po/xh/LC_MESSAGES/bte-2.91-xh.mo with a custom command[184/195] Generating po/zh_CN/LC_MESSAGES/bte-2.91-zh_CN.mo with a custom command[185/195] Generating po/zh_CN/LC_MESSAGES/bte-2.91-zh_CN.mo with a custom command[185/195] Generating po/zh_HK/LC_MESSAGES/bte-2.91-zh_HK.mo with a custom command[186/195] Generating po/zh_HK/LC_MESSAGES/bte-2.91-zh_HK.mo with a custom command[186/195] Generating po/zh_TW/LC_MESSAGES/bte-2.91-zh_TW.mo with a custom command[187/195] Generating po/zh_TW/LC_MESSAGES/bte-2.91-zh_TW.mo with a custom command[188/195] Compiling C++ object src/app/bte-2.91.p/app.cc.o
+../src/app/app.cc:2503:1: warning: macro "BTEAPP_IS_TERMINAL_CLASS" is not used [-Wunused-macros]
+ 2503 | }
+      | ^
+../src/app/app.cc:2503:1: warning: macro "BTEAPP_APPLICATION_GET_CLASS" is not used [-Wunused-macros]
+../src/app/app.cc:2503:1: warning: macro "BTEAPP_IS_APPLICATION" is not used [-Wunused-macros]
+../src/app/app.cc:2503:1: warning: macro "BTEAPP_SEARCH_POPOVER_GET_CLASS" is not used [-Wunused-macros]
+../src/app/app.cc:2503:1: warning: macro "BTEAPP_IS_SEARCH_POPOVER" is not used [-Wunused-macros]
+../src/app/app.cc:2503:1: warning: macro "BTEAPP_IS_WINDOW_CLASS" is not used [-Wunused-macros]
+../src/app/app.cc:2503:1: warning: macro "BTEAPP_IS_TERMINAL" is not used [-Wunused-macros]
+../src/app/app.cc:2503:1: warning: macro "BTEAPP_WINDOW_GET_CLASS" is not used [-Wunused-macros]
+../src/app/app.cc:2503:1: warning: macro "BTEAPP_TERMINAL_GET_CLASS" is not used [-Wunused-macros]
+../src/app/app.cc:2503:1: warning: macro "BTEAPP_APPLICATION_CLASS" is not used [-Wunused-macros]
+../src/app/app.cc:2503:1: warning: macro "BTEAPP_WINDOW_CLASS" is not used [-Wunused-macros]
+../src/app/app.cc:2503:1: warning: macro "BTEAPP_IS_SEARCH_POPOVER_CLASS" is not used [-Wunused-macros]
+../src/app/app.cc:2503:1: warning: macro "BTEAPP_SEARCH_POPOVER_CLASS" is not used [-Wunused-macros]
+../src/app/app.cc:2503:1: warning: macro "BTEAPP_TERMINAL_CLASS" is not used [-Wunused-macros]
+../src/app/app.cc:2503:1: warning: macro "BTEAPP_IS_APPLICATION_CLASS" is not used [-Wunused-macros]
+[189/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/bte.cc.o
+In file included from ../src/bte.cc:38:
+In file included from ../src/bteinternal.hh:40:
+In file included from ../src/ring.hh:28:
+In file included from ../src/bterowdata.hh:30:
+In file included from ../src/cell.hh:42:
+../src/color-triple.hh:54:20: warning: The left operand of '&' is a garbage value [core.UndefinedBinaryOperatorResult]
+        *ct = (*ct & ~BTE_COLOR_TRIPLE_FORE_MASK) | (uint64_t(fore)) << BTE_COLOR_TRIPLE_FORE_SHIFT;
+               ~~~ ^
+../src/color-triple.hh:60:20: warning: The left operand of '&' is a garbage value [core.UndefinedBinaryOperatorResult]
+        *ct = (*ct & ~BTE_COLOR_TRIPLE_BACK_MASK) | (uint64_t(back)) << BTE_COLOR_TRIPLE_BACK_SHIFT;
+               ~~~ ^
+../src/bte.cc:787:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/bte.cc:822:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/bte.cc:3101:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/bte.cc:4685:6: warning: Value stored to 'suppress_alt_esc' is never read [deadcode.DeadStores]
+                                        suppress_alt_esc = FALSE;
+                                        ^                  ~~~~~
+../src/bte.cc:4717:5: warning: Value stored to 'suppress_alt_esc' is never read [deadcode.DeadStores]
+                                suppress_alt_esc = FALSE;
+                                ^                  ~~~~~
+../src/bte.cc:7625:1: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+try
+^~~
+../src/bte.cc:8389:14: warning: 1st function call argument is an uninitialized value [core.CallAndMessage]
+                gint len = g_unichar_to_utf8 (cells[i].c, ubuf);
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/bte.cc:8623:25: warning: The left operand of '&' is a garbage value [core.UndefinedBinaryOperatorResult]
+                                        cells[j].attr.attr & attr_mask,
+                                        ~~~~~~~~~~~~~~~~~~ ^
+10 warnings generated.
+[189/195] Linking target src/libbte-2.91.so.0.6500.0[190/195] Linking target src/libbte-2.91.so.0.6500.0[190/195] Generating symbol file src/libbte-2.91.so.0.6500.0.p/libbte-2.91.so.0.6500.0.symbols[190/195] Generating bindings/gir/Bte-2.91.gir with a custom command[191/195] Generating symbol file src/libbte-2.91.so.0.6500.0.p/libbte-2.91.so.0.6500.0.symbols[191/195] Linking target src/reflect-bte[191/195] Linking target src/app/bte-2.91[192/195] Linking target src/reflect-bte[193/195] Linking target src/app/bte-2.91[194/195] Generating bindings/gir/Bte-2.91.gir with a custom command
+g-ir-scanner: link: /usr/share/clang/scan-build-14/bin/../libexec/ccc-analyzer -o /rootdir/_build/tmp-introspect9zd97dnh/Bte-2.91 -Wall -Wmissing-prototypes -Wbad-function-cast -Wcast-align -Wextra -Wformat-nonliteral -Wmissing-declarations -Wmissing-field-initializers -Wnested-externs -Wpointer-arith -Wredundant-decls -Wshadow -Wstrict-prototypes -Wunused-macros -Werror=format-security /rootdir/_build/tmp-introspect9zd97dnh/Bte-2.91.o -L. -Wl,-rpath,. -Wl,--no-as-needed -L/rootdir/_build/src -Wl,-rpath,/rootdir/_build/src -L/rootdir/_build/src -Wl,-rpath,/rootdir/_build/src -lbte-2.91 -lbte-2.91 -lgio-2.0 -lgobject-2.0 -lglib-2.0 -lpango-1.0 -lharfbuzz -lfribidi -lgnutls -licuuc -licudata -lpcre2-8 -lm -lsystemd -lz -lctk-3 -lcdk-3 -lpangocairo-1.0 -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgirepository-1.0 -lgio-2.0 -lgobject-2.0 -Wl,--export-dynamic -lgmodule-2.0 -pthread -lglib-2.0
+[194/195] Generating bindings/gir/Bte-2.91.typelib with a custom command[195/195] Generating bindings/gir/Bte-2.91.typelib with a custom command
+scan-build: Analysis run complete.
+scan-build: 167 bugs found.
+scan-build: Run 'scan-view /rootdir/html-report/2022-08-07-225954-9680-1' to examine bug reports.
+Listing... 0%Listing... 0%Listing... 0%Listing... Done
+gir1.2-ctk-3.0/now 3.25.2-1 amd64 [installed,local]
+libctk-3-0/now 3.25.2-1 amd64 [installed,local]
+libctk-3-common/now 3.25.2-1 all [installed,local]
+libctk-3-dev/now 3.25.2-1 amd64 [installed,local]
+Selecting previously unselected package gir1.2-ctk-3.0:amd64.
+(Reading database ... 42223 files and directories currently installed.)
+Preparing to unpack gir1.2-ctk-3.0_3.25.2-1_amd64.deb ...
+Unpacking gir1.2-ctk-3.0:amd64 (3.25.2-1) ...
+Selecting previously unselected package libctk-3-0:amd64.
+Preparing to unpack libctk-3-0_3.25.2-1_amd64.deb ...
+Unpacking libctk-3-0:amd64 (3.25.2-1) ...
+Selecting previously unselected package libctk-3-common.
+Preparing to unpack libctk-3-common_3.25.2-1_all.deb ...
+Unpacking libctk-3-common (3.25.2-1) ...
+Selecting previously unselected package libctk-3-dev:amd64.
+Preparing to unpack libctk-3-dev_3.25.2-1_amd64.deb ...
+Unpacking libctk-3-dev:amd64 (3.25.2-1) ...
+Setting up libctk-3-common (3.25.2-1) ...
+Processing triggers for libglib2.0-0:amd64 (2.72.3-1) ...
+Setting up libctk-3-0:amd64 (3.25.2-1) ...
+Setting up gir1.2-ctk-3.0:amd64 (3.25.2-1) ...
+Setting up libctk-3-dev:amd64 (3.25.2-1) ...
+Processing triggers for libc-bin (2.33-8) ...
+Errors detected in dpkg 0
+Errors detected in the build 0
+Warnings detected in the logs 289
+cppcheck defects detected in the logs 73
+TOTAL warnings detected in the logs 362
