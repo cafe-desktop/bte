@@ -760,8 +760,8 @@ _bte_keymap_map(guint keyval,
                 if (entries[i].normal_length != -1) {
                         *normal_length = entries[i].normal_length;
                         assert(entries[i].normal_length < G_MAXINT);
-                        *normal = (char*)g_memdup(entries[i].normal,
-                                                  entries[i].normal_length);
+                        *normal = (char*)g_memdup2(entries[i].normal,
+                                                   entries[i].normal_length);
                 } else {
                         *normal_length = strlen(entries[i].normal);
                         *normal = g_strdup(entries[i].normal);
