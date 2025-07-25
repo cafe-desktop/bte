@@ -38,8 +38,6 @@ ctk3_max_allowed_version  = '3.20'
 fribidi_req_version       = '1.0.0'
 gio_req_version           = '2.52.0'
 glib_req_version          = '2.52.0'
-glib_min_req_version      = '2.52'
-glib_max_allowed_version  = '2.52'
 gnutls_req_version        = '3.2.7'
 icu_uc_req_version        = '4.8'
 pango_req_version         = '1.22.0'
@@ -119,11 +117,6 @@ config_h.set('WITH_A11Y', get_option('a11y'))
 config_h.set('WITH_FRIBIDI', get_option('fribidi'))
 config_h.set('WITH_GNUTLS', get_option('gnutls'))
 config_h.set('WITH_ICU', get_option('icu'))
-
-ver = glib_min_req_version.split('.')
-config_h.set('GLIB_VERSION_MIN_REQUIRED', '(G_ENCODE_VERSION(' + ver[0] + ',' + ver[1] + '))')
-ver = glib_max_allowed_version.split('.')
-config_h.set('GLIB_VERSION_MAX_ALLOWED', '(G_ENCODE_VERSION(' + ver[0] + ',' + ver[1] + '))')
 
 if get_option('ctk3')
   ctk3_version_cppflags = []
