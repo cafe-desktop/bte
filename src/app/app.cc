@@ -1079,10 +1079,8 @@ bteapp_terminal_style_updated(CtkWidget* widget)
         if (options.use_theme_colors) {
                 auto theme_fg = CdkRGBA{};
                 ctk_style_context_get_color(context, flags, &theme_fg);
-                G_GNUC_BEGIN_IGNORE_DEPRECATIONS;
                 auto theme_bg = CdkRGBA{};
                 ctk_style_context_get_background_color(context, flags, &theme_bg);
-                G_GNUC_END_IGNORE_DEPRECATIONS;
 
                 verbose_print("Theme colors: foreground is #%02X%02X%02X, background is #%02X%02X%02X\n",
                               dti(theme_fg.red), dti(theme_fg.green), dti(theme_fg.blue),
@@ -2098,9 +2096,7 @@ bteapp_window_constructed(GObject *object)
 
         /* Settings */
         if (options.no_double_buffer) {
-                G_GNUC_BEGIN_IGNORE_DEPRECATIONS;
                 ctk_widget_set_double_buffered(CTK_WIDGET(window->terminal), false);
-                G_GNUC_END_IGNORE_DEPRECATIONS;
         }
 
         if (options.encoding != nullptr) {
