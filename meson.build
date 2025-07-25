@@ -37,7 +37,7 @@ ctk3_max_allowed_version  = '3.20'
 
 fribidi_req_version       = '1.0.0'
 gio_req_version           = '2.52.0'
-glib_req_version          = '2.52.0'
+glib_req_version          = '2.67.3'
 gnutls_req_version        = '3.2.7'
 icu_uc_req_version        = '4.8'
 pango_req_version         = '1.22.0'
