@@ -1,0 +1,312 @@
+<html>
+<head>
+<title>bte (clang-tools 1:19.0-63) - scan-build results</title>
+<link type="text/css" rel="stylesheet" href="scanview.css"/>
+<script src="sorttable.js"></script>
+<script language='javascript' type="text/javascript">
+function SetDisplay(RowClass, DisplayVal)
+{
+  var Rows = document.getElementsByTagName("tr");
+  for ( var i = 0 ; i < Rows.length; ++i ) {
+    if (Rows[i].className == RowClass) {
+      Rows[i].style.display = DisplayVal;
+    }
+  }
+}
+
+function CopyCheckedStateToCheckButtons(SummaryCheckButton) {
+  var Inputs = document.getElementsByTagName("input");
+  for ( var i = 0 ; i < Inputs.length; ++i ) {
+    if (Inputs[i].type == "checkbox") {
+      if(Inputs[i] != SummaryCheckButton) {
+        Inputs[i].checked = SummaryCheckButton.checked;
+        Inputs[i].onclick();
+      }
+    }
+  }
+}
+
+function returnObjById( id ) {
+    if (document.getElementById)
+        var returnVar = document.getElementById(id);
+    else if (document.all)
+        var returnVar = document.all[id];
+    else if (document.layers)
+        var returnVar = document.layers[id];
+    return returnVar;
+}
+
+var NumUnchecked = 0;
+
+function ToggleDisplay(CheckButton, ClassName) {
+  if (CheckButton.checked) {
+    SetDisplay(ClassName, "");
+    if (--NumUnchecked == 0) {
+      returnObjById("AllBugsCheck").checked = true;
+    }
+  }
+  else {
+    SetDisplay(ClassName, "none");
+    NumUnchecked++;
+    returnObjById("AllBugsCheck").checked = false;
+  }
+}
+</script>
+<!-- SUMMARYENDHEAD -->
+</head>
+<body>
+<h1>bte (clang-tools 1:19.0-63) - scan-build results</h1>
+
+<table>
+<tr><th>User:</th><td>root@72812139ad89</td></tr>
+<tr><th>Working Directory:</th><td>/rootdir</td></tr>
+<tr><th>Command Line:</th><td>ninja -C _build</td></tr>
+<tr><th>Clang Version:</th><td>Debian clang version 19.1.7 (3+b1)
+</td></tr>
+<tr><th>Date:</th><td>Fri Jul 25 12:44:44 2025</td></tr>
+</table>
+<h2>Bug Summary</h2><table>
+<thead><tr><td>Bug Type</td><td>Quantity</td><td class="sorttable_nosort">Display?</td></tr></thead>
+<tr style="font-weight:bold"><td class="SUMM_DESC">All Bugs</td><td class="Q">65</td><td><center><input type="checkbox" id="AllBugsCheck" onClick="CopyCheckedStateToCheckButtons(this);" checked/></center></td></tr>
+<tr><th>C++ move semantics</th><th colspan=2></th></tr>
+<tr><td class="SUMM_DESC">Use-after-move</td><td class="Q">1</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_c++_move_semantics_use-after-move');" checked/></center></td></tr>
+<tr><th>Logic error</th><th colspan=2></th></tr>
+<tr><td class="SUMM_DESC">Assigned value is garbage or undefined</td><td class="Q">1</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_logic_error_assigned_value_is_garbage_or_undefined');" checked/></center></td></tr>
+<tr><td class="SUMM_DESC">Cast from non-struct type to struct type</td><td class="Q">2</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_logic_error_cast_from_non-struct_type_to_struct_type');" checked/></center></td></tr>
+<tr><td class="SUMM_DESC">Dereference of null pointer</td><td class="Q">4</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_logic_error_dereference_of_null_pointer');" checked/></center></td></tr>
+<tr><td class="SUMM_DESC">Division by zero</td><td class="Q">1</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_logic_error_division_by_zero');" checked/></center></td></tr>
+<tr><td class="SUMM_DESC">Out-of-bound access</td><td class="Q">2</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_logic_error_out-of-bound_access');" checked/></center></td></tr>
+<tr><td class="SUMM_DESC">Out-of-bound array access</td><td class="Q">1</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_logic_error_out-of-bound_array_access');" checked/></center></td></tr>
+<tr><td class="SUMM_DESC">Result of operation is garbage or undefined</td><td class="Q">5</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_logic_error_result_of_operation_is_garbage_or_undefined');" checked/></center></td></tr>
+<tr><td class="SUMM_DESC">Uninitialized argument value</td><td class="Q">3</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_logic_error_uninitialized_argument_value');" checked/></center></td></tr>
+<tr><th>Stream handling error</th><th colspan=2></th></tr>
+<tr><td class="SUMM_DESC">Invalid stream state</td><td class="Q">2</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_stream_handling_error_invalid_stream_state');" checked/></center></td></tr>
+<tr><td class="SUMM_DESC">Stream already in EOF</td><td class="Q">1</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_stream_handling_error_stream_already_in_eof');" checked/></center></td></tr>
+<tr><th>Unused code</th><th colspan=2></th></tr>
+<tr><td class="SUMM_DESC">Dead assignment</td><td class="Q">9</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_unused_code_dead_assignment');" checked/></center></td></tr>
+<tr><td class="SUMM_DESC">Dead increment</td><td class="Q">1</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_unused_code_dead_increment');" checked/></center></td></tr>
+<tr><td class="SUMM_DESC">Dead initialization</td><td class="Q">6</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_unused_code_dead_initialization');" checked/></center></td></tr>
+<tr><td class="SUMM_DESC">Unreachable code</td><td class="Q">26</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_unused_code_unreachable_code');" checked/></center></td></tr>
+</table>
+
+<h2>Filter Results by File</h2>
+<input
+  type="text"
+  id="file_input"
+  onkeyup="searchFiles()"
+  placeholder="Enter a path or filename"
+  title="Enter a path or filename">
+
+<h2>Reports</h2>
+
+<table id="reports_table" class="sortable" style="table-layout:automatic">
+<thead><tr>
+  <td>Bug Group</td>
+  <td class="sorttable_sorted">Bug Type<span id="sorttable_sortfwdind">&nbsp;&#x25BE;</span></td>
+  <td>File</td>
+  <td>Function/Method</td>
+  <td class="Q">Line</td>
+  <td class="Q">Path Length</td>
+  <td class="sorttable_nosort"></td>
+  <!-- REPORTBUGCOL -->
+</tr></thead>
+<tbody>
+<tr class="bt_logic_error_assigned_value_is_garbage_or_undefined"><td class="DESC">Logic error</td><td class="DESC">Assigned value is garbage or undefined</td><td>src/ringview.cc</td><td class="DESC">update</td><td class="Q">279</td><td class="Q">29</td><td><a href="report-1b0978.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-1b0978.html" -->
+</tr>
+<tr class="bt_logic_error_cast_from_non-struct_type_to_struct_type"><td class="DESC">Logic error</td><td class="DESC">Cast from non-struct type to struct type</td><td>src/missing.cc</td><td class="DESC">fdwalk</td><td class="Q">163</td><td class="Q">1</td><td><a href="report-ae48e6.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-ae48e6.html" -->
+</tr>
+<tr class="bt_logic_error_cast_from_non-struct_type_to_struct_type"><td class="DESC">Logic error</td><td class="DESC">Cast from non-struct type to struct type</td><td>src/bterowdata.cc</td><td class="DESC">_bte_cells_for_cell_array</td><td class="Q">55</td><td class="Q">1</td><td><a href="report-d6aa71.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-d6aa71.html" -->
+</tr>
+<tr class="bt_unused_code_dead_assignment"><td class="DESC">Unused code</td><td class="DESC">Dead assignment</td><td>src/drawing-cairo.cc</td><td class="DESC">draw_text_internal</td><td class="Q">356</td><td class="Q">1</td><td><a href="report-1496b2.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-1496b2.html" -->
+</tr>
+<tr class="bt_unused_code_dead_assignment"><td class="DESC">Unused code</td><td class="DESC">Dead assignment</td><td>src/bteaccess.cc</td><td class="DESC">bte_terminal_accessible_get_text_somewhere</td><td class="Q">1106</td><td class="Q">1</td><td><a href="report-25a1e5.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-25a1e5.html" -->
+</tr>
+<tr class="bt_unused_code_dead_assignment"><td class="DESC">Unused code</td><td class="DESC">Dead assignment</td><td>src/bte.cc</td><td class="DESC">widget_key_press</td><td class="Q">4717</td><td class="Q">1</td><td><a href="report-3e278e.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-3e278e.html" -->
+</tr>
+<tr class="bt_unused_code_dead_assignment"><td class="DESC">Unused code</td><td class="DESC">Dead assignment</td><td>src/parser-test.cc</td><td class="DESC">test_seq_string</td><td class="Q">281</td><td class="Q">1</td><td><a href="report-579290.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-579290.html" -->
+</tr>
+<tr class="bt_unused_code_dead_assignment"><td class="DESC">Unused code</td><td class="DESC">Dead assignment</td><td>src/bte.cc</td><td class="DESC">widget_key_press</td><td class="Q">4685</td><td class="Q">1</td><td><a href="report-6fdd47.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-6fdd47.html" -->
+</tr>
+<tr class="bt_unused_code_dead_assignment"><td class="DESC">Unused code</td><td class="DESC">Dead assignment</td><td>src/icu-converter.cc</td><td class="DESC">convert</td><td class="Q">121</td><td class="Q">1</td><td><a href="report-91b95a.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-91b95a.html" -->
+</tr>
+<tr class="bt_unused_code_dead_assignment"><td class="DESC">Unused code</td><td class="DESC">Dead assignment</td><td>src/mev.c</td><td class="DESC">main</td><td class="Q">383</td><td class="Q">1</td><td><a href="report-b1d067.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-b1d067.html" -->
+</tr>
+<tr class="bt_unused_code_dead_assignment"><td class="DESC">Unused code</td><td class="DESC">Dead assignment</td><td>src/bteseq.cc</td><td class="DESC">delete_character</td><td class="Q">916</td><td class="Q">1</td><td><a href="report-cfdf86.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-cfdf86.html" -->
+</tr>
+<tr class="bt_unused_code_dead_assignment"><td class="DESC">Unused code</td><td class="DESC">Dead assignment</td><td>src/parser-test.cc</td><td class="DESC">test_seq_string</td><td class="Q">268</td><td class="Q">1</td><td><a href="report-e408dc.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-e408dc.html" -->
+</tr>
+<tr class="bt_unused_code_dead_increment"><td class="DESC">Unused code</td><td class="DESC">Dead increment</td><td>src/bidi.cc</td><td class="DESC">implicit_paragraph</td><td class="Q">694</td><td class="Q">1</td><td><a href="report-734667.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-734667.html" -->
+</tr>
+<tr class="bt_unused_code_dead_initialization"><td class="DESC">Unused code</td><td class="DESC">Dead initialization</td><td>src/mev.c</td><td class="DESC">parse_legacy_mouse_mode</td><td class="Q">136</td><td class="Q">1</td><td><a href="report-0413d4.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-0413d4.html" -->
+</tr>
+<tr class="bt_unused_code_dead_initialization"><td class="DESC">Unused code</td><td class="DESC">Dead initialization</td><td>src/mev.c</td><td class="DESC">parse_legacy_mouse_mode</td><td class="Q">136</td><td class="Q">1</td><td><a href="report-1f7429.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-1f7429.html" -->
+</tr>
+<tr class="bt_unused_code_dead_initialization"><td class="DESC">Unused code</td><td class="DESC">Dead initialization</td><td>src/pty.cc</td><td class="DESC">child_setup</td><td class="Q">211</td><td class="Q">1</td><td><a href="report-56bf7f.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-56bf7f.html" -->
+</tr>
+<tr class="bt_unused_code_dead_initialization"><td class="DESC">Unused code</td><td class="DESC">Dead initialization</td><td>src/mev.c</td><td class="DESC">parse_legacy_mouse_mode</td><td class="Q">136</td><td class="Q">1</td><td><a href="report-6e48b5.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-6e48b5.html" -->
+</tr>
+<tr class="bt_unused_code_dead_initialization"><td class="DESC">Unused code</td><td class="DESC">Dead initialization</td><td>src/pty.cc</td><td class="DESC">child_setup</td><td class="Q">189</td><td class="Q">1</td><td><a href="report-9faf9b.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-9faf9b.html" -->
+</tr>
+<tr class="bt_unused_code_dead_initialization"><td class="DESC">Unused code</td><td class="DESC">Dead initialization</td><td>src/parser-test.cc</td><td class="DESC">test_seq_string</td><td class="Q">261</td><td class="Q">1</td><td><a href="report-f05d69.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-f05d69.html" -->
+</tr>
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/ring.cc</td><td class="DESC">get_hyperlink_at_position</td><td class="Q">685</td><td class="Q">15</td><td><a href="report-24ca63.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-24ca63.html" -->
+</tr>
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/reflect.c</td><td class="DESC">main</td><td class="Q">312</td><td class="Q">14</td><td><a href="report-87a543.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-87a543.html" -->
+</tr>
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/reflect.c</td><td class="DESC">update_contents</td><td class="Q">97</td><td class="Q">13</td><td><a href="report-977668.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-977668.html" -->
+</tr>
+<tr class="bt_logic_error_dereference_of_null_pointer"><td class="DESC">Logic error</td><td class="DESC">Dereference of null pointer</td><td>src/bidi.cc</td><td class="DESC">explicit_line_shape</td><td class="Q">244</td><td class="Q">32</td><td><a href="report-bb3991.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-bb3991.html" -->
+</tr>
+<tr class="bt_logic_error_division_by_zero"><td class="DESC">Logic error</td><td class="DESC">Division by zero</td><td>src/decoder-cat.cc</td><td class="DESC">print_benchmark</td><td class="Q">529</td><td class="Q">14</td><td><a href="report-122706.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-122706.html" -->
+</tr>
+<tr class="bt_stream_handling_error_invalid_stream_state"><td class="DESC">Stream handling error</td><td class="DESC">Invalid stream state</td><td>src/slowcat.c</td><td class="DESC">catfile</td><td class="Q">60</td><td class="Q">26</td><td><a href="report-0d9c4f.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-0d9c4f.html" -->
+</tr>
+<tr class="bt_stream_handling_error_invalid_stream_state"><td class="DESC">Stream handling error</td><td class="DESC">Invalid stream state</td><td>_build/tmp-introspect_0m7bvdn/Bte-2.91.c</td><td class="DESC">read_line</td><td class="Q">89</td><td class="Q">33</td><td><a href="report-5d4bc8.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-5d4bc8.html" -->
+</tr>
+<tr class="bt_logic_error_out-of-bound_access"><td class="DESC">Logic error</td><td class="DESC">Out-of-bound access</td><td>src/ringview.cc</td><td class="DESC">set_rows</td><td class="Q">154</td><td class="Q">16</td><td><a href="report-99cb9b.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-99cb9b.html" -->
+</tr>
+<tr class="bt_logic_error_out-of-bound_access"><td class="DESC">Logic error</td><td class="DESC">Out-of-bound access</td><td>src/parser-glue.hh</td><td class="DESC">assert_equal_full</td><td class="Q">754</td><td class="Q">21</td><td><a href="report-ada404.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-ada404.html" -->
+</tr>
+<tr class="bt_logic_error_out-of-bound_array_access"><td class="DESC">Logic error</td><td class="DESC">Out-of-bound array access</td><td>src/xticker.c</td><td class="DESC">main</td><td class="Q">115</td><td class="Q">23</td><td><a href="report-bc743b.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-bc743b.html" -->
+</tr>
+<tr class="bt_logic_error_result_of_operation_is_garbage_or_undefined"><td class="DESC">Logic error</td><td class="DESC">Result of operation is garbage or undefined</td><td>src/bteseq.cc</td><td class="DESC">XTERM_WM</td><td class="Q">8617</td><td class="Q">13</td><td><a href="report-264d0e.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-264d0e.html" -->
+</tr>
+<tr class="bt_logic_error_result_of_operation_is_garbage_or_undefined"><td class="DESC">Logic error</td><td class="DESC">Result of operation is garbage or undefined</td><td>src/color-triple.hh</td><td class="DESC">bte_color_triple_set_back</td><td class="Q">60</td><td class="Q">59</td><td><a href="report-6d2577.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-6d2577.html" -->
+</tr>
+<tr class="bt_logic_error_result_of_operation_is_garbage_or_undefined"><td class="DESC">Logic error</td><td class="DESC">Result of operation is garbage or undefined</td><td>src/bte.cc</td><td class="DESC">draw_cells_with_attributes</td><td class="Q">8623</td><td class="Q">48</td><td><a href="report-92fb3a.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-92fb3a.html" -->
+</tr>
+<tr class="bt_logic_error_result_of_operation_is_garbage_or_undefined"><td class="DESC">Logic error</td><td class="DESC">Result of operation is garbage or undefined</td><td>src/color-triple.hh</td><td class="DESC">bte_color_triple_set_fore</td><td class="Q">54</td><td class="Q">58</td><td><a href="report-d3dd87.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-d3dd87.html" -->
+</tr>
+<tr class="bt_logic_error_result_of_operation_is_garbage_or_undefined"><td class="DESC">Logic error</td><td class="DESC">Result of operation is garbage or undefined</td><td>src/bteseq.cc</td><td class="DESC">DECSTBM</td><td class="Q">4756</td><td class="Q">2</td><td><a href="report-fd9592.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-fd9592.html" -->
+</tr>
+<tr class="bt_stream_handling_error_stream_already_in_eof"><td class="DESC">Stream handling error</td><td class="DESC">Stream already in EOF</td><td>_build/tmp-introspect_0m7bvdn/Bte-2.91.c</td><td class="DESC">read_line</td><td class="Q">89</td><td class="Q">33</td><td><a href="report-9361af.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-9361af.html" -->
+</tr>
+<tr class="bt_logic_error_uninitialized_argument_value"><td class="DESC">Logic error</td><td class="DESC">Uninitialized argument value</td><td>src/ringview.cc</td><td class="DESC">update</td><td class="Q">245</td><td class="Q">31</td><td><a href="report-2e3a7f.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-2e3a7f.html" -->
+</tr>
+<tr class="bt_logic_error_uninitialized_argument_value"><td class="DESC">Logic error</td><td class="DESC">Uninitialized argument value</td><td>src/ringview.cc</td><td class="DESC">update</td><td class="Q">261</td><td class="Q">30</td><td><a href="report-729e99.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-729e99.html" -->
+</tr>
+<tr class="bt_logic_error_uninitialized_argument_value"><td class="DESC">Logic error</td><td class="DESC">Uninitialized argument value</td><td>src/bte.cc</td><td class="DESC">fudge_pango_colors</td><td class="Q">8389</td><td class="Q">62</td><td><a href="report-fa98f0.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-fa98f0.html" -->
+</tr>
+<tr class="bt_unused_code_unreachable_code"><td class="DESC">Unused code</td><td class="DESC">Unreachable code</td><td>src/reflect.c</td><td class="DESC">main</td><td class="Q">314</td><td class="Q">1</td><td><a href="report-0ae3cf.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-0ae3cf.html" -->
+</tr>
+<tr class="bt_unused_code_unreachable_code"><td class="DESC">Unused code</td><td class="DESC">Unreachable code</td><td>src/btectk.cc</td><td class="DESC">bte_terminal_set_colors</td><td class="Q">4401</td><td class="Q">1</td><td><a href="report-0b4b4f.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-0b4b4f.html" -->
+</tr>
+<tr class="bt_unused_code_unreachable_code"><td class="DESC">Unused code</td><td class="DESC">Unreachable code</td><td>src/icu-decoder.cc</td><td class="DESC">decode</td><td class="Q">108</td><td class="Q">1</td><td><a href="report-248ec0.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-248ec0.html" -->
+</tr>
+<tr class="bt_unused_code_unreachable_code"><td class="DESC">Unused code</td><td class="DESC">Unreachable code</td><td>src/btectk.cc</td><td class="DESC">bte_terminal_set_color_highlight_foreground</td><td class="Q">4337</td><td class="Q">1</td><td><a href="report-282226.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-282226.html" -->
+</tr>
+<tr class="bt_unused_code_unreachable_code"><td class="DESC">Unused code</td><td class="DESC">Unreachable code</td><td>src/btectk.cc</td><td class="DESC">bte_terminal_set_color_bold</td><td class="Q">4198</td><td class="Q">1</td><td><a href="report-3d81bd.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-3d81bd.html" -->
+</tr>
+<tr class="bt_unused_code_unreachable_code"><td class="DESC">Unused code</td><td class="DESC">Unreachable code</td><td>src/parser.cc</td><td class="DESC">parser_feed_to_state</td><td class="Q">1389</td><td class="Q">1</td><td><a href="report-3fe690.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-3fe690.html" -->
+</tr>
+<tr class="bt_unused_code_unreachable_code"><td class="DESC">Unused code</td><td class="DESC">Unreachable code</td><td>src/reaper.cc</td><td class="DESC">main</td><td class="Q">182</td><td class="Q">1</td><td><a href="report-4b44a6.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-4b44a6.html" -->
+</tr>
+<tr class="bt_unused_code_unreachable_code"><td class="DESC">Unused code</td><td class="DESC">Unreachable code</td><td>src/btectk.cc</td><td class="DESC">bte_terminal_set_property</td><td class="Q">852</td><td class="Q">1</td><td><a href="report-4fb1e8.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-4fb1e8.html" -->
+</tr>
+<tr class="bt_unused_code_unreachable_code"><td class="DESC">Unused code</td><td class="DESC">Unreachable code</td><td>src/btectk.cc</td><td class="DESC">bte_terminal_set_color_cursor_foreground</td><td class="Q">4256</td><td class="Q">1</td><td><a href="report-53283b.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-53283b.html" -->
+</tr>
+<tr class="bt_unused_code_unreachable_code"><td class="DESC">Unused code</td><td class="DESC">Unreachable code</td><td>src/bteseq.cc</td><td class="DESC">XTERM_WM</td><td class="Q">8617</td><td class="Q">1</td><td><a href="report-5a9d64.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-5a9d64.html" -->
+</tr>
+<tr class="bt_unused_code_unreachable_code"><td class="DESC">Unused code</td><td class="DESC">Unreachable code</td><td>src/btectk.cc</td><td class="DESC">bte_terminal_set_colors</td><td class="Q">4399</td><td class="Q">1</td><td><a href="report-5db386.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-5db386.html" -->
+</tr>
+<tr class="bt_unused_code_unreachable_code"><td class="DESC">Unused code</td><td class="DESC">Unreachable code</td><td>src/btectk.cc</td><td class="DESC">bte_terminal_set_colors</td><td class="Q">4392</td><td class="Q">1</td><td><a href="report-79e8f7.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-79e8f7.html" -->
+</tr>
+<tr class="bt_unused_code_unreachable_code"><td class="DESC">Unused code</td><td class="DESC">Unreachable code</td><td>src/reaper.cc</td><td class="DESC">main</td><td class="Q">189</td><td class="Q">1</td><td><a href="report-7c5221.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-7c5221.html" -->
+</tr>
+<tr class="bt_unused_code_unreachable_code"><td class="DESC">Unused code</td><td class="DESC">Unreachable code</td><td>src/bteseq.cc</td><td class="DESC">DECSTBM</td><td class="Q">4778</td><td class="Q">1</td><td><a href="report-81d9a6.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-81d9a6.html" -->
+</tr>
+<tr class="bt_unused_code_unreachable_code"><td class="DESC">Unused code</td><td class="DESC">Unreachable code</td><td>src/btectk.cc</td><td class="DESC">bte_terminal_set_colors</td><td class="Q">4388</td><td class="Q">1</td><td><a href="report-822884.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-822884.html" -->
+</tr>
+<tr class="bt_unused_code_unreachable_code"><td class="DESC">Unused code</td><td class="DESC">Unreachable code</td><td>src/reflect.c</td><td class="DESC">main</td><td class="Q">317</td><td class="Q">1</td><td><a href="report-85eb38.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-85eb38.html" -->
+</tr>
+<tr class="bt_unused_code_unreachable_code"><td class="DESC">Unused code</td><td class="DESC">Unreachable code</td><td>src/btectk.cc</td><td class="DESC">bte_terminal_init</td><td class="Q">580</td><td class="Q">1</td><td><a href="report-876efc.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-876efc.html" -->
+</tr>
+<tr class="bt_unused_code_unreachable_code"><td class="DESC">Unused code</td><td class="DESC">Unreachable code</td><td>src/widget.cc</td><td class="DESC">key_event_from_cdk</td><td class="Q">361</td><td class="Q">1</td><td><a href="report-891022.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-891022.html" -->
+</tr>
+<tr class="bt_unused_code_unreachable_code"><td class="DESC">Unused code</td><td class="DESC">Unreachable code</td><td>src/bteseq.cc</td><td class="DESC">DECSTBM</td><td class="Q">4782</td><td class="Q">1</td><td><a href="report-9bac5e.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-9bac5e.html" -->
+</tr>
+<tr class="bt_unused_code_unreachable_code"><td class="DESC">Unused code</td><td class="DESC">Unreachable code</td><td>src/btectk.cc</td><td class="DESC">bte_terminal_set_color_cursor</td><td class="Q">4226</td><td class="Q">1</td><td><a href="report-a280fd.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-a280fd.html" -->
+</tr>
+<tr class="bt_unused_code_unreachable_code"><td class="DESC">Unused code</td><td class="DESC">Unreachable code</td><td>src/btectk.cc</td><td class="DESC">bte_terminal_set_colors</td><td class="Q">4385</td><td class="Q">1</td><td><a href="report-ab606e.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-ab606e.html" -->
+</tr>
+<tr class="bt_unused_code_unreachable_code"><td class="DESC">Unused code</td><td class="DESC">Unreachable code</td><td>src/btectk.cc</td><td class="DESC">bte_terminal_set_color_highlight</td><td class="Q">4308</td><td class="Q">1</td><td><a href="report-adaf9b.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-adaf9b.html" -->
+</tr>
+<tr class="bt_unused_code_unreachable_code"><td class="DESC">Unused code</td><td class="DESC">Unreachable code</td><td>src/btectk.cc</td><td class="DESC">bte_terminal_set_colors</td><td class="Q">4398</td><td class="Q">1</td><td><a href="report-c8deaa.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-c8deaa.html" -->
+</tr>
+<tr class="bt_unused_code_unreachable_code"><td class="DESC">Unused code</td><td class="DESC">Unreachable code</td><td>src/bteseq.cc</td><td class="DESC">DECSTBM</td><td class="Q">4757</td><td class="Q">1</td><td><a href="report-ccc546.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-ccc546.html" -->
+</tr>
+<tr class="bt_unused_code_unreachable_code"><td class="DESC">Unused code</td><td class="DESC">Unreachable code</td><td>src/bteseq.cc</td><td class="DESC">SCORC</td><td class="Q">6881</td><td class="Q">1</td><td><a href="report-de9a90.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-de9a90.html" -->
+</tr>
+<tr class="bt_unused_code_unreachable_code"><td class="DESC">Unused code</td><td class="DESC">Unreachable code</td><td>_build/tmp-introspect_0m7bvdn/Bte-2.91.c</td><td class="DESC">value_to_string</td><td class="Q">239</td><td class="Q">1</td><td><a href="report-fb6164.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-fb6164.html" -->
+</tr>
+<tr class="bt_c++_move_semantics_use-after-move"><td class="DESC">C++ move semantics</td><td class="DESC">Use-after-move</td><td>src/refptr-test.cc</td><td class="DESC">test_glib_refptr</td><td class="Q">81</td><td class="Q">5</td><td><a href="report-31b40d.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-31b40d.html" -->
+</tr>
+</tbody>
+</table>
+
+</body></html>

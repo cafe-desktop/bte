@@ -1,0 +1,1841 @@
+Checking src/app/app.cc ...
+src/app/app.cc:1224:37: error: syntax error [syntaxError]
+        g_assert_cmpint(chrome_width, >=, 0);
+                                    ^
+Checking src/app/app.cc: BTE_DEBUG...
+1/47 files checked 6% done
+Checking src/bidi.cc ...
+Checking src/bidi.cc: BTE_COMPILATION;__BTE_BTE_H_INSIDE__;__EXCEPTIONS;__GXX_RTTI...
+src/attr.hh:122:40: error: syntax error [syntaxError]
+        g_assert_cmpuint(value << shift, <=, mask); /* assurance */
+                                       ^
+2/47 files checked 8% done
+Checking src/bte.cc ...
+Checking src/bte.cc: BTE_COMPILATION;__BTE_BTE_H_INSIDE__;__EXCEPTIONS;__GXX_RTTI...
+src/bteunistr.h:121:1: error: There is an unknown macro here somewhere. Configuration is required. If G_END_DECLS is a macro then please configure it. [unknownMacro]
+G_END_DECLS
+^
+3/47 files checked 32% done
+Checking src/bteaccess.cc ...
+Checking src/bteaccess.cc: BTE_COMPILATION;__BTE_BTE_H_INSIDE__;__EXCEPTIONS;__GXX_RTTI...
+src/bteaccess.h:54:1: error: There is an unknown macro here somewhere. Configuration is required. If G_END_DECLS is a macro then please configure it. [unknownMacro]
+G_END_DECLS
+^
+4/47 files checked 36% done
+Checking src/btectk.cc ...
+Checking src/btectk.cc: BTE_COMPILATION;__BTE_BTE_H_INSIDE__;__EXCEPTIONS;__GXX_RTTI...
+src/btectk.cc:138:1: error: syntax error: keyword 'try' is not allowed in global scope [syntaxError]
+try
+^
+Checking src/btectk.cc: BTE_COMPILATION;__EXCEPTIONS;__GXX_RTTI...
+5/47 files checked 47% done
+Checking src/btepty.cc ...
+Checking src/btepty.cc: BTE_COMPILATION...
+src/btepty.cc:134:1: error: syntax error: keyword 'try' is not allowed in global scope [syntaxError]
+try
+^
+Checking src/btepty.cc: BTE_COMPILATION;__BTE_BTE_H_INSIDE__...
+6/47 files checked 49% done
+Checking src/bteregex.cc ...
+src/bteregex.cc:92:1: error: syntax error: keyword 'try' is not allowed in global scope [syntaxError]
+try
+^
+Checking src/bteregex.cc: BTE_DEBUG...
+Checking src/bteregex.cc: __GNUC__;__clang__...
+7/47 files checked 50% done
+Checking src/bterowdata.cc ...
+Checking src/bterowdata.cc: BTE_DEBUG...
+Checking src/bterowdata.cc: BTE_DEBUG;__GNUC__...
+Checking src/bterowdata.cc: G_HAVE_GNUC_VARARGS=0;__GNUC__...
+Checking src/bterowdata.cc: __clang__...
+8/47 files checked 50% done
+Checking src/bteseq.cc ...
+Checking src/bteseq.cc: BTE_COMPILATION;__BTE_BTE_H_INSIDE__;__EXCEPTIONS;__GXX_RTTI...
+9/47 files checked 65% done
+Checking src/btespawn.cc ...
+src/btespawn.cc:51:15: style: C-style pointer casting [cstyleCast]
+  char *buf = (char *) vbuf;
+              ^
+src/btespawn.cc:109:20: style: C-style pointer casting [cstyleCast]
+  argv_buffer[0] = (char *) "/bin/sh";
+                   ^
+src/btespawn.cc:110:20: style: C-style pointer casting [cstyleCast]
+  argv_buffer[1] = (char *) file;
+                   ^
+Checking src/btespawn.cc: ENOTDIR...
+Checking src/btespawn.cc: ESTALE...
+10/47 files checked 66% done
+Checking src/btestream.cc ...
+src/btestream-file.h:400:55: error: syntax error [syntaxError]
+        g_assert_cmpuint (offset % BTE_SNAKE_BLOCKSIZE, ==, 0);
+                                                      ^
+Checking src/btestream.cc: BTESTREAM_MAIN...
+Checking src/btestream.cc: BTESTREAM_MAIN;WITH_GNUTLS...
+Checking src/btestream.cc: BTESTREAM_MAIN;__clang__...
+Checking src/btestream.cc: BTE_DEBUG...
+Checking src/btestream.cc: BTE_DEBUG;__GNUC__...
+Checking src/btestream.cc: FALLOC_FL_PUNCH_HOLE...
+Checking src/btestream.cc: G_HAVE_GNUC_VARARGS=0;__GNUC__...
+Checking src/btestream.cc: WITH_GNUTLS...
+11/47 files checked 66% done
+Checking src/btetypes.cc ...
+src/btetypes.hh:139:17: warning: Member variable 'coords::x' is not initialized in the constructor. [uninitMemberVar]
+                coords() = default;
+                ^
+src/btetypes.hh:139:17: warning: Member variable 'coords::y' is not initialized in the constructor. [uninitMemberVar]
+                coords() = default;
+                ^
+src/btetypes.hh:156:17: warning: Member variable 'extents::m_width' is not initialized in the constructor. [uninitMemberVar]
+                extents() = default;
+                ^
+src/btetypes.hh:156:17: warning: Member variable 'extents::m_height' is not initialized in the constructor. [uninitMemberVar]
+                extents() = default;
+                ^
+src/btetypes.hh:183:17: style: Class 'rgb' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+                rgb(PangoColor const& c) { *static_cast<PangoColor*>(this) = c; }
+                ^
+src/btetypes.hh:184:17: style: Class 'rgb' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+                rgb(CdkRGBA const* c);
+                ^
+src/btetypes.hh:185:17: style: Class 'rgb' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+                rgb(CdkRGBA const& c) : rgb(&c) { }
+                ^
+src/btetypes.cc:50:20: style: C-style pointer casting [cstyleCast]
+ char *spec_copy = (char *)spec;
+                   ^
+src/btetypes.cc:58:15: style: Variable 'ptr' can be declared as pointer to const [constVariablePointer]
+  char *cur, *ptr;
+              ^
+Checking src/btetypes.cc: BTE_DEBUG...
+Checking src/btetypes.cc: BTE_DEBUG;MAIN...
+src/btetypes.cc:169:33: error: syntax error [syntaxError]
+        g_assert_cmpint(p2.row(), ==, 256);
+                                ^
+Checking src/btetypes.cc: MAIN...
+12/47 files checked 67% done
+Checking src/bteunistr.cc ...
+src/bteunistr.cc:188:31: error: syntax error [syntaxError]
+        g_assert_cmpint(a->len, >=, 1);
+                              ^
+13/47 files checked 67% done
+Checking src/bteutils.cc ...
+Checking src/bteutils.cc: O_NOATIME...
+Checking src/bteutils.cc: __linux__...
+14/47 files checked 67% done
+Checking src/chunk.cc ...
+src/chunk.hh:59:9: warning: Member variable 'Chunk::dataminusone' is not initialized in the constructor. [uninitMemberVar]
+        Chunk() = default;
+        ^
+src/chunk.hh:59:9: warning: Member variable 'Chunk::data' is not initialized in the constructor. [uninitMemberVar]
+        Chunk() = default;
+        ^
+15/47 files checked 67% done
+Checking src/debug.cc ...
+Checking src/debug.cc: BTE_DEBUG...
+Checking src/debug.cc: BTE_DEBUG;__GNUC__...
+Checking src/debug.cc: G_HAVE_GNUC_VARARGS=0;__GNUC__...
+16/47 files checked 68% done
+Checking src/decoder-cat.cc ...
+src/debug.h:116:1: error: There is an unknown macro here somewhere. Configuration is required. If G_END_DECLS is a macro then please configure it. [unknownMacro]
+G_END_DECLS
+^
+Checking src/decoder-cat.cc: BTE_DEBUG...
+Checking src/decoder-cat.cc: BTE_DEBUG;__GNUC__...
+Checking src/decoder-cat.cc: G_HAVE_GNUC_VARARGS=0;__GNUC__...
+Checking src/decoder-cat.cc: WITH_ICU...
+17/47 files checked 69% done
+Checking src/drawing-cairo.cc ...
+Checking src/drawing-cairo.cc: BTE_DEBUG...
+Checking src/drawing-cairo.cc: BTE_DEBUG;__GNUC__...
+Checking src/drawing-cairo.cc: G_HAVE_GNUC_VARARGS=0;__GNUC__...
+Checking src/drawing-cairo.cc: WITH_FRIBIDI...
+Checking src/drawing-cairo.cc: __clang__...
+18/47 files checked 70% done
+Checking src/dumpkeys.c ...
+Checking src/dumpkeys.c: HAVE_SYS_SELECT_H...
+Checking src/dumpkeys.c: HAVE_SYS_TERMIOS_H...
+Checking src/dumpkeys.c: HAVE_SYS_TYPES_H...
+Checking src/dumpkeys.c: HAVE_TERMIOS_H...
+19/47 files checked 71% done
+Checking src/fonts-pangocairo.cc ...
+Checking src/fonts-pangocairo.cc: BTE_DEBUG...
+Checking src/fonts-pangocairo.cc: BTE_DEBUG;__GNUC__...
+Checking src/fonts-pangocairo.cc: G_HAVE_GNUC_VARARGS=0;__GNUC__...
+20/47 files checked 72% done
+Checking src/icu-converter.cc ...
+Checking src/icu-converter.cc: BTE_DEBUG...
+Checking src/icu-converter.cc: BTE_DEBUG;__GNUC__...
+Checking src/icu-converter.cc: G_HAVE_GNUC_VARARGS=0;__GNUC__...
+21/47 files checked 72% done
+Checking src/icu-decoder.cc ...
+src/icu-decoder.hh:37:9: warning: Member variable 'ICUDecoder::m_u32_buffer' is not initialized in the constructor. [uninitMemberVar]
+        ICUDecoder(converter_shared_type charset_converter,
+        ^
+src/icu-decoder.hh:37:9: warning: Member variable 'ICUDecoder::m_u16_buffer' is not initialized in the constructor. [uninitMemberVar]
+        ICUDecoder(converter_shared_type charset_converter,
+        ^
+22/47 files checked 72% done
+Checking src/icu-glue.cc ...
+23/47 files checked 73% done
+Checking src/keymap.cc ...
+src/keymap.cc:763:35: style: C-style pointer casting [cstyleCast]
+                        *normal = (char*)g_memdup2(entries[i].normal,
+                                  ^
+Checking src/keymap.cc: BTE_DEBUG...
+Checking src/keymap.cc: BTE_DEBUG;__GNUC__...
+Checking src/keymap.cc: G_HAVE_GNUC_VARARGS=0;__GNUC__...
+24/47 files checked 75% done
+Checking src/mev.c ...
+src/mev.c:192:19: style: Parameter 'data' can be declared as pointer to const [constParameterPointer]
+parse_esc(guint8 *data,
+                  ^
+Checking src/mev.c: HAVE_SYS_SELECT_H...
+Checking src/mev.c: HAVE_SYS_TERMIOS_H...
+Checking src/mev.c: HAVE_TERMIOS_H...
+25/47 files checked 75% done
+Checking src/minifont.cc ...
+Checking src/minifont.cc: BTE_DEBUG...
+26/47 files checked 78% done
+Checking src/missing.cc ...
+src/missing.cc:206:19: style: C-style pointer casting [cstyleCast]
+        char *p = (char *) s;
+                  ^
+Checking src/missing.cc: HAVE_SYS_RESOURCE_H...
+Checking src/missing.cc: HAVE_SYS_RESOURCE_H;__GLIBC__...
+Checking src/missing.cc: HAVE_SYS_RESOURCE_H;__linux__...
+src/missing.cc:163:21: style: C-style pointer casting [cstyleCast]
+              de = (struct linux_dirent64 *)(buf + pos);
+                    ^
+src/missing.cc:157:30: style: Variable 'de' can be declared as pointer to const [constVariablePointer]
+      struct linux_dirent64 *de;
+                             ^
+Checking src/missing.cc: __APPLE__;__FreeBSD__;__OpenBSD__...
+Checking src/missing.cc: __linux__...
+27/47 files checked 78% done
+Checking src/modes-test.cc ...
+src/modes-test.cc:47:42: error: syntax error [syntaxError]
+        g_assert_cmpuint(copy.get_modes(), ==, modes.get_modes());
+                                         ^
+Checking src/modes-test.cc: MODE;MODE_FIXED...
+28/47 files checked 79% done
+Checking src/parser-cat.cc ...
+Checking src/parser-cat.cc: BTE_DEBUG...
+Checking src/parser-cat.cc: BTE_DEBUG;__GNUC__...
+Checking src/parser-cat.cc: G_HAVE_GNUC_VARARGS=0;__GNUC__...
+29/47 files checked 81% done
+Checking src/parser-test.cc ...
+src/parser-glue.hh:740:44: error: syntax error [syntaxError]
+                g_assert_cmpuint(seq.type(), ==, m_seq.type);
+                                           ^
+Checking src/parser-test.cc: PARSER_INCLUDE_NOP...
+Checking src/parser-test.cc: _BTE_NGR;_BTE_SGR...
+30/47 files checked 84% done
+Checking src/parser.cc ...
+src/parser-string.hh:48:20: style: C-style pointer casting [cstyleCast]
+        str->buf = (uint32_t*)g_malloc0_n(str->capacity, sizeof(uint32_t));
+                   ^
+src/parser-string.hh:79:20: style: C-style pointer casting [cstyleCast]
+        str->buf = (uint32_t*)g_realloc_n(str->buf, str->capacity, sizeof(uint32_t));
+                   ^
+src/parser.cc:536:26: style: Parameter 'parser' can be declared as pointer to const [constParameterPointer]
+parser_nop(bte_parser_t* parser,
+                         ^
+src/parser.cc:624:28: style: Parameter 'parser' can be declared as pointer to const. However it seems that 'parser_clear' is a callback function, if 'parser' is declared with const you might also need to cast function pointer(s). [constParameterCallback]
+parser_clear(bte_parser_t* parser,
+                           ^
+src/parser.cc:1430:53: note: You might need to cast the function pointer here
+                                         STATE_SCI, ACTION_CLEAR);
+                                                    ^
+src/parser.cc:624:28: note: Parameter 'parser' can be declared as pointer to const
+parser_clear(bte_parser_t* parser,
+                           ^
+src/parser-string.hh:109:60: style: Parameter 'str' can be declared as pointer to const [constParameterPointer]
+static inline void bte_seq_string_finish(bte_seq_string_t* str)
+                                                           ^
+Checking src/parser.cc: PARSER_EXTRA_CLEAN...
+src/parser.cc:661:53: error: syntax error [syntaxError]
+                g_assert_cmpuint(parser->seq.args[n], ==, BTE_SEQ_ARG_INIT_DEFAULT);
+                                                    ^
+Checking src/parser.cc: PARSER_INCLUDE_NOP...
+Checking src/parser.cc: _BTE_CMD;_BTE_NOP...
+Checking src/parser.cc: _BTE_NGR;_BTE_SGR...
+31/47 files checked 87% done
+Checking src/pty.cc ...
+Checking src/pty.cc: BTE_COMPILATION...
+src/bte/bteenums.h:199:1: error: There is an unknown macro here somewhere. Configuration is required. If G_END_DECLS is a macro then please configure it. [unknownMacro]
+G_END_DECLS
+^
+Checking src/pty.cc: BTE_COMPILATION;__BTE_BTE_H_INSIDE__...
+32/47 files checked 88% done
+Checking src/reaper.cc ...
+src/reaper.cc:42:1: error: There is an unknown macro here somewhere. Configuration is required. If G_DEFINE_TYPE is a macro then please configure it. [unknownMacro]
+G_DEFINE_TYPE(BteReaper, bte_reaper, G_TYPE_OBJECT)
+^
+Checking src/reaper.cc: BTE_DEBUG...
+Checking src/reaper.cc: BTE_DEBUG;__GNUC__...
+Checking src/reaper.cc: G_HAVE_GNUC_VARARGS=0;__GNUC__...
+Checking src/reaper.cc: MAIN...
+33/47 files checked 89% done
+Checking src/reflect.c ...
+src/reflect.c:217:27: style: Parameter 'terminal' can be declared as pointer to const [constParameterPointer]
+terminal_shell(CtkWidget *terminal)
+                          ^
+src/reflect.c:230:32: style: Parameter 'terminal' can be declared as pointer to const [constParameterPointer]
+terminal_adjustment(CtkWidget *terminal)
+                               ^
+Checking src/reflect.c: BTE_DEBUG...
+Checking src/reflect.c: USE_BTE...
+Checking src/reflect.c: USE_TEXT_VIEW...
+src/reflect.c:44:37: style: Parameter 'widget' can be declared as pointer to const [constParameterPointer]
+terminal_shell_text_view(CtkWidget *widget)
+                                    ^
+34/47 files checked 89% done
+Checking src/refptr-test.cc ...
+src/refptr-test.cc:37:1: error: There is an unknown macro here somewhere. Configuration is required. If G_DEFINE_TYPE is a macro then please configure it. [unknownMacro]
+G_DEFINE_TYPE(TestObject, test_object, G_TYPE_OBJECT)
+^
+Checking src/refptr-test.cc: BTE_DEBUG...
+35/47 files checked 90% done
+Checking src/regex.cc ...
+Checking src/regex.cc: BTE_COMPILATION...
+src/bte/bteregex.h:79:1: error: There is an unknown macro here somewhere. Configuration is required. If G_END_DECLS is a macro then please configure it. [unknownMacro]
+G_END_DECLS
+^
+Checking src/regex.cc: BTE_COMPILATION;__BTE_BTE_H_INSIDE__...
+36/47 files checked 90% done
+Checking src/ring.cc ...
+Checking src/ring.cc: BTE_DEBUG...
+Checking src/ring.cc: BTE_DEBUG;__GNUC__...
+Checking src/ring.cc: G_HAVE_GNUC_VARARGS=0;__GNUC__...
+Checking src/ring.cc: __clang__...
+37/47 files checked 93% done
+Checking src/ringview.cc ...
+Checking src/ringview.cc: BTE_COMPILATION;__BTE_BTE_H_INSIDE__;__EXCEPTIONS;__GXX_RTTI...
+38/47 files checked 94% done
+Checking src/slowcat.c ...
+39/47 files checked 94% done
+Checking src/spawn.cc ...
+Checking src/spawn.cc: BTE_COMPILATION...
+src/bte/btepty.h:136:1: error: There is an unknown macro here somewhere. Configuration is required. If G_END_DECLS is a macro then please configure it. [unknownMacro]
+G_END_DECLS
+^
+Checking src/spawn.cc: BTE_COMPILATION;__BTE_BTE_H_INSIDE__...
+40/47 files checked 96% done
+Checking src/systemd.cc ...
+src/glib-glue.hh:89:9: error: There is an unknown macro here somewhere. Configuration is required. If G_GNUC_PRINTF is a macro then please configure it. [unknownMacro]
+        G_GNUC_PRINTF(4, 5)
+        ^
+Checking src/systemd.cc: BTE_DEBUG...
+41/47 files checked 96% done
+Checking src/tabstops-test.cc ...
+src/tabstops.hh:142:50: error: syntax error [syntaxError]
+                g_assert_cmpuint(new_capacity % 2, ==, 0);
+                                                 ^
+42/47 files checked 97% done
+Checking src/urlencode.cc ...
+src/urlencode.cc:44:20: style: Redundant initialization for 'ch'. The initialized value is overwritten before it is read. [redundantInitialization]
+        while ((ch = *pwd++ & 0xff)) {
+                   ^
+src/urlencode.cc:43:17: note: ch is initialized
+        auto ch = int{};
+                ^
+src/urlencode.cc:44:20: note: ch is overwritten
+        while ((ch = *pwd++ & 0xff)) {
+                   ^
+src/urlencode.cc:37:14: style: Variable 'pwd' can be declared as pointer to const [constVariablePointer]
+        auto pwd = getenv("PWD");
+             ^
+43/47 files checked 97% done
+Checking src/utf8-test.cc ...
+src/utf8-test.cc:46:38: error: syntax error [syntaxError]
+                g_assert_cmpint(state, ==, UTF8Decoder::ACCEPT);
+                                     ^
+44/47 files checked 98% done
+Checking src/utf8.cc ...
+45/47 files checked 98% done
+Checking src/widget.cc ...
+Checking src/widget.cc: BTE_COMPILATION;__BTE_BTE_H_INSIDE__;__EXCEPTIONS;__GXX_RTTI...
+Checking src/widget.cc: BTE_COMPILATION;__EXCEPTIONS;__GXX_RTTI...
+46/47 files checked 99% done
+Checking src/xticker.c ...
+47/47 files checked 100% done
+nofile:0:0: information: Active checkers: There was critical errors (use --checkers-report=<filename> to see details) [checkersReport]
+
+scan-build: Using '/usr/lib/llvm-19/bin/clang' for static analysis
+The Meson build system
+Version: 1.7.0
+Source dir: /rootdir
+Build dir: /rootdir/_build
+Build type: native build
+Project name: bte
+Project version: 0.65.0
+C compiler for the host machine: /usr/share/clang/scan-build-19/bin/../libexec/ccc-analyzer (gcc 14.2.0 "gcc (Debian 14.2.0-19) 14.2.0")
+C linker for the host machine: /usr/share/clang/scan-build-19/bin/../libexec/ccc-analyzer ld.bfd 2.44
+C++ compiler for the host machine: /usr/share/clang/scan-build-19/bin/../libexec/c++-analyzer (gcc 14.2.0 "g++ (Debian 14.2.0-19) 14.2.0")
+C++ linker for the host machine: /usr/share/clang/scan-build-19/bin/../libexec/c++-analyzer ld.bfd 2.44
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Has header "locale.h" : YES 
+Has header "pty.h" : YES 
+Has header "stropts.h" : NO 
+Has header "sys/resource.h" : YES 
+Has header "sys/select.h" : YES 
+Has header "sys/syslimits.h" : NO 
+Has header "sys/termios.h" : YES 
+Has header "sys/types.h" : YES 
+Has header "sys/wait.h" : YES 
+Has header "termios.h" : YES 
+Has header "util.h" : NO 
+Has header "wchar.h" : YES 
+Header "sys/ioctl.h" has symbol "TIOCGWINSZ" : YES 
+Checking for function "fork" : YES 
+Checking for function "grantpt" : YES 
+Checking for function "posix_openpt" : YES 
+Checking for function "ptsname" : YES 
+Checking for function "tcgetattr" : YES 
+Checking for function "unlockpt" : YES 
+Checking for function "explicit_bzero" : YES 
+Checking for function "fdwalk" : NO 
+Checking for function "pread" : YES 
+Checking for function "pwrite" : YES 
+Checking for function "strchrnul" : YES 
+Library m found: YES
+Checking for function "ceil" with dependency -lm: YES 
+Checking for function "floor" with dependency -lm: YES 
+Checking for function "round" with dependency -lm: YES 
+Compiler for C supports arguments -Wall: YES 
+Compiler for C supports arguments -Wextra: YES 
+Compiler for C supports arguments -Wcast-align: YES 
+Compiler for C supports arguments -Wcast-function-type: YES 
+Compiler for C supports arguments -Wclobbered: YES 
+Compiler for C supports arguments -Wempty-body: YES 
+Compiler for C supports arguments -Wendif-labels: YES 
+Compiler for C supports arguments -Werror=init-self: YES 
+Compiler for C supports arguments -Werror=missing-include-dirs: YES 
+Compiler for C supports arguments -Werror=pointer-arith: YES 
+Compiler for C supports arguments -Wfloat-equal: YES 
+Compiler for C supports arguments -Wignored-qualifiers: YES 
+Compiler for C supports arguments -Winvalid-pch: YES 
+Compiler for C supports arguments -Wlogical-op: YES 
+Compiler for C supports arguments -Wmisleading-indentation: YES 
+Compiler for C supports arguments -Wmissing-declarations: YES 
+Compiler for C supports arguments -Wmissing-field-initializers: YES 
+Compiler for C supports arguments -Wmissing-format-attribute: YES 
+Compiler for C supports arguments -Wmissing-include-dirs: YES 
+Compiler for C supports arguments -Wmissing-noreturn: YES 
+Compiler for C supports arguments -Wno-address-of-packed-member: YES 
+Compiler for C supports arguments -Wno-missing-field-initializers: YES 
+Compiler for C supports arguments -Wno-packed: YES 
+Compiler for C supports arguments -Wno-switch-enum: YES 
+Compiler for C supports arguments -Wno-unused-parameter: YES 
+Compiler for C supports arguments -Wshadow: YES 
+Compiler for C supports arguments -Wshift-negative-value: YES 
+Compiler for C supports arguments -Wsign-compare: YES 
+Compiler for C supports arguments -Wstrict-aliasing=2: YES 
+Compiler for C supports arguments -Wtype-limits: YES 
+Compiler for C supports arguments -Wundef: YES 
+Compiler for C supports arguments -Wuninitialized: YES 
+Compiler for C supports arguments -Wuninitialized: YES (cached)
+Compiler for C supports arguments -Wunsafe-loop-optimizations: YES 
+Compiler for C supports arguments -Wunused: YES 
+Compiler for C supports arguments -Wunused-but-set-parameter: YES 
+Compiler for C supports arguments -Wunused-but-set-variable: YES 
+Compiler for C supports arguments -Wunused-function: YES 
+Compiler for C supports arguments -Wunused-label: YES 
+Compiler for C supports arguments -Wunused-local-typedefs: YES 
+Compiler for C supports arguments -Wunused-value: YES 
+Compiler for C supports arguments -Wunused-variable: YES 
+Compiler for C supports arguments -Wvla: YES 
+Compiler for C supports arguments -Wwrite-strings: YES 
+Compiler for C supports arguments -fdiagnostics-show-option: YES 
+Compiler for C supports arguments -fno-common: YES 
+Compiler for C supports arguments -fno-semantic-interposition: YES 
+Compiler for C supports arguments -fstack-protector: YES 
+Compiler for C supports arguments -fstack-protector-strong: YES 
+Compiler for C supports arguments -fno-strict-aliasing: YES 
+Compiler for C supports arguments -Waggregate-return: YES 
+Compiler for C supports arguments -Werror=implicit-function-declaration: YES 
+Compiler for C supports arguments -Werror=missing-prototypes: YES 
+Compiler for C supports arguments -Wimplicit: YES 
+Compiler for C supports arguments -Wimplicit-fallthrough=3: YES 
+Compiler for C supports arguments -Wmissing-parameter-type: YES 
+Compiler for C supports arguments -Wnested-externs: YES 
+Compiler for C supports arguments -Wold-style-declaration: YES 
+Compiler for C supports arguments -Wold-style-definition: YES 
+Compiler for C supports arguments -Woverride-init: YES 
+Compiler for C supports arguments -Wsign-compare: YES (cached)
+Compiler for C supports arguments -Wstrict-prototypes: YES 
+Compiler for C++ supports arguments -Wall: YES 
+Compiler for C++ supports arguments -Wextra: YES 
+Compiler for C++ supports arguments -Wcast-align: YES 
+Compiler for C++ supports arguments -Wcast-function-type: YES 
+Compiler for C++ supports arguments -Wclobbered: YES 
+Compiler for C++ supports arguments -Wempty-body: YES 
+Compiler for C++ supports arguments -Wendif-labels: YES 
+Compiler for C++ supports arguments -Werror=init-self: YES 
+Compiler for C++ supports arguments -Werror=missing-include-dirs: YES 
+Compiler for C++ supports arguments -Werror=pointer-arith: YES 
+Compiler for C++ supports arguments -Wfloat-equal: YES 
+Compiler for C++ supports arguments -Wignored-qualifiers: YES 
+Compiler for C++ supports arguments -Winvalid-pch: YES 
+Compiler for C++ supports arguments -Wlogical-op: YES 
+Compiler for C++ supports arguments -Wmisleading-indentation: YES 
+Compiler for C++ supports arguments -Wmissing-declarations: YES 
+Compiler for C++ supports arguments -Wmissing-field-initializers: YES 
+Compiler for C++ supports arguments -Wmissing-format-attribute: YES 
+Compiler for C++ supports arguments -Wmissing-include-dirs: YES 
+Compiler for C++ supports arguments -Wmissing-noreturn: YES 
+Compiler for C++ supports arguments -Wno-address-of-packed-member: YES 
+Compiler for C++ supports arguments -Wno-missing-field-initializers: YES 
+Compiler for C++ supports arguments -Wno-packed: YES 
+Compiler for C++ supports arguments -Wno-switch-enum: YES 
+Compiler for C++ supports arguments -Wno-unused-parameter: YES 
+Compiler for C++ supports arguments -Wshadow: YES 
+Compiler for C++ supports arguments -Wshift-negative-value: YES 
+Compiler for C++ supports arguments -Wsign-compare: YES 
+Compiler for C++ supports arguments -Wstrict-aliasing=2: YES 
+Compiler for C++ supports arguments -Wtype-limits: YES 
+Compiler for C++ supports arguments -Wundef: YES 
+Compiler for C++ supports arguments -Wuninitialized: YES 
+Compiler for C++ supports arguments -Wuninitialized: YES (cached)
+Compiler for C++ supports arguments -Wunsafe-loop-optimizations: YES 
+Compiler for C++ supports arguments -Wunused: YES 
+Compiler for C++ supports arguments -Wunused-but-set-parameter: YES 
+Compiler for C++ supports arguments -Wunused-but-set-variable: YES 
+Compiler for C++ supports arguments -Wunused-function: YES 
+Compiler for C++ supports arguments -Wunused-label: YES 
+Compiler for C++ supports arguments -Wunused-local-typedefs: YES 
+Compiler for C++ supports arguments -Wunused-value: YES 
+Compiler for C++ supports arguments -Wunused-variable: YES 
+Compiler for C++ supports arguments -Wvla: YES 
+Compiler for C++ supports arguments -Wwrite-strings: YES 
+Compiler for C++ supports arguments -fdiagnostics-show-option: YES 
+Compiler for C++ supports arguments -fno-common: YES 
+Compiler for C++ supports arguments -fno-semantic-interposition: YES 
+Compiler for C++ supports arguments -fstack-protector: YES 
+Compiler for C++ supports arguments -fstack-protector-strong: YES 
+Compiler for C++ supports arguments -fno-strict-aliasing: YES 
+Compiler for C++ supports arguments -Wimplicit-fallthrough=5: YES 
+Compiler for C++ supports arguments -Wnon-virtual-dtor: YES 
+Compiler for C++ supports arguments -Wstrict-null-sentinel: YES 
+Compiler for C++ supports arguments -fvisibility-inlines-hidden: YES 
+Compiler for C++ supports arguments -fvisibility=hidden: YES 
+Compiler for C++ supports arguments -fvisibility-inlines-hidden: YES (cached)
+Compiler for C++ supports arguments -fvisibility=hidden: YES (cached)
+Compiler for C supports arguments -Werror=format=2 -Werror=format-nonliteral -Werror=format-security: YES 
+Compiler for C++ supports arguments -Werror=format=2 -Werror=format-nonliteral -Werror=format-security: YES 
+meson.build:363: WARNING: Consider using the built-in warning_level option instead of using "-Wall".
+meson.build:363: WARNING: Consider using the built-in warning_level option instead of using "-Wextra".
+meson.build:364: WARNING: Consider using the built-in warning_level option instead of using "-Wall".
+meson.build:364: WARNING: Consider using the built-in warning_level option instead of using "-Wextra".
+Compiler for C supports link arguments -Wl,-Bsymbolic: YES 
+Compiler for C++ supports link arguments -Wl,-Bsymbolic: YES 
+Compiler for C supports link arguments -Wl,-Bsymbolic-functions: YES 
+Compiler for C++ supports link arguments -Wl,-Bsymbolic-functions: YES 
+Found pkg-config: YES (/usr/bin/pkg-config) 1.8.1
+Run-time dependency gio-2.0 found: YES 2.84.3
+Run-time dependency glib-2.0 found: YES 2.84.3
+Run-time dependency gobject-2.0 found: YES 2.84.3
+Run-time dependency pango found: YES 1.56.3
+Run-time dependency libpcre2-8 found: YES 10.45
+Run-time dependency threads found: YES
+Run-time dependency zlib found: YES 1.3.1
+Run-time dependency fribidi found: YES 1.0.16
+Run-time dependency gnutls found: YES 3.8.9
+Run-time dependency ctk+-3.0 found: YES 3.25.6
+Run-time dependency icu-uc found: YES 76.1
+Run-time dependency libsystemd found: YES 257
+Configuring config.h using configuration
+Dependency glib-2.0 found: YES 2.84.3 (cached)
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Dependency glib-2.0 found: YES 2.84.3 (cached)
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Configuring bteversion.h using configuration
+Program box_drawing_generate.sh found: YES (/rootdir/src/box_drawing_generate.sh)
+Dependency gio-2.0 found: YES 2.84.3 (cached)
+Program /usr/bin/glib-compile-resources found: YES (/usr/bin/glib-compile-resources)
+Dependency glib-2.0 found: YES 2.84.3 (cached)
+Program /usr/bin/glib-genmarshal found: YES (/usr/bin/glib-genmarshal)
+Configuring bte.csh using configuration
+Configuring bte.sh using configuration
+Dependency gio-2.0 found: YES 2.84.3 (cached)
+Program /usr/bin/glib-compile-resources found: YES (/usr/bin/glib-compile-resources)
+Run-time dependency gobject-introspection-1.0 found: YES 1.84.0
+Dependency gobject-introspection-1.0 found: YES 1.84.0 (cached)
+Dependency gobject-introspection-1.0 found: YES 1.84.0 (cached)
+Program /usr/bin/x86_64-linux-gnu-g-ir-scanner found: YES (/usr/bin/x86_64-linux-gnu-g-ir-scanner)
+Dependency gobject-introspection-1.0 found: YES 1.84.0 (cached)
+Program /usr/bin/x86_64-linux-gnu-g-ir-compiler found: YES (/usr/bin/x86_64-linux-gnu-g-ir-compiler)
+Program msgfmt found: YES (/usr/bin/msgfmt)
+Program msginit found: YES (/usr/bin/msginit)
+Program msgmerge found: YES (/usr/bin/msgmerge)
+Program xgettext found: YES (/usr/bin/xgettext)
+Configuring Makefile using configuration
+Configuring .gitignore with command
+Message: 
+Configuration for BTE:
+
+  Version:      0.65.0
+
+  C compiler:   gcc (version 14.2.0)
+  C++ compiler: gcc (version 14.2.0)
+
+  Coverage:     false
+  Debug:        false
+
+  A11y:         true
+  Docs:         false
+  FRIBIDI:      true
+  GNUTLS:       true
+  CTK+ 3.0:     true
+  ICU:          true
+  GIR:          true
+  systemd:      true
+
+  Prefix:       /usr/local
+
+Build targets in project: 130
+
+Found ninja-1.12.1 at /usr/bin/ninja
+WARNING: Running the setup command as `meson [options]` instead of `meson setup [options]` is ambiguous and deprecated.
+scan-build: Analysis run complete.
+scan-build: Removing directory '/tmp/scan-build-2025-07-25-124426-9135-1' because it contains no reports.
+scan-build: No bugs found.
+scan-build: Using '/usr/lib/llvm-19/bin/clang' for static analysis
+ninja: Entering directory `_build'
+[0/195] Generating GObject enum file src/bte/btetypebuiltins.h (wrapped by meson to capture output)[0/195] Generating glib marshaller header src/marshal_h[0/195] Generating src/box-drawing with a custom command (wrapped by meson to capture output)[0/195] Generating src/bteresources_c with a custom command[0/195] Generating src/bteresources_h with a custom command[0/195] Generating src/app/resources.cc_c with a custom command[1/195] Generating src/bteresources_c with a custom command[1/195] Generating src/app/resources.cc_h with a custom command[2/195] Generating src/bteresources_h with a custom command[2/195] Compiling C++ object src/decoder-cat.p/utf8.cc.o[3/195] Generating src/app/resources.cc_h with a custom command[3/195] Compiling C++ object src/decoder-cat.p/debug.cc.o[4/195] Generating src/app/resources.cc_c with a custom command[4/195] Compiling C++ object src/decoder-cat.p/decoder-cat.cc.o[5/195] Generating glib marshaller header src/marshal_h[5/195] Generating glib marshaller source src/marshal_c[6/195] Generating glib marshaller source src/marshal_c[6/195] Compiling C++ object src/decoder-cat.p/icu-converter.cc.o[7/195] Generating GObject enum file src/bte/btetypebuiltins.h (wrapped by meson to capture output)[7/195] Generating GObject enum file src/bte/btetypebuiltins.cc (wrapped by meson to capture output)[8/195] Compiling C++ object src/decoder-cat.p/utf8.cc.o[8/195] Compiling C++ object src/decoder-cat.p/icu-decoder.cc.o[9/195] Generating src/box-drawing with a custom command (wrapped by meson to capture output)[9/195] Compiling C object src/libbte-2.91.so.0.6500.0.p/meson-generated_.._bteresources.c.o[10/195] Generating GObject enum file src/bte/btetypebuiltins.cc (wrapped by meson to capture output)[10/195] Compiling C object src/libbte-2.91.so.0.6500.0.p/meson-generated_.._marshal.c.o[11/195] Compiling C++ object src/decoder-cat.p/debug.cc.o[11/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/meson-generated_.._bte_btetypebuiltins.cc.o[12/195] Compiling C object src/libbte-2.91.so.0.6500.0.p/meson-generated_.._marshal.c.o
+src/marshal.c:32:9: warning: macro "g_marshal_value_peek_char" is not used [-Wunused-macros]
+   32 | #define g_marshal_value_peek_char(v)     (v)->data[0].v_int
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+src/marshal.c:47:9: warning: macro "g_marshal_value_peek_pointer" is not used [-Wunused-macros]
+   47 | #define g_marshal_value_peek_pointer(v)  (v)->data[0].v_pointer
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/marshal.c:49:9: warning: macro "g_marshal_value_peek_variant" is not used [-Wunused-macros]
+   49 | #define g_marshal_value_peek_variant(v)  (v)->data[0].v_pointer
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/marshal.c:39:9: warning: macro "g_marshal_value_peek_uint64" is not used [-Wunused-macros]
+   39 | #define g_marshal_value_peek_uint64(v)   (v)->data[0].v_uint64
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/marshal.c:37:9: warning: macro "g_marshal_value_peek_ulong" is not used [-Wunused-macros]
+   37 | #define g_marshal_value_peek_ulong(v)    (v)->data[0].v_ulong
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~
+src/marshal.c:38:9: warning: macro "g_marshal_value_peek_int64" is not used [-Wunused-macros]
+   38 | #define g_marshal_value_peek_int64(v)    (v)->data[0].v_int64
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~
+src/marshal.c:40:9: warning: macro "g_marshal_value_peek_enum" is not used [-Wunused-macros]
+   40 | #define g_marshal_value_peek_enum(v)     (v)->data[0].v_long
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+src/marshal.c:31:9: warning: macro "g_marshal_value_peek_boolean" is not used [-Wunused-macros]
+   31 | #define g_marshal_value_peek_boolean(v)  (v)->data[0].v_int
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/marshal.c:34:9: warning: macro "g_marshal_value_peek_int" is not used [-Wunused-macros]
+   34 | #define g_marshal_value_peek_int(v)      (v)->data[0].v_int
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+src/marshal.c:33:9: warning: macro "g_marshal_value_peek_uchar" is not used [-Wunused-macros]
+   33 | #define g_marshal_value_peek_uchar(v)    (v)->data[0].v_uint
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~
+src/marshal.c:43:9: warning: macro "g_marshal_value_peek_double" is not used [-Wunused-macros]
+   43 | #define g_marshal_value_peek_double(v)   (v)->data[0].v_double
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/marshal.c:36:9: warning: macro "g_marshal_value_peek_long" is not used [-Wunused-macros]
+   36 | #define g_marshal_value_peek_long(v)     (v)->data[0].v_long
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+src/marshal.c:48:9: warning: macro "g_marshal_value_peek_object" is not used [-Wunused-macros]
+   48 | #define g_marshal_value_peek_object(v)   (v)->data[0].v_pointer
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/marshal.c:42:9: warning: macro "g_marshal_value_peek_float" is not used [-Wunused-macros]
+   42 | #define g_marshal_value_peek_float(v)    (v)->data[0].v_float
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~
+src/marshal.c:45:9: warning: macro "g_marshal_value_peek_param" is not used [-Wunused-macros]
+   45 | #define g_marshal_value_peek_param(v)    (v)->data[0].v_pointer
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~
+src/marshal.c:41:9: warning: macro "g_marshal_value_peek_flags" is not used [-Wunused-macros]
+   41 | #define g_marshal_value_peek_flags(v)    (v)->data[0].v_ulong
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~
+[12/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/debug.cc.o[13/195] Compiling C object src/libbte-2.91.so.0.6500.0.p/meson-generated_.._bteresources.c.o
+src/bteresources.c:49:9: warning: macro "__G_CONSTRUCTOR_H__" is not used [-Wunused-macros]
+   49 | #define __G_CONSTRUCTOR_H__
+      |         ^~~~~~~~~~~~~~~~~~~
+[13/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/parser.cc.o[14/195] Compiling C++ object src/decoder-cat.p/icu-decoder.cc.o
+../src/icu-decoder.cc:108:35: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+  108 |                         m_state = State::eError;
+      |                                   ^~~~~~~~~~~~~
+1 warning generated.
+[14/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/pty.cc.o[15/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/debug.cc.o[15/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/btepty.cc.o[16/195] Compiling C++ object src/decoder-cat.p/icu-converter.cc.o
+../src/icu-converter.cc:121:9: warning: Value stored to 'target_size' is never read [deadcode.DeadStores]
+  121 |         target_size = ucnv_fromUChars(m_charset_converter.get(),
+      |         ^             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  122 |                                       target_buffer.data(),
+      |                                       ~~~~~~~~~~~~~~~~~~~~~
+  123 |                                       target_buffer.capacity(),
+      |                                       ~~~~~~~~~~~~~~~~~~~~~~~~~
+  124 |                                       u16_buffer.data(),
+      |                                       ~~~~~~~~~~~~~~~~~~
+  125 |                                       u16_size,
+      |                                       ~~~~~~~~~
+  126 |                                       err);
+      |                                       ~~~~
+1 warning generated.
+[16/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/regex.cc.o[17/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/meson-generated_.._bte_btetypebuiltins.cc.o[17/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/utf8.cc.o[18/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/utf8.cc.o[18/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/bidi.cc.o[19/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/parser.cc.o
+../src/parser.cc:105:9: warning: macro "BTE_SEQ_PARAMETER_MASK" is not used [-Wunused-macros]
+  105 | #define BTE_SEQ_PARAMETER_MASK         ((1U << BTE_SEQ_PARAMETER_BITS) - 1U)
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+../src/parser.cc:106:9: warning: macro "BTE_SEQ_PARAMETER" is not used [-Wunused-macros]
+  106 | #define BTE_SEQ_PARAMETER(u)           ((u) & BTE_SEQ_PARAMETER_MASK)
+      |         ^~~~~~~~~~~~~~~~~
+../src/parser.cc:107:9: warning: macro "BTE_SEQ_REMOVE_PARAMETER" is not used [-Wunused-macros]
+  107 | #define BTE_SEQ_REMOVE_PARAMETER(u)    ((u) >> BTE_SEQ_PARAMETER_BITS)
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/parser.cc:1389:9: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+ 1389 |         g_assert_not_reached();
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gtestutils.h:274:136: note: expanded from macro 'g_assert_not_reached'
+  274 | #define g_assert_not_reached()          G_STMT_START { g_assertion_message_expr (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, NULL); } G_STMT_END
+      |                                                                                                                                        ^~~~~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:999:30: note: expanded from macro 'G_STMT_END'
+  999 | #define G_STMT_END    while (0)
+      |                              ^
+1 warning generated.
+[19/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/chunk.cc.o[20/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/regex.cc.o[20/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/drawing-cairo.cc.o[21/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/chunk.cc.o[21/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/fonts-pangocairo.cc.o[22/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/pty.cc.o
+../src/pty.cc:189:22: warning: Value stored to 'errsv' during its initialization is never read [deadcode.DeadStores]
+  189 |                 auto errsv = bte::libc::ErrnoSaver{};
+      |                      ^~~~~   ~~~~~~~~~~~~~~~~~~~~~~~
+../src/pty.cc:211:30: warning: Value stored to 'errsv' during its initialization is never read [deadcode.DeadStores]
+  211 |                         auto errsv = bte::libc::ErrnoSaver{};
+      |                              ^~~~~   ~~~~~~~~~~~~~~~~~~~~~~~
+../src/pty.cc:229:30: warning: Value stored to 'errsv' during its initialization is never read [deadcode.DeadStores]
+  229 |                         auto errsv = bte::libc::ErrnoSaver{};
+      |                              ^~~~~   ~~~~~~~~~~~~~~~~~~~~~~~
+3 warnings generated.
+[22/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/keymap.cc.o[23/195] Compiling C++ object src/decoder-cat.p/decoder-cat.cc.o
+../src/decoder-cat.cc:529:39: warning: Division by zero [core.DivideZero]
+  529 |                            total_time / (int64_t)m_bench_times->len);
+      |                            ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+[23/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/minifont.cc.o[24/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/drawing-cairo.cc.o
+../src/drawing-cairo.cc:39:9: warning: macro "BTE_DRAW_BOLD_ITALIC" is not used [-Wunused-macros]
+   39 | #define BTE_DRAW_BOLD_ITALIC 3
+      |         ^~~~~~~~~~~~~~~~~~~~
+../src/drawing-cairo.cc:356:3: warning: Value stored to 'n_cr_glyphs' is never read [deadcode.DeadStores]
+  356 |                 n_cr_glyphs = 0;
+      |                 ^             ~
+1 warning generated.
+[24/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/missing.cc.o[25/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/missing.cc.o
+../src/missing.cc:163:20: warning: Casting a non-structure type to a structure type and accessing a field can lead to memory access errors or data corruption [alpha.core.CastToStruct]
+  163 |               de = (struct linux_dirent64 *)(buf + pos);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+[25/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/reaper.cc.o[26/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/keymap.cc.o[26/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/ring.cc.o[27/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/reaper.cc.o
+../src/reaper.cc:35:9: warning: macro "BTE_REAPER_CLASS" is not used [-Wunused-macros]
+   35 | #define BTE_REAPER_CLASS(klass)    (G_TYPE_CHECK_CLASS_CAST ((klass),  BTE_TYPE_REAPER, BteReaperClass))
+      |         ^~~~~~~~~~~~~~~~
+../src/reaper.cc:38:9: warning: macro "BTE_REAPER_GET_CLASS" is not used [-Wunused-macros]
+   38 | #define BTE_REAPER_GET_CLASS(obj)  (G_TYPE_INSTANCE_GET_CLASS ((obj),  BTE_TYPE_REAPER, BteReaperClass))
+      |         ^~~~~~~~~~~~~~~~~~~~
+../src/reaper.cc:36:9: warning: macro "BTE_IS_REAPER" is not used [-Wunused-macros]
+   36 | #define BTE_IS_REAPER(obj)         (G_TYPE_CHECK_INSTANCE_TYPE ((obj), BTE_TYPE_REAPER))
+      |         ^~~~~~~~~~~~~
+../src/reaper.cc:37:9: warning: macro "BTE_IS_REAPER_CLASS" is not used [-Wunused-macros]
+   37 | #define BTE_IS_REAPER_CLASS(klass) (G_TYPE_CHECK_CLASS_TYPE ((klass),  BTE_TYPE_REAPER))
+      |         ^~~~~~~~~~~~~~~~~~~
+[27/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/ringview.cc.o[28/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/minifont.cc.o[28/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/spawn.cc.o[29/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/fonts-pangocairo.cc.o
+../src/fonts-pangocairo.cc:47:9: warning: macro "FONT_CACHE_TIMEOUT" is not used [-Wunused-macros]
+   47 | #define FONT_CACHE_TIMEOUT (30) /* seconds */
+      |         ^~~~~~~~~~~~~~~~~~
+[29/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/bte.cc.o[30/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/btepty.cc.o
+../src/btepty.cc:54:9: warning: macro "I_" is not used [-Wunused-macros]
+   54 | #define I_(string) (g_intern_static_string(string))
+      |         ^~
+[30/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/btectk.cc.o[31/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/bidi.cc.o
+../src/bidi.cc:244:58: warning: Access to field 'c' results in a dereference of a null pointer (loaded from variable 'cell') [core.NullDereference]
+  244 |                         _bte_unistr_append_to_gunichars (cell->c, fribidi_chars_array);
+      |                                                          ^~~~~~~
+../src/bidi.cc:694:33: warning: Value stored to 'tl' is never read [deadcode.DeadStores]
+  694 |                                 tl += cell->attr.columns();
+      |                                 ^     ~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+[31/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/bteregex.cc.o[32/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/ringview.cc.o
+../src/ringview.cc:154:25: warning: Out of bound access to memory preceding the heap area [alpha.security.ArrayBoundV2]
+  154 |                         m_bidirows[i] = new BidiRow();
+      |                         ^~~~~~~~~~~~~
+../src/ringview.cc:245:25: warning: 2nd function call argument is an uninitialized value [core.CallAndMessage]
+  245 |                         _bte_row_data_copy (row_data, m_rows[m_rows_len]);
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/ringview.cc:261:25: warning: 1st function call argument is an uninitialized value [core.CallAndMessage]
+  261 |                         _bte_row_data_clear (m_rows[m_rows_len]);
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/ringview.cc:279:26: warning: Assigned value is garbage or undefined [core.uninitialized.Assign]
+  279 |                 row_data = m_rows[row - m_top];
+      |                          ^ ~~~~~~~~~~~~~~~~~~~
+4 warnings generated.
+[32/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/bterowdata.cc.o[33/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/bteregex.cc.o[33/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/bteseq.cc.o[34/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/bterowdata.cc.o
+../src/bterowdata.cc:55:9: warning: Casting a non-structure type to a structure type and accessing a field can lead to memory access errors or data corruption [alpha.core.CastToStruct]
+   55 |         return (BteCells *) (((guchar *) cells) - G_STRUCT_OFFSET (BteCells, cells));
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+[34/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/btespawn.cc.o[35/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/spawn.cc.o
+../src/spawn.cc: In function 'char** bte::base::merge_environ(char**, const char*, bool)':
+../src/spawn.cc:267:54: warning: dereferencing type-punned pointer might break strict-aliasing rules [-Wstrict-aliasing]
+  267 |         while (g_hash_table_iter_next(&iter, (void**)&name, (void**)&value)) {
+      |                                                      ^~~~~
+../src/spawn.cc:267:69: warning: dereferencing type-punned pointer might break strict-aliasing rules [-Wstrict-aliasing]
+  267 |         while (g_hash_table_iter_next(&iter, (void**)&name, (void**)&value)) {
+      |                                                                     ^~~~~~
+[35/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/btestream.cc.o[36/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/btespawn.cc.o[36/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/btetypes.cc.o[37/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/btestream.cc.o[37/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/bteunistr.cc.o[38/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/btetypes.cc.o[38/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/bteutils.cc.o[39/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/bteunistr.cc.o[39/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/widget.cc.o[40/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/bteutils.cc.o[40/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/bteaccess.cc.o[41/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/ring.cc.o
+../src/ring.cc:685:13: warning: Dereference of null pointer [core.NullDereference]
+  685 |         if (**hyperlink == '\0')
+      |             ^~~~~~~~~~~
+1 warning generated.
+[41/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/icu-converter.cc.o[42/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/btectk.cc.o
+In file included from /usr/include/c++/14/string:54,
+                 from ../src/parser-glue.hh:22,
+                 from ../src/bteinternal.hh:44,
+                 from ../src/btectk.cc:57:
+In member function 'bool std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::_M_is_local() const [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]',
+    inlined from 'std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]' at /usr/include/c++/14/bits/basic_string.h:685:23,
+    inlined from 'constexpr std::__detail::__variant::_Uninitialized<_Type, false>::_Uninitialized(std::in_place_index_t<0>, _Args&& ...) [with _Args = {std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >}; _Type = std::__cxx11::basic_string<char>]' at /usr/include/c++/14/variant:283:4,
+    inlined from 'constexpr std::__detail::__variant::_Variadic_union<__trivially_destructible, _First, _Rest ...>::_Variadic_union(std::in_place_index_t<0>, _Args&& ...) [with _Args = {std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >}; bool __trivially_destructible = false; _First = std::__cxx11::basic_string<char>; _Rest = {std::unique_ptr<_CdkCursor, bte::FreeableDeleter<_CdkCursor, void (*)(void*), g_object_unref> >, CdkCursorType}]' at /usr/include/c++/14/variant:412:4,
+    inlined from 'void std::_Construct(_Tp*, _Args&& ...) [with _Tp = __detail::__variant::_Variadic_union<false, __cxx11::basic_string<char, char_traits<char>, allocator<char> >, unique_ptr<_CdkCursor, bte::FreeableDeleter<_CdkCursor, void (*)(void*), g_object_unref> >, CdkCursorType>; _Args = {const in_place_index_t<0>&, __cxx11::basic_string<char, char_traits<char>, allocator<char> >}]' at /usr/include/c++/14/bits/stl_construct.h:119:7,
+    inlined from 'std::__detail::__variant::_Move_ctor_base<false, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::unique_ptr<_CdkCursor, bte::FreeableDeleter<_CdkCursor, void (*)(void*), g_object_unref> >, CdkCursorType>::_Move_ctor_base(std::__detail::__variant::_Move_ctor_base<false, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::unique_ptr<_CdkCursor, bte::FreeableDeleter<_CdkCursor, void (*)(void*), g_object_unref> >, CdkCursorType>&&)::<lambda(auto:4&&, auto:5)> mutable [with auto:4 = std::__cxx11::basic_string<char>; auto:5 = std::integral_constant<long unsigned int, 0>]' at /usr/include/c++/14/variant:632:23,
+    inlined from 'constexpr _Res std::__invoke_impl(__invoke_other, _Fn&&, _Args&& ...) [with _Res = void; _Fn = __detail::__variant::_Move_ctor_base<false, __cxx11::basic_string<char, char_traits<char>, allocator<char> >, unique_ptr<_CdkCursor, bte::FreeableDeleter<_CdkCursor, void (*)(void*), g_object_unref> >, CdkCursorType>::_Move_ctor_base(std::__detail::__variant::_Move_ctor_base<false, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::unique_ptr<_CdkCursor, bte::FreeableDeleter<_CdkCursor, void (*)(void*), g_object_unref> >, CdkCursorType>&&)::<lambda(auto:4&&, auto:5)>; _Args = {__cxx11::basic_string<char, char_traits<char>, allocator<char> >, integral_constant<long unsigned int, 0>}]' at /usr/include/c++/14/bits/invoke.h:61:36,
+    inlined from 'constexpr typename std::__invoke_result<_Functor, _ArgTypes>::type std::__invoke(_Callable&&, _Args&& ...) [with _Callable = __detail::__variant::_Move_ctor_base<false, __cxx11::basic_string<char, char_traits<char>, allocator<char> >, unique_ptr<_CdkCursor, bte::FreeableDeleter<_CdkCursor, void (*)(void*), g_object_unref> >, CdkCursorType>::_Move_ctor_base(std::__detail::__variant::_Move_ctor_base<false, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::unique_ptr<_CdkCursor, bte::FreeableDeleter<_CdkCursor, void (*)(void*), g_object_unref> >, CdkCursorType>&&)::<lambda(auto:4&&, auto:5)>; _Args = {__cxx11::basic_string<char, char_traits<char>, allocator<char> >, integral_constant<long unsigned int, 0>}]' at /usr/include/c++/14/bits/invoke.h:96:40,
+    inlined from 'static constexpr decltype(auto) std::__detail::__variant::__gen_vtable_impl<std::__detail::__variant::_Multi_array<_Result_type (*)(_Visitor, _Variants ...)>, std::integer_sequence<long unsigned int, __indices ...> >::__visit_invoke(_Visitor&&, _Variants ...) [with _Result_type = std::__detail::__variant::__variant_idx_cookie; _Visitor = std::__detail::__variant::_Move_ctor_base<false, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::unique_ptr<_CdkCursor, bte::FreeableDeleter<_CdkCursor, void (*)(void*), g_object_unref> >, CdkCursorType>::_Move_ctor_base(std::__detail::__variant::_Move_ctor_base<false, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::unique_ptr<_CdkCursor, bte::FreeableDeleter<_CdkCursor, void (*)(void*), g_object_unref> >, CdkCursorType>&&)::<lambda(auto:4&&, auto:5)>&&; _Variants = {std::variant<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::unique_ptr<_CdkCursor, bte::FreeableDeleter<_CdkCursor, void (*)(void*), g_object_unref> >, CdkCursorType>&&}; long unsigned int ...__indices = {0}]' at /usr/include/c++/14/variant:1049:17,
+    inlined from 'constexpr decltype(auto) std::__do_visit(_Visitor&&, _Variants&& ...) [with _Result_type = __detail::__variant::__variant_idx_cookie; _Visitor = __detail::__variant::_Move_ctor_base<false, __cxx11::basic_string<char, char_traits<char>, allocator<char> >, unique_ptr<_CdkCursor, bte::FreeableDeleter<_CdkCursor, void (*)(void*), g_object_unref> >, CdkCursorType>::_Move_ctor_base(std::__detail::__variant::_Move_ctor_base<false, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::unique_ptr<_CdkCursor, bte::FreeableDeleter<_CdkCursor, void (*)(void*), g_object_unref> >, CdkCursorType>&&)::<lambda(auto:4&&, auto:5)>; _Variants = {variant<__cxx11::basic_string<char, char_traits<char>, allocator<char> >, unique_ptr<_CdkCursor, bte::FreeableDeleter<_CdkCursor, void (*)(void*), g_object_unref> >, CdkCursorType>}]' at /usr/include/c++/14/variant:1819:5,
+    inlined from 'constexpr void std::__detail::__variant::__raw_idx_visit(_Visitor&&, _Variants&& ...) [with _Visitor = _Move_ctor_base<false, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::unique_ptr<_CdkCursor, bte::FreeableDeleter<_CdkCursor, void (*)(void*), g_object_unref> >, CdkCursorType>::_Move_ctor_base(std::__detail::__variant::_Move_ctor_base<false, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::unique_ptr<_CdkCursor, bte::FreeableDeleter<_CdkCursor, void (*)(void*), g_object_unref> >, CdkCursorType>&&)::<lambda(auto:4&&, auto:5)>; _Variants = {std::variant<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::unique_ptr<_CdkCursor, bte::FreeableDeleter<_CdkCursor, void (*)(void*), g_object_unref> >, CdkCursorType>}]' at /usr/include/c++/14/variant:184:44,
+    inlined from 'std::__detail::__variant::_Move_ctor_base<<anonymous>, _Types>::_Move_ctor_base(std::__detail::__variant::_Move_ctor_base<<anonymous>, _Types>&&) [with bool <anonymous> = false; _Types = {std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::unique_ptr<_CdkCursor, bte::FreeableDeleter<_CdkCursor, void (*)(void*), g_object_unref> >, CdkCursorType}]' at /usr/include/c++/14/variant:627:28,
+    inlined from 'std::__detail::__variant::_Copy_assign_base<<anonymous>, _Types>::_Copy_assign_base(std::__detail::__variant::_Copy_assign_base<<anonymous>, _Types>&&) [with bool <anonymous> = false; _Types = {std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::unique_ptr<_CdkCursor, bte::FreeableDeleter<_CdkCursor, void (*)(void*), g_object_unref> >, CdkCursorType}]' at /usr/include/c++/14/variant:692:7,
+    inlined from 'std::__detail::__variant::_Move_assign_base<<anonymous>, _Types>::_Move_assign_base(std::__detail::__variant::_Move_assign_base<<anonymous>, _Types>&&) [with bool <anonymous> = false; _Types = {std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::unique_ptr<_CdkCursor, bte::FreeableDeleter<_CdkCursor, void (*)(void*), g_object_unref> >, CdkCursorType}]' at /usr/include/c++/14/variant:746:7,
+    inlined from 'std::__detail::__variant::_Variant_base<_Types>::_Variant_base(std::__detail::__variant::_Variant_base<_Types>&&) [with _Types = {std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::unique_ptr<_CdkCursor, bte::FreeableDeleter<_CdkCursor, void (*)(void*), g_object_unref> >, CdkCursorType}]' at /usr/include/c++/14/variant:777:7,
+    inlined from 'std::variant<_Types>::variant(std::variant<_Types>&&) [with _Types = {std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::unique_ptr<_CdkCursor, bte::FreeableDeleter<_CdkCursor, void (*)(void*), g_object_unref> >, CdkCursorType}]' at /usr/include/c++/14/variant:1435:7,
+    inlined from 'bte::terminal::Terminal::MatchRegex::MatchRegex(bte::base::RefPtr<bte::base::Regex>&&, uint32_t, bte::platform::Cursor&&, int)' at ../src/bteinternal.hh:774:27,
+    inlined from 'void std::__new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = bte::terminal::Terminal::MatchRegex; _Args = {std::unique_ptr<bte::base::Regex, bte::base::Unreffer<bte::base::Regex> >, unsigned int&, CdkCursorType, int}; _Tp = bte::terminal::Terminal::MatchRegex]' at /usr/include/c++/14/bits/new_allocator.h:191:4,
+    inlined from 'static void std::allocator_traits<std::allocator<_Tp1> >::construct(allocator_type&, _Up*, _Args&& ...) [with _Up = bte::terminal::Terminal::MatchRegex; _Args = {std::unique_ptr<bte::base::Regex, bte::base::Unreffer<bte::base::Regex> >, unsigned int&, CdkCursorType, int}; _Tp = bte::terminal::Terminal::MatchRegex]' at /usr/include/c++/14/bits/alloc_traits.h:575:17,
+    inlined from 'std::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::emplace_back(_Args&& ...) [with _Args = {std::unique_ptr<bte::base::Regex, bte::base::Unreffer<bte::base::Regex> >, unsigned int&, CdkCursorType, int}; _Tp = bte::terminal::Terminal::MatchRegex; _Alloc = std::allocator<bte::terminal::Terminal::MatchRegex>]' at /usr/include/c++/14/bits/vector.tcc:117:30,
+    inlined from 'auto& bte::terminal::Terminal::regex_match_add(Args&& ...) [with Args = {std::unique_ptr<bte::base::Regex, bte::base::Unreffer<bte::base::Regex> >, unsigned int&, CdkCursorType, int}]' at ../src/bteinternal.hh:825:61,
+    inlined from 'int bte_terminal_match_add_regex(BteTerminal*, BteRegex*, guint32)' at ../src/btectk.cc:2471:37:
+/usr/include/c++/14/bits/basic_string.h:271:17: warning: '*(const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*)((char*)&<unnamed> + offsetof(std::Cursor, std::variant<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::unique_ptr<_CdkCursor, bte::FreeableDeleter<_CdkCursor, void (*)(void*), &g_object_unref(void*)> >, CdkCursorType>::<unnamed>.std::__detail::__variant::_Variant_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::unique_ptr<_CdkCursor, bte::FreeableDeleter<_CdkCursor, void (*)(void*), &g_object_unref(void*)> >, CdkCursorType>::<unnamed>.std::__detail::__variant::_Move_assign_base<false, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::unique_ptr<_CdkCursor, bte::FreeableDeleter<_CdkCursor, void (*)(void*), &g_object_unref(void*)> >, CdkCursorType>::<unnamed>.std::__detail::__variant::_Copy_assign_base<false, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::unique_ptr<_CdkCursor, bte::FreeableDeleter<_CdkCursor, void (*)(void*), &g_object_unref(void*)> >, CdkCursorType>::<unnamed>.std::__detail::__variant::_Move_ctor_base<false, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::unique_ptr<_CdkCursor, bte::FreeableDeleter<_CdkCursor, void (*)(void*), &g_object_unref(void*)> >, CdkCursorType>::<unnamed>.std::__detail::__variant::_Copy_ctor_base<false, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::unique_ptr<_CdkCursor, bte::FreeableDeleter<_CdkCursor, void (*)(void*), &g_object_unref(void*)> >, CdkCursorType>::<unnamed>.std::__detail::__variant::_Variant_storage<false, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::unique_ptr<_CdkCursor, bte::FreeableDeleter<_CdkCursor, void (*)(void*), &g_object_unref(void*)> >, CdkCursorType>::_M_u)).std::__cxx11::basic_string<char>::_M_string_length' may be used uninitialized [-Wmaybe-uninitialized]
+  271 |             if (_M_string_length > _S_local_capacity)
+      |                 ^~~~~~~~~~~~~~~~
+In file included from /usr/include/x86_64-linux-gnu/c++/14/bits/c++allocator.h:33,
+                 from /usr/include/c++/14/bits/allocator.h:46,
+                 from /usr/include/c++/14/bits/alloc_traits.h:39,
+                 from /usr/include/c++/14/ext/alloc_traits.h:34,
+                 from /usr/include/c++/14/bits/hashtable_policy.h:39,
+                 from /usr/include/c++/14/bits/hashtable.h:35,
+                 from /usr/include/c++/14/bits/unordered_map.h:33,
+                 from /usr/include/c++/14/unordered_map:41,
+                 from /usr/include/c++/14/functional:63,
+                 from ../src/glib-glue.hh:22,
+                 from ../src/btectk.cc:52:
+/usr/include/c++/14/bits/new_allocator.h: In function 'int bte_terminal_match_add_regex(BteTerminal*, BteRegex*, guint32)':
+/usr/include/c++/14/bits/new_allocator.h:191:11: note: '<anonymous>' declared here
+  191 |         { ::new((void *)__p) _Up(std::forward<_Args>(__args)...); }
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/btectk.cc:580:9: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+  580 |         g_assert_not_reached();
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gtestutils.h:274:136: note: expanded from macro 'g_assert_not_reached'
+  274 | #define g_assert_not_reached()          G_STMT_START { g_assertion_message_expr (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, NULL); } G_STMT_END
+      |                                                                                                                                        ^~~~~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:999:30: note: expanded from macro 'G_STMT_END'
+  999 | #define G_STMT_END    while (0)
+      |                              ^
+../src/btectk.cc:852:25: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+  852 |                         g_assert_not_reached ();
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gtestutils.h:274:136: note: expanded from macro 'g_assert_not_reached'
+  274 | #define g_assert_not_reached()          G_STMT_START { g_assertion_message_expr (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, NULL); } G_STMT_END
+      |                                                                                                                                        ^~~~~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:999:30: note: expanded from macro 'G_STMT_END'
+  999 | #define G_STMT_END    while (0)
+      |                              ^
+../src/btectk.cc:4198:17: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+ 4198 |                 impl->set_color_bold(bte::color::rgb(bold));
+      |                 ^~~~
+../src/btectk.cc:4226:17: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+ 4226 |                 impl->set_color_cursor_background(bte::color::rgb(cursor_background));
+      |                 ^~~~
+../src/btectk.cc:4256:17: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+ 4256 |                 impl->set_color_cursor_foreground(bte::color::rgb(cursor_foreground));
+      |                 ^~~~
+../src/btectk.cc:4308:17: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+ 4308 |                 impl->set_color_highlight_background(bte::color::rgb(highlight_background));
+      |                 ^~~~
+../src/btectk.cc:4337:17: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+ 4337 |                 impl->set_color_highlight_foreground(bte::color::rgb(highlight_foreground));
+      |                 ^~~~
+../src/btectk.cc:4385:20: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+ 4385 |                 fg = bte::color::rgb(foreground);
+      |                    ^
+../src/btectk.cc:4388:20: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+ 4388 |                 bg = bte::color::rgb(background);
+      |                    ^
+../src/btectk.cc:4392:47: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+ 4392 |                 pal = g_new0(bte::color::rgb, palette_size);
+      |                                               ^~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gmem.h:335:63: note: expanded from macro 'g_new0'
+  335 | #define g_new0(struct_type, n_structs)                  _G_NEW (struct_type, n_structs, malloc0)
+      |                                                                              ^~~~~~~~~
+/usr/include/glib-2.0/glib/gmem.h:264:25: note: expanded from macro '_G_NEW'
+  264 |           gsize __n = (gsize) (n_structs);                      \
+      |                                ^~~~~~~~~
+../src/btectk.cc:4398:40: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+ 4398 |         impl->set_colors(foreground ? &fg : nullptr,
+      |                                        ^~
+../src/btectk.cc:4399:40: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+ 4399 |                          background ? &bg : nullptr,
+      |                                        ^~
+../src/btectk.cc:4401:49: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+ 4401 |         impl->set_background_alpha(background ? background->alpha : 1.0);
+      |                                                 ^~~~~~~~~~
+13 warnings generated.
+[42/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/icu-decoder.cc.o[43/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/icu-decoder.cc.o
+../src/icu-decoder.cc:108:35: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+  108 |                         m_state = State::eError;
+      |                                   ^~~~~~~~~~~~~
+1 warning generated.
+[43/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/icu-glue.cc.o[44/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/icu-converter.cc.o
+../src/icu-converter.cc:121:9: warning: Value stored to 'target_size' is never read [deadcode.DeadStores]
+  121 |         target_size = ucnv_fromUChars(m_charset_converter.get(),
+      |         ^             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  122 |                                       target_buffer.data(),
+      |                                       ~~~~~~~~~~~~~~~~~~~~~
+  123 |                                       target_buffer.capacity(),
+      |                                       ~~~~~~~~~~~~~~~~~~~~~~~~~
+  124 |                                       u16_buffer.data(),
+      |                                       ~~~~~~~~~~~~~~~~~~
+  125 |                                       u16_size,
+      |                                       ~~~~~~~~~
+  126 |                                       err);
+      |                                       ~~~~
+1 warning generated.
+[44/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/systemd.cc.o[45/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/systemd.cc.o[45/195] Compiling C++ object src/decoder-cat.p/icu-glue.cc.o[46/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/widget.cc.o
+../src/widget.cc:361:18: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+  361 |         default: g_assert_not_reached(); return {};
+      |                  ^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gtestutils.h:274:136: note: expanded from macro 'g_assert_not_reached'
+  274 | #define g_assert_not_reached()          G_STMT_START { g_assertion_message_expr (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, NULL); } G_STMT_END
+      |                                                                                                                                        ^~~~~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:999:30: note: expanded from macro 'G_STMT_END'
+  999 | #define G_STMT_END    while (0)
+      |                              ^
+1 warning generated.
+[46/195] Compiling C++ object src/parser-cat.p/parser.cc.o[47/195] Compiling C++ object src/parser-cat.p/parser.cc.o
+../src/parser.cc:105:9: warning: macro "BTE_SEQ_PARAMETER_MASK" is not used [-Wunused-macros]
+  105 | #define BTE_SEQ_PARAMETER_MASK         ((1U << BTE_SEQ_PARAMETER_BITS) - 1U)
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+../src/parser.cc:106:9: warning: macro "BTE_SEQ_PARAMETER" is not used [-Wunused-macros]
+  106 | #define BTE_SEQ_PARAMETER(u)           ((u) & BTE_SEQ_PARAMETER_MASK)
+      |         ^~~~~~~~~~~~~~~~~
+../src/parser.cc:107:9: warning: macro "BTE_SEQ_REMOVE_PARAMETER" is not used [-Wunused-macros]
+  107 | #define BTE_SEQ_REMOVE_PARAMETER(u)    ((u) >> BTE_SEQ_PARAMETER_BITS)
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/parser.cc:1389:9: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+ 1389 |         g_assert_not_reached();
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gtestutils.h:274:136: note: expanded from macro 'g_assert_not_reached'
+  274 | #define g_assert_not_reached()          G_STMT_START { g_assertion_message_expr (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, NULL); } G_STMT_END
+      |                                                                                                                                        ^~~~~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:999:30: note: expanded from macro 'G_STMT_END'
+  999 | #define G_STMT_END    while (0)
+      |                              ^
+1 warning generated.
+[47/195] Compiling C++ object src/parser-cat.p/utf8.cc.o[48/195] Compiling C++ object src/parser-cat.p/utf8.cc.o[48/195] Compiling C++ object src/parser-cat.p/debug.cc.o[49/195] Compiling C++ object src/parser-cat.p/debug.cc.o[49/195] Compiling C++ object src/parser-cat.p/parser-cat.cc.o[50/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/icu-glue.cc.o[50/195] Compiling C object src/dumpkeys.p/dumpkeys.c.o[51/195] Compiling C object src/dumpkeys.p/dumpkeys.c.o[51/195] Compiling C object src/mev.p/mev.c.o[52/195] Compiling C++ object src/decoder-cat.p/icu-glue.cc.o[52/195] Compiling C object src/slowcat.p/slowcat.c.o[53/195] Compiling C object src/slowcat.p/slowcat.c.o
+../src/slowcat.c:60:8: warning: File position of the stream might be 'indeterminate' after a failed operation. Can cause undefined behavior [unix.Stream]
+   60 |                         c = fgetc(fp);
+      |                             ^~~~~~~~~
+1 warning generated.
+[53/195] Compiling C object src/reflect-textview.p/reflect.c.o[54/195] Compiling C object src/mev.p/mev.c.o
+../src/mev.c:136:21: warning: Value stored to 'shift' during its initialization is never read [deadcode.DeadStores]
+  136 |         const char *shift = "", *control = "", *alt = "";
+      |                     ^~~~~   ~~
+../src/mev.c:136:34: warning: Value stored to 'control' during its initialization is never read [deadcode.DeadStores]
+  136 |         const char *shift = "", *control = "", *alt = "";
+      |                                  ^~~~~~~   ~~
+../src/mev.c:136:49: warning: Value stored to 'alt' during its initialization is never read [deadcode.DeadStores]
+  136 |         const char *shift = "", *control = "", *alt = "";
+      |                                                 ^~~   ~~
+../src/mev.c:383:3: warning: Value stored to 'stop' is never read [deadcode.DeadStores]
+  383 |                 stop = TRUE;
+      |                 ^      ~~~~
+4 warnings generated.
+[54/195] Compiling C object src/reflect-bte.p/reflect.c.o[55/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/bteaccess.cc.o
+../src/bteaccess.cc:1106:4: warning: Value stored to 'line' is never read [deadcode.DeadStores]
+ 1106 |                         line = 0;
+      |                         ^      ~
+1 warning generated.
+[55/195] Compiling C++ object src/bte-urlencode-cwd.p/urlencode.cc.o[56/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/bteseq.cc.o
+../src/bteseq.cc:39:9: warning: macro "BEL_C0" is not used [-Wunused-macros]
+   39 | #define BEL_C0 "\007"
+      |         ^~~~~~
+../src/bteseq.cc:40:9: warning: macro "ST_C0" is not used [-Wunused-macros]
+   40 | #define ST_C0 _BTE_CAP_ST
+      |         ^~~~~
+../src/bteseq.cc:916:33: warning: Value stored to 'len' is never read [deadcode.DeadStores]
+  916 |                                 len = m_column_count;
+      |                                 ^     ~~~~~~~~~~~~~~
+../src/bteseq.cc:4756:19: warning: The left operand of '<=' is a garbage value [core.UndefinedBinaryOperatorResult]
+ 4756 |         if (start <= 0)
+      |             ~~~~~ ^
+../src/bteseq.cc:4757:25: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+ 4757 |                 start = 1;
+      |                         ^
+../src/bteseq.cc:4778:42: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+ 4778 |                 m_scrolling_restricted = FALSE;
+      |                                          ^~~~~
+/usr/include/glib-2.0/glib/gmacros.h:931:16: note: expanded from macro 'FALSE'
+  931 | #define FALSE   (0)
+      |                  ^
+../src/bteseq.cc:4782:25: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+ 4782 |                         _bte_ring_insert(m_screen->row_data, _bte_ring_next(m_screen->row_data), get_bidi_flags());
+      |                         ^~~~~~~~~~~~~~~~
+../src/bteseq.cc:6881:17: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+ 6881 |                 return;
+      |                 ^~~~~~
+../src/bteseq.cc:8617:27: warning: The left operand of '!=' is a garbage value [core.UndefinedBinaryOperatorResult]
+ 8617 |                 if (width != -1 && height != -1) {
+      |                     ~~~~~ ^
+../src/bteseq.cc:8617:36: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+ 8617 |                 if (width != -1 && height != -1) {
+      |                                    ^~~~~~
+../src/bteseq.cc:8640:27: warning: The left operand of '!=' is a garbage value [core.UndefinedBinaryOperatorResult]
+ 8640 |                 if (width != -1 && height != -1) {
+      |                     ~~~~~ ^
+../src/bteseq.cc:8640:36: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+ 8640 |                 if (width != -1 && height != -1) {
+      |                                    ^~~~~~
+10 warnings generated.
+[56/195] Compiling C object src/xticker.p/xticker.c.o[57/195] Compiling C object src/reflect-textview.p/reflect.c.o
+../src/reflect.c:97:18: warning: Access to field 'len' results in a dereference of a null pointer (loaded from variable 'contents') [core.NullDereference]
+   97 |         for (i = 0; i < contents->len; i++) {
+      |                         ^~~~~~~~~~~~~
+../src/reflect.c:312:9: warning: Access to field 'len' results in a dereference of a null pointer (loaded from variable 'contents') [core.NullDereference]
+  312 |                              contents->len < count;
+      |                              ^~~~~~~~~~~~~
+../src/reflect.c:314:9: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+  314 |                                 c = g_utf8_get_char(p);
+      |                                     ^~~~~~~~~~~~~~~
+../src/reflect.c:317:4: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+  317 |                         g_free(text);
+      |                         ^~~~~~
+4 warnings generated.
+[57/195] Compiling C++ object src/test-modes.p/modes-test.cc.o[58/195] Compiling C object src/reflect-bte.p/reflect.c.o
+../src/reflect.c:97:18: warning: Access to field 'len' results in a dereference of a null pointer (loaded from variable 'contents') [core.NullDereference]
+   97 |         for (i = 0; i < contents->len; i++) {
+      |                         ^~~~~~~~~~~~~
+../src/reflect.c:312:9: warning: Access to field 'len' results in a dereference of a null pointer (loaded from variable 'contents') [core.NullDereference]
+  312 |                              contents->len < count;
+      |                              ^~~~~~~~~~~~~
+../src/reflect.c:314:9: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+  314 |                                 c = g_utf8_get_char(p);
+      |                                     ^~~~~~~~~~~~~~~
+../src/reflect.c:317:4: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+  317 |                         g_free(text);
+      |                         ^~~~~~
+4 warnings generated.
+[58/195] Compiling C++ object src/test-parser.p/parser.cc.o[59/195] Compiling C++ object src/bte-urlencode-cwd.p/urlencode.cc.o[59/195] Compiling C++ object src/test-parser.p/parser-test.cc.o[60/195] Compiling C++ object src/test-modes.p/modes-test.cc.o[60/195] Compiling C++ object src/test-reaper.p/debug.cc.o[61/195] Compiling C++ object src/test-reaper.p/debug.cc.o[61/195] Compiling C++ object src/test-reaper.p/reaper.cc.o[62/195] Compiling C++ object src/test-reaper.p/reaper.cc.o
+../src/reaper.cc:35:9: warning: macro "BTE_REAPER_CLASS" is not used [-Wunused-macros]
+   35 | #define BTE_REAPER_CLASS(klass)    (G_TYPE_CHECK_CLASS_CAST ((klass),  BTE_TYPE_REAPER, BteReaperClass))
+      |         ^~~~~~~~~~~~~~~~
+../src/reaper.cc:38:9: warning: macro "BTE_REAPER_GET_CLASS" is not used [-Wunused-macros]
+   38 | #define BTE_REAPER_GET_CLASS(obj)  (G_TYPE_INSTANCE_GET_CLASS ((obj),  BTE_TYPE_REAPER, BteReaperClass))
+      |         ^~~~~~~~~~~~~~~~~~~~
+../src/reaper.cc:36:9: warning: macro "BTE_IS_REAPER" is not used [-Wunused-macros]
+   36 | #define BTE_IS_REAPER(obj)         (G_TYPE_CHECK_INSTANCE_TYPE ((obj), BTE_TYPE_REAPER))
+      |         ^~~~~~~~~~~~~
+../src/reaper.cc:37:9: warning: macro "BTE_IS_REAPER_CLASS" is not used [-Wunused-macros]
+   37 | #define BTE_IS_REAPER_CLASS(klass) (G_TYPE_CHECK_CLASS_TYPE ((klass),  BTE_TYPE_REAPER))
+      |         ^~~~~~~~~~~~~~~~~~~
+../src/reaper.cc:182:25: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+  182 |                         g_assert_not_reached();
+      |                         ^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gtestutils.h:274:136: note: expanded from macro 'g_assert_not_reached'
+  274 | #define g_assert_not_reached()          G_STMT_START { g_assertion_message_expr (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, NULL); } G_STMT_END
+      |                                                                                                                                        ^~~~~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:999:30: note: expanded from macro 'G_STMT_END'
+  999 | #define G_STMT_END    while (0)
+      |                              ^
+../src/reaper.cc:189:25: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+  189 |                         break;
+      |                         ^~~~~
+../src/reaper.cc:206:25: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+  206 |                         g_assert_not_reached();
+      |                         ^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gtestutils.h:274:136: note: expanded from macro 'g_assert_not_reached'
+  274 | #define g_assert_not_reached()          G_STMT_START { g_assertion_message_expr (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, NULL); } G_STMT_END
+      |                                                                                                                                        ^~~~~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:999:30: note: expanded from macro 'G_STMT_END'
+  999 | #define G_STMT_END    while (0)
+      |                              ^
+../src/reaper.cc:213:25: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+  213 |                         break;
+      |                         ^~~~~
+4 warnings generated.
+[62/195] Compiling C++ object src/test-refptr.p/refptr-test.cc.o[63/195] Compiling C++ object src/test-parser.p/parser.cc.o
+../src/parser.cc:105:9: warning: macro "BTE_SEQ_PARAMETER_MASK" is not used [-Wunused-macros]
+  105 | #define BTE_SEQ_PARAMETER_MASK         ((1U << BTE_SEQ_PARAMETER_BITS) - 1U)
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+../src/parser.cc:106:9: warning: macro "BTE_SEQ_PARAMETER" is not used [-Wunused-macros]
+  106 | #define BTE_SEQ_PARAMETER(u)           ((u) & BTE_SEQ_PARAMETER_MASK)
+      |         ^~~~~~~~~~~~~~~~~
+../src/parser.cc:107:9: warning: macro "BTE_SEQ_REMOVE_PARAMETER" is not used [-Wunused-macros]
+  107 | #define BTE_SEQ_REMOVE_PARAMETER(u)    ((u) >> BTE_SEQ_PARAMETER_BITS)
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/parser.cc:1389:9: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+ 1389 |         g_assert_not_reached();
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gtestutils.h:274:136: note: expanded from macro 'g_assert_not_reached'
+  274 | #define g_assert_not_reached()          G_STMT_START { g_assertion_message_expr (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, NULL); } G_STMT_END
+      |                                                                                                                                        ^~~~~~~~~~
+/usr/include/glib-2.0/glib/gmacros.h:999:30: note: expanded from macro 'G_STMT_END'
+  999 | #define G_STMT_END    while (0)
+      |                              ^
+1 warning generated.
+[63/195] Compiling C++ object src/test-stream.p/btestream.cc.o[64/195] Compiling C object src/xticker.p/xticker.c.o
+../src/xticker.c:115:6: warning: Memory copy function accesses out-of-bound array element [alpha.unix.cstring.OutOfBounds]
+  115 |                                         memcpy(outbuf + 4,
+      |                                         ^~~~~~~~~~~~~~~~~~
+  116 |                                                buffer + j,
+      |                                                ~~~~~~~~~~~
+  117 |                                                length);
+      |                                                ~~~~~~~
+1 warning generated.
+[64/195] Compiling C++ object src/test-stream.p/bteutils.cc.o[65/195] Compiling C++ object src/test-refptr.p/refptr-test.cc.o
+../src/refptr-test.cc:81:23: warning: Method called on moved-from object 'ptr1' [cplusplus.Move]
+   81 |         g_assert_true(ptr1.get() == nullptr);
+      |                       ^~~~~~~~~~
+/usr/include/glib-2.0/glib/gtestutils.h:228:59: note: expanded from macro 'g_assert_true'
+  228 |                                              if G_LIKELY (expr) ; else \
+      |                                                           ^~~~
+/usr/include/glib-2.0/glib/gmacros.h:1248:59: note: expanded from macro 'G_LIKELY'
+ 1248 | #define G_LIKELY(expr) (__builtin_expect (_G_BOOLEAN_EXPR(expr), 1))
+      |                                                           ^~~~
+/usr/include/glib-2.0/glib/gmacros.h:1247:66: note: expanded from macro '_G_BOOLEAN_EXPR'
+ 1247 | #define _G_BOOLEAN_EXPR(expr) _G_BOOLEAN_EXPR_IMPL (__COUNTER__, expr)
+      |                                                                  ^~~~
+/usr/include/glib-2.0/glib/gmacros.h:1243:8: note: expanded from macro '_G_BOOLEAN_EXPR_IMPL'
+ 1243 |    if (expr)                                    \
+      |        ^~~~
+1 warning generated.
+[65/195] Compiling C++ object src/test-tabstops.p/tabstops-test.cc.o[66/195] Compiling C++ object src/test-stream.p/bteutils.cc.o[66/195] Compiling C++ object src/test-utf8.p/utf8.cc.o[67/195] Compiling C++ object src/test-utf8.p/utf8.cc.o[67/195] Compiling C++ object src/test-utf8.p/utf8-test.cc.o[68/195] Compiling C++ object src/parser-cat.p/parser-cat.cc.o
+../src/parser-cat.cc:807:39: warning: Division by zero [core.DivideZero]
+  807 |                            total_time / (int64_t)m_bench_times->len);
+      |                            ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+[68/195] Compiling C++ object src/test-btetypes.p/btetypes.cc.o[69/195] Compiling C++ object src/test-stream.p/btestream.cc.o[69/195] Compiling C object src/app/bte-2.91.p/meson-generated_.._resources.cc.c.o[70/195] Compiling C++ object src/test-utf8.p/utf8-test.cc.o[70/195] Compiling C++ object src/app/bte-2.91.p/app.cc.o[71/195] Compiling C object src/app/bte-2.91.p/meson-generated_.._resources.cc.c.o
+src/app/resources.cc.c:286:9: warning: macro "__G_CONSTRUCTOR_H__" is not used [-Wunused-macros]
+  286 | #define __G_CONSTRUCTOR_H__
+      |         ^~~~~~~~~~~~~~~~~~~
+[71/195] Linking target src/decoder-cat[72/195] Linking target src/decoder-cat[72/195] Linking target src/parser-cat[73/195] Linking target src/parser-cat[73/195] Linking target src/dumpkeys[74/195] Linking target src/dumpkeys[74/195] Linking target src/mev[75/195] Linking target src/mev[75/195] Linking target src/slowcat[76/195] Linking target src/slowcat[76/195] Linking target src/reflect-textview[77/195] Compiling C++ object src/test-btetypes.p/btetypes.cc.o[77/195] Linking target src/bte-urlencode-cwd[78/195] Linking target src/reflect-textview[78/195] Linking target src/xticker[79/195] Linking target src/bte-urlencode-cwd[79/195] Linking target src/test-modes[80/195] Linking target src/xticker[80/195] Linking target src/test-reaper[81/195] Linking target src/test-modes[81/195] Linking target src/test-refptr[82/195] Linking target src/test-reaper[82/195] Linking target src/test-stream[83/195] Linking target src/test-refptr[83/195] Linking target src/test-utf8[84/195] Linking target src/test-stream[84/195] Linking target src/test-btetypes[85/195] Linking target src/test-utf8[85/195] Building translation po/am/LC_MESSAGES/bte-2.91-am.mo[86/195] Building translation po/am/LC_MESSAGES/bte-2.91-am.mo[86/195] Building translation po/an/LC_MESSAGES/bte-2.91-an.mo[87/195] Building translation po/an/LC_MESSAGES/bte-2.91-an.mo[87/195] Building translation po/ang/LC_MESSAGES/bte-2.91-ang.mo[88/195] Building translation po/ang/LC_MESSAGES/bte-2.91-ang.mo[88/195] Building translation po/ar/LC_MESSAGES/bte-2.91-ar.mo[89/195] Building translation po/ar/LC_MESSAGES/bte-2.91-ar.mo[89/195] Building translation po/as/LC_MESSAGES/bte-2.91-as.mo[90/195] Building translation po/as/LC_MESSAGES/bte-2.91-as.mo[90/195] Building translation po/ast/LC_MESSAGES/bte-2.91-ast.mo[91/195] Building translation po/ast/LC_MESSAGES/bte-2.91-ast.mo[91/195] Building translation po/az/LC_MESSAGES/bte-2.91-az.mo[92/195] Building translation po/az/LC_MESSAGES/bte-2.91-az.mo[92/195] Building translation po/be/LC_MESSAGES/bte-2.91-be.mo[93/195] Building translation po/be/LC_MESSAGES/bte-2.91-be.mo[93/195] Building translation po/be@latin/LC_MESSAGES/bte-2.91-be@latin.mo[94/195] Building translation po/be@latin/LC_MESSAGES/bte-2.91-be@latin.mo[94/195] Building translation po/bg/LC_MESSAGES/bte-2.91-bg.mo[95/195] Building translation po/bg/LC_MESSAGES/bte-2.91-bg.mo[95/195] Building translation po/bn/LC_MESSAGES/bte-2.91-bn.mo[96/195] Building translation po/bn/LC_MESSAGES/bte-2.91-bn.mo[96/195] Building translation po/bn_IN/LC_MESSAGES/bte-2.91-bn_IN.mo[97/195] Building translation po/bn_IN/LC_MESSAGES/bte-2.91-bn_IN.mo[97/195] Building translation po/bs/LC_MESSAGES/bte-2.91-bs.mo[98/195] Building translation po/bs/LC_MESSAGES/bte-2.91-bs.mo[98/195] Building translation po/ca/LC_MESSAGES/bte-2.91-ca.mo[99/195] Building translation po/ca/LC_MESSAGES/bte-2.91-ca.mo[99/195] Building translation po/ca@valencia/LC_MESSAGES/bte-2.91-ca@valencia.mo[100/195] Building translation po/ca@valencia/LC_MESSAGES/bte-2.91-ca@valencia.mo[100/195] Building translation po/ckb/LC_MESSAGES/bte-2.91-ckb.mo[101/195] Building translation po/ckb/LC_MESSAGES/bte-2.91-ckb.mo[101/195] Building translation po/cs/LC_MESSAGES/bte-2.91-cs.mo[102/195] Building translation po/cs/LC_MESSAGES/bte-2.91-cs.mo[102/195] Building translation po/cy/LC_MESSAGES/bte-2.91-cy.mo[103/195] Building translation po/cy/LC_MESSAGES/bte-2.91-cy.mo[103/195] Building translation po/da/LC_MESSAGES/bte-2.91-da.mo[104/195] Building translation po/da/LC_MESSAGES/bte-2.91-da.mo[104/195] Building translation po/de/LC_MESSAGES/bte-2.91-de.mo[105/195] Building translation po/de/LC_MESSAGES/bte-2.91-de.mo[105/195] Building translation po/dz/LC_MESSAGES/bte-2.91-dz.mo[106/195] Building translation po/dz/LC_MESSAGES/bte-2.91-dz.mo[106/195] Building translation po/el/LC_MESSAGES/bte-2.91-el.mo[107/195] Building translation po/el/LC_MESSAGES/bte-2.91-el.mo[107/195] Building translation po/en_CA/LC_MESSAGES/bte-2.91-en_CA.mo[108/195] Linking target src/test-btetypes[108/195] Building translation po/en_GB/LC_MESSAGES/bte-2.91-en_GB.mo[109/195] Building translation po/en_CA/LC_MESSAGES/bte-2.91-en_CA.mo[109/195] Building translation po/en@shaw/LC_MESSAGES/bte-2.91-en@shaw.mo[110/195] Building translation po/en@shaw/LC_MESSAGES/bte-2.91-en@shaw.mo[110/195] Building translation po/eo/LC_MESSAGES/bte-2.91-eo.mo[111/195] Building translation po/en_GB/LC_MESSAGES/bte-2.91-en_GB.mo[111/195] Building translation po/es/LC_MESSAGES/bte-2.91-es.mo[112/195] Building translation po/es/LC_MESSAGES/bte-2.91-es.mo[112/195] Building translation po/et/LC_MESSAGES/bte-2.91-et.mo[113/195] Building translation po/eo/LC_MESSAGES/bte-2.91-eo.mo[113/195] Building translation po/eu/LC_MESSAGES/bte-2.91-eu.mo[114/195] Building translation po/et/LC_MESSAGES/bte-2.91-et.mo[114/195] Building translation po/fa/LC_MESSAGES/bte-2.91-fa.mo[115/195] Building translation po/eu/LC_MESSAGES/bte-2.91-eu.mo[115/195] Building translation po/fi/LC_MESSAGES/bte-2.91-fi.mo[116/195] Building translation po/fa/LC_MESSAGES/bte-2.91-fa.mo[116/195] Building translation po/fr/LC_MESSAGES/bte-2.91-fr.mo[117/195] Building translation po/fi/LC_MESSAGES/bte-2.91-fi.mo[117/195] Building translation po/fur/LC_MESSAGES/bte-2.91-fur.mo[118/195] Building translation po/fr/LC_MESSAGES/bte-2.91-fr.mo[118/195] Building translation po/ga/LC_MESSAGES/bte-2.91-ga.mo[119/195] Building translation po/fur/LC_MESSAGES/bte-2.91-fur.mo[119/195] Building translation po/gd/LC_MESSAGES/bte-2.91-gd.mo[120/195] Building translation po/gd/LC_MESSAGES/bte-2.91-gd.mo[120/195] Building translation po/gl/LC_MESSAGES/bte-2.91-gl.mo[121/195] Building translation po/ga/LC_MESSAGES/bte-2.91-ga.mo[121/195] Building translation po/gu/LC_MESSAGES/bte-2.91-gu.mo[122/195] Building translation po/gu/LC_MESSAGES/bte-2.91-gu.mo[122/195] Building translation po/he/LC_MESSAGES/bte-2.91-he.mo[123/195] Building translation po/gl/LC_MESSAGES/bte-2.91-gl.mo[123/195] Building translation po/hi/LC_MESSAGES/bte-2.91-hi.mo[124/195] Building translation po/he/LC_MESSAGES/bte-2.91-he.mo[124/195] Building translation po/hr/LC_MESSAGES/bte-2.91-hr.mo[125/195] Building translation po/hi/LC_MESSAGES/bte-2.91-hi.mo[125/195] Building translation po/hu/LC_MESSAGES/bte-2.91-hu.mo[126/195] Building translation po/hr/LC_MESSAGES/bte-2.91-hr.mo[126/195] Building translation po/id/LC_MESSAGES/bte-2.91-id.mo[127/195] Building translation po/hu/LC_MESSAGES/bte-2.91-hu.mo[127/195] Building translation po/is/LC_MESSAGES/bte-2.91-is.mo[128/195] Building translation po/id/LC_MESSAGES/bte-2.91-id.mo[128/195] Building translation po/it/LC_MESSAGES/bte-2.91-it.mo[129/195] Building translation po/is/LC_MESSAGES/bte-2.91-is.mo[129/195] Building translation po/ja/LC_MESSAGES/bte-2.91-ja.mo[130/195] Building translation po/it/LC_MESSAGES/bte-2.91-it.mo[130/195] Building translation po/ka/LC_MESSAGES/bte-2.91-ka.mo[131/195] Building translation po/ja/LC_MESSAGES/bte-2.91-ja.mo[131/195] Building translation po/kk/LC_MESSAGES/bte-2.91-kk.mo[132/195] Building translation po/ka/LC_MESSAGES/bte-2.91-ka.mo[132/195] Building translation po/kn/LC_MESSAGES/bte-2.91-kn.mo[133/195] Building translation po/kk/LC_MESSAGES/bte-2.91-kk.mo[133/195] Building translation po/ko/LC_MESSAGES/bte-2.91-ko.mo[134/195] Building translation po/kn/LC_MESSAGES/bte-2.91-kn.mo[134/195] Building translation po/ku/LC_MESSAGES/bte-2.91-ku.mo[135/195] Building translation po/ko/LC_MESSAGES/bte-2.91-ko.mo[135/195] Building translation po/ky/LC_MESSAGES/bte-2.91-ky.mo[136/195] Building translation po/ku/LC_MESSAGES/bte-2.91-ku.mo[136/195] Building translation po/li/LC_MESSAGES/bte-2.91-li.mo[137/195] Building translation po/ky/LC_MESSAGES/bte-2.91-ky.mo[137/195] Building translation po/lt/LC_MESSAGES/bte-2.91-lt.mo[138/195] Building translation po/li/LC_MESSAGES/bte-2.91-li.mo[138/195] Building translation po/lv/LC_MESSAGES/bte-2.91-lv.mo[139/195] Building translation po/lv/LC_MESSAGES/bte-2.91-lv.mo[139/195] Building translation po/mai/LC_MESSAGES/bte-2.91-mai.mo[140/195] Building translation po/lt/LC_MESSAGES/bte-2.91-lt.mo[140/195] Building translation po/mi/LC_MESSAGES/bte-2.91-mi.mo[141/195] Building translation po/mi/LC_MESSAGES/bte-2.91-mi.mo[141/195] Building translation po/mjw/LC_MESSAGES/bte-2.91-mjw.mo[142/195] Building translation po/mai/LC_MESSAGES/bte-2.91-mai.mo[142/195] Building translation po/mk/LC_MESSAGES/bte-2.91-mk.mo[143/195] Building translation po/mjw/LC_MESSAGES/bte-2.91-mjw.mo[143/195] Building translation po/ml/LC_MESSAGES/bte-2.91-ml.mo[144/195] Building translation po/mk/LC_MESSAGES/bte-2.91-mk.mo[144/195] Building translation po/mn/LC_MESSAGES/bte-2.91-mn.mo[145/195] Building translation po/mn/LC_MESSAGES/bte-2.91-mn.mo[145/195] Building translation po/mr/LC_MESSAGES/bte-2.91-mr.mo[146/195] Building translation po/ml/LC_MESSAGES/bte-2.91-ml.mo[146/195] Building translation po/ms/LC_MESSAGES/bte-2.91-ms.mo[147/195] Building translation po/mr/LC_MESSAGES/bte-2.91-mr.mo[147/195] Building translation po/nb/LC_MESSAGES/bte-2.91-nb.mo[148/195] Building translation po/ms/LC_MESSAGES/bte-2.91-ms.mo[148/195] Building translation po/nds/LC_MESSAGES/bte-2.91-nds.mo[149/195] Building translation po/nb/LC_MESSAGES/bte-2.91-nb.mo[149/195] Building translation po/ne/LC_MESSAGES/bte-2.91-ne.mo[150/195] Building translation po/nds/LC_MESSAGES/bte-2.91-nds.mo[150/195] Building translation po/nl/LC_MESSAGES/bte-2.91-nl.mo[151/195] Building translation po/ne/LC_MESSAGES/bte-2.91-ne.mo[151/195] Building translation po/nn/LC_MESSAGES/bte-2.91-nn.mo[152/195] Building translation po/nl/LC_MESSAGES/bte-2.91-nl.mo[152/195] Building translation po/oc/LC_MESSAGES/bte-2.91-oc.mo[153/195] Building translation po/oc/LC_MESSAGES/bte-2.91-oc.mo[153/195] Building translation po/or/LC_MESSAGES/bte-2.91-or.mo[154/195] Building translation po/nn/LC_MESSAGES/bte-2.91-nn.mo[154/195] Building translation po/pa/LC_MESSAGES/bte-2.91-pa.mo[155/195] Building translation po/or/LC_MESSAGES/bte-2.91-or.mo[155/195] Building translation po/pl/LC_MESSAGES/bte-2.91-pl.mo[156/195] Building translation po/pa/LC_MESSAGES/bte-2.91-pa.mo[156/195] Building translation po/pt/LC_MESSAGES/bte-2.91-pt.mo[157/195] Building translation po/pl/LC_MESSAGES/bte-2.91-pl.mo[157/195] Building translation po/pt_BR/LC_MESSAGES/bte-2.91-pt_BR.mo[158/195] Building translation po/pt/LC_MESSAGES/bte-2.91-pt.mo[158/195] Building translation po/ro/LC_MESSAGES/bte-2.91-ro.mo[159/195] Building translation po/ro/LC_MESSAGES/bte-2.91-ro.mo[159/195] Building translation po/ru/LC_MESSAGES/bte-2.91-ru.mo[160/195] Building translation po/pt_BR/LC_MESSAGES/bte-2.91-pt_BR.mo[160/195] Building translation po/rw/LC_MESSAGES/bte-2.91-rw.mo[161/195] Building translation po/ru/LC_MESSAGES/bte-2.91-ru.mo[161/195] Building translation po/si/LC_MESSAGES/bte-2.91-si.mo[162/195] Building translation po/rw/LC_MESSAGES/bte-2.91-rw.mo[162/195] Building translation po/sk/LC_MESSAGES/bte-2.91-sk.mo[163/195] Building translation po/sk/LC_MESSAGES/bte-2.91-sk.mo[163/195] Building translation po/sl/LC_MESSAGES/bte-2.91-sl.mo[164/195] Building translation po/si/LC_MESSAGES/bte-2.91-si.mo[164/195] Building translation po/sq/LC_MESSAGES/bte-2.91-sq.mo[165/195] Building translation po/sl/LC_MESSAGES/bte-2.91-sl.mo[165/195] Building translation po/sr/LC_MESSAGES/bte-2.91-sr.mo[166/195] Building translation po/sr/LC_MESSAGES/bte-2.91-sr.mo[166/195] Building translation po/sr@latin/LC_MESSAGES/bte-2.91-sr@latin.mo[167/195] Building translation po/sq/LC_MESSAGES/bte-2.91-sq.mo[167/195] Building translation po/sv/LC_MESSAGES/bte-2.91-sv.mo[168/195] Building translation po/sr@latin/LC_MESSAGES/bte-2.91-sr@latin.mo[168/195] Building translation po/ta/LC_MESSAGES/bte-2.91-ta.mo[169/195] Building translation po/ta/LC_MESSAGES/bte-2.91-ta.mo[169/195] Building translation po/te/LC_MESSAGES/bte-2.91-te.mo[170/195] Building translation po/sv/LC_MESSAGES/bte-2.91-sv.mo[170/195] Building translation po/tg/LC_MESSAGES/bte-2.91-tg.mo[171/195] Building translation po/tg/LC_MESSAGES/bte-2.91-tg.mo[171/195] Building translation po/th/LC_MESSAGES/bte-2.91-th.mo[172/195] Building translation po/te/LC_MESSAGES/bte-2.91-te.mo[172/195] Building translation po/tr/LC_MESSAGES/bte-2.91-tr.mo[173/195] Building translation po/th/LC_MESSAGES/bte-2.91-th.mo[173/195] Building translation po/ug/LC_MESSAGES/bte-2.91-ug.mo[174/195] Building translation po/tr/LC_MESSAGES/bte-2.91-tr.mo[174/195] Building translation po/uk/LC_MESSAGES/bte-2.91-uk.mo[175/195] Building translation po/ug/LC_MESSAGES/bte-2.91-ug.mo[175/195] Building translation po/uz@cyrillic/LC_MESSAGES/bte-2.91-uz@cyrillic.mo[176/195] Building translation po/uk/LC_MESSAGES/bte-2.91-uk.mo[176/195] Building translation po/vi/LC_MESSAGES/bte-2.91-vi.mo[177/195] Building translation po/uz@cyrillic/LC_MESSAGES/bte-2.91-uz@cyrillic.mo[177/195] Building translation po/wa/LC_MESSAGES/bte-2.91-wa.mo[178/195] Building translation po/vi/LC_MESSAGES/bte-2.91-vi.mo[178/195] Building translation po/xh/LC_MESSAGES/bte-2.91-xh.mo[179/195] Building translation po/xh/LC_MESSAGES/bte-2.91-xh.mo[179/195] Building translation po/zh_CN/LC_MESSAGES/bte-2.91-zh_CN.mo[180/195] Building translation po/wa/LC_MESSAGES/bte-2.91-wa.mo[180/195] Building translation po/zh_HK/LC_MESSAGES/bte-2.91-zh_HK.mo[181/195] Building translation po/zh_CN/LC_MESSAGES/bte-2.91-zh_CN.mo[181/195] Building translation po/zh_TW/LC_MESSAGES/bte-2.91-zh_TW.mo[182/195] Building translation po/zh_HK/LC_MESSAGES/bte-2.91-zh_HK.mo[183/195] Building translation po/zh_TW/LC_MESSAGES/bte-2.91-zh_TW.mo[184/195] Compiling C++ object src/test-tabstops.p/tabstops-test.cc.o[184/195] Linking target src/test-tabstops[185/195] Linking target src/test-tabstops[186/195] Compiling C++ object src/app/bte-2.91.p/app.cc.o
+../src/app/app.cc: In function 'void bteapp_window_constructed(GObject*)':
+../src/app/app.cc:2099:47: warning: 'void ctk_widget_set_double_buffered(CtkWidget*, gboolean)' is deprecated [-Wdeprecated-declarations]
+ 2099 |                 ctk_widget_set_double_buffered(CTK_WIDGET(window->terminal), false);
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/ctk-3.0/ctk/ctkapplication.h:27,
+                 from /usr/include/ctk-3.0/ctk/ctkwindow.h:33,
+                 from /usr/include/ctk-3.0/ctk/ctkdialog.h:32,
+                 from /usr/include/ctk-3.0/ctk/ctkaboutdialog.h:30,
+                 from /usr/include/ctk-3.0/ctk/ctk.h:31,
+                 from ../src/app/app.cc:33:
+/usr/include/ctk-3.0/ctk/ctkwidget.h:883:23: note: declared here
+  883 | void                  ctk_widget_set_double_buffered    (CtkWidget    *widget,
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/app/app.cc: At global scope:
+../src/app/app.cc:971:9: warning: macro "BTEAPP_IS_TERMINAL_CLASS" is not used [-Wunused-macros]
+  971 | #define BTEAPP_IS_TERMINAL_CLASS(k)  (G_TYPE_CHECK_CLASS_TYPE((k), BTEAPP_TYPE_TERMINAL))
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/app/app.cc:2281:9: warning: macro "BTEAPP_APPLICATION_GET_CLASS" is not used [-Wunused-macros]
+ 2281 | #define BTEAPP_APPLICATION_GET_CLASS(o) (G_TYPE_INSTANCE_GET_CLASS((o), BTEAPP_TYPE_APPLICATION, BteappApplicationClass))
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/app/app.cc:2279:9: warning: macro "BTEAPP_IS_APPLICATION" is not used [-Wunused-macros]
+ 2279 | #define BTEAPP_IS_APPLICATION(o)        (G_TYPE_CHECK_INSTANCE_TYPE((o), BTEAPP_TYPE_APPLICATION))
+      |         ^~~~~~~~~~~~~~~~~~~~~
+../src/app/app.cc:741:9: warning: macro "BTEAPP_SEARCH_POPOVER_GET_CLASS" is not used [-Wunused-macros]
+  741 | #define BTEAPP_SEARCH_POPOVER_GET_CLASS(o) (G_TYPE_INSTANCE_GET_CLASS((o), BTEAPP_TYPE_SEARCH_POPOVER, BteappSearchPopoverClass))
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/app/app.cc:739:9: warning: macro "BTEAPP_IS_SEARCH_POPOVER" is not used [-Wunused-macros]
+  739 | #define BTEAPP_IS_SEARCH_POPOVER(o)        (G_TYPE_CHECK_INSTANCE_TYPE((o), BTEAPP_TYPE_SEARCH_POPOVER))
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/app/app.cc:1130:9: warning: macro "BTEAPP_IS_WINDOW_CLASS" is not used [-Wunused-macros]
+ 1130 | #define BTEAPP_IS_WINDOW_CLASS(k)  (G_TYPE_CHECK_CLASS_TYPE((k), BTEAPP_TYPE_WINDOW))
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+../src/app/app.cc:1131:9: warning: macro "BTEAPP_WINDOW_GET_CLASS" is not used [-Wunused-macros]
+ 1131 | #define BTEAPP_WINDOW_GET_CLASS(o) (G_TYPE_INSTANCE_GET_CLASS((o), BTEAPP_TYPE_WINDOW, BteappWindowClass))
+      |         ^~~~~~~~~~~~~~~~~~~~~~~
+../src/app/app.cc:972:9: warning: macro "BTEAPP_TERMINAL_GET_CLASS" is not used [-Wunused-macros]
+  972 | #define BTEAPP_TERMINAL_GET_CLASS(o) (G_TYPE_INSTANCE_GET_CLASS((o), BTEAPP_TYPE_TERMINAL, BteappTerminalClass))
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/app/app.cc:2278:9: warning: macro "BTEAPP_APPLICATION_CLASS" is not used [-Wunused-macros]
+ 2278 | #define BTEAPP_APPLICATION_CLASS(k)     (G_TYPE_CHECK_CLASS_CAST((k), BTEAPP_TYPE_APPLICATION, BteappApplicationClass))
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/app/app.cc:1128:9: warning: macro "BTEAPP_WINDOW_CLASS" is not used [-Wunused-macros]
+ 1128 | #define BTEAPP_WINDOW_CLASS(k)     (G_TYPE_CHECK_CLASS_CAST((k), BTEAPP_TYPE_WINDOW, BteappWindowClass))
+      |         ^~~~~~~~~~~~~~~~~~~
+../src/app/app.cc:740:9: warning: macro "BTEAPP_IS_SEARCH_POPOVER_CLASS" is not used [-Wunused-macros]
+  740 | #define BTEAPP_IS_SEARCH_POPOVER_CLASS(k)  (G_TYPE_CHECK_CLASS_TYPE((k), BTEAPP_TYPE_SEARCH_POPOVER))
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/app/app.cc:738:9: warning: macro "BTEAPP_SEARCH_POPOVER_CLASS" is not used [-Wunused-macros]
+  738 | #define BTEAPP_SEARCH_POPOVER_CLASS(k)     (G_TYPE_CHECK_CLASS_CAST((k), BTEAPP_TYPE_SEARCH_POPOVER, BteappSearchPopoverClass))
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/app/app.cc:969:9: warning: macro "BTEAPP_TERMINAL_CLASS" is not used [-Wunused-macros]
+  969 | #define BTEAPP_TERMINAL_CLASS(k)     (G_TYPE_CHECK_CLASS_CAST((k), BTEAPP_TYPE_TERMINAL, BteappTerminalClass))
+      |         ^~~~~~~~~~~~~~~~~~~~~
+../src/app/app.cc:970:9: warning: macro "BTEAPP_IS_TERMINAL" is not used [-Wunused-macros]
+  970 | #define BTEAPP_IS_TERMINAL(o)        (G_TYPE_CHECK_INSTANCE_TYPE((o), BTEAPP_TYPE_TERMINAL))
+      |         ^~~~~~~~~~~~~~~~~~
+../src/app/app.cc:2280:9: warning: macro "BTEAPP_IS_APPLICATION_CLASS" is not used [-Wunused-macros]
+ 2280 | #define BTEAPP_IS_APPLICATION_CLASS(k)  (G_TYPE_CHECK_CLASS_TYPE((k), BTEAPP_TYPE_APPLICATION))
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+[187/195] Compiling C++ object src/test-parser.p/parser-test.cc.o
+../src/parser-test.cc:37:9: warning: macro "_BTE_NOP" is not used [-Wunused-macros]
+   37 | #define _BTE_NOP(...) _BTE_CMD(__VA_ARGS__)
+      |         ^~~~~~~~
+In file included from ../src/parser-test.cc:33:
+../src/parser-glue.hh:754:67: warning: Out of bound access to memory after the end of 'b.m_seq.args' [alpha.security.ArrayBoundV2]
+  754 |                                 g_assert_true(bte_seq_arg_default(m_seq.args[m_seq.n_args - 1]));
+      |                                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/glib-2.0/glib/gtestutils.h:228:59: note: expanded from macro 'g_assert_true'
+  228 |                                              if G_LIKELY (expr) ; else \
+      |                                                           ^~~~
+/usr/include/glib-2.0/glib/gmacros.h:1248:59: note: expanded from macro 'G_LIKELY'
+ 1248 | #define G_LIKELY(expr) (__builtin_expect (_G_BOOLEAN_EXPR(expr), 1))
+      |                                                           ^~~~
+/usr/include/glib-2.0/glib/gmacros.h:1247:66: note: expanded from macro '_G_BOOLEAN_EXPR'
+ 1247 | #define _G_BOOLEAN_EXPR(expr) _G_BOOLEAN_EXPR_IMPL (__COUNTER__, expr)
+      |                                                                  ^~~~
+/usr/include/glib-2.0/glib/gmacros.h:1243:8: note: expanded from macro '_G_BOOLEAN_EXPR_IMPL'
+ 1243 |    if (expr)                                    \
+      |        ^~~~
+../src/parser-test.cc:261:14: warning: Value stored to 'buf' during its initialization is never read [deadcode.DeadStores]
+  261 |         auto buf = bte_seq_string_get(&str, &len);
+      |              ^~~   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/parser-test.cc:268:17: warning: Value stored to 'buf' is never read [deadcode.DeadStores]
+  268 |                 buf = bte_seq_string_get(&str, &len);
+      |                 ^     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/parser-test.cc:281:9: warning: Value stored to 'buf' is never read [deadcode.DeadStores]
+  281 |         buf = bte_seq_string_get(&str, &len);
+      |         ^     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4 warnings generated.
+[187/195] Linking target src/test-parser[188/195] Linking target src/test-parser[189/195] Compiling C++ object src/libbte-2.91.so.0.6500.0.p/bte.cc.o
+In file included from ../src/bte.cc:38:
+In file included from ../src/bteinternal.hh:40:
+In file included from ../src/ring.hh:28:
+In file included from ../src/bterowdata.hh:30:
+In file included from ../src/cell.hh:42:
+../src/color-triple.hh:54:20: warning: The left operand of '&' is a garbage value [core.UndefinedBinaryOperatorResult]
+   54 |         *ct = (*ct & ~BTE_COLOR_TRIPLE_FORE_MASK) | (uint64_t(fore)) << BTE_COLOR_TRIPLE_FORE_SHIFT;
+      |                ~~~ ^
+../src/color-triple.hh:60:20: warning: The left operand of '&' is a garbage value [core.UndefinedBinaryOperatorResult]
+   60 |         *ct = (*ct & ~BTE_COLOR_TRIPLE_BACK_MASK) | (uint64_t(back)) << BTE_COLOR_TRIPLE_BACK_SHIFT;
+      |                ~~~ ^
+../src/bte.cc:4685:6: warning: Value stored to 'suppress_alt_esc' is never read [deadcode.DeadStores]
+ 4685 |                                         suppress_alt_esc = FALSE;
+      |                                         ^                  ~~~~~
+../src/bte.cc:4717:5: warning: Value stored to 'suppress_alt_esc' is never read [deadcode.DeadStores]
+ 4717 |                                 suppress_alt_esc = FALSE;
+      |                                 ^                  ~~~~~
+../src/bte.cc:8389:14: warning: 1st function call argument is an uninitialized value [core.CallAndMessage]
+ 8389 |                 gint len = g_unichar_to_utf8 (cells[i].c, ubuf);
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/bte.cc:8623:25: warning: The left operand of '&' is a garbage value [core.UndefinedBinaryOperatorResult]
+ 8623 |                                         cells[j].attr.attr & attr_mask,
+      |                                         ~~~~~~~~~~~~~~~~~~ ^
+6 warnings generated.
+[189/195] Linking target src/libbte-2.91.so.0.6500.0[190/195] Linking target src/libbte-2.91.so.0.6500.0[190/195] Generating symbol file src/libbte-2.91.so.0.6500.0.p/libbte-2.91.so.0.6500.0.symbols[190/195] Generating bindings/gir/Bte-2.91.gir with a custom command (wrapped by meson to set env)[191/195] Generating symbol file src/libbte-2.91.so.0.6500.0.p/libbte-2.91.so.0.6500.0.symbols[191/195] Linking target src/reflect-bte[191/195] Linking target src/app/bte-2.91[192/195] Linking target src/app/bte-2.91[193/195] Linking target src/reflect-bte[194/195] Generating bindings/gir/Bte-2.91.gir with a custom command (wrapped by meson to set env)
+/rootdir/_build/tmp-introspect_0m7bvdn/Bte-2.91.c:89:13: warning: File position of the stream might be 'indeterminate' after a failed operation. Can cause undefined behavior [unix.Stream]
+   89 |       ret = fread (&byte, 1, 1, input);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/rootdir/_build/tmp-introspect_0m7bvdn/Bte-2.91.c:89:13: warning: Read function called when stream is in EOF state. Function has no effect [unix.Stream]
+   89 |       ret = fread (&byte, 1, 1, input);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/rootdir/_build/tmp-introspect_0m7bvdn/Bte-2.91.c:239:11: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+  239 |           break;
+      |           ^~~~~
+/rootdir/_build/tmp-introspect_0m7bvdn/Bte-2.91.c:246:11: warning: This statement is never executed [alpha.deadcode.UnreachableCode]
+  246 |           break;
+      |           ^~~~~
+4 warnings generated.
+../src/btepty.cc:853: Warning: Bte: invalid "closure" annotation: only valid on callback parameters
+../src/btepty.cc:858: Warning: Bte: invalid "closure" annotation: only valid on callback parameters
+../src/btepty.cc:728: Warning: Bte: invalid "scope" annotation: only valid on callback parameters
+../src/btepty.cc:730: Warning: Bte: invalid "scope" annotation: only valid on callback parameters
+../src/btepty.cc:734: Warning: Bte: invalid "closure" annotation: only valid on callback parameters
+../src/btepty.cc:739: Warning: Bte: invalid "closure" annotation: only valid on callback parameters
+../src/btectk.cc:3476: Warning: Bte: invalid "closure" annotation: only valid on callback parameters
+../src/btectk.cc:3481: Warning: Bte: invalid "closure" annotation: only valid on callback parameters
+../src/btectk.cc:3355: Warning: Bte: invalid "scope" annotation: only valid on callback parameters
+../src/btectk.cc:3357: Warning: Bte: invalid "scope" annotation: only valid on callback parameters
+../src/btectk.cc:3361: Warning: Bte: invalid "closure" annotation: only valid on callback parameters
+../src/btectk.cc:3366: Warning: Bte: invalid "closure" annotation: only valid on callback parameters
+../src/btectk.cc:3633: Warning: Bte: invalid "closure" annotation: only valid on callback parameters
+../src/btectk.cc:3705: Warning: Bte: invalid "closure" annotation: only valid on callback parameters
+../src/btectk.cc:3672: Warning: Bte: invalid "closure" annotation: only valid on callback parameters
+../src/bte/btepty.h:113: Warning: Bte: Couldn't find 'spawn_with_fds_finish' for the corresponding async function: 'spawn_with_fds_async'
+[194/195] Generating bindings/gir/Bte-2.91.typelib with a custom command[195/195] Generating bindings/gir/Bte-2.91.typelib with a custom command
+scan-build: Analysis run complete.
+scan-build: 65 bugs found.
+scan-build: Run 'scan-view /rootdir/html-report/2025-07-25-124444-10734-1' to examine bug reports.
+Listing... 0%Listing... 0%Listing... 0%              adduser/testing,now 3.152 all [installed,automatic]
+advaita-icon-theme/unknown,now 3.25.0-1 all [installed,automatic]
+apt/testing,now 3.0.3 amd64 [installed,automatic]
+aptitude-common/testing,now 0.8.13-7 all [installed,automatic]
+aptitude/testing,now 0.8.13-7 amd64 [installed]
+at-spi2-common/testing,now 2.56.2-1 all [installed,automatic]
+at-spi2-core/testing,now 2.56.2-1 amd64 [installed,automatic]
+base-files/testing,now 13.8 amd64 [installed,automatic]
+base-passwd/testing,now 3.6.7 amd64 [installed,automatic]
+bash/testing,now 5.2.37-2+b3 amd64 [installed,automatic]
+binfmt-support/testing,now 2.2.2-7 amd64 [installed,automatic]
+binutils-common/testing,now 2.44-3 amd64 [installed,automatic]
+binutils-x86-64-linux-gnu/testing,now 2.44-3 amd64 [installed,automatic]
+binutils/testing,now 2.44-3 amd64 [installed,automatic]
+bsdutils/testing,now 1:2.41-5 amd64 [installed,automatic]
+build-essential/testing,now 12.12 amd64 [installed,automatic]
+bzip2-doc/testing,now 1.0.8-6 all [installed,automatic]
+bzip2/testing,now 1.0.8-6 amd64 [installed,automatic]
+ca-certificates/testing,now 20250419 all [installed,automatic]
+clang-19/testing,now 1:19.1.7-3+b1 amd64 [installed,automatic]
+clang-tools-19/testing,now 1:19.1.7-3+b1 amd64 [installed,automatic]
+clang-tools/testing,now 1:19.0-63 amd64 [installed]
+coreutils/testing,now 9.7-3 amd64 [installed,automatic]
+cpp-14-x86-64-linux-gnu/testing,now 14.2.0-19 amd64 [installed,automatic]
+cpp-14/testing,now 14.2.0-19 amd64 [installed,automatic]
+cpp-x86-64-linux-gnu/testing,now 4:14.2.0-1 amd64 [installed,automatic]
+cpp/testing,now 4:14.2.0-1 amd64 [installed,automatic]
+cppcheck/testing,now 2.17.1-2 amd64 [installed]
+ctk-update-icon-cache/unknown,now 3.25.6-1 amd64 [installed,automatic]
+dash/testing,now 0.5.12-12 amd64 [installed,automatic]
+dbus-bin/testing,now 1.16.2-2 amd64 [installed,automatic]
+dbus-daemon/testing,now 1.16.2-2 amd64 [installed,automatic]
+dbus-session-bus-common/testing,now 1.16.2-2 all [installed,automatic]
+dbus-system-bus-common/testing,now 1.16.2-2 all [installed,automatic]
+dbus-user-session/testing,now 1.16.2-2 amd64 [installed,automatic]
+dbus/testing,now 1.16.2-2 amd64 [installed,automatic]
+dconf-gsettings-backend/testing,now 0.40.0-5 amd64 [installed,automatic]
+dconf-service/testing,now 0.40.0-5 amd64 [installed,automatic]
+debconf/testing,now 1.5.91 all [installed,automatic]
+debian-archive-keyring/testing,now 2025.1 all [installed,automatic]
+debianutils/testing,now 5.23.1 amd64 [installed,automatic]
+diffutils/testing,now 1:3.10-4 amd64 [installed,automatic]
+dmsetup/testing,now 2:1.02.205-2 amd64 [installed,automatic]
+docbook-to-man/testing,now 1:2.0.0-48 amd64 [installed,automatic]
+docbook-xml/testing,now 4.5-13 all [installed,automatic]
+docbook-xsl/testing,now 1.79.2+dfsg-7 all [installed,automatic]
+docbook/testing,now 4.5-11 all [installed,automatic]
+dpkg-dev/testing,now 1.22.21 all [installed,automatic]
+dpkg/testing,now 1.22.21 amd64 [installed,automatic]
+expect/testing,now 5.45.4-4 amd64 [installed]
+fakeroot/testing,now 1.37.1.1-1 amd64 [installed,automatic]
+findutils/testing,now 4.10.0-3 amd64 [installed,automatic]
+fontconfig-config/testing,now 2.15.0-2.3 amd64 [installed,automatic]
+fontconfig/testing,now 2.15.0-2.3 amd64 [installed,automatic]
+fonts-dejavu-core/testing,now 2.37-8 all [installed,automatic]
+fonts-dejavu-mono/testing,now 2.37-8 all [installed,automatic]
+g++-14-x86-64-linux-gnu/testing,now 14.2.0-19 amd64 [installed,automatic]
+g++-14/testing,now 14.2.0-19 amd64 [installed,automatic]
+g++-x86-64-linux-gnu/testing,now 4:14.2.0-1 amd64 [installed,automatic]
+g++/testing,now 4:14.2.0-1 amd64 [installed,automatic]
+gcc-14-base/testing,now 14.2.0-19 amd64 [installed,automatic]
+gcc-14-x86-64-linux-gnu/testing,now 14.2.0-19 amd64 [installed,automatic]
+gcc-14/testing,now 14.2.0-19 amd64 [installed,automatic]
+gcc-x86-64-linux-gnu/testing,now 4:14.2.0-1 amd64 [installed,automatic]
+gcc/testing,now 4:14.2.0-1 amd64 [installed,automatic]
+gettext-base/testing,now 0.23.1-2 amd64 [installed,automatic]
+gettext/testing,now 0.23.1-2 amd64 [installed]
+gir1.2-atk-1.0/testing,now 2.56.2-1 amd64 [installed,automatic]
+gir1.2-atspi-2.0/testing,now 2.56.2-1 amd64 [installed,automatic]
+gir1.2-ctk-3.0/unknown,now 3.25.6-1 amd64 [installed]
+gir1.2-freedesktop-dev/testing,now 1.84.0-1 amd64 [installed,automatic]
+gir1.2-freedesktop/testing,now 1.84.0-1 amd64 [installed,automatic]
+gir1.2-gdkpixbuf-2.0/testing,now 2.42.12+dfsg-3 amd64 [installed,automatic]
+gir1.2-girepository-2.0-dev/testing,now 1.84.0-1 amd64 [installed,automatic]
+gir1.2-girepository-2.0/testing,now 1.84.0-1 amd64 [installed,automatic]
+gir1.2-glib-2.0-dev/testing,now 2.84.3-1 amd64 [installed,automatic]
+gir1.2-glib-2.0/testing,now 2.84.3-1 amd64 [installed,automatic]
+gir1.2-harfbuzz-0.0/testing,now 10.2.0-1+b1 amd64 [installed,automatic]
+gir1.2-pango-1.0/testing,now 1.56.3-1 amd64 [installed,automatic]
+girepository-tools/testing,now 2.84.3-1 amd64 [installed,automatic]
+git-man/testing,now 1:2.47.2-0.2 all [installed,automatic]
+git/testing,now 1:2.47.2-0.2 amd64 [installed]
+gobject-introspection-bin/testing,now 1.84.0-1 amd64 [installed,automatic]
+gobject-introspection/testing,now 1.84.0-1 amd64 [installed,automatic]
+grep/testing,now 3.11-4 amd64 [installed,automatic]
+gsettings-desktop-schemas/testing,now 48.0-1 all [installed,automatic]
+gtk-doc-tools/testing,now 1.34.0-2 all [installed]
+gzip/testing,now 1.13-1 amd64 [installed,automatic]
+hicolor-icon-theme/testing,now 0.18-2 all [installed,automatic]
+hostname/testing,now 3.25 amd64 [installed,automatic]
+icu-devtools/testing,now 76.1-4 amd64 [installed,automatic]
+init-system-helpers/testing,now 1.68 all [installed,automatic]
+krb5-locales/testing,now 1.21.3-5 all [installed,automatic]
+less/testing,now 668-1 amd64 [installed,automatic]
+lib32gcc-s1/testing,now 14.2.0-19 amd64 [installed,automatic]
+lib32stdc++6/testing,now 14.2.0-19 amd64 [installed,automatic]
+libacl1/testing,now 2.3.2-2+b1 amd64 [installed,automatic]
+libalgorithm-diff-perl/testing,now 1.201-1 all [installed,automatic]
+libalgorithm-diff-xs-perl/testing,now 0.04-9 amd64 [installed,automatic]
+libalgorithm-merge-perl/testing,now 0.08-5 all [installed,automatic]
+libapparmor1/testing,now 4.1.0-1 amd64 [installed,automatic]
+libapt-pkg7.0/testing,now 3.0.3 amd64 [installed,automatic]
+libasan8/testing,now 14.2.0-19 amd64 [installed,automatic]
+libatk-bridge2.0-0t64/testing,now 2.56.2-1 amd64 [installed,automatic]
+libatk-bridge2.0-dev/testing,now 2.56.2-1 amd64 [installed,automatic]
+libatk1.0-0t64/testing,now 2.56.2-1 amd64 [installed,automatic]
+libatk1.0-dev/testing,now 2.56.2-1 amd64 [installed,automatic]
+libatomic1/testing,now 14.2.0-19 amd64 [installed,automatic]
+libatspi2.0-0t64/testing,now 2.56.2-1 amd64 [installed,automatic]
+libatspi2.0-dev/testing,now 2.56.2-1 amd64 [installed,automatic]
+libattr1/testing,now 1:2.5.2-3 amd64 [installed,automatic]
+libaudit-common/testing,now 1:4.0.2-2 all [installed,automatic]
+libaudit1/testing,now 1:4.0.2-2+b2 amd64 [installed,automatic]
+libavahi-client3/testing,now 0.8-16 amd64 [installed,automatic]
+libavahi-common-data/testing,now 0.8-16 amd64 [installed,automatic]
+libavahi-common3/testing,now 0.8-16 amd64 [installed,automatic]
+libbinutils/testing,now 2.44-3 amd64 [installed,automatic]
+libblkid-dev/testing,now 2.41-5 amd64 [installed,automatic]
+libblkid1/testing,now 2.41-5 amd64 [installed,automatic]
+libboost-iostreams1.83.0/testing,now 1.83.0-4.2 amd64 [installed,automatic]
+libbrotli-dev/testing,now 1.1.0-2+b7 amd64 [installed,automatic]
+libbrotli1/testing,now 1.1.0-2+b7 amd64 [installed,automatic]
+libbsd0/testing,now 0.12.2-2 amd64 [installed,automatic]
+libbz2-1.0/testing,now 1.0.8-6 amd64 [installed,automatic]
+libbz2-dev/testing,now 1.0.8-6 amd64 [installed,automatic]
+libc-bin/testing,now 2.41-10 amd64 [installed,automatic]
+libc-dev-bin/testing,now 2.41-10 amd64 [installed,automatic]
+libc6-dev/testing,now 2.41-10 amd64 [installed,automatic]
+libc6-i386/testing,now 2.41-10 amd64 [installed,automatic]
+libc6/testing,now 2.41-10 amd64 [installed,automatic]
+libcairo-gobject2/testing,now 1.18.4-1+b1 amd64 [installed,automatic]
+libcairo-script-interpreter2/testing,now 1.18.4-1+b1 amd64 [installed,automatic]
+libcairo2-dev/testing,now 1.18.4-1+b1 amd64 [installed,automatic]
+libcairo2/testing,now 1.18.4-1+b1 amd64 [installed,automatic]
+libcap-dev/testing,now 1:2.75-9 amd64 [installed,automatic]
+libcap-ng0/testing,now 0.8.5-4+b1 amd64 [installed,automatic]
+libcap2/testing,now 1:2.75-9 amd64 [installed,automatic]
+libcbor0.10/testing,now 0.10.2-2 amd64 [installed,automatic]
+libcc1-0/testing,now 14.2.0-19 amd64 [installed,automatic]
+libclang-common-19-dev/testing,now 1:19.1.7-3+b1 amd64 [installed,automatic]
+libclang-cpp19/testing,now 1:19.1.7-3+b1 amd64 [installed,automatic]
+libclang-rt-19-dev/testing,now 1:19.1.7-3+b1 amd64 [installed,automatic]
+libclang1-19/testing,now 1:19.1.7-3+b1 amd64 [installed,automatic]
+libcolord2/testing,now 1.4.7-3 amd64 [installed,automatic]
+libcom-err2/testing,now 1.47.2-3+b1 amd64 [installed,automatic]
+libcrypt-dev/testing,now 1:4.4.38-1 amd64 [installed,automatic]
+libcrypt1/testing,now 1:4.4.38-1 amd64 [installed,automatic]
+libcryptsetup12/testing,now 2:2.7.5-2 amd64 [installed,automatic]
+libctf-nobfd0/testing,now 2.44-3 amd64 [installed,automatic]
+libctf0/testing,now 2.44-3 amd64 [installed,automatic]
+libctk-3-0/unknown,now 3.25.6-1 amd64 [installed]
+libctk-3-bin/unknown,now 3.25.6-1 amd64 [installed,automatic]
+libctk-3-common/unknown,now 3.25.6-1 all [installed]
+libctk-3-dev/unknown,now 3.25.6-1 amd64 [installed]
+libcups2t64/testing,now 2.4.10-3 amd64 [installed,automatic]
+libcurl3t64-gnutls/testing,now 8.14.1-2 amd64 [installed,automatic]
+libcurl4t64/testing,now 8.14.1-2 amd64 [installed,automatic]
+libcwidget4/testing,now 0.5.18-6+b2 amd64 [installed,automatic]
+libdatrie-dev/testing,now 0.2.13-3+b1 amd64 [installed,automatic]
+libdatrie1/testing,now 0.2.13-3+b1 amd64 [installed,automatic]
+libdav1d7/testing,now 1.5.1-1 amd64 [installed,automatic]
+libdb5.3t64/testing,now 5.3.28+dfsg2-9 amd64 [installed,automatic]
+libdbus-1-3/testing,now 1.16.2-2 amd64 [installed,automatic]
+libdbus-1-dev/testing,now 1.16.2-2 amd64 [installed,automatic]
+libdconf1/testing,now 0.40.0-5 amd64 [installed,automatic]
+libdebconfclient0/testing,now 0.279 amd64 [installed,automatic]
+libdeflate-dev/testing,now 1.23-2 amd64 [installed,automatic]
+libdeflate0/testing,now 1.23-2 amd64 [installed,automatic]
+libdevmapper1.02.1/testing,now 2:1.02.205-2 amd64 [installed,automatic]
+libdpkg-perl/testing,now 1.22.21 all [installed,automatic]
+libdrm-amdgpu1/testing,now 2.4.124-2 amd64 [installed,automatic]
+libdrm-common/testing,now 2.4.124-2 all [installed,automatic]
+libdrm-intel1/testing,now 2.4.124-2 amd64 [installed,automatic]
+libdrm2/testing,now 2.4.124-2 amd64 [installed,automatic]
+libedit2/testing,now 3.1-20250104-1 amd64 [installed,automatic]
+libegl-dev/testing,now 1.7.0-1+b2 amd64 [installed,automatic]
+libegl-mesa0/testing,now 25.0.7-2 amd64 [installed,automatic]
+libegl1-mesa-dev/testing,now 25.0.7-2 amd64 [installed,automatic]
+libegl1/testing,now 1.7.0-1+b2 amd64 [installed,automatic]
+libelf1t64/testing,now 0.192-4 amd64 [installed,automatic]
+libepoxy-dev/testing,now 1.5.10-2 amd64 [installed,automatic]
+libepoxy0/testing,now 1.5.10-2 amd64 [installed,automatic]
+liberror-perl/testing,now 0.17030-1 all [installed,automatic]
+libevent-2.1-7t64/testing,now 2.1.12-stable-10+b1 amd64 [installed,automatic]
+libexpat1-dev/testing,now 2.7.1-2 amd64 [installed,automatic]
+libexpat1/testing,now 2.7.1-2 amd64 [installed,automatic]
+libfakeroot/testing,now 1.37.1.1-1 amd64 [installed,automatic]
+libffi-dev/testing,now 3.4.8-2 amd64 [installed,automatic]
+libffi8/testing,now 3.4.8-2 amd64 [installed,automatic]
+libfido2-1/testing,now 1.15.0-1+b1 amd64 [installed,automatic]
+libfile-fcntllock-perl/testing,now 0.22-4+b4 amd64 [installed,automatic]
+libfontconfig-dev/testing,now 2.15.0-2.3 amd64 [installed,automatic]
+libfontconfig1/testing,now 2.15.0-2.3 amd64 [installed,automatic]
+libfreetype-dev/testing,now 2.13.3+dfsg-1 amd64 [installed,automatic]
+libfreetype6/testing,now 2.13.3+dfsg-1 amd64 [installed,automatic]
+libfribidi-dev/testing,now 1.0.16-1 amd64 [installed,automatic]
+libfribidi0/testing,now 1.0.16-1 amd64 [installed,automatic]
+libgbm1/testing,now 25.0.7-2 amd64 [installed,automatic]
+libgc1/testing,now 1:8.2.8-1 amd64 [installed,automatic]
+libgcc-14-dev/testing,now 14.2.0-19 amd64 [installed,automatic]
+libgcc-s1/testing,now 14.2.0-19 amd64 [installed,automatic]
+libgcrypt20/testing,now 1.11.0-7 amd64 [installed,automatic]
+libgdbm-compat4t64/testing,now 1.24-2 amd64 [installed,automatic]
+libgdbm6t64/testing,now 1.24-2 amd64 [installed,automatic]
+libgdk-pixbuf-2.0-0/testing,now 2.42.12+dfsg-3 amd64 [installed,automatic]
+libgdk-pixbuf-2.0-dev/testing,now 2.42.12+dfsg-3 amd64 [installed,automatic]
+libgdk-pixbuf2.0-bin/testing,now 2.42.12+dfsg-3 amd64 [installed,automatic]
+libgdk-pixbuf2.0-common/testing,now 2.42.12+dfsg-3 all [installed,automatic]
+libgio-2.0-dev-bin/testing,now 2.84.3-1 amd64 [installed,automatic]
+libgio-2.0-dev/testing,now 2.84.3-1 amd64 [installed,automatic]
+libgirepository-1.0-1/testing,now 1.84.0-1 amd64 [installed,automatic]
+libgirepository-1.0-dev/testing,now 1.84.0-1 amd64 [installed,automatic]
+libgirepository-2.0-0/testing,now 2.84.3-1 amd64 [installed,automatic]
+libgirepository1.0-dev/testing,now 1.84.0-1 amd64 [installed]
+libgl-dev/testing,now 1.7.0-1+b2 amd64 [installed,automatic]
+libgl1-mesa-dri/testing,now 25.0.7-2 amd64 [installed,automatic]
+libgl1/testing,now 1.7.0-1+b2 amd64 [installed,automatic]
+libgles-dev/testing,now 1.7.0-1+b2 amd64 [installed,automatic]
+libgles1/testing,now 1.7.0-1+b2 amd64 [installed,automatic]
+libgles2/testing,now 1.7.0-1+b2 amd64 [installed,automatic]
+libglib2.0-0t64/testing,now 2.84.3-1 amd64 [installed,automatic]
+libglib2.0-bin/testing,now 2.84.3-1 amd64 [installed,automatic]
+libglib2.0-data/testing,now 2.84.3-1 all [installed,automatic]
+libglib2.0-dev-bin/testing,now 2.84.3-1 amd64 [installed,automatic]
+libglib2.0-dev/testing,now 2.84.3-1 amd64 [installed]
+libglvnd-core-dev/testing,now 1.7.0-1+b2 amd64 [installed,automatic]
+libglvnd-dev/testing,now 1.7.0-1+b2 amd64 [installed,automatic]
+libglvnd0/testing,now 1.7.0-1+b2 amd64 [installed,automatic]
+libglx-dev/testing,now 1.7.0-1+b2 amd64 [installed,automatic]
+libglx-mesa0/testing,now 25.0.7-2 amd64 [installed,automatic]
+libglx0/testing,now 1.7.0-1+b2 amd64 [installed,automatic]
+libgmp-dev/testing,now 2:6.3.0+dfsg-3 amd64 [installed,automatic]
+libgmp10/testing,now 2:6.3.0+dfsg-3 amd64 [installed,automatic]
+libgmpxx4ldbl/testing,now 2:6.3.0+dfsg-3 amd64 [installed,automatic]
+libgnutls-dane0t64/testing,now 3.8.9-3 amd64 [installed,automatic]
+libgnutls-openssl27t64/testing,now 3.8.9-3 amd64 [installed,automatic]
+libgnutls28-dev/testing,now 3.8.9-3 amd64 [installed]
+libgnutls30t64/testing,now 3.8.9-3 amd64 [installed,automatic]
+libgomp1/testing,now 14.2.0-19 amd64 [installed,automatic]
+libgpg-error-l10n/testing,now 1.51-4 all [installed,automatic]
+libgpg-error0/testing,now 1.51-4 amd64 [installed,automatic]
+libgpm2/testing,now 1.20.7-11+b2 amd64 [installed,automatic]
+libgprofng0/testing,now 2.44-3 amd64 [installed,automatic]
+libgraphite2-3/testing,now 1.3.14-2+b1 amd64 [installed,automatic]
+libgraphite2-dev/testing,now 1.3.14-2+b1 amd64 [installed,automatic]
+libgssapi-krb5-2/testing,now 1.21.3-5 amd64 [installed,automatic]
+libharfbuzz-cairo0/testing,now 10.2.0-1+b1 amd64 [installed,automatic]
+libharfbuzz-dev/testing,now 10.2.0-1+b1 amd64 [installed,automatic]
+libharfbuzz-gobject0/testing,now 10.2.0-1+b1 amd64 [installed,automatic]
+libharfbuzz-icu0/testing,now 10.2.0-1+b1 amd64 [installed,automatic]
+libharfbuzz-subset0/testing,now 10.2.0-1+b1 amd64 [installed,automatic]
+libharfbuzz0b/testing,now 10.2.0-1+b1 amd64 [installed,automatic]
+libhogweed6t64/testing,now 3.10.1-1 amd64 [installed,automatic]
+libhwasan0/testing,now 14.2.0-19 amd64 [installed,automatic]
+libice-dev/testing,now 2:1.1.1-1 amd64 [installed,automatic]
+libice6/testing,now 2:1.1.1-1 amd64 [installed,automatic]
+libicu-dev/testing,now 76.1-4 amd64 [installed,automatic]
+libicu76/testing,now 76.1-4 amd64 [installed,automatic]
+libidn2-0/testing,now 2.3.8-2 amd64 [installed,automatic]
+libidn2-dev/testing,now 2.3.8-2 amd64 [installed,automatic]
+libisl23/testing,now 0.27-1 amd64 [installed,automatic]
+libitm1/testing,now 14.2.0-19 amd64 [installed,automatic]
+libjansson4/testing,now 2.14-2+b3 amd64 [installed,automatic]
+libjbig-dev/testing,now 2.1-6.1+b2 amd64 [installed,automatic]
+libjbig0/testing,now 2.1-6.1+b2 amd64 [installed,automatic]
+libjpeg-dev/testing,now 1:2.1.5-4 amd64 [installed,automatic]
+libjpeg62-turbo-dev/testing,now 1:2.1.5-4 amd64 [installed,automatic]
+libjpeg62-turbo/testing,now 1:2.1.5-4 amd64 [installed,automatic]
+libjson-c5/testing,now 0.18+ds-1 amd64 [installed,automatic]
+libk5crypto3/testing,now 1.21.3-5 amd64 [installed,automatic]
+libkeyutils1/testing,now 1.6.3-6 amd64 [installed,automatic]
+libkmod2/testing,now 34.2-2 amd64 [installed,automatic]
+libkrb5-3/testing,now 1.21.3-5 amd64 [installed,automatic]
+libkrb5support0/testing,now 1.21.3-5 amd64 [installed,automatic]
+liblastlog2-2/testing,now 2.41-5 amd64 [installed,automatic]
+liblcms2-2/testing,now 2.16-2 amd64 [installed,automatic]
+libldap-common/testing,now 2.6.10+dfsg-1 all [installed,automatic]
+libldap2/testing,now 2.6.10+dfsg-1 amd64 [installed,automatic]
+liblerc-dev/testing,now 4.0.0+ds-5 amd64 [installed,automatic]
+liblerc4/testing,now 4.0.0+ds-5 amd64 [installed,automatic]
+libllvm19/testing,now 1:19.1.7-3+b1 amd64 [installed,automatic]
+liblocale-gettext-perl/testing,now 1.07-7+b1 amd64 [installed,automatic]
+liblsan0/testing,now 14.2.0-19 amd64 [installed,automatic]
+liblz4-1/testing,now 1.10.0-4 amd64 [installed,automatic]
+liblzma-dev/testing,now 5.8.1-1 amd64 [installed,automatic]
+liblzma5/testing,now 5.8.1-1 amd64 [installed,automatic]
+liblzo2-2/testing,now 2.10-3+b1 amd64 [installed,automatic]
+libmd0/testing,now 1.1.0-2+b1 amd64 [installed,automatic]
+libmount-dev/testing,now 2.41-5 amd64 [installed,automatic]
+libmount1/testing,now 2.41-5 amd64 [installed,automatic]
+libmpc3/testing,now 1.3.1-1+b3 amd64 [installed,automatic]
+libmpfr6/testing,now 4.2.2-1 amd64 [installed,automatic]
+libncurses-dev/testing,now 6.5+20250216-2 amd64 [installed,automatic]
+libncurses6/testing,now 6.5+20250216-2 amd64 [installed,automatic]
+libncursesw6/testing,now 6.5+20250216-2 amd64 [installed,automatic]
+libnettle8t64/testing,now 3.10.1-1 amd64 [installed,automatic]
+libnghttp2-14/testing,now 1.64.0-1.1 amd64 [installed,automatic]
+libnghttp3-9/testing,now 1.8.0-1 amd64 [installed,automatic]
+libngtcp2-16/testing,now 1.11.0-1 amd64 [installed,automatic]
+libngtcp2-crypto-gnutls8/testing,now 1.11.0-1 amd64 [installed,automatic]
+libnss-systemd/testing,now 257.7-1 amd64 [installed,automatic]
+libobjc-14-dev/testing,now 14.2.0-19 amd64 [installed,automatic]
+libobjc4/testing,now 14.2.0-19 amd64 [installed,automatic]
+libopengl-dev/testing,now 1.7.0-1+b2 amd64 [installed,automatic]
+libopengl0/testing,now 1.7.0-1+b2 amd64 [installed,automatic]
+libosp5/testing,now 1.5.2-15.2 amd64 [installed,automatic]
+libp11-kit-dev/testing,now 0.25.5-3 amd64 [installed,automatic]
+libp11-kit0/testing,now 0.25.5-3 amd64 [installed,automatic]
+libpam-modules-bin/testing,now 1.7.0-5 amd64 [installed,automatic]
+libpam-modules/testing,now 1.7.0-5 amd64 [installed,automatic]
+libpam-runtime/testing,now 1.7.0-5 all [installed,automatic]
+libpam-systemd/testing,now 257.7-1 amd64 [installed,automatic]
+libpam0g/testing,now 1.7.0-5 amd64 [installed,automatic]
+libpango-1.0-0/testing,now 1.56.3-1 amd64 [installed,automatic]
+libpango1.0-dev/testing,now 1.56.3-1 amd64 [installed]
+libpangocairo-1.0-0/testing,now 1.56.3-1 amd64 [installed,automatic]
+libpangoft2-1.0-0/testing,now 1.56.3-1 amd64 [installed,automatic]
+libpangoxft-1.0-0/testing,now 1.56.3-1 amd64 [installed,automatic]
+libpciaccess0/testing,now 0.17-3+b3 amd64 [installed,automatic]
+libpcre2-16-0/testing,now 10.45-1 amd64 [installed,automatic]
+libpcre2-32-0/testing,now 10.45-1 amd64 [installed,automatic]
+libpcre2-8-0/testing,now 10.45-1 amd64 [installed,automatic]
+libpcre2-dev/testing,now 10.45-1 amd64 [installed]
+libpcre2-posix3/testing,now 10.45-1 amd64 [installed,automatic]
+libperl5.40/testing,now 5.40.1-5 amd64 [installed,automatic]
+libpfm4/testing,now 4.13.0+git99-gc5587f9-1 amd64 [installed,automatic]
+libpipeline1/testing,now 1.5.8-1 amd64 [installed,automatic]
+libpixman-1-0/testing,now 0.44.0-3 amd64 [installed,automatic]
+libpixman-1-dev/testing,now 0.44.0-3 amd64 [installed,automatic]
+libpkgconf3/testing,now 1.8.1-4 amd64 [installed,automatic]
+libpng-dev/testing,now 1.6.48-1 amd64 [installed,automatic]
+libpng-tools/testing,now 1.6.48-1 amd64 [installed,automatic]
+libpng16-16t64/testing,now 1.6.48-1 amd64 [installed,automatic]
+libproc2-0/testing,now 2:4.0.4-8 amd64 [installed,automatic]
+libpsl5t64/testing,now 0.21.2-1.1+b1 amd64 [installed,automatic]
+libpython3-stdlib/testing,now 3.13.5-1 amd64 [installed,automatic]
+libpython3.13-minimal/testing,now 3.13.5-2 amd64 [installed,automatic]
+libpython3.13-stdlib/testing,now 3.13.5-2 amd64 [installed,automatic]
+libquadmath0/testing,now 14.2.0-19 amd64 [installed,automatic]
+libreadline8t64/testing,now 8.2-6 amd64 [installed,automatic]
+librsvg2-2/testing,now 2.60.0+dfsg-1 amd64 [installed,automatic]
+librsvg2-common/testing,now 2.60.0+dfsg-1 amd64 [installed,automatic]
+librtmp1/testing,now 2.4+20151223.gitfa8646d.1-2+b5 amd64 [installed,automatic]
+libsasl2-2/testing,now 2.1.28+dfsg1-9 amd64 [installed,automatic]
+libsasl2-modules-db/testing,now 2.1.28+dfsg1-9 amd64 [installed,automatic]
+libsasl2-modules/testing,now 2.1.28+dfsg1-9 amd64 [installed,automatic]
+libseccomp2/testing,now 2.6.0-2 amd64 [installed,automatic]
+libselinux1-dev/testing,now 3.8.1-1 amd64 [installed,automatic]
+libselinux1/testing,now 3.8.1-1 amd64 [installed,automatic]
+libsemanage-common/testing,now 3.8.1-1 all [installed,automatic]
+libsemanage2/testing,now 3.8.1-1 amd64 [installed,automatic]
+libsensors-config/testing,now 1:3.6.2-2 all [installed,automatic]
+libsensors5/testing,now 1:3.6.2-2 amd64 [installed,automatic]
+libsepol-dev/testing,now 3.8.1-1 amd64 [installed,automatic]
+libsepol2/testing,now 3.8.1-1 amd64 [installed,automatic]
+libsframe1/testing,now 2.44-3 amd64 [installed,automatic]
+libsharpyuv-dev/testing,now 1.5.0-0.1 amd64 [installed,automatic]
+libsharpyuv0/testing,now 1.5.0-0.1 amd64 [installed,automatic]
+libsigc++-2.0-0v5/testing,now 2.12.1-3 amd64 [installed,automatic]
+libsm-dev/testing,now 2:1.2.6-1 amd64 [installed,automatic]
+libsm6/testing,now 2:1.2.6-1 amd64 [installed,automatic]
+libsmartcols1/testing,now 2.41-5 amd64 [installed,automatic]
+libsqlite3-0/testing,now 3.46.1-6 amd64 [installed,automatic]
+libssh2-1t64/testing,now 1.11.1-1 amd64 [installed,automatic]
+libssl3t64/testing,now 3.5.1-1 amd64 [installed,automatic]
+libstdc++-14-dev/testing,now 14.2.0-19 amd64 [installed,automatic]
+libstdc++6/testing,now 14.2.0-19 amd64 [installed,automatic]
+libsysprof-capture-4-dev/testing,now 48.0-2 amd64 [installed,automatic]
+libsystemd-dev/testing,now 257.7-1 amd64 [installed]
+libsystemd-shared/testing,now 257.7-1 amd64 [installed,automatic]
+libsystemd0/testing,now 257.7-1 amd64 [installed,automatic]
+libtasn1-6-dev/testing,now 4.20.0-2 amd64 [installed,automatic]
+libtasn1-6/testing,now 4.20.0-2 amd64 [installed,automatic]
+libtasn1-doc/testing,now 4.20.0-2 all [installed,automatic]
+libtcl8.6/testing,now 8.6.16+dfsg-1 amd64 [installed,automatic]
+libthai-data/testing,now 0.1.29-2 all [installed,automatic]
+libthai-dev/testing,now 0.1.29-2+b1 amd64 [installed,automatic]
+libthai0/testing,now 0.1.29-2+b1 amd64 [installed,automatic]
+libtiff-dev/testing,now 4.7.0-3 amd64 [installed,automatic]
+libtiff6/testing,now 4.7.0-3 amd64 [installed,automatic]
+libtiffxx6/testing,now 4.7.0-3 amd64 [installed,automatic]
+libtinfo6/testing,now 6.5+20250216-2 amd64 [installed,automatic]
+libtinyxml2-11/testing,now 11.0.0+dfsg-1+b1 amd64 [installed,automatic]
+libtsan2/testing,now 14.2.0-19 amd64 [installed,automatic]
+libubsan1/testing,now 14.2.0-19 amd64 [installed,automatic]
+libudev1/testing,now 257.7-1 amd64 [installed,automatic]
+libunbound8/testing,now 1.22.0-2 amd64 [installed,automatic]
+libunistring5/testing,now 1.3-2 amd64 [installed,automatic]
+libuuid1/testing,now 2.41-5 amd64 [installed,automatic]
+libvulkan1/testing,now 1.4.309.0-1 amd64 [installed,automatic]
+libwayland-bin/testing,now 1.23.1-3 amd64 [installed,automatic]
+libwayland-client0/testing,now 1.23.1-3 amd64 [installed,automatic]
+libwayland-cursor0/testing,now 1.23.1-3 amd64 [installed,automatic]
+libwayland-dev/testing,now 1.23.1-3 amd64 [installed,automatic]
+libwayland-egl1/testing,now 1.23.1-3 amd64 [installed,automatic]
+libwayland-server0/testing,now 1.23.1-3 amd64 [installed,automatic]
+libwebp-dev/testing,now 1.5.0-0.1 amd64 [installed,automatic]
+libwebp7/testing,now 1.5.0-0.1 amd64 [installed,automatic]
+libwebpdecoder3/testing,now 1.5.0-0.1 amd64 [installed,automatic]
+libwebpdemux2/testing,now 1.5.0-0.1 amd64 [installed,automatic]
+libwebpmux3/testing,now 1.5.0-0.1 amd64 [installed,automatic]
+libx11-6/testing,now 2:1.8.12-1 amd64 [installed,automatic]
+libx11-data/testing,now 2:1.8.12-1 all [installed,automatic]
+libx11-dev/testing,now 2:1.8.12-1 amd64 [installed,automatic]
+libx11-xcb1/testing,now 2:1.8.12-1 amd64 [installed,automatic]
+libxapian30/testing,now 1.4.29-3 amd64 [installed,automatic]
+libxau-dev/testing,now 1:1.0.11-1 amd64 [installed,automatic]
+libxau6/testing,now 1:1.0.11-1 amd64 [installed,automatic]
+libxcb-dri3-0/testing,now 1.17.0-2+b1 amd64 [installed,automatic]
+libxcb-glx0/testing,now 1.17.0-2+b1 amd64 [installed,automatic]
+libxcb-present0/testing,now 1.17.0-2+b1 amd64 [installed,automatic]
+libxcb-randr0/testing,now 1.17.0-2+b1 amd64 [installed,automatic]
+libxcb-render0-dev/testing,now 1.17.0-2+b1 amd64 [installed,automatic]
+libxcb-render0/testing,now 1.17.0-2+b1 amd64 [installed,automatic]
+libxcb-shm0-dev/testing,now 1.17.0-2+b1 amd64 [installed,automatic]
+libxcb-shm0/testing,now 1.17.0-2+b1 amd64 [installed,automatic]
+libxcb-sync1/testing,now 1.17.0-2+b1 amd64 [installed,automatic]
+libxcb-xfixes0/testing,now 1.17.0-2+b1 amd64 [installed,automatic]
+libxcb1-dev/testing,now 1.17.0-2+b1 amd64 [installed,automatic]
+libxcb1/testing,now 1.17.0-2+b1 amd64 [installed,automatic]
+libxcomposite-dev/testing,now 1:0.4.6-1 amd64 [installed,automatic]
+libxcomposite1/testing,now 1:0.4.6-1 amd64 [installed,automatic]
+libxcursor-dev/testing,now 1:1.2.3-1 amd64 [installed,automatic]
+libxcursor1/testing,now 1:1.2.3-1 amd64 [installed,automatic]
+libxdamage-dev/testing,now 1:1.1.6-1+b2 amd64 [installed,automatic]
+libxdamage1/testing,now 1:1.1.6-1+b2 amd64 [installed,automatic]
+libxdmcp-dev/testing,now 1:1.1.5-1 amd64 [installed,automatic]
+libxdmcp6/testing,now 1:1.1.5-1 amd64 [installed,automatic]
+libxext-dev/testing,now 2:1.3.4-1+b3 amd64 [installed,automatic]
+libxext6/testing,now 2:1.3.4-1+b3 amd64 [installed,automatic]
+libxfixes-dev/testing,now 1:6.0.0-2+b4 amd64 [installed,automatic]
+libxfixes3/testing,now 1:6.0.0-2+b4 amd64 [installed,automatic]
+libxft-dev/testing,now 2.3.6-1+b4 amd64 [installed,automatic]
+libxft2/testing,now 2.3.6-1+b4 amd64 [installed,automatic]
+libxi-dev/testing,now 2:1.8.2-1 amd64 [installed,automatic]
+libxi6/testing,now 2:1.8.2-1 amd64 [installed,automatic]
+libxinerama-dev/testing,now 2:1.1.4-3+b4 amd64 [installed,automatic]
+libxinerama1/testing,now 2:1.1.4-3+b4 amd64 [installed,automatic]
+libxkbcommon-dev/testing,now 1.7.0-2 amd64 [installed,automatic]
+libxkbcommon0/testing,now 1.7.0-2 amd64 [installed,automatic]
+libxml2-dev/testing,now 2.12.7+dfsg+really2.9.14-2 amd64 [installed,automatic]
+libxml2-utils/testing,now 2.12.7+dfsg+really2.9.14-2 amd64 [installed]
+libxml2/testing,now 2.12.7+dfsg+really2.9.14-2 amd64 [installed,automatic]
+libxmuu1/testing,now 2:1.1.3-3+b4 amd64 [installed,automatic]
+libxrandr-dev/testing,now 2:1.5.4-1+b3 amd64 [installed,automatic]
+libxrandr2/testing,now 2:1.5.4-1+b3 amd64 [installed,automatic]
+libxrender-dev/testing,now 1:0.9.12-1 amd64 [installed,automatic]
+libxrender1/testing,now 1:0.9.12-1 amd64 [installed,automatic]
+libxshmfence1/testing,now 1.3.3-1 amd64 [installed,automatic]
+libxslt1.1/testing,now 1.1.35-1.2 amd64 [installed,automatic]
+libxtst-dev/testing,now 2:1.2.5-1 amd64 [installed,automatic]
+libxtst6/testing,now 2:1.2.5-1 amd64 [installed,automatic]
+libxxf86vm1/testing,now 1:1.1.4-1+b4 amd64 [installed,automatic]
+libxxhash0/testing,now 0.8.3-2 amd64 [installed,automatic]
+libyaml-0-2/testing,now 0.2.5-2 amd64 [installed,automatic]
+libz3-4/testing,now 4.13.3-1 amd64 [installed,automatic]
+libz3-dev/testing,now 4.13.3-1 amd64 [installed,automatic]
+libzstd-dev/testing,now 1.5.7+dfsg-1 amd64 [installed,automatic]
+libzstd1/testing,now 1.5.7+dfsg-1 amd64 [installed,automatic]
+linux-libc-dev/testing,now 6.12.35-1 all [installed,automatic]
+linux-sysctl-defaults/testing,now 4.12 all [installed,automatic]
+llvm-19-dev/testing,now 1:19.1.7-3+b1 amd64 [installed,automatic]
+llvm-19-linker-tools/testing,now 1:19.1.7-3+b1 amd64 [installed,automatic]
+llvm-19-runtime/testing,now 1:19.1.7-3+b1 amd64 [installed,automatic]
+llvm-19-tools/testing,now 1:19.1.7-3+b1 amd64 [installed,automatic]
+llvm-19/testing,now 1:19.1.7-3+b1 amd64 [installed,automatic]
+login.defs/testing,now 1:4.17.4-2 all [installed,automatic]
+login/testing,now 1:4.16.0-2+really2.41-5 amd64 [installed,automatic]
+make/testing,now 4.4.1-2 amd64 [installed,automatic]
+manpages-dev/testing,now 6.9.1-1 all [installed,automatic]
+manpages/testing,now 6.9.1-1 all [installed,automatic]
+mawk/testing,now 1.3.4.20250131-1 amd64 [installed,automatic]
+media-types/testing,now 13.0.0 all [installed,automatic]
+mesa-libgallium/testing,now 25.0.7-2 amd64 [installed,automatic]
+mesa-vulkan-drivers/testing,now 25.0.7-2 amd64 [installed,automatic]
+meson/testing,now 1.7.0-1 all [installed]
+mount/testing,now 2.41-5 amd64 [installed,automatic]
+native-architecture/testing,now 0.2.6 all [installed,automatic]
+ncurses-base/testing,now 6.5+20250216-2 all [installed,automatic]
+ncurses-bin/testing,now 6.5+20250216-2 amd64 [installed,automatic]
+netbase/testing,now 6.5 all [installed,automatic]
+nettle-dev/testing,now 3.10.1-1 amd64 [installed,automatic]
+ninja-build/testing,now 1.12.1-1 amd64 [installed,automatic]
+opensp/testing,now 1.5.2-15.2 amd64 [installed,automatic]
+openssh-client/testing,now 1:10.0p1-5 amd64 [installed,automatic]
+openssl-provider-legacy/testing,now 3.5.1-1 amd64 [installed,automatic]
+openssl/testing,now 3.5.1-1 amd64 [installed,automatic]
+pango1.0-tools/testing,now 1.56.3-1 amd64 [installed,automatic]
+passwd/testing,now 1:4.17.4-2 amd64 [installed,automatic]
+patch/testing,now 2.8-2 amd64 [installed,automatic]
+perl-base/testing,now 5.40.1-5 amd64 [installed,automatic]
+perl-modules-5.40/testing,now 5.40.1-5 all [installed,automatic]
+perl/testing,now 5.40.1-5 amd64 [installed,automatic]
+pkgconf-bin/testing,now 1.8.1-4 amd64 [installed,automatic]
+pkgconf/testing,now 1.8.1-4 amd64 [installed,automatic]
+procps/testing,now 2:4.0.4-8 amd64 [installed,automatic]
+psmisc/testing,now 23.7-2 amd64 [installed,automatic]
+publicsuffix/testing,now 20250328.1952-0.1 all [installed,automatic]
+python3-autocommand/testing,now 2.2.2-3 all [installed,automatic]
+python3-bs4/testing,now 4.13.4-2 all [installed,automatic]
+python3-chardet/testing,now 5.2.0+dfsg-2 all [installed,automatic]
+python3-cssselect/testing,now 1.3.0-1 all [installed,automatic]
+python3-html5lib/testing,now 1.2-2 all [installed,automatic]
+python3-inflect/testing,now 7.3.1-2 all [installed,automatic]
+python3-jaraco.context/testing,now 6.0.1-1 all [installed,automatic]
+python3-jaraco.functools/testing,now 4.1.0-1 all [installed,automatic]
+python3-jaraco.text/testing,now 4.0.0-1 all [installed,automatic]
+python3-lxml/testing,now 5.4.0-1 amd64 [installed,automatic]
+python3-mako/testing,now 1.3.9-1 all [installed,automatic]
+python3-markdown/testing,now 3.7-2 all [installed,automatic]
+python3-markupsafe/testing,now 2.1.5-1+b3 amd64 [installed,automatic]
+python3-minimal/testing,now 3.13.5-1 amd64 [installed,automatic]
+python3-more-itertools/testing,now 10.7.0-1 all [installed,automatic]
+python3-packaging/testing,now 25.0-1 all [installed,automatic]
+python3-pkg-resources/testing,now 78.1.1-0.1 all [installed,automatic]
+python3-pygments/testing,now 2.18.0+dfsg-2 all [installed,automatic]
+python3-setuptools/testing,now 78.1.1-0.1 all [installed,automatic]
+python3-soupsieve/testing,now 2.7-1 all [installed,automatic]
+python3-typeguard/testing,now 4.4.2-1 all [installed,automatic]
+python3-typing-extensions/testing,now 4.13.2-1 all [installed,automatic]
+python3-webencodings/testing,now 0.5.1-5 all [installed,automatic]
+python3-yaml/testing,now 6.0.2-1+b2 amd64 [installed,automatic]
+python3-zipp/testing,now 3.21.0-1 all [installed,automatic]
+python3.13-minimal/testing,now 3.13.5-2 amd64 [installed,automatic]
+python3.13/testing,now 3.13.5-2 amd64 [installed,automatic]
+python3/testing,now 3.13.5-1 amd64 [installed,automatic]
+readline-common/testing,now 8.2-6 all [installed,automatic]
+rpcsvc-proto/testing,now 1.4.3-1 amd64 [installed,automatic]
+sed/testing,now 4.9-2 amd64 [installed,automatic]
+sensible-utils/testing,now 0.0.25 all [installed,automatic]
+sgml-base/testing,now 1.31+nmu1 all [installed,automatic]
+sgml-data/testing,now 2.0.11+nmu1 all [installed,automatic]
+shared-mime-info/testing,now 2.4-5+b2 amd64 [installed,automatic]
+sq/testing,now 1.3.1-2+b1 amd64 [installed,automatic]
+sqv/testing,now 1.3.0-3 amd64 [installed,automatic]
+systemd-cryptsetup/testing,now 257.7-1 amd64 [installed,automatic]
+systemd-sysv/testing,now 257.7-1 amd64 [installed,automatic]
+systemd-timesyncd/testing,now 257.7-1 amd64 [installed,automatic]
+systemd/testing,now 257.7-1 amd64 [installed,automatic]
+sysvinit-utils/testing,now 3.14-4 amd64 [installed,automatic]
+tar/testing,now 1.35+dfsg-3.1 amd64 [installed,automatic]
+tcl-expect/testing,now 5.45.4-4 amd64 [installed,automatic]
+tcl8.6/testing,now 8.6.16+dfsg-1 amd64 [installed,automatic]
+tzdata/testing,now 2025b-4 all [installed,automatic]
+util-linux/testing,now 2.41-5 amd64 [installed,automatic]
+uuid-dev/testing,now 2.41-5 amd64 [installed,automatic]
+wayland-protocols/testing,now 1.44-1 all [installed,automatic]
+wget/testing,now 1.25.0-2 amd64 [installed]
+x11-common/testing,now 1:7.7+24 all [installed,automatic]
+x11proto-dev/testing,now 2024.1-1 all [installed,automatic]
+xauth/testing,now 1:1.1.2-1.1 amd64 [installed,automatic]
+xdg-user-dirs/testing,now 0.18-2 amd64 [installed,automatic]
+xkb-data/testing,now 2.42-1 all [installed,automatic]
+xml-core/testing,now 0.19 all [installed,automatic]
+xorg-sgml-doctools/testing,now 1:1.11-1.1 all [installed,automatic]
+xsltproc/testing,now 1.1.35-1.2 amd64 [installed,automatic]
+xtrans-dev/testing,now 1.4.0-1 all [installed,automatic]
+xz-utils/testing,now 5.8.1-1 amd64 [installed,automatic]
+zlib1g-dev/testing,now 1:1.3.dfsg+really1.3.1-1+b1 amd64 [installed,automatic]
+zlib1g/testing,now 1:1.3.dfsg+really1.3.1-1+b1 amd64 [installed,automatic]
+Errors detected in the build 0
+Warnings detected in the logs 199
+cppcheck defects detected in the logs 54
+TOTAL warnings detected in the logs 253
