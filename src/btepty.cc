@@ -47,10 +47,6 @@
 
 #include "bteptyinternal.hh"
 
-#if !GLIB_CHECK_VERSION(2, 42, 0)
-#define G_PARAM_EXPLICIT_NOTIFY 0
-#endif
-
 #define I_(string) (g_intern_static_string(string))
 
 typedef struct _BtePtyPrivate BtePtyPrivate;
