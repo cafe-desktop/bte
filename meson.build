@@ -23,7 +23,7 @@ project(
     'buildtype=release',
     'c_std=gnu11',
     'cpp_std=gnu++17',
-    'warning_level=0',
+    'warning_level=2',
     'b_ndebug=false',
   ],
   meson_version: '>= 0.50.0',
@@ -237,8 +237,6 @@ assert(get_option('b_lto') == false, 'LTO not supported')
 # Compiler flags
 
 compiler_flags_common = [
-  '-Wall',
-  '-Wextra',
   '-Wcast-align',
   '-Wcast-function-type',
   '-Wclobbered',
