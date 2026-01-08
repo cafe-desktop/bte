@@ -1,3 +1,16 @@
+### bte 1.0.0
+
+  * ci: some improvements
+  * btepty: Do not typecast to GSpawnFlags
+  * app: don't hide deprecations
+  * meson: remove GLIB_VERSION_MIN_REQUIRED and GLIB_VERSION_MAX_ALLOWED
+  * keymap: avoid deprecated g_memdup
+  * meson: GLib 2.67.3 required
+  * btepty: remove obsolete GLIB_CHECK_VERSION
+  * build: use warning_level=2 which has already -Wall and -Wextra
+  * add NEWS file
+
+
 ### bte 0.65.0
 
   * ci: some improvements
