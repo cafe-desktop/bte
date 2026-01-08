@@ -1,0 +1,29 @@
+### bte 0.65.0
+
+  * ci: some improvements
+  * Fix [-Wmissing-field-initializers] warnings
+  * minifont: declare some variables with const
+  * missing: remove unused struct member
+  * mev: declare parameter with const
+  * btectk: avoid identical expressions on both sides of bitwise operator
+  * slowcat: Fix resource leak
+  * remove vala code
+  * remove ctk4 code
+
+
+### bte 0.64.0
+
+  * ci: little improvements
+  * don't make deprecated: 'bte_terminal_set/get_allow_bold', 'bte_terminal_get_icon_title', 'bte_terminal_set/get_encoding'
+  * reduce the scope of some variables
+  * update README
+
+
+### bte 0.63.0
+
+  * Initial release, forked from vte 0.62.3
+  * Enable Github Actions
+  * Apply debian patch: Allow background-color and color on VteTerminal widgets to be customised via the theme
+  * vte: make 'vte_terminal_select_all' to select ALL
+  * Rename gtk/gdk/vte -> ctk/cdk/bte
+  * Disable vala build
