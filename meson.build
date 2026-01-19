@@ -22,7 +22,7 @@ project(
   default_options: [
     'buildtype=release',
     'c_std=gnu11',
-    'cpp_std=gnu++17',
+    'cpp_std=gnu++23',
     'warning_level=2',
     'b_ndebug=false',
   ],
