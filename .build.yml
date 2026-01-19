@@ -19,6 +19,8 @@ requires:
     - meson
     - expect #required for unbuffer
     - wget
+    - build-essential
+    - libc6-dev
 
 before_scripts:
   - ./html-cppcheck
