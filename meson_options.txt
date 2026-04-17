@@ -81,6 +81,6 @@ option(
 option(
   '_systemd',
   type: 'boolean',
-  value: true,
+  value: false,
   description: 'Enable systemd support',
 )
