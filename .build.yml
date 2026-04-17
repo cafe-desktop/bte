@@ -26,7 +26,7 @@ before_scripts:
 
 build_scripts:
   - ./before-build
-  - ./make-scanbuild meson
+  - ./make-scanbuild meson 'setup -D_systemd=true'
   - ./after-build
 
 after_scripts:
