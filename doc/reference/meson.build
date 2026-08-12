@@ -80,7 +80,7 @@ if get_option('ctk3')
     '--extra-dir=' + (glib_prefix / gnome.gtkdoc_html_dir('glib')),
     '--extra-dir=' + (glib_prefix / gnome.gtkdoc_html_dir('gio')),
     '--extra-dir=' + (ctk3_prefix / gnome.gtkdoc_html_dir('cdk')),
-    '--extra-dir=' + (ctk3_prefix / gnome.gtkdoc_html_dir('gdk-pixbuf')),
+    '--extra-dir=' + (ctk3_prefix / gnome.gtkdoc_html_dir('cdk-pixbuf')),
     '--extra-dir=' + (ctk3_prefix / gnome.gtkdoc_html_dir('ctk')),
   ]
 
