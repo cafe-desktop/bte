@@ -263,8 +263,14 @@ merge_environ(char** envp /* consumed */,
 
         auto iter = GHashTableIter{};
         g_hash_table_iter_init(&iter, table);
-        char *name, *value;
-        while (g_hash_table_iter_next(&iter, (void**)&name, (void**)&value)) {
+
+        gpointer key_ptr = nullptr;
+        gpointer value_ptr = nullptr;
+
+        while (g_hash_table_iter_next(&iter, &key_ptr, &value_ptr)) {
+                auto name = static_cast<char*>(key_ptr);
+                auto value = static_cast<char*>(value_ptr);
+
                 if (value)
                         g_ptr_array_add(array, g_strconcat(name, "=", value, nullptr));
         }
