@@ -6,99 +6,54 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: bte\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=bte&component=general\n"
-"POT-Creation-Date: 2010-12-23 18:42+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-12 11:10+0200\n"
 "PO-Revision-Date: 2004-02-05 00:10+0100\n"
 "Last-Translator:  Abduxukur Abdurixit <abduxukur.abdurixit@t-systems.ch>\n"
-"Language-Team:  GNOME Uighur Translation Project <gnome-uighur@yahoogroups.com>\n"
+"Language-Team:  GNOME Uighur Translation Project <gnome-"
+"uighur@yahoogroups.com>\n"
 "Language: ug\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/iso2022.c:779 ../src/iso2022.c:787 ../src/iso2022.c:818
-#: ../src/bte.c:2278
+#: src/bte.cc:7774
+msgid "WARNING"
+msgstr ""
+
+#: src/bte.cc:7776
+msgid "GnuTLS not enabled; data will be written to disk unencrypted!"
+msgstr ""
+
+#: src/spawn.cc:111
 #, c-format
-msgid "Unable to convert characters from %s to %s."
-msgstr "%s ھەرپىنى %s ھەرپىگە ئايلاندۇرالمىدى"
+msgid "Failed to set pipe nonblocking: %s"
+msgstr ""
 
-#: ../src/iso2022.c:1472
+#: src/spawn.cc:156
 #, c-format
-msgid "Attempt to set invalid NRC map '%c'."
-msgstr "ئىناۋەتسىز NRC خەرىتە '%c' تەڭشەشنى سىنىدى."
+msgid "poll error: %s"
+msgstr ""
 
-#. Application signalled an "identified coding system" we haven't heard of.  See ECMA-35 for gory details.
-#: ../src/iso2022.c:1502
-msgid "Unrecognized identified coding system."
-msgstr "تونۇيالمىغان كودلاشنى بەلگىلەش سىستېمىسى"
+#: src/spawn.cc:163
+msgid "Operation timed out"
+msgstr ""
 
-#: ../src/iso2022.c:1561 ../src/iso2022.c:1588
+#: src/spawn.cc:173
+msgid "Operation was cancelled"
+msgstr ""
+
+#: src/spawn.cc:191
 #, c-format
-msgid "Attempt to set invalid wide NRC map '%c'."
-msgstr "ئىناۋەتسىز كەڭ NRC خەرىتە '%c' تەڭشەشنى سىنىدى."
+msgid "Failed to read from child pipe (%s)"
+msgstr ""
 
-#: ../src/trie.c:409
+#: src/spawn.cc:627
 #, c-format
-msgid "Duplicate (%s/%s)!"
-msgstr "(%s/%s) نۇسخىلا!"
+msgid "Failed to change to directory “%s”: %s"
+msgstr ""
 
-#. Bail back to normal mode.
-#: ../src/bteapp.c:981
-msgid "Could not open console.\n"
-msgstr "كونترول سۇپىسىنى ئاچالمىدى.\n"
-
-#: ../src/bteapp.c:1074
-msgid "Could not parse the geometry spec passed to --geometry"
-msgstr "--geometry غا يوللايدىغان گېئومېتىرىيىلىك پارامېتىرنى يېشەلمىدى"
-
-#: ../src/bte.c:1304
+#: src/spawn.cc:696
 #, c-format
-msgid "Error compiling regular expression \"%s\"."
-msgstr "مۇنتىزىم ئىپادە \"%s\" نى ھېسابلاشتا خاتالىق يۈز بەردى."
-
-#. Translators: %s is replaced with error message returned by strerror().
-#: ../src/bte.c:4387
-#, c-format
-msgid "Error reading from child: %s."
-msgstr "تارماق پروگراممىدىن سانلىق-مەلۇمات ئوقۇش خاتالىقى: %s ."
-
-#: ../src/bte.c:4514
-msgid "Unable to send data to child, invalid charset convertor"
-msgstr "تارماق جەريانغا سانلىق-مەلۇمات يوللىيالمىدى، ھەرپ-بەلگە ئايلاندۇرغۇچ ئىناۋەتسىز"
-
-#: ../src/bte.c:4525 ../src/bte.c:5562
-#, c-format
-msgid "Error (%s) converting data for child, dropping."
-msgstr "تارماق پروگرامما سانلىق-ئاساسىنى ئۆزگەرتىش جەريانىدا خاتالىق كۆرۈلگىنىنى ئۈچۈن تاشلىۋېتىلدى(%s) ."
-
-#: ../src/bte.c:7756
-#, c-format
-msgid "Error reading PTY size, using defaults: %s\n"
-msgstr "PTY چوڭلۇقىنى ئوقۇشتا خاتالىق كۆرۈلدى، كۆڭۈلدىكى چوڭلۇق ئىشلىتىلىدۇ: %s\n"
-
-#. Aaargh.  We're screwed.
-#: ../src/bte.c:13554
-msgid "_bte_conv_open() failed setting word characters"
-msgstr "_bte_conv_open() سۆزدىكى ھەرپ تىزمىسىنى بەلگىلەش مەغلۇپ بولدى."
-
-#~ msgid "can not run %s"
-#~ msgstr "%s نى ئىجرا قىلالمىدى"
-
-#~ msgid "Error adding `%s' to environment, continuing."
-#~ msgstr "%s نى مۇھىتقا قوشۇشتا خاتالىق يۈز بەردى، داۋاملىشىدۇ."
-
-#~ msgid "Error creating signal pipe."
-#~ msgstr "سىگنال قانىلى ھاسىل قىلىشتا خاتالىق يۈز بەردى"
-
-#~ msgid "No handler for control sequence `%s' defined."
-#~ msgstr ""
-#~ "%s كونترول ھەرپلەر تىزمىسى نى بىر تەرەپ قىلىش پروگراممىسى ئېنىق ئەمەس "
-
-#~ msgid "Error setting PTY size: %s."
-#~ msgstr "PTY ئۆلچىمىنى بەلگىلەشتە خاتالىق كۆرۈلدى:%s"
-
-#~ msgid "Unknown pixel mode %d.\n"
-#~ msgstr "%d تونۇمايدىغان پىكسېل شەكلى \n"
-
-#~ msgid "Can not draw character U+%04x.\n"
-#~ msgstr " U+%04x ھەرپىنى سىزالمايدۇ.\n"
+msgid "Failed to execute child process “%s”: "
+msgstr ""

@@ -8,8 +8,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: bte\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/bte/issues\n"
-"POT-Creation-Date: 2020-05-27 19:17+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-12 11:10+0200\n"
 "PO-Revision-Date: 2020-09-03 09:14+0200\n"
 "Last-Translator: Milo Casagrande <milo@milo.name>\n"
 "Language-Team: Italiano <gnome-it-list@gnome.org>\n"
@@ -20,11 +20,11 @@ msgstr ""
 "X-Generator: Poedit 2.4.1\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: src/bte.cc:7763
+#: src/bte.cc:7774
 msgid "WARNING"
 msgstr "Attenzione"
 
-#: src/bte.cc:7765
+#: src/bte.cc:7776
 msgid "GnuTLS not enabled; data will be written to disk unencrypted!"
 msgstr "GnuTLS non abilitato; i dati saranno scritti sul disco non cifrati."
 
@@ -33,30 +33,30 @@ msgstr "GnuTLS non abilitato; i dati saranno scritti sul disco non cifrati."
 msgid "Failed to set pipe nonblocking: %s"
 msgstr "Impostazione del non-blocco per la pipe non riuscita: %s"
 
-#: src/spawn.cc:155
+#: src/spawn.cc:156
 #, c-format
 msgid "poll error: %s"
 msgstr "Errore di polling: %s"
 
-#: src/spawn.cc:161
+#: src/spawn.cc:163
 msgid "Operation timed out"
 msgstr "Tempo esaurito per l'operazione"
 
-#: src/spawn.cc:171
+#: src/spawn.cc:173
 msgid "Operation was cancelled"
 msgstr "L'operazione è stata annullata"
 
-#: src/spawn.cc:189
+#: src/spawn.cc:191
 #, c-format
 msgid "Failed to read from child pipe (%s)"
 msgstr "Lettura dalla pipe figlia non riuscita (%s)"
 
-#: src/spawn.cc:576
+#: src/spawn.cc:627
 #, c-format
 msgid "Failed to change to directory “%s”: %s"
 msgstr "Cambio della directory in «%s» non riuscito: %s"
 
-#: src/spawn.cc:645
+#: src/spawn.cc:696
 #, c-format
 msgid "Failed to execute child process “%s”: "
 msgstr "Esecuzione del processo figlio «%s» non riuscita: "

@@ -5,9 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: bte bte-0-38\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=bte&k"
-"eywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-09-11 19:17+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-12 11:10+0200\n"
 "PO-Revision-Date: 2018-03-01 11:09+0100\n"
 "Last-Translator: GunChleoc <fios@foramnagaidhlig.net>\n"
 "Language-Team: Fòram na Gàidhlig\n"
@@ -20,77 +19,43 @@ msgstr ""
 "X-Generator: Virtaal 0.7.1\n"
 "X-Project-Style: gnome\n"
 
-#: ../src/iso2022.cc:73 ../src/iso2022.cc:81 ../src/iso2022.cc:111
-#: ../src/btectk.cc:3423
-#, c-format
-msgid "Unable to convert characters from %s to %s."
-msgstr "Cha ghabh na caractaran iompachadh o %s gu %s."
-
-#. Translators: %s is replaced with error message returned by strerror().
-#: ../src/bte.cc:4067
-#, c-format
-msgid "Error reading from child: %s."
-msgstr "Mearachd le leughadh o chlann: %s."
-
-#: ../src/bte.cc:4206
-#, c-format
-msgid "Error (%s) converting data for child, dropping."
-msgstr ""
-"Mearachd (%s) ag iompachadh an dàta airson na cloinne, ’ga leigeil seachad."
-
-#: ../src/bte.cc:8151
+#: src/bte.cc:7774
 msgid "WARNING"
 msgstr "RABHADH"
 
-#: ../src/bte.cc:8152
-msgid "GNUTLS not enabled; data will be written to disk unencrypted!"
+#: src/bte.cc:7776
+msgid "GnuTLS not enabled; data will be written to disk unencrypted!"
 msgstr ""
-"Chan eil GNUTLS an comas; thèid an dàta a sgrìobhadh dhan diosg gun "
-"chrioptachadh!"
 
-#~ msgid "Copy"
-#~ msgstr "Dèan lethbhreac"
+#: src/spawn.cc:111
+#, c-format
+msgid "Failed to set pipe nonblocking: %s"
+msgstr ""
 
-#~ msgid "Paste"
-#~ msgstr "Cuir ann"
+#: src/spawn.cc:156
+#, c-format
+msgid "poll error: %s"
+msgstr ""
 
-#~ msgid "Reset (use Ctrl to reset and clear)"
-#~ msgstr ""
-#~ "Ath-shuidhich (cleachd Ctrl airson sth-shuidheachadh 's falamhachadh)"
+#: src/spawn.cc:163
+msgid "Operation timed out"
+msgstr ""
 
-#~ msgid "Reset"
-#~ msgstr "Ath-shuidhich"
+#: src/spawn.cc:173
+msgid "Operation was cancelled"
+msgstr ""
 
-#~ msgid "Toggle input enabled setting"
-#~ msgstr "Toglaich an roghainn a bheil ion-chur an comas"
+#: src/spawn.cc:191
+#, c-format
+msgid "Failed to read from child pipe (%s)"
+msgstr ""
 
-#~ msgid "Input"
-#~ msgstr "Ion-chur"
+#: src/spawn.cc:627
+#, c-format
+msgid "Failed to change to directory “%s”: %s"
+msgstr ""
 
-#~ msgid "Attempt to set invalid NRC map '%c'."
-#~ msgstr ""
-#~ "Chaidh feuchainn ri mapa NRC '%c' nach eil dligheach a shuidheachadh."
-
-#~ msgid "Unrecognized identified coding system."
-#~ msgstr "Siostam còdachaidh aithnichte air nach eil sinn eòlach."
-
-#~ msgid "Attempt to set invalid wide NRC map '%c'."
-#~ msgstr ""
-#~ "Chaidh feuchainn ri mapa NRC leathann '%c' nach eil dligheach a "
-#~ "shuidheachadh."
-
-#~ msgid "Could not open console.\n"
-#~ msgstr "Cha deach leinn consoil fhoagladh.\n"
-
-#~ msgid "Could not parse the geometry spec passed to --geometry"
-#~ msgstr ""
-#~ "Cha b' urrainn dhuinn sònrachadh a' gheomatrais a pharsadh a chaidh a "
-#~ "chur gu --geometry"
-
-#~ msgid "Unable to send data to child, invalid charset convertor"
-#~ msgstr ""
-#~ "Cha ghabh an dàta a chur gu clann on a tha iompaichear an t-seata "
-#~ "charactaran mì-dhligheach"
-
-#~ msgid "Error reading PTY size, using defaults: %s\n"
-#~ msgstr "Mearachd a' leughadh meud PTY, a' cleachdadh na bun-roghainn: %s\n"
+#: src/spawn.cc:696
+#, c-format
+msgid "Failed to execute child process “%s”: "
+msgstr ""

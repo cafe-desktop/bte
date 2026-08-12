@@ -12,8 +12,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: bte 0.14.1\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/bte/issues\n"
-"POT-Creation-Date: 2020-08-10 11:59+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-12 11:10+0200\n"
 "PO-Revision-Date: 2020-09-05 20:35+0200\n"
 "Last-Translator: Thibault Martin <mail@thibaultmart.in>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
@@ -24,11 +24,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Gtranslator 3.36.0\n"
 
-#: src/bte.cc:7770
+#: src/bte.cc:7774
 msgid "WARNING"
 msgstr "AVERTISSEMENT"
 
-#: src/bte.cc:7772
+#: src/bte.cc:7776
 msgid "GnuTLS not enabled; data will be written to disk unencrypted!"
 msgstr ""
 "GnuTLS n’est pas activé ; les données seront écrites sur le disque sans être "
@@ -57,12 +57,12 @@ msgstr "L’opération a été annulée"
 msgid "Failed to read from child pipe (%s)"
 msgstr "Erreur lors de la lecture du tube fils (%s)"
 
-#: src/spawn.cc:621
+#: src/spawn.cc:627
 #, c-format
 msgid "Failed to change to directory “%s”: %s"
 msgstr "Impossible de passer dans le répertoire « %s » : %s"
 
-#: src/spawn.cc:690
+#: src/spawn.cc:696
 #, c-format
 msgid "Failed to execute child process “%s”: "
 msgstr "Impossible d’exécuter le processus fils « %s » : "

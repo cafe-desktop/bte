@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: bte master\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/bte/issues\n"
-"POT-Creation-Date: 2020-09-04 08:17+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-12 11:10+0200\n"
 "PO-Revision-Date: 2020-09-07 20:27+0200\n"
 "Last-Translator: Tim Sabsch <tim@sabsch.com>\n"
 "Language-Team: German <gnome-de@gnome.org>\n"
@@ -21,11 +21,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.4.1\n"
 
-#: src/bte.cc:7770
+#: src/bte.cc:7774
 msgid "WARNING"
 msgstr "WARNUNG"
 
-#: src/bte.cc:7772
+#: src/bte.cc:7776
 msgid "GnuTLS not enabled; data will be written to disk unencrypted!"
 msgstr ""
 "GnuTLS ist nicht aktiviert, die Daten werden unverschlüsselt auf die "
@@ -58,96 +58,12 @@ msgstr "Vorgang wurde abgebrochen"
 msgid "Failed to read from child pipe (%s)"
 msgstr "Fehler beim Lesen von der Kind-Pipe (%s)"
 
-#: src/spawn.cc:621
+#: src/spawn.cc:627
 #, c-format
 msgid "Failed to change to directory “%s”: %s"
 msgstr "Wechsel zu Verzeichnis »%s« fehlgeschlagen: %s"
 
-#: src/spawn.cc:690
+#: src/spawn.cc:696
 #, c-format
 msgid "Failed to execute child process “%s”: "
 msgstr "Ausführung des Kind-Prozesses »%s« fehlgeschlagen: "
-
-#~ msgid "Error (%s) converting data for child, dropping."
-#~ msgstr "Fehler (%s) beim Konvertieren der Daten für Kind, abgebrochen."
-
-#~ msgid "Unable to convert characters from %s to %s."
-#~ msgstr "Zeichen konnten nicht von %s nach %s konvertiert werden."
-
-#~ msgid "Copy"
-#~ msgstr "Kopieren"
-
-#~ msgid "Paste"
-#~ msgstr "Einfügen"
-
-#~ msgid "Reset (use Ctrl to reset and clear)"
-#~ msgstr "Zurücksetzen (mit Strg gedrückt: Zurücksetzen und Leeren)"
-
-#~ msgid "Reset"
-#~ msgstr "Zurücksetzen"
-
-#~ msgid "Toggle input enabled setting"
-#~ msgstr "Umschalten, ob Eingabe aktiv ist"
-
-#~ msgid "Input"
-#~ msgstr "Eingabe"
-
-#~ msgid "Attempt to set invalid NRC map '%c'."
-#~ msgstr "Es wurde versucht, die ungültige NRC-Map »%c« zu setzen."
-
-#~ msgid "Unrecognized identified coding system."
-#~ msgstr "Nicht erkanntes, identifiziertes Kodiersystem"
-
-#~ msgid "Attempt to set invalid wide NRC map '%c'."
-#~ msgstr "Es wurde versucht, die ungültige weite NRC-Map »%c« zu setzen."
-
-#~ msgid "Could not open console.\n"
-#~ msgstr "Konsole konnte nicht geöffnet werden.\n"
-
-#~ msgid "Could not parse the geometry spec passed to --geometry"
-#~ msgstr ""
-#~ "Mittels --geometry übergebene Ausmaße konnten nicht verarbeitet werden"
-
-#~ msgid "Unable to send data to child, invalid charset convertor"
-#~ msgstr ""
-#~ "Daten konnten nicht an Kind gesendet werden, ungültiger Zeichensatz-"
-#~ "Konverter"
-
-#~ msgid "Error reading PTY size, using defaults: %s\n"
-#~ msgstr ""
-#~ "Fehler beim Ermitteln der PTY-Größe, Vorgaben werden verwendet: %s\n"
-
-#~ msgid "can not run %s"
-#~ msgstr "%s konnte nicht ausgeführt werden"
-
-#~ msgid "Duplicate (%s/%s)!"
-#~ msgstr "Duplikat (%s/%s)!"
-
-#~ msgid "Error compiling regular expression \"%s\"."
-#~ msgstr "Fehler beim Kompilieren des regulären Ausdrucks »%s«."
-
-#~ msgid "_bte_conv_open() failed setting word characters"
-#~ msgstr "_bte_conv_open() konnte die Zeichen des Wortes nicht festlegen"
-
-#~ msgid "Error creating signal pipe."
-#~ msgstr "Fehler beim Erstellen der Signalweiterleitung."
-
-#~ msgid "No handler for control sequence `%s' defined."
-#~ msgstr "Kein Handler für Kontrollsequenz »%s« festgelegt."
-
-#~ msgid "Error setting PTY size: %s."
-#~ msgstr "Fehler beim Festlegen der PTY-Größe: %s."
-
-#~ msgid "Got unexpected (key?) sequence `%s'."
-#~ msgstr "Unerwartete (Schlüssel?)-Sequenz »%s« erhalten."
-
-#~ msgid "Unknown pixel mode %d.\n"
-#~ msgstr "Unbekannter Pixelmodus %d.\n"
-
-#~ msgid "Can not find appropiate font for character U+%04x.\n"
-#~ msgstr ""
-#~ "Es konnte keine passende Schrift für das Zeichen U+%04x gefunden "
-#~ "werden.\n"
-
-#~ msgid "Error adding `%s' to environment, continuing."
-#~ msgstr "Fehler beim Hinzufügen von »%s« zur Umgebung, fortfahren."

@@ -6,9 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: bte master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=bte&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-02-19 10:56+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-12 11:10+0200\n"
 "PO-Revision-Date: 2012-02-19 10:56+0000\n"
 "Last-Translator: Bahodir Mansurov <6ahodir@gmail.com>\n"
 "Language-Team: Uzbek (Cyrillic) <uz@cyrillic@li.org>\n"
@@ -17,67 +16,43 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/iso2022.c:779 ../src/iso2022.c:787 ../src/iso2022.c:818
-#: ../src/bte.c:2277
+#: src/bte.cc:7774
+msgid "WARNING"
+msgstr ""
+
+#: src/bte.cc:7776
+msgid "GnuTLS not enabled; data will be written to disk unencrypted!"
+msgstr ""
+
+#: src/spawn.cc:111
 #, c-format
-msgid "Unable to convert characters from %s to %s."
-msgstr "Белгиларни %sдан %sга ўгириб бўлмади."
+msgid "Failed to set pipe nonblocking: %s"
+msgstr ""
 
-#: ../src/iso2022.c:1472
+#: src/spawn.cc:156
 #, c-format
-msgid "Attempt to set invalid NRC map '%c'."
-msgstr "Нотўғри NRC харитаси '%c'ни ўрнатишга ҳаракат қилинди."
+msgid "poll error: %s"
+msgstr ""
 
-#. Application signalled an "identified coding system" we haven't heard of.  See ECMA-35 for gory details.
-#: ../src/iso2022.c:1502
-msgid "Unrecognized identified coding system."
-msgstr "Номаълум кодлаш системаси"
+#: src/spawn.cc:163
+msgid "Operation timed out"
+msgstr ""
 
-#: ../src/iso2022.c:1561 ../src/iso2022.c:1588
+#: src/spawn.cc:173
+msgid "Operation was cancelled"
+msgstr ""
+
+#: src/spawn.cc:191
 #, c-format
-msgid "Attempt to set invalid wide NRC map '%c'."
-msgstr "Нотўғри кенг NRC харитаси '%c'ни ўрнатишга ҳаракат қилинди."
+msgid "Failed to read from child pipe (%s)"
+msgstr ""
 
-#: ../src/trie.c:409
+#: src/spawn.cc:627
 #, c-format
-msgid "Duplicate (%s/%s)!"
-msgstr "(%s/%s) янги нусха яратиш!"
+msgid "Failed to change to directory “%s”: %s"
+msgstr ""
 
-#. Bail back to normal mode.
-#: ../src/bteapp.c:981
-msgid "Could not open console.\n"
-msgstr "Консолни очиб бўлмади.\n"
-
-#: ../src/bteapp.c:1077
-msgid "Could not parse the geometry spec passed to --geometry"
-msgstr "--geometry параметрига берилган геометрия хусусиятини таҳлил қилиб бўлмади."
-
-#: ../src/bte.c:1303
+#: src/spawn.cc:696
 #, c-format
-msgid "Error compiling regular expression \"%s\"."
-msgstr "Доимий ифодани теришда хатолик \"%s\"."
-
-#. Translators: %s is replaced with error message returned by strerror().
-#: ../src/bte.c:4591
-#, c-format
-msgid "Error reading from child: %s."
-msgstr "Авлоддан ўқишда хатолик: %s."
-
-#: ../src/bte.c:4718
-msgid "Unable to send data to child, invalid charset convertor"
-msgstr "Авлодга маълумотни жўнатиб бўлмади, кодлар жадвалининг нотўғри ўгиргичи"
-
-#: ../src/bte.c:4729 ../src/bte.c:5791
-#, c-format
-msgid "Error (%s) converting data for child, dropping."
-msgstr "Авлод учун маълумотни ўгиришда хатолик (%s), ташлаб юбориляпи."
-
-#: ../src/bte.c:7976
-#, c-format
-msgid "Error reading PTY size, using defaults: %s\n"
-msgstr "PTY ўлчамларини ўқишда хатолик, андоза қийматлар ишлатиляпти: %s\n"
-
-#. Aaargh.  We're screwed.
-#: ../src/bte.c:13794
-msgid "_bte_conv_open() failed setting word characters"
-msgstr "_bte_conv_open() сўз белгиларини ўрната олмади"
+msgid "Failed to execute child process “%s”: "
+msgstr ""

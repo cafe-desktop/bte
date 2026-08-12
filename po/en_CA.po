@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bte 0.11.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-08-15 18:02-0400\n"
+"POT-Creation-Date: 2026-08-12 11:10+0200\n"
 "PO-Revision-Date: 2004-09-08 22:54-0400\n"
 "Last-Translator: Adam Weinberger <adamw@gnome.org>\n"
 "Language-Team: Canadian English <adamw@gnome.org>\n"
@@ -17,99 +17,43 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/iso2022.c:791 ../src/iso2022.c:799 ../src/iso2022.c:830
-#: ../src/bte.c:1814
+#: src/bte.cc:7774
+msgid "WARNING"
+msgstr ""
+
+#: src/bte.cc:7776
+msgid "GnuTLS not enabled; data will be written to disk unencrypted!"
+msgstr ""
+
+#: src/spawn.cc:111
 #, c-format
-msgid "Unable to convert characters from %s to %s."
-msgstr "Unable to convert characters from %s to %s."
+msgid "Failed to set pipe nonblocking: %s"
+msgstr ""
 
-#: ../src/iso2022.c:1540
+#: src/spawn.cc:156
 #, c-format
-msgid "Attempt to set invalid NRC map '%c'."
-msgstr "Attempt to set invalid NRC map '%c'."
+msgid "poll error: %s"
+msgstr ""
 
-#. Application signalled an "identified coding system" we haven't heard of.  See ECMA-35 for gory details.
-#: ../src/iso2022.c:1570
-msgid "Unrecognized identified coding system."
-msgstr "Unrecognized identified coding system."
+#: src/spawn.cc:163
+msgid "Operation timed out"
+msgstr ""
 
-#: ../src/iso2022.c:1629 ../src/iso2022.c:1656
+#: src/spawn.cc:173
+msgid "Operation was cancelled"
+msgstr ""
+
+#: src/spawn.cc:191
 #, c-format
-msgid "Attempt to set invalid wide NRC map '%c'."
-msgstr "Attempt to set invalid wide NRC map '%c'."
+msgid "Failed to read from child pipe (%s)"
+msgstr ""
 
-#. Give the user some clue as to why session logging is not
-#. * going to work (assuming we can open a pty using some other
-#. * method).
-#: ../src/pty.c:837
+#: src/spawn.cc:627
 #, c-format
-msgid "can not run %s"
-msgstr "can not run %s"
+msgid "Failed to change to directory “%s”: %s"
+msgstr ""
 
-#: ../src/reaper.c:136
-msgid "Error creating signal pipe."
-msgstr "Error creating signal pipe."
-
-#: ../src/trie.c:414
+#: src/spawn.cc:696
 #, c-format
-msgid "Duplicate (%s/%s)!"
-msgstr "Duplicate (%s/%s)!"
-
-#: ../src/bte.c:1204
-#, c-format
-msgid "Error compiling regular expression \"%s\"."
-msgstr "Error compiling regular expression \"%s\"."
-
-#: ../src/bte.c:2675 ../src/bte.c:2680
-#, c-format
-msgid "No handler for control sequence `%s' defined."
-msgstr "No handler for control sequence `%s' defined."
-
-#. Translators: %s is replaced with error message returned by strerror().
-#: ../src/bte.c:3645
-#, c-format
-msgid "Error reading from child: %s."
-msgstr "Error reading from child: %s."
-
-#: ../src/bte.c:3761
-msgid "Unable to send data to child, invalid charset convertor"
-msgstr "Unable to send data to child: invalid charset convertor"
-
-#: ../src/bte.c:3772 ../src/bte.c:4679
-#, c-format
-msgid "Error (%s) converting data for child, dropping."
-msgstr "Error (%s) converting data for child: dropping."
-
-#: ../src/bte.c:6914
-#, c-format
-msgid "Error reading PTY size, using defaults: %s."
-msgstr "Error reading PTY size: using defaults: %s."
-
-#: ../src/bte.c:6950
-#, c-format
-msgid "Error setting PTY size: %s."
-msgstr "Error setting PTY size: %s."
-
-#. Aaargh.  We're screwed.
-#: ../src/bte.c:11415
-msgid "_bte_conv_open() failed setting word characters"
-msgstr "_bte_conv_open() failed setting word characters"
-
-#: ../src/bteseq.c:3926
-#, c-format
-msgid "Got unexpected (key?) sequence `%s'."
-msgstr "Got unexpected (key?) sequence `%s'."
-
-#. Bail back to normal mode.
-#: ../src/bteapp.c:774
-msgid "Could not open console.\n"
-msgstr "Could not open console.\n"
-
-#: ../src/bteapp.c:838
-msgid "Could not parse the geometry spec passed to --geometry"
-msgstr "Could not parse the geometry spec passed to --geometry"
-
-#: ../src/bteglyph.c:562
-#, c-format
-msgid "Unknown pixel mode %d.\n"
-msgstr "Unknown pixel mode %d.\n"
+msgid "Failed to execute child process “%s”: "
+msgstr ""

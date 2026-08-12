@@ -6,38 +6,56 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: bte2.91\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2019-05-13 09:31+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-12 11:10+0200\n"
 "PO-Revision-Date: 2020-05-05 01:16+0300\n"
 "Last-Translator: Jwtiyar Nariman <jwtiyar@gmail.com>\n"
 "Language-Team: Kurdish (Sorani) <ckb@li.org>\n"
+"Language: ckb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2020-05-04 22:12+0000\n"
 "X-Generator: Poedit 2.3\n"
-"Language: ckb\n"
 
-#. Translators: %s is replaced with error message returned by strerror().
-#: ../src/bte.cc:3928
-#, c-format
-msgid "Error reading from child: %s."
-msgstr "هەڵەی خوێندنەوە لە مناڵەوە: %s."
-
-#: ../src/bte.cc:4078
-#, c-format
-msgid "Error (%s) converting data for child, dropping."
-msgstr "هەڵە(%s) لە گۆڕینی زانیاری فۆر منداڵ، فڕێدان."
-
-#: ../src/bte.cc:7889
+#: src/bte.cc:7774
 msgid "WARNING"
 msgstr "ئاگاداربە"
 
-#: ../src/bte.cc:7890
+#: src/bte.cc:7776
 msgid "GnuTLS not enabled; data will be written to disk unencrypted!"
-msgstr "GnuTLS چالاک نیە؛ زانیارییەکان دەکرێنە سەر پەپکە بێ ئەوەی پارێزراوبکرێن!"
+msgstr ""
+"GnuTLS چالاک نیە؛ زانیارییەکان دەکرێنە سەر پەپکە بێ ئەوەی پارێزراوبکرێن!"
 
-#: ../src/btectk.cc:3666
+#: src/spawn.cc:111
 #, c-format
-msgid "Unable to convert characters from %s to %s."
-msgstr "نەتوانرا نووسەکان بگۆڕدرێت لە %s بۆ %s."
+msgid "Failed to set pipe nonblocking: %s"
+msgstr ""
+
+#: src/spawn.cc:156
+#, c-format
+msgid "poll error: %s"
+msgstr ""
+
+#: src/spawn.cc:163
+msgid "Operation timed out"
+msgstr ""
+
+#: src/spawn.cc:173
+msgid "Operation was cancelled"
+msgstr ""
+
+#: src/spawn.cc:191
+#, c-format
+msgid "Failed to read from child pipe (%s)"
+msgstr ""
+
+#: src/spawn.cc:627
+#, c-format
+msgid "Failed to change to directory “%s”: %s"
+msgstr ""
+
+#: src/spawn.cc:696
+#, c-format
+msgid "Failed to execute child process “%s”: "
+msgstr ""

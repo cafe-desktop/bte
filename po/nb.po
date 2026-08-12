@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: bte 0.62.x\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/bte/issues\n"
-"POT-Creation-Date: 2020-09-12 19:27+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-12 11:10+0200\n"
 "PO-Revision-Date: 2021-01-25 15:05+0100\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
@@ -15,11 +15,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/bte.cc:7764
+#: src/bte.cc:7774
 msgid "WARNING"
 msgstr "ADVARSEL"
 
-#: src/bte.cc:7766
+#: src/bte.cc:7776
 msgid "GnuTLS not enabled; data will be written to disk unencrypted!"
 msgstr ""
 "GNUTLS er ikke aktivert; data vil bli skrevet til disk uten kryptering!"
@@ -47,12 +47,12 @@ msgstr "Operasjonen ble avbrutt"
 msgid "Failed to read from child pipe (%s)"
 msgstr "Feil under lesing fra underrør (%s)"
 
-#: src/spawn.cc:621
+#: src/spawn.cc:627
 #, c-format
 msgid "Failed to change to directory “%s”: %s"
 msgstr "Klarte ikke å endre til katalog «%s»: %s"
 
-#: src/spawn.cc:690
+#: src/spawn.cc:696
 #, c-format
 msgid "Failed to execute child process “%s”: "
 msgstr "Klarte ikke å kjøre underprosess «%s»: "

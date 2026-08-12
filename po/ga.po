@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bte.master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-29 16:00-0600\n"
+"POT-Creation-Date: 2026-08-12 11:10+0200\n"
 "PO-Revision-Date: 2013-08-29 16:00-0600\n"
 "Last-Translator: Seán de Búrca <leftmostcat@gmail.com>\n"
 "Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
@@ -18,70 +18,43 @@ msgstr ""
 "Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : n<7 ? 2 : n<11 ? 3 : "
 "4;\n"
 
-#: ../src/iso2022.c:795 ../src/iso2022.c:803 ../src/iso2022.c:834
-#: ../src/bte.c:2296
-#, c-format
-msgid "Unable to convert characters from %s to %s."
-msgstr "Ní féidir carachtair a thiontú ó %s go %s."
-
-#: ../src/iso2022.c:1488
-#, c-format
-msgid "Attempt to set invalid NRC map '%c'."
-msgstr "Déan iarracht ar mapa NRC neamhbhailí '%c' a shocrú."
-
-#. Application signalled an "identified coding system" we haven't heard of.  See ECMA-35 for gory details.
-#: ../src/iso2022.c:1518
-msgid "Unrecognized identified coding system."
-msgstr "Córas códaithe aitheanta anaithnid."
-
-#: ../src/iso2022.c:1577 ../src/iso2022.c:1604
-#, c-format
-msgid "Attempt to set invalid wide NRC map '%c'."
-msgstr "Déan iarracht ar mapa NRC leathan neamhbhailí '%c' a shocrú."
-
-#: ../src/trie.c:409
-#, c-format
-msgid "Duplicate (%s/%s)!"
-msgstr "Dúblach (%s/%s)!"
-
-#. Bail back to normal mode.
-#: ../src/bteapp.c:981
-msgid "Could not open console.\n"
-msgstr "Níorbh fhéidir consól a oscailt.\n"
-
-#: ../src/bteapp.c:1077
-msgid "Could not parse the geometry spec passed to --geometry"
+#: src/bte.cc:7774
+msgid "WARNING"
 msgstr ""
-"Níorbh fhéidir an tsonraíocht céimseatan a seoladh chuig --geometry a "
-"pharsáil"
 
-#: ../src/bte.c:1318
-#, c-format
-msgid "Error compiling regular expression \"%s\"."
-msgstr "Earráid agus slonn ionadaíochta \"%s\" á thiomsú."
-
-#. Translators: %s is replaced with error message returned by strerror().
-#: ../src/bte.c:4613
-#, c-format
-msgid "Error reading from child: %s."
-msgstr "Earráid agus á léamh ó mhac: %s."
-
-#: ../src/bte.c:4740
-msgid "Unable to send data to child, invalid charset convertor"
+#: src/bte.cc:7776
+msgid "GnuTLS not enabled; data will be written to disk unencrypted!"
 msgstr ""
-"Ní féidir sonraí a sheoladh chuig mac, tiontaire tacair carachtar neamhbhailí"
 
-#: ../src/bte.c:4751 ../src/bte.c:5798
+#: src/spawn.cc:111
 #, c-format
-msgid "Error (%s) converting data for child, dropping."
-msgstr "Earráid (%s) agus sonraí á thiontú do mhac, á mbaint."
+msgid "Failed to set pipe nonblocking: %s"
+msgstr ""
 
-#: ../src/bte.c:8009
+#: src/spawn.cc:156
 #, c-format
-msgid "Error reading PTY size, using defaults: %s\n"
-msgstr "Earráid agus méid PTY á léamh, réamhshocruithe á úsáid: %s\n"
+msgid "poll error: %s"
+msgstr ""
 
-#. Aaargh.  We're screwed.
-#: ../src/bte.c:13852
-msgid "_bte_conv_open() failed setting word characters"
-msgstr "theip _bte_conv_open() ar shocrú carachtar focail"
+#: src/spawn.cc:163
+msgid "Operation timed out"
+msgstr ""
+
+#: src/spawn.cc:173
+msgid "Operation was cancelled"
+msgstr ""
+
+#: src/spawn.cc:191
+#, c-format
+msgid "Failed to read from child pipe (%s)"
+msgstr ""
+
+#: src/spawn.cc:627
+#, c-format
+msgid "Failed to change to directory “%s”: %s"
+msgstr ""
+
+#: src/spawn.cc:696
+#, c-format
+msgid "Failed to execute child process “%s”: "
+msgstr ""

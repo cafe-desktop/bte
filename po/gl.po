@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gl\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/bte/issues\n"
-"POT-Creation-Date: 2020-05-27 19:17+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-12 11:10+0200\n"
 "PO-Revision-Date: 2020-08-04 09:31+0200\n"
 "Last-Translator: Fran Dieguez <frandieguez@gnome.gl>\n"
 "Language-Team: Galician <Proxecto Trasno <proxecto@trasno.gal>>\n"
@@ -22,11 +22,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "X-Generator: Gtranslator 3.36.0\n"
 
-#: src/bte.cc:7763
+#: src/bte.cc:7774
 msgid "WARNING"
 msgstr "AVISO"
 
-#: src/bte.cc:7765
+#: src/bte.cc:7776
 msgid "GnuTLS not enabled; data will be written to disk unencrypted!"
 msgstr "GnuTLS non está activado; os datos escribiranse no disco sen cifrar!"
 
@@ -35,92 +35,30 @@ msgstr "GnuTLS non está activado; os datos escribiranse no disco sen cifrar!"
 msgid "Failed to set pipe nonblocking: %s"
 msgstr "Produciuse un fallo ao estabelecer a tubería non bloqueante: %s"
 
-#: src/spawn.cc:155
+#: src/spawn.cc:156
 #, c-format
 msgid "poll error: %s"
 msgstr "erro de consulta: %s"
 
-#: src/spawn.cc:161
+#: src/spawn.cc:163
 msgid "Operation timed out"
 msgstr "Expirou o tempo da operación"
 
-#: src/spawn.cc:171
+#: src/spawn.cc:173
 msgid "Operation was cancelled"
 msgstr "Cancelouse a operación"
 
-#: src/spawn.cc:189
+#: src/spawn.cc:191
 #, c-format
-#| msgid "Error reading from child: %s."
 msgid "Failed to read from child pipe (%s)"
 msgstr "Produciuse un erro ao ler desde a tubería filla (%s)"
 
-#: src/spawn.cc:576
+#: src/spawn.cc:627
 #, c-format
 msgid "Failed to change to directory “%s”: %s"
 msgstr "Produciuse un fallo ao cambiar ao directorio «%s»: %s"
 
-#: src/spawn.cc:645
+#: src/spawn.cc:696
 #, c-format
 msgid "Failed to execute child process “%s”: "
 msgstr "Produciuse un fallo ao executar o proceso fillo «%s»: "
-
-#~ msgid "Error (%s) converting data for child, dropping."
-#~ msgstr "Produciuse un erro (%s) ao converter os datos do fillo; eliminando."
-
-#~ msgid "Unable to convert characters from %s to %s."
-#~ msgstr "Non foi posíbel converter os caracteres desde %s a %s."
-
-#~ msgid "Copy"
-#~ msgstr "Copiar"
-
-#~ msgid "Paste"
-#~ msgstr "Pegar"
-
-#~ msgid "Reset (use Ctrl to reset and clear)"
-#~ msgstr "Restabelecer (use Ctrl para restabelecer e limpar)"
-
-#~ msgid "Reset"
-#~ msgstr "Restabelecer"
-
-#~ msgid "Toggle input enabled setting"
-#~ msgstr "Troca as preferencias entrada activada"
-
-#~ msgid "Input"
-#~ msgstr "Entrada"
-
-#~ msgid "Attempt to set invalid NRC map '%c'."
-#~ msgstr "Tentando definir un mapa NRC «%c» incorrecto."
-
-#~ msgid "Unrecognized identified coding system."
-#~ msgstr "Sistema de codificación identificado non recoñecido."
-
-#~ msgid "Attempt to set invalid wide NRC map '%c'."
-#~ msgstr "Tentando definir un mapa NRC global «%c» incorrecto."
-
-#~ msgid "Could not open console.\n"
-#~ msgstr "Non foi posíbel abrir a consola.\n"
-
-#~ msgid "Could not parse the geometry spec passed to --geometry"
-#~ msgstr ""
-#~ "Non foi posíbel analizar a especificación de xeometría pasada a --geometry"
-
-#~ msgid "Unable to send data to child, invalid charset convertor"
-#~ msgstr ""
-#~ "Non foi posíbel enviar os datos ao fillo; o convertedor de conxunto de "
-#~ "caracteres é incorrecto"
-
-#~ msgid "Error reading PTY size, using defaults: %s\n"
-#~ msgstr ""
-#~ "Produciuse un erro ao ler o tamaño do PTY; usarase o valor "
-#~ "predeterminado: %s\n"
-
-#~ msgid "Duplicate (%s/%s)!"
-#~ msgstr "Duplicado (%s/%s)!"
-
-#~ msgid "Error compiling regular expression \"%s\"."
-#~ msgstr "Produciuse un erro ao compilar a expresión regular «%s»."
-
-#~ msgid "_bte_conv_open() failed setting word characters"
-#~ msgstr ""
-#~ "Produciuse un fallo en _bte_conv_open() ao definir os caracteres da "
-#~ "palabra"

@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: bte master\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/bte/issues\n"
-"POT-Creation-Date: 2020-02-19 20:42+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-12 11:10+0200\n"
 "PO-Revision-Date: 2020-02-23 12:49+0530\n"
 "Last-Translator: Jor Teron <jor.teron@gmail.com>\n"
 "Language-Team: Karbi <karbi.translation@gmail.com>\n"
@@ -18,10 +18,43 @@ msgstr ""
 "Plural-Forms: nplurals=2 ; plural=( n != 1 );\n"
 "X-Generator: Gtranslator 2.91.7\n"
 
-#: src/bte.cc:7837
+#: src/bte.cc:7774
 msgid "WARNING"
 msgstr "WARNING"
 
-#: src/bte.cc:7839
+#: src/bte.cc:7776
 msgid "GnuTLS not enabled; data will be written to disk unencrypted!"
 msgstr "GnuTLS not enabled; data will be written to disk unencrypted!"
+
+#: src/spawn.cc:111
+#, c-format
+msgid "Failed to set pipe nonblocking: %s"
+msgstr ""
+
+#: src/spawn.cc:156
+#, c-format
+msgid "poll error: %s"
+msgstr ""
+
+#: src/spawn.cc:163
+msgid "Operation timed out"
+msgstr ""
+
+#: src/spawn.cc:173
+msgid "Operation was cancelled"
+msgstr ""
+
+#: src/spawn.cc:191
+#, c-format
+msgid "Failed to read from child pipe (%s)"
+msgstr ""
+
+#: src/spawn.cc:627
+#, c-format
+msgid "Failed to change to directory “%s”: %s"
+msgstr ""
+
+#: src/spawn.cc:696
+#, c-format
+msgid "Failed to execute child process “%s”: "
+msgstr ""

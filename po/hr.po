@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: bte 0\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/bte/issues\n"
-"POT-Creation-Date: 2020-05-27 19:17+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-12 11:10+0200\n"
 "PO-Revision-Date: 2020-08-23 14:41+0200\n"
 "Last-Translator: gogo <trebelnik2@gmail.com>\n"
 "Language-Team: Croatian <lokalizacija@linux.hr>\n"
@@ -16,11 +16,11 @@ msgstr ""
 "X-Launchpad-Export-Date: 2016-09-15 11:47+0000\n"
 "X-Generator: Poedit 2.4.1\n"
 
-#: src/bte.cc:7763
+#: src/bte.cc:7774
 msgid "WARNING"
 msgstr "UPOZORENJE"
 
-#: src/bte.cc:7765
+#: src/bte.cc:7776
 msgid "GnuTLS not enabled; data will be written to disk unencrypted!"
 msgstr "GNUTLS nije omogućen; podaci će biti zapisivani nešifrirano na disk!"
 
@@ -29,84 +29,30 @@ msgstr "GNUTLS nije omogućen; podaci će biti zapisivani nešifrirano na disk!"
 msgid "Failed to set pipe nonblocking: %s"
 msgstr "Neuspjelo postavljanje pipe neblokiranja: %s"
 
-#: src/spawn.cc:155
+#: src/spawn.cc:156
 #, c-format
 msgid "poll error: %s"
 msgstr "poll greška: %s"
 
-#: src/spawn.cc:161
+#: src/spawn.cc:163
 msgid "Operation timed out"
 msgstr "Istek vremena radnje"
 
-#: src/spawn.cc:171
+#: src/spawn.cc:173
 msgid "Operation was cancelled"
 msgstr "Radnja je prekinuta"
 
-#: src/spawn.cc:189
+#: src/spawn.cc:191
 #, c-format
 msgid "Failed to read from child pipe (%s)"
 msgstr "Greška prilikom čitanja nadređenog slivnika (%s)"
 
-#: src/spawn.cc:576
+#: src/spawn.cc:627
 #, c-format
 msgid "Failed to change to directory “%s”: %s"
 msgstr "Neuspjela promjena u direktorij “%s”: %s"
 
-#: src/spawn.cc:645
+#: src/spawn.cc:696
 #, c-format
 msgid "Failed to execute child process “%s”: "
 msgstr "Neuspjelo pokretanje podređenog procesa “%s”: "
-
-#~ msgid "Error (%s) converting data for child, dropping."
-#~ msgstr "Greška (%s) pri pretvorbi podataka za nadređenog, odbacujem."
-
-#~ msgid "Unable to convert characters from %s to %s."
-#~ msgstr "Nemoguća pretvorba znakova iz %s u %s."
-
-#~ msgid "Attempt to set invalid NRC map '%c'."
-#~ msgstr "Pokušaj postavljanja neispravne NRC mape '%c'."
-
-#~ msgid "Unrecognized identified coding system."
-#~ msgstr "Pronađen je nepoznati sustav kôdiranja."
-
-#~ msgid "Attempt to set invalid wide NRC map '%c'."
-#~ msgstr "Pokušaj postavljanja neispravne široke NRC mape '%c'."
-
-#~ msgid "can not run %s"
-#~ msgstr "nemoguće je pokrenuti %s"
-
-#~ msgid "Error creating signal pipe."
-#~ msgstr "Greška prilikom stvaranja slivnika signala."
-
-#~ msgid "Duplicate (%s/%s)!"
-#~ msgstr "Duplikat (%s/%s)!"
-
-#~ msgid "Error compiling regular expression \"%s\"."
-#~ msgstr "Greška u kompilaciji regularnog izraza \"%s\"."
-
-#~ msgid "No handler for control sequence `%s' defined."
-#~ msgstr "Nema određenog rukovatelja za kontrolni slijed `%s' ."
-
-#~ msgid "Unable to send data to child, invalid charset convertor"
-#~ msgstr "Nemoguće slanje podatka podređenom, neispravan pretvornik znakova"
-
-#~ msgid "Error reading PTY size, using defaults: %s."
-#~ msgstr "Greška prilikom čitanja PTY veličine, koristim uobičajene postavke: %s."
-
-#~ msgid "Error setting PTY size: %s."
-#~ msgstr "Greška postavljanja PTY veličine: %s."
-
-#~ msgid "_bte_conv_open() failed setting word characters"
-#~ msgstr "_bte_conv_open() nije uspio postaviti znakove riječi"
-
-#~ msgid "Got unexpected (key?) sequence `%s'."
-#~ msgstr "Dobio sam neočekivani (tipkanjem?) slijed `%s'."
-
-#~ msgid "Could not open console.\n"
-#~ msgstr "Nemoguće otvaranje konzole\n"
-
-#~ msgid "Could not parse the geometry spec passed to --geometry"
-#~ msgstr "Nemoguća obrada geometrijske specifikacije prosljeđene pomoću --geometry"
-
-#~ msgid "Unknown pixel mode %d.\n"
-#~ msgstr "Nepoznati način piksela %d.\n"

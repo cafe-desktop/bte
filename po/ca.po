@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: bte 0.11.6\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/bte/issues\n"
-"POT-Creation-Date: 2020-05-27 19:17+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-12 11:10+0200\n"
 "PO-Revision-Date: 2020-07-03 02:37+0200\n"
 "Last-Translator: Gil Forcada <gilforcada@guifi.net>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
@@ -19,12 +19,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "X-Generator: Gtranslator 3.36.0\n"
 
-#: src/bte.cc:7763
+#: src/bte.cc:7774
 msgid "WARNING"
 msgstr "AVÍS"
 
-#: src/bte.cc:7765
-#| msgid "GNUTLS not enabled; data will be written to disk unencrypted!"
+#: src/bte.cc:7776
 msgid "GnuTLS not enabled; data will be written to disk unencrypted!"
 msgstr ""
 "El GNUTLS no està habilitat; s'escriuran les dades al disc sense xifrar!"
@@ -34,83 +33,30 @@ msgstr ""
 msgid "Failed to set pipe nonblocking: %s"
 msgstr "S'ha produït un error en establir el conducte com a no bloquejable: %s"
 
-#: src/spawn.cc:155
+#: src/spawn.cc:156
 #, c-format
 msgid "poll error: %s"
 msgstr "s'ha produït un error en l'enquesta: %s"
 
-#: src/spawn.cc:161
+#: src/spawn.cc:163
 msgid "Operation timed out"
 msgstr "L'operació ha excedit el temps"
 
-#: src/spawn.cc:171
+#: src/spawn.cc:173
 msgid "Operation was cancelled"
 msgstr "S'ha cancel·lat l'operació"
 
-#: src/spawn.cc:189
+#: src/spawn.cc:191
 #, c-format
-#| msgid "Error reading from child: %s."
 msgid "Failed to read from child pipe (%s)"
 msgstr "S'ha produït un error en llegir del conducte fill )%s)"
 
-#: src/spawn.cc:576
+#: src/spawn.cc:627
 #, c-format
 msgid "Failed to change to directory “%s”: %s"
 msgstr "No s'ha pogut canviar al directori «%s»:%s"
 
-#: src/spawn.cc:645
+#: src/spawn.cc:696
 #, c-format
 msgid "Failed to execute child process “%s”: "
 msgstr "No s'ha pogut executar el procés fill «%s»: "
-
-#~ msgid "Unable to convert characters from %s to %s."
-#~ msgstr "No es pot convertir el caràcter %s a %s."
-
-#~ msgid "Error (%s) converting data for child, dropping."
-#~ msgstr ""
-#~ "S'ha produït un error (%s) en convertir dades per al fill; s'ometrà la "
-#~ "conversió."
-
-#~ msgid "Copy"
-#~ msgstr "Copia"
-
-#~ msgid "Paste"
-#~ msgstr "Enganxa"
-
-#~ msgid "Reset (use Ctrl to reset and clear)"
-#~ msgstr "Reinicia (utilitzeu Ctrl per reiniciar i netejar)"
-
-#~ msgid "Reset"
-#~ msgstr "Reinicia"
-
-#~ msgid "Toggle input enabled setting"
-#~ msgstr "Commuta el paràmetre del mètode d'entrada actiu"
-
-#~ msgid "Input"
-#~ msgstr "Entrada"
-
-#~ msgid "Attempt to set invalid NRC map '%c'."
-#~ msgstr "S'ha intentat fixar el mapa NRC invàlid «%c»."
-
-#~ msgid "Unrecognized identified coding system."
-#~ msgstr "No s'ha reconegut el sistema de codificació identificat."
-
-#~ msgid "Attempt to set invalid wide NRC map '%c'."
-#~ msgstr "S'ha intentat fixar el mapa global NRC «%c»."
-
-#~ msgid "Could not open console.\n"
-#~ msgstr "No s'ha pogut obrir la consola.\n"
-
-#~ msgid "Could not parse the geometry spec passed to --geometry"
-#~ msgstr ""
-#~ "No s'ha pogut analitzar l'especificació geomètrica indicada a --geometry"
-
-#~ msgid "Unable to send data to child, invalid charset convertor"
-#~ msgstr ""
-#~ "No s'ha pogut enviar les dades al fill, el convertidor de codificació no "
-#~ "és vàlid"
-
-#~ msgid "Error reading PTY size, using defaults: %s\n"
-#~ msgstr ""
-#~ "S'ha produït un error en llegir la mida de PTY; s'utilitzarà el valor per "
-#~ "defecte: %s\n"

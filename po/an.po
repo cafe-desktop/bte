@@ -6,9 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: bte master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=bte&key"
-"words=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-05-04 11:37+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-12 11:10+0200\n"
 "PO-Revision-Date: 2015-05-04 16:14+0200\n"
 "Last-Translator: Daniel <entaltoaragon@gmail.com>\n"
 "Language-Team: Aragonese <softaragones@googlegroups.com>\n"
@@ -20,65 +19,43 @@ msgstr ""
 "X-Generator: Pootle 2.5.1.1\n"
 "X-POOTLE-MTIME: 1430752479.000000\n"
 
-#: ../src/app.ui.h:1
-msgid "Copy"
-msgstr "Copiar"
-
-#: ../src/app.ui.h:2
-msgid "Paste"
-msgstr "Apegar"
-
-#: ../src/app.ui.h:3
-msgid "Reset (use Ctrl to reset and clear)"
-msgstr "Restablir (user Ctrl ta restablir y limpiar)"
-
-#: ../src/app.ui.h:4
-msgid "Reset"
-msgstr "Restablir"
-
-#: ../src/app.ui.h:5
-msgid "Toggle input enabled setting"
-msgstr "Commutar a configuración de dentrada activada"
-
-#: ../src/app.ui.h:6
-msgid "Input"
-msgstr "Dentrada"
-
-#: ../src/iso2022.cc:73 ../src/iso2022.cc:81 ../src/iso2022.cc:111
-#: ../src/bte.cc:2011
-#, c-format
-msgid "Unable to convert characters from %s to %s."
-msgstr "No se pueden convertir caracters de %s a %s."
-
-#. Bail back to normal mode.
-#: ../src/bteapp.c:1027
-msgid "Could not open console.\n"
-msgstr "No se podió ubrir a consola.\n"
-
-#: ../src/bteapp.c:1137
-msgid "Could not parse the geometry spec passed to --geometry"
+#: src/bte.cc:7774
+msgid "WARNING"
 msgstr ""
-"No se podió analisar a especificación de cheometría pasada a --geometry"
 
-#. Translators: %s is replaced with error message returned by strerror().
-#: ../src/bte.cc:4264
-#, c-format
-msgid "Error reading from child: %s."
-msgstr "Error en leyer dende o fillo: %s."
-
-#: ../src/bte.cc:4400
-msgid "Unable to send data to child, invalid charset convertor"
+#: src/bte.cc:7776
+msgid "GnuTLS not enabled; data will be written to disk unencrypted!"
 msgstr ""
-"No se pueden ninviar os datos a o fillo, convertidor de codigos de caracters "
-"invalido"
 
-#: ../src/bte.cc:4411 ../src/bte.cc:5466
+#: src/spawn.cc:111
 #, c-format
-msgid "Error (%s) converting data for child, dropping."
-msgstr "Error (%s) en convertir datos dende o fillo, omitindo."
-
-#: ../src/bte.cc:8006
-#, c-format
-msgid "Error reading PTY size, using defaults: %s\n"
+msgid "Failed to set pipe nonblocking: %s"
 msgstr ""
-"Error en leyer a grandaria PTY, usando as valors predeterminadas: %s.\n"
+
+#: src/spawn.cc:156
+#, c-format
+msgid "poll error: %s"
+msgstr ""
+
+#: src/spawn.cc:163
+msgid "Operation timed out"
+msgstr ""
+
+#: src/spawn.cc:173
+msgid "Operation was cancelled"
+msgstr ""
+
+#: src/spawn.cc:191
+#, c-format
+msgid "Failed to read from child pipe (%s)"
+msgstr ""
+
+#: src/spawn.cc:627
+#, c-format
+msgid "Failed to change to directory “%s”: %s"
+msgstr ""
+
+#: src/spawn.cc:696
+#, c-format
+msgid "Failed to execute child process “%s”: "
+msgstr ""

@@ -8,8 +8,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: bte\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/bte/issues\n"
-"POT-Creation-Date: 2020-04-27 18:50+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-12 11:10+0200\n"
 "PO-Revision-Date: 2020-05-18 13:01+0100\n"
 "Last-Translator: Zander Brown <zbrown@gnome.org>\n"
 "Language-Team: English - United Kingdom <en_GB@li.org>\n"
@@ -20,104 +20,43 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Gtranslator 3.36.0\n"
 
-#: src/bte.cc:7843
+#: src/bte.cc:7774
 msgid "WARNING"
 msgstr "WARNING"
 
-#: src/bte.cc:7845
+#: src/bte.cc:7776
 msgid "GnuTLS not enabled; data will be written to disk unencrypted!"
 msgstr "GnuTLS not enabled; data will be written to disk unencrypted!"
 
-#: src/spawn.cc:104
+#: src/spawn.cc:111
 #, c-format
 msgid "Failed to set pipe nonblocking: %s"
 msgstr "Failed to set pipe non-blocking: %s"
 
-#: src/spawn.cc:148
+#: src/spawn.cc:156
 #, c-format
 msgid "poll error: %s"
 msgstr "poll error: %s"
 
-#: src/spawn.cc:154
+#: src/spawn.cc:163
 msgid "Operation timed out"
 msgstr "Operation timed out"
 
-#: src/spawn.cc:164
+#: src/spawn.cc:173
 msgid "Operation was cancelled"
 msgstr "Operation was cancelled"
 
-#: src/spawn.cc:182
+#: src/spawn.cc:191
 #, c-format
-#| msgid "Error reading from child: %s."
 msgid "Failed to read from child pipe (%s)"
 msgstr "Failed to read from child pipe (%s)"
 
-#: src/spawn.cc:576
+#: src/spawn.cc:627
 #, c-format
 msgid "Failed to change to directory “%s”: %s"
 msgstr "Failed to change to directory “%s”: %s"
 
-#: src/spawn.cc:645
+#: src/spawn.cc:696
 #, c-format
 msgid "Failed to execute child process “%s”: "
 msgstr "Failed to execute child process “%s”: "
-
-#~ msgid "Error (%s) converting data for child, dropping."
-#~ msgstr "Error (%s) converting data for child, dropping."
-
-#~ msgid "Unable to convert characters from %s to %s."
-#~ msgstr "Unable to convert characters from %s to %s."
-
-#~ msgid "Attempt to set invalid NRC map '%c'."
-#~ msgstr "Attempt to set invalid NRC map '%c'."
-
-#~ msgid "Unrecognized identified coding system."
-#~ msgstr "Unrecognised identified coding system."
-
-#~ msgid "Attempt to set invalid wide NRC map '%c'."
-#~ msgstr "Attempt to set invalid wide NRC map '%c'."
-
-#~ msgid "Duplicate (%s/%s)!"
-#~ msgstr "Duplicate (%s/%s)!"
-
-#~ msgid "Could not open console.\n"
-#~ msgstr "Could not open console.\n"
-
-#~ msgid "Could not parse the geometry spec passed to --geometry"
-#~ msgstr "Could not parse the geometry spec passed to --geometry"
-
-#~ msgid "Error compiling regular expression \"%s\"."
-#~ msgstr "Error compiling regular expression \"%s\"."
-
-#~ msgid "Unable to send data to child, invalid charset convertor"
-#~ msgstr "Unable to send data to child, invalid charset convertor"
-
-#~ msgid "Error reading PTY size, using defaults: %s\n"
-#~ msgstr "Error reading PTY size; using defaults: %s\n"
-
-#~ msgid "_bte_conv_open() failed setting word characters"
-#~ msgstr "_bte_conv_open() failed setting word characters"
-
-#~ msgid "can not run %s"
-#~ msgstr "can not run %s"
-
-#~ msgid "Error creating signal pipe."
-#~ msgstr "Error creating signal pipe."
-
-#~ msgid "No handler for control sequence `%s' defined."
-#~ msgstr "No handler for control sequence `%s' defined."
-
-#~ msgid "Error setting PTY size: %s."
-#~ msgstr "Error setting PTY size: %s."
-
-#~ msgid "Got unexpected (key?) sequence `%s'."
-#~ msgstr "Got unexpected (key?) sequence `%s'."
-
-#~ msgid "Unknown pixel mode %d.\n"
-#~ msgstr "Unknown pixel mode %d.\n"
-
-#~ msgid "Can not find appropiate font for character U+%04x.\n"
-#~ msgstr "Can not find appropiate font for character U+%04x.\n"
-
-#~ msgid "Error adding `%s' to environment, continuing."
-#~ msgstr "Error adding `%s' to environment, continuing."

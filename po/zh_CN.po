@@ -11,8 +11,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: bte master\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/bte/issues\n"
-"POT-Creation-Date: 2020-05-27 19:17+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-12 11:10+0200\n"
 "PO-Revision-Date: 2020-06-15 16:23+0800\n"
 "Last-Translator: 王滋涵 Zephyr Wang <wi24rd@fedoraproject.org>\n"
 "Language-Team: Chinese - China <i18n-zh@googlegroups.com>\n"
@@ -23,11 +23,11 @@ msgstr ""
 "X-Generator: Gtranslator 3.36.0\n"
 "Plural-Forms: nplurals=1; plural=0\n"
 
-#: src/bte.cc:7763
+#: src/bte.cc:7774
 msgid "WARNING"
 msgstr "警告"
 
-#: src/bte.cc:7765
+#: src/bte.cc:7776
 msgid "GnuTLS not enabled; data will be written to disk unencrypted!"
 msgstr "GnuTLS 未启用；写入磁盘的数据没有加密！"
 
@@ -36,109 +36,30 @@ msgstr "GnuTLS 未启用；写入磁盘的数据没有加密！"
 msgid "Failed to set pipe nonblocking: %s"
 msgstr "无法设置管道非阻塞：%s"
 
-#: src/spawn.cc:155
+#: src/spawn.cc:156
 #, c-format
 msgid "poll error: %s"
 msgstr "轮询错误：%s"
 
-#: src/spawn.cc:161
+#: src/spawn.cc:163
 msgid "Operation timed out"
 msgstr "操作超时"
 
-#: src/spawn.cc:171
+#: src/spawn.cc:173
 msgid "Operation was cancelled"
 msgstr "操作已取消"
 
-#: src/spawn.cc:189
+#: src/spawn.cc:191
 #, c-format
-#| msgid "Error reading from child: %s."
 msgid "Failed to read from child pipe (%s)"
 msgstr "无法从子管道（%s）读取"
 
-#: src/spawn.cc:576
+#: src/spawn.cc:627
 #, c-format
 msgid "Failed to change to directory “%s”: %s"
 msgstr "无法更改到目录“%s”: %s"
 
-#: src/spawn.cc:645
+#: src/spawn.cc:696
 #, c-format
 msgid "Failed to execute child process “%s”: "
 msgstr "无法执行子进程“%s”："
-
-#~ msgid "Unable to convert characters from %s to %s."
-#~ msgstr "无法将字符从 %s 转换至 %s。"
-
-#~ msgid "Error (%s) converting data for child, dropping."
-#~ msgstr "从子程序转换数据时出错 (%s)，放弃。"
-
-#~ msgid "Copy"
-#~ msgstr "复制"
-
-#~ msgid "Paste"
-#~ msgstr "粘贴"
-
-#~ msgid "Reset (use Ctrl to reset and clear)"
-#~ msgstr "重置(使用 Ctrl 重置并清空)"
-
-#~ msgid "Reset"
-#~ msgstr "重置"
-
-#~ msgid "Toggle input enabled setting"
-#~ msgstr "切换输入启用设置"
-
-#~ msgid "Input"
-#~ msgstr "输入"
-
-#~ msgid "Attempt to set invalid NRC map '%c'."
-#~ msgstr "试图设置无效的 NRC 映射 “%c”。"
-
-#~ msgid "Unrecognized identified coding system."
-#~ msgstr "不可识别的标识代码系统。"
-
-#~ msgid "Attempt to set invalid wide NRC map '%c'."
-#~ msgstr "试图设置无效的宽 NRC 映射 “%c”。"
-
-#~ msgid "Could not open console.\n"
-#~ msgstr "无法打开控制台。\n"
-
-#~ msgid "Could not parse the geometry spec passed to --geometry"
-#~ msgstr "无法解析传递给 --geometry 的几何参数"
-
-#~ msgid "Unable to send data to child, invalid charset convertor"
-#~ msgstr "无法给子进程发送数据，字符集转换器非法"
-
-#~ msgid "Error reading PTY size, using defaults: %s\n"
-#~ msgstr "读取 PTY 的尺寸时出错，使用默认值：%s\n"
-
-#~ msgid "Duplicate (%s/%s)!"
-#~ msgstr "重复 (%s/%s)！"
-
-#~ msgid "Error compiling regular expression \"%s\"."
-#~ msgstr "计算正则表达式“%s”时出错。"
-
-#~ msgid "_bte_conv_open() failed setting word characters"
-#~ msgstr "_bte_conv_open() 设置单词字符失败"
-
-#~ msgid "can not run %s"
-#~ msgstr "无法执行 %s"
-
-#~ msgid "Error creating signal pipe."
-#~ msgstr "创建信号管道出错。"
-
-#~ msgid "No handler for control sequence `%s' defined."
-#~ msgstr "控制字符序列“%s”的处理程序未定义。"
-
-#~ msgid "Error setting PTY size: %s."
-#~ msgstr "设置 PTY 的尺寸时出错：%s。"
-
-#~ msgid "Got unexpected (key?) sequence `%s'."
-#~ msgstr "收到预料之外的字符序列(可能是按键?)“%s”。"
-
-#~ msgid "Unknown pixel mode %d.\n"
-#~ msgstr "未知的像素模式 %d。\n"
-
-#~ msgid "Can not find appropiate font for character U+%04x.\n"
-#~ msgstr "无法找到字符 U+%04x的合适的字体。\n"
-
-#~ msgid "Error adding `%s' to environment, continuing."
-#~ msgstr "加入‘%s’环境变量时出错，将会继续。"

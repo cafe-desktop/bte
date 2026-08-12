@@ -1,9 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: bte.HEAD\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=bte&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-02-27 00:20+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-12 11:10+0200\n"
 "PO-Revision-Date: 2013-01-30 21:33+0000\n"
 "Last-Translator: Samir Ribić <Unknown>\n"
 "Language-Team: Bosnian <+>\n"
@@ -14,63 +13,43 @@ msgstr ""
 "X-Launchpad-Export-Date: 2014-10-23 07:19+0000\n"
 "X-Generator: Launchpad (build 17203)\n"
 
-#: ../src/app.ui.h:1
-msgid "Copy"
-msgstr "Umnoži"
-
-#: ../src/app.ui.h:2
-msgid "Paste"
-msgstr "Ubaci"
-
-#: ../src/app.ui.h:3
-msgid "Reset (use Ctrl to reset and clear)"
-msgstr "Vrati (koristite Ktrl da povratite i očistite)"
-
-#: ../src/app.ui.h:4
-msgid "Reset"
-msgstr "Vrati"
-
-#: ../src/app.ui.h:5
-msgid "Toggle input enabled setting"
-msgstr "Okida podešavanja uključena ulazom"
-
-#: ../src/app.ui.h:6
-msgid "Input"
-msgstr "Ulaz"
-
-#: ../src/iso2022.c:73 ../src/iso2022.c:81 ../src/iso2022.c:111
-#: ../src/bte.c:2002
-#, c-format
-msgid "Unable to convert characters from %s to %s."
-msgstr "Ne mogu konvertovati karaktere iz %s u %s."
-
-#. Bail back to normal mode.
-#: ../src/bteapp.c:1027
-msgid "Could not open console.\n"
-msgstr "Ne mogu otvoriti konzolu.\n"
-
-#: ../src/bteapp.c:1137
-msgid "Could not parse the geometry spec passed to --geometry"
+#: src/bte.cc:7774
+msgid "WARNING"
 msgstr ""
-"Ne mogu da raščlanim odrednicu geometrije proslijeđenu opcijom --geometry"
 
-#. Translators: %s is replaced with error message returned by strerror().
-#: ../src/bte.c:4253
-#, c-format
-msgid "Error reading from child: %s."
-msgstr "Greška prilikom čitanja: %s."
-
-#: ../src/bte.c:4389
-msgid "Unable to send data to child, invalid charset convertor"
+#: src/bte.cc:7776
+msgid "GnuTLS not enabled; data will be written to disk unencrypted!"
 msgstr ""
-"Ne mogu da pošaljem podatke podprocesu, neispravan pretvarač skupa znakova"
 
-#: ../src/bte.c:4400 ../src/bte.c:5403
+#: src/spawn.cc:111
 #, c-format
-msgid "Error (%s) converting data for child, dropping."
-msgstr "Greška (%s) pri prebacivanju sadržaja, odbacujem."
+msgid "Failed to set pipe nonblocking: %s"
+msgstr ""
 
-#: ../src/bte.c:7712
+#: src/spawn.cc:156
 #, c-format
-msgid "Error reading PTY size, using defaults: %s\n"
-msgstr "Greška u čitanju PTY veličine, podrazumijevano: %s\n"
+msgid "poll error: %s"
+msgstr ""
+
+#: src/spawn.cc:163
+msgid "Operation timed out"
+msgstr ""
+
+#: src/spawn.cc:173
+msgid "Operation was cancelled"
+msgstr ""
+
+#: src/spawn.cc:191
+#, c-format
+msgid "Failed to read from child pipe (%s)"
+msgstr ""
+
+#: src/spawn.cc:627
+#, c-format
+msgid "Failed to change to directory “%s”: %s"
+msgstr ""
+
+#: src/spawn.cc:696
+#, c-format
+msgid "Failed to execute child process “%s”: "
+msgstr ""

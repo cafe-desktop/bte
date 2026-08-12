@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: bte\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/bte/issues\n"
-"POT-Creation-Date: 2020-04-27 18:50+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-12 11:10+0200\n"
 "PO-Revision-Date: 2020-04-28 23:34+0200\n"
 "Last-Translator: scootergrisen\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
@@ -21,44 +21,44 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: src/bte.cc:7843
+#: src/bte.cc:7774
 msgid "WARNING"
 msgstr "ADVARSEL"
 
-#: src/bte.cc:7845
+#: src/bte.cc:7776
 msgid "GnuTLS not enabled; data will be written to disk unencrypted!"
-msgstr "GnuTLS er ikke slået til; data vil blive skrevet ukrypteret til disken!"
+msgstr ""
+"GnuTLS er ikke slået til; data vil blive skrevet ukrypteret til disken!"
 
-#: src/spawn.cc:104
+#: src/spawn.cc:111
 #, c-format
 msgid "Failed to set pipe nonblocking: %s"
 msgstr "Kunne ikke indstille pipe som ikke-blokerende: %s"
 
-#: src/spawn.cc:148
+#: src/spawn.cc:156
 #, c-format
 msgid "poll error: %s"
 msgstr "fejl ved poll: %s"
 
-#: src/spawn.cc:154
+#: src/spawn.cc:163
 msgid "Operation timed out"
 msgstr "Handlingen fik timeout"
 
-#: src/spawn.cc:164
+#: src/spawn.cc:173
 msgid "Operation was cancelled"
 msgstr "Handlingen blev annulleret"
 
-#: src/spawn.cc:182
+#: src/spawn.cc:191
 #, c-format
-#| msgid "Error reading from child: %s."
 msgid "Failed to read from child pipe (%s)"
 msgstr "Kunne ikke læse fra underpipe (%s)"
 
-#: src/spawn.cc:576
+#: src/spawn.cc:627
 #, c-format
 msgid "Failed to change to directory “%s”: %s"
 msgstr "Kunne ikke skifte til mappen “%s”: %s"
 
-#: src/spawn.cc:645
+#: src/spawn.cc:696
 #, c-format
 msgid "Failed to execute child process “%s”: "
 msgstr "Kunne ikke køre underprocessen “%s”: "
