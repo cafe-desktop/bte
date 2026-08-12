@@ -3,31 +3,12 @@
 ##########################################################
 requires:
   debian:
-    - aptitude
-    - clang-tools
-    - cppcheck
-    - gettext
-    - git
-    - gtk-doc-tools
-    - libgirepository1.0-dev
-    - libglib2.0-dev
-    - libgnutls28-dev
-    - libpango1.0-dev
-    - libpcre2-dev
-    - libsystemd-dev
-    - libxml2-utils
-    - meson
-    - expect #required for unbuffer
-    - wget
 
 before_scripts:
-  - ./html-cppcheck
-  - ./debrepo-install 'libctk-3-dev gir1.2-ctk-3.0 libctk-3-common libctk-3-0'
+  - ./debrepo-install
 
 build_scripts:
-  - ./before-build
-  - ./make-scanbuild meson 'setup -D_systemd=true'
-  - ./after-build
+  - ./build-debs https://github.com/cafe-desktop/debian-packages devel bte2.91
 
 after_scripts:
   - ./gen-index -l 20
