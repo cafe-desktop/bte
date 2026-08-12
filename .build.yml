@@ -8,7 +8,7 @@ before_scripts:
   - ./debrepo-install
 
 build_scripts:
-  - ./build-debs https://github.com/cafe-desktop/debian-packages devel bte2.91
+  - ./testrepo
 
 after_scripts:
   - ./gen-index -l 20
