@@ -94,7 +94,7 @@ public:
         char** dingus{nullptr};
         char** exec_argv{nullptr};
         char** environment{nullptr};
-        GdkPixbuf* background_pixbuf{nullptr};
+        CdkPixbuf* background_pixbuf{nullptr};
         CdkRGBA bg_color{1.0, 1.0, 1.0, 1.0};
         CdkRGBA fg_color{0.0, 0.0, 0.0, 1.0};
         CdkRGBA cursor_bg_color{};
