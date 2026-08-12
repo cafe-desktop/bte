@@ -1,3 +1,12 @@
+### bte 2.0.0
+
+  * meson_options: set _systemd to false by default
+  * ci: enable systemd
+  * port from GdkPixbuf to CdkPixbuf
+  * spawn: Fix [-Wstrict-aliasing] warnings
+  * update translations
+
+
 ### bte 1.0.0
 
   * ci: some improvements
