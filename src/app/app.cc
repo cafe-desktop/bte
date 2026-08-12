@@ -29,7 +29,7 @@
 #include <glib/gprintf.h>
 #include <glib/gi18n.h>
 #include <glib-unix.h>
-#include <gdk-pixbuf/gdk-pixbuf.h>
+#include <cdk-pixbuf/cdk-pixbuf.h>
 #include <ctk/ctk.h>
 #include <cairo/cairo-gobject.h>
 #include <bte/bte.h>
@@ -305,7 +305,7 @@ private:
         {
                 Options* that = static_cast<Options*>(data);
                 g_clear_object(&that->background_pixbuf);
-                that->background_pixbuf = gdk_pixbuf_new_from_file(value, error);
+                that->background_pixbuf = cdk_pixbuf_new_from_file(value, error);
                 return that->background_pixbuf != nullptr;
         }
 
