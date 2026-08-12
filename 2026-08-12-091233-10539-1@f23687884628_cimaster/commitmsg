@@ -1,0 +1,11 @@
+spawn: Fix [-Wstrict-aliasing] warnings
+
+Fixes the warnings:
+
+../src/spawn.cc: In function 'char** bte::base::merge_environ(char**, const char*, bool)':
+../src/spawn.cc:267:54: warning: dereferencing type-punned pointer might break strict-aliasing rules [-Wstrict-aliasing]
+  267 |         while (g_hash_table_iter_next(&iter, (void**)&name, (void**)&value)) {
+      |                                                      ^~~~~
+../src/spawn.cc:267:69: warning: dereferencing type-punned pointer might break strict-aliasing rules [-Wstrict-aliasing]
+  267 |         while (g_hash_table_iter_next(&iter, (void**)&name, (void**)&value)) {
+      |                                                                     ^~~~~~
